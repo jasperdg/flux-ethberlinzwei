@@ -63,6 +63,7 @@ contract('MarketOracle', () => {
 				CASH,
 				AUGUR,
 				COMPLETE_SETS,
+				CLAIM_TRADING_PROCEEDS,
 				chainLink.address
 			]
 		}).encodeABI();
@@ -127,7 +128,6 @@ contract('MarketOracle', () => {
 		const disputeEndTime = await marketOracle.methods.getDisputeEndTime().call();
 		await reportingUtils.setTimestamp(toBN(disputeEndTime).add(toBN(1)));
 	});
-
 	
 	it('Commits initial report', async () => {
 		const nonce = await web3.eth.getTransactionCount(PUB_KEY);
@@ -150,9 +150,18 @@ contract('MarketOracle', () => {
 
 	it('sets timestamp three days and one second from when the market was finalized so that proceeds can be claimed', async () => {
 		const threeDaysAndOneSecond = 60 * 60 * 24 * 3 + 1;
-		const reportingEndTime = await marketContracts[marketContracts.length - 1].methods.getFinalizationTime.call()
+		const reportingEndTime = await marketOracle.methods.getDisputeMarketFinalizationTime.call();
 		const setTime = await reportingUtils.setTimestamp(reportingEndTime.add(threeDaysAndOneSecond));
 		assert.equal(setTime.status, true);
+	});
+
+	it('The oracle claims all proceeds from Augur and transfers them back to the market address', async () => {
+		const nonce = await web3.eth.getTransactionCount(PUB_KEY);
+		const data  = marketOracle.methods.claimDisputeTradingProceeds().encodeABI();
+		await sendSignedTransaction(marketOracle.address, nonce, data, "0");
+		const marketOracleBalance = await web3.eth.getBalance(marketOracle.address);
+		const yesnoMarketBalance = await web3.eth.getBalance(yesNoMarket.address);
+		console.log(marketOracleBalance, yesnoMarketBalance);
 	});
 
 });

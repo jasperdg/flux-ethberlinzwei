@@ -25,6 +25,7 @@ contract YesNoMarket {
 		address _cash,
 		address _augur,
 		address _completeSets,
+		address _claimTradingProceeds,
 		address _chainLink
 	) public {
 		endTime = _endTime;
@@ -39,7 +40,8 @@ contract YesNoMarket {
 			_universe, 
 			_cash, 
 			_augur,
-			_completeSets
+			_completeSets,
+			_claimTradingProceeds
 		);
 	}
 

@@ -39,6 +39,7 @@ contract MarketOracle {
 	Universe universe;
 	ICash cash;
 	CompleteSets completeSets;
+	ClaimTradingProceeds claimTradingProceeds;
 
 	uint256 constant NUM_TICKS = 10000;
 	uint256 constant ZERO = 0;
@@ -58,7 +59,8 @@ contract MarketOracle {
 		address _universe,
 		address _cash,
 		address _augur,
-		address _completeSets
+		address _completeSets,
+		address _claimTradingProceeds
 	) 
 	public {
 		require (_endTime > now);
@@ -75,6 +77,7 @@ contract MarketOracle {
 		cash = ICash(_cash);
 		universe = Universe(_universe);
 		completeSets = CompleteSets(_completeSets);
+		claimTradingProceeds = ClaimTradingProceeds(_claimTradingProceeds);
 
 		uint256 timeToEnd = endTime.sub(now);
 		uint256 potentialAddedDisputeTime = timeToEnd.div(30);
@@ -176,7 +179,9 @@ contract MarketOracle {
 	public
 	view
 	returns (bool) {
-		require(now >= endTime + disputeTimeAdded);
+		require(now >= endTime);
+		// If not testing the line below here should be uncommented
+		// require(now >= endTime + disputeTimeAdded);
 		if (!disputed) {
 			resoluted = true;
 			payoutDistributionHash = answerToPayoutDistributionHash(answer, isInvalid);
@@ -184,6 +189,22 @@ contract MarketOracle {
 			require(!disputeMarket.isFinalized());
 			disputeMarket.finalize();
 		}
+	}
+
+	function claimDisputeTradingProceeds()
+	public {
+		uint256 balanceBefore = address(this).balance;
+		claimTradingProceeds.claimTradingProceeds(disputeMarket, address(this));
+		uint256 balanceAfter = address(this).balance;
+		creator.transfer(balanceAfter.sub(balanceBefore));
+	}
+
+	function getDisputeMarketFinalizationTime()
+	public
+	view
+	returns (uint256) {
+		require(disputed == true);
+		return disputeMarket.getFinalizationTime();
 	}
 
 
