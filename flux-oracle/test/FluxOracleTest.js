@@ -1,6 +1,7 @@
 const Web3 = require("web3");
 const MarketOracleAbi = require("../build/contracts/MarketOracle").abi;
 const YesNoMarketAbi = require("../build/contracts/YesNoMarket").abi;
+const FeeWindowAbi = require("../build/contracts/FeeWindow").abi;
 const YesNoMarketBytecode = require("../build/contracts/YesNoMarket").bytecode;
 const ERC20Abi = require("../build/contracts/ERC20").abi;
 const FakeLinkAbi = require("../build/contracts/FakeLink").abi;
@@ -24,7 +25,7 @@ const { getNoShowBondFee } = require("../utils/createAugurMarket");
 const reportingUtils = new ReportingUtils(web3);
 
 const oneEthInWei = toWei("1", "ether");
-const inOneMinute = Math.round(new Date().getTime() + 60);
+const inOneMinute = Math.round(new Date().getTime() / 1000 + 30);
 
 contract('MarketOracle', () => {
 	let yesNoMarket;
@@ -34,11 +35,11 @@ contract('MarketOracle', () => {
 	let chainLinkWs;
 	let repToken;
 
-	it('Reset augur timestamp to now', async () => {
+	it('Resets augur timestamp to current date/time', async () => {
 		await reportingUtils.setTimestamp(toBN(Math.round(new Date().getTime() / 1000)));
 	});
 
-	it('is able to deploy the FakeLink contract', async () => {
+	it('Deploys ChainLink contracts to local node', async () => {
 		const nonce = await web3.eth.getTransactionCount(PUB_KEY);
 		const data = new web3.eth.Contract(FakeLinkAbi).deploy({ data: FakeLinkBytecode, arguments: [] }).encodeABI();
 		const { contractAddress } = await sendSignedTransaction(false, nonce, data, "0");
@@ -48,7 +49,7 @@ contract('MarketOracle', () => {
 
 	});
 	
-	it('is able to deploy a Market contract', async () => {
+	it('Deploys YesNoMarket contract ti local node', async () => {
 		const nonce = await web3.eth.getTransactionCount(PUB_KEY);
 		const data = new web3.eth.Contract(YesNoMarketAbi).deploy({
 			data: YesNoMarketBytecode,
@@ -73,34 +74,10 @@ contract('MarketOracle', () => {
 		marketOracleWs = new web3Ws.eth.Contract(MarketOracleAbi, oracleAddress);
 	});
 
-	it('Create ChainLink operator that listens for new data requests', async () => {
+	it('Initialize new ChainLink operator that listens for query events', async () => {
 		const operator = new ChainLinkOperator(chainLinkWs, web3);
 		operator.listenForRequests();
 	});
-
-	it('Fire new request from marketOracle', async () => {
-		const nonce = await web3.eth.getTransactionCount(PUB_KEY);
-		const data = marketOracle.methods.requestDataChainLink().encodeABI();
-		await sendSignedTransaction(marketOracle.address, nonce, data, "0");
-	});
-
-	it('Waitfor the request to be fulfilled', async () => {
-		const marketOracleUtils = new MarketOracleUtils(marketOracleWs, web3);
-		await marketOracleUtils.waitMarketDataIsFulfilled();
-	});
-
-	it('Answer should be 2', async () => {
-		const answer = await marketOracle.methods.getAnswer().call();
-		assert.equal(hexToUtf8(answer), 1);
-	});
-
-	// it('Waits till market end', async () => {
-	// 	await new Promise((resolve) => {
-	// 		setTimeout(() => {
-	// 			resolve();
-	// 		}, 15000);
-	// 	});
-	// });
 
 	it("Should be able to take positions in the markets", async () => {
 		const nonce = await web3.eth.getTransactionCount(PUB_KEY);
@@ -111,34 +88,63 @@ contract('MarketOracle', () => {
 		await sendSignedTransaction(yesNoMarket.address, nonceTwo, dataTwo, hexToNumberString(oneEthInWei));
 	});
 
-	it ("Should be able to create a contract instance of the current REP token", async () => {
+	it('Fire a new ChainLink query event through the Flux oracle bridge', async () => {
+		const nonce = await web3.eth.getTransactionCount(PUB_KEY);
+		const data = marketOracle.methods.requestDataChainLink().encodeABI();
+		await sendSignedTransaction(marketOracle.address, nonce, data, "0");
+	});
+
+	it('Wait for the ChainLink to pickup the request and provide a (false) answer', async () => {
+		const marketOracleUtils = new MarketOracleUtils(marketOracleWs, web3);
+		await marketOracleUtils.waitMarketDataIsFulfilled();
+	});
+
+	it('Answer the ChainLink node provided was false', async () => {
+		const answer = await marketOracle.methods.getAnswer().call();
+		assert.equal(hexToUtf8(answer), 1);
+	});
+
+	it ("Should be able to create a contract instance of the current REP token in preperation of a dispute", async () => {
 		const repAddress = await marketOracle.methods.getRepToken().call();
 		repToken = new web3.eth.Contract(ERC20Abi, repAddress);
 	});
 
-	it ("Should approve our marketOracle to transfer rep for us", async () => {
+	it ("Should approve our the Flux oracle bridge to transfer Rep for our address", async () => {
 		const noShowBondFee = await getNoShowBondFee(0);
 		const nonce = await web3.eth.getTransactionCount(PUB_KEY);
 		const data = repToken.methods.approve(marketOracle.address, hexToNumberString(noShowBondFee)).encodeABI();
 		await sendSignedTransaction(repToken.address, nonce, data, "0");
 	});
 	
-	it("Should be able to dispute ChainLink's answer by creating an augur market and moving all open interest to said market", async () => {
-		const data = yesNoMarket.methods.dispute(fromAscii("1")).encodeABI();
+	it("Starts a dispute that creates an Augur market and transfers all open interest into this Augur market", async () => {
+		const data = yesNoMarket.methods.dispute(fromAscii("2"), false).encodeABI();
 		const marketCreationFee = await getMarketCreationFee(0);
 		const nonce = await web3.eth.getTransactionCount(PUB_KEY);
-		const receipt = await sendSignedTransaction(yesNoMarket.address, nonce, data, hexToNumberString(marketCreationFee));
-		assert.equal(receipt.status, true);
+		await sendSignedTransaction(yesNoMarket.address, nonce, data, hexToNumberString(marketCreationFee));
 	});
 
-	it('set timestamp to date and time where the market are going to be able to be finalized', async () => {
+	it('Set the Augur timestamp to a stamp where the dispute market has just ended', async () => {
 		const disputeEndTime = await marketOracle.methods.getDisputeEndTime().call();
-		await reportingUtils.setTimestamp(toBN(disputeEndTime));
+		await reportingUtils.setTimestamp(toBN(disputeEndTime).add(toBN(1)));
 	});
 
+	
+	it('Commits initial report', async () => {
+		const nonce = await web3.eth.getTransactionCount(PUB_KEY);
+		const data = marketOracle.methods.submitInitialReport([NUM_TICKS, 0]).encodeABI();
+		await sendSignedTransaction(marketOracle.address, nonce, data, "0");
+	});
+
+	it('changes timestamp to after reporting phase', async () => {
+		const feeWindow = await marketOracle.methods.getFeeWindow();
+		const feeWindowContract = new web3.eth.Contract(FeeWindowAbi, feeWindow);
+		const feeWindowEndTime = await feeWindowContract.methods.getEndTime.call();
+		// await reportingUtils.setTimestamp(feeWindowEndTime.add(1));
+	});
+	
 	// it('finalizes the market', async () => {
 	// 	const nonce = await web3.eth.getTransactionCount(PUB_KEY);
-	// 	const data = yesNoMarket.methods.finalizeDispute().encodeABI();
+	// 	const data = yesNoMarket.methods.finalize().encodeABI();
 	// 	await sendSignedTransaction(yesNoMarket.address, nonce, data, "0");
 	// });
 

@@ -3,6 +3,7 @@ pragma experimental ABIEncoderV2;
 
 import "./YesNoMarket.sol";
 import "./../libraries/augur/source/contracts/reporting/IMarket.sol";
+import "./../libraries/augur/source/contracts/reporting/Market.sol";
 import "./../libraries/augur/source/contracts/trading/IShareToken.sol";
 import "./../libraries/augur/source/contracts/trading/CompleteSets.sol";
 import "./../libraries/augur/source/contracts/trading/ICash.sol";
@@ -25,13 +26,14 @@ contract MarketOracle {
 	bool disputed;
 	bool resoluted;
 	bool isInvalid;
+	bool disputeIsInvalid;
 	uint256 endTime;
 	uint256 disputeTimeAdded;
 	bytes32 public answer;
 	bytes32 disputeAnswer;
 	IMarket disputeMarket;
-	uint256[] payoutDistribution;
-	
+	bytes32 public payoutDistributionHash;
+
 	string marketDescription;
 	bytes32 marketTopic;
 	Universe universe;
@@ -39,6 +41,7 @@ contract MarketOracle {
 	CompleteSets completeSets;
 
 	uint256 constant NUM_TICKS = 10000;
+	uint256 constant ZERO = 0;
 	uint256 constant TEN_MINUTES = 60 * 10;
 	uint256 constant ONE_DAY = 60 * 60 * 24;
 
@@ -111,12 +114,13 @@ contract MarketOracle {
 
 	function startDispute(
 		bytes32 _correctAnswer,
+		bool _invalid,
 		address _disputer
 	)
 	public 
 	payable	{
-		// require(msg.value == creator.balance);
-		// require(disputed == false);
+		require(msg.sender == address(creator));
+		require(disputed == false);
 		// require(now < endTime + disputeTimeAdded && now >= endTime);		
 
 		// get noShowBond
@@ -139,6 +143,7 @@ contract MarketOracle {
 			""
 		);
 		disputeAnswer = _correctAnswer;
+		disputeIsInvalid = _invalid;
 		disputed = true;
 
 		uint256 setsToBuy = msg.value.sub(marketCreationFee).div(NUM_TICKS);
@@ -148,11 +153,39 @@ contract MarketOracle {
 		emit marketDisputed(disputeMarket);
 	}
 
-	function finalizeDisputeMarket()
-	public 
-	returns (bool) {
-		return disputeMarket.finalize();
+	function submitInitialReport(uint256[] payoutNumerators) public {
+		require(answerToPayoutDistributionHash(disputeAnswer, disputeIsInvalid) == keccak256(payoutNumerators));
+		Market(address(disputeMarket)).doInitialReport(payoutNumerators, disputeIsInvalid);
 	}
+
+	function answerToPayoutDistributionHash(bytes32 _answer, bool _invalid) 
+	internal 
+	returns(bytes32) {
+		if (_invalid) {
+			return keccak256([NUM_TICKS.div(2), NUM_TICKS.div(2)]);
+		}
+		else if (_answer == bytes32(2)) {
+			return keccak256([ZERO, NUM_TICKS]);
+		} 
+		else {
+			return keccak256([NUM_TICKS, ZERO]);
+		}
+	}
+
+	function finalize()
+	public
+	view
+	returns (bool) {
+		require(now >= endTime + disputeTimeAdded);
+		if (!disputed) {
+			resoluted = true;
+			payoutDistributionHash = answerToPayoutDistributionHash(answer, isInvalid);
+		} else {
+			require(!disputeMarket.isFinalized());
+			disputeMarket.finalize();
+		}
+	}
+
 
 	function getAnswer()
 	public 
@@ -173,33 +206,14 @@ contract MarketOracle {
 	view 
 	returns (uint256) {
 		require(disputed == true);
-		return endTime + disputeTimeAdded + 120;
-
+		return Market(address(disputeMarket)).getDesignatedReportingEndTime() + 1;
 	}
-
-	function answerToPayoutDistribution() public view {
-		if (isInvalid) {
-			payoutDistribution = [500, 500];
-		}
-		else if (answer == bytes32(2)) {
-			payoutDistribution = [0, 1000];
-		} 
-		else {
-			payoutDistribution = [1000, 0];
-		}
-	}
-
-	function resolute()
-	public
-	view
-	returns (bool) {
-		require(now >= endTime + disputeTimeAdded);
-		if (!disputed) {
-			resoluted = true;
-			answerToPayoutDistribution();
-		} else {
-			require(!disputeMarket.isFinalized());
-			disputeMarket.finalize();
-		}
+	
+	function getFeeWindow()
+	public 
+	view 
+	returns(address) {
+		require(disputed == true);
+		return address(Market(address(disputeMarket)).getFeeWindow());
 	}
 }

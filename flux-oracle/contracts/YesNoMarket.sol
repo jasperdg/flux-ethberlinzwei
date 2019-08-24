@@ -53,22 +53,22 @@ contract YesNoMarket {
 		balances[msg.sender][_position] = balances[msg.sender][_position].add(msg.value.div(NUM_TICKS));
 	}
 
-	function dispute(bytes32 _correctAnswer)
+	function dispute(bytes32 _correctAnswer, bool _invalid)
 	public
 	payable {
 		require(!disputed);
 		uint256 marketCreationFee = universe.getOrCacheValidityBond();
 		require(msg.value >= marketCreationFee);
-		oracle.startDispute.value(address(this).balance)(_correctAnswer, msg.sender);
+		oracle.startDispute.value(address(this).balance)(_correctAnswer, _invalid,msg.sender);
 		disputed = true;
 	}
 
-	// function finalizeDispute()
-	// public
-	// view {
-	// 	require(disputed);
-	// 	oracle.finalizeDispute();
-	// }
+	function finalize()
+	public
+	view {
+		require(disputed);
+		oracle.finalize();
+	}
 
 	function getOracle()
 	public 
@@ -76,4 +76,6 @@ contract YesNoMarket {
 	returns (address) {
 		return oracle;
 	}
+
+	
 }

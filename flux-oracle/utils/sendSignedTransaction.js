@@ -14,7 +14,7 @@ const web3 = new Web3(`http://localhost:${PARITY_PORT}`);
 const sendSignedTransaction = (to, nonce, data, value) => new Promise( async (resolve, reject) => {
 	const privateKey = Buffer.from(PVT_KEY, "hex");
 	const gasPrice = toHex("1");
-	const gasLimit = toHex("7000000");
+	const gasLimit = toHex("7500000");
 	
 	let rawTx = {
 		nonce: toHex(nonce),
