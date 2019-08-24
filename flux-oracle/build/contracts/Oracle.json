@@ -1,0 +1,446 @@
+{
+  "contractName": "Oracle",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "requestDataChainLink",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5060d98061001f6000396000f300608060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063daff9ab7146044575b600080fd5b348015604f57600080fd5b506056606a565b60405160619190607c565b60405180910390f35b600090565b6076816095565b82525050565b6000602082019050608f6000830184606f565b92915050565b60008190509190505600a265627a7a7230582024e8df58761833b50d3b23bd95731f9d1aa920810e386df4f7435a3f6b5702446c6578706572696d656e74616cf50037",
+  "deployedBytecode": "0x608060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063daff9ab7146044575b600080fd5b348015604f57600080fd5b506056606a565b60405160619190607c565b60405180910390f35b600090565b6076816095565b82525050565b6000602082019050608f6000830184606f565b92915050565b60008190509190505600a265627a7a7230582024e8df58761833b50d3b23bd95731f9d1aa920810e386df4f7435a3f6b5702446c6578706572696d656e74616cf50037",
+  "sourceMap": "490:121:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;490:121:1;;;;;;;",
+  "deployedSourceMap": "490:121:1:-;;;;;;;;;;;;;;;;;;;;;;;;542:67;;8:9:-1;5:2;;;30:1;27;20:12;5:2;542:67:1;;;;;;;;;;;;;;;;;;;;;594:7;542:67;:::o;5:110:-1:-;78:31;103:5;78:31;;;73:3;66:44;60:55;;;122:193;;230:2;219:9;215:18;207:26;;244:61;302:1;291:9;287:17;278:6;244:61;;;201:114;;;;;322:79;;391:5;380:16;;374:27;;;",
+  "source": "pragma solidity >= 0.4.22;\npragma experimental ABIEncoderV2;\n\nimport \"./../libraries/augur/source/contracts/reporting/IMarket.sol\";\nimport \"./../libraries/augur/source/contracts/trading/IShareToken.sol\";\nimport \"./../libraries/augur/source/contracts/trading/CompleteSets.sol\";\nimport \"./../libraries/augur/source/contracts/trading/ICash.sol\";\nimport \"./../libraries/augur/source/contracts/trading/ClaimTradingProceeds.sol\";\n\nimport \"./../libraries/openzeppelin-solidity/SafeMathLib.sol\";\n \ncontract Oracle {\n\tusing SafeMathLib for uint256;\n\n\tfunction requestDataChainLink() \n\tpublic \n\treturns (bytes32)\n\t{\n\n\t}\n}",
+  "sourcePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/contracts/Oracle.sol",
+  "ast": {
+    "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/contracts/Oracle.sol",
+    "exportedSymbols": {
+      "Oracle": [
+        120
+      ]
+    },
+    "id": 121,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 103,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:26:1"
+      },
+      {
+        "id": 104,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "27:33:1"
+      },
+      {
+        "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/reporting/IMarket.sol",
+        "file": "./../libraries/augur/source/contracts/reporting/IMarket.sol",
+        "id": 105,
+        "nodeType": "ImportDirective",
+        "scope": 121,
+        "sourceUnit": 1790,
+        "src": "62:69:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/trading/IShareToken.sol",
+        "file": "./../libraries/augur/source/contracts/trading/IShareToken.sol",
+        "id": 106,
+        "nodeType": "ImportDirective",
+        "scope": 121,
+        "sourceUnit": 3648,
+        "src": "132:71:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/trading/CompleteSets.sol",
+        "file": "./../libraries/augur/source/contracts/trading/CompleteSets.sol",
+        "id": 107,
+        "nodeType": "ImportDirective",
+        "scope": 121,
+        "sourceUnit": 3240,
+        "src": "204:72:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/trading/ICash.sol",
+        "file": "./../libraries/augur/source/contracts/trading/ICash.sol",
+        "id": 108,
+        "nodeType": "ImportDirective",
+        "scope": 121,
+        "sourceUnit": 3283,
+        "src": "277:65:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/trading/ClaimTradingProceeds.sol",
+        "file": "./../libraries/augur/source/contracts/trading/ClaimTradingProceeds.sol",
+        "id": 109,
+        "nodeType": "ImportDirective",
+        "scope": 121,
+        "sourceUnit": 2764,
+        "src": "343:80:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/openzeppelin-solidity/SafeMathLib.sol",
+        "file": "./../libraries/openzeppelin-solidity/SafeMathLib.sol",
+        "id": 110,
+        "nodeType": "ImportDirective",
+        "scope": 121,
+        "sourceUnit": 4310,
+        "src": "425:62:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 120,
+        "linearizedBaseContracts": [
+          120
+        ],
+        "name": "Oracle",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "id": 113,
+            "libraryName": {
+              "contractScope": null,
+              "id": 111,
+              "name": "SafeMathLib",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 4309,
+              "src": "515:11:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_SafeMathLib_$4309",
+                "typeString": "library SafeMathLib"
+              }
+            },
+            "nodeType": "UsingForDirective",
+            "src": "509:30:1",
+            "typeName": {
+              "id": 112,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "531:7:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            }
+          },
+          {
+            "body": {
+              "id": 118,
+              "nodeType": "Block",
+              "src": "604:5:1",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 119,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "requestDataChainLink",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 114,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "571:2:1"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 117,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 116,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 119,
+                  "src": "594:7:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 115,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "594:7:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "593:9:1"
+            },
+            "scope": 120,
+            "src": "542:67:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 121,
+        "src": "490:121:1"
+      }
+    ],
+    "src": "0:611:1"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/contracts/Oracle.sol",
+    "exportedSymbols": {
+      "Oracle": [
+        120
+      ]
+    },
+    "id": 121,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 103,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:26:1"
+      },
+      {
+        "id": 104,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "27:33:1"
+      },
+      {
+        "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/reporting/IMarket.sol",
+        "file": "./../libraries/augur/source/contracts/reporting/IMarket.sol",
+        "id": 105,
+        "nodeType": "ImportDirective",
+        "scope": 121,
+        "sourceUnit": 1790,
+        "src": "62:69:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/trading/IShareToken.sol",
+        "file": "./../libraries/augur/source/contracts/trading/IShareToken.sol",
+        "id": 106,
+        "nodeType": "ImportDirective",
+        "scope": 121,
+        "sourceUnit": 3648,
+        "src": "132:71:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/trading/CompleteSets.sol",
+        "file": "./../libraries/augur/source/contracts/trading/CompleteSets.sol",
+        "id": 107,
+        "nodeType": "ImportDirective",
+        "scope": 121,
+        "sourceUnit": 3240,
+        "src": "204:72:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/trading/ICash.sol",
+        "file": "./../libraries/augur/source/contracts/trading/ICash.sol",
+        "id": 108,
+        "nodeType": "ImportDirective",
+        "scope": 121,
+        "sourceUnit": 3283,
+        "src": "277:65:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/trading/ClaimTradingProceeds.sol",
+        "file": "./../libraries/augur/source/contracts/trading/ClaimTradingProceeds.sol",
+        "id": 109,
+        "nodeType": "ImportDirective",
+        "scope": 121,
+        "sourceUnit": 2764,
+        "src": "343:80:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/openzeppelin-solidity/SafeMathLib.sol",
+        "file": "./../libraries/openzeppelin-solidity/SafeMathLib.sol",
+        "id": 110,
+        "nodeType": "ImportDirective",
+        "scope": 121,
+        "sourceUnit": 4310,
+        "src": "425:62:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 120,
+        "linearizedBaseContracts": [
+          120
+        ],
+        "name": "Oracle",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "id": 113,
+            "libraryName": {
+              "contractScope": null,
+              "id": 111,
+              "name": "SafeMathLib",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 4309,
+              "src": "515:11:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_SafeMathLib_$4309",
+                "typeString": "library SafeMathLib"
+              }
+            },
+            "nodeType": "UsingForDirective",
+            "src": "509:30:1",
+            "typeName": {
+              "id": 112,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "531:7:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            }
+          },
+          {
+            "body": {
+              "id": 118,
+              "nodeType": "Block",
+              "src": "604:5:1",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 119,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "requestDataChainLink",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 114,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "571:2:1"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 117,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 116,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 119,
+                  "src": "594:7:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 115,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "594:7:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "593:9:1"
+            },
+            "scope": 120,
+            "src": "542:67:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 121,
+        "src": "490:121:1"
+      }
+    ],
+    "src": "0:611:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.22+commit.4cb486ee.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.1",
+  "updatedAt": "2019-08-18T13:03:01.113Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
