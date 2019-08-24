@@ -24,8 +24,8 @@ contract YesNoMarket {
 		address _universe,
 		address _cash,
 		address _augur,
-		address _chainLink,
-		address _completeSets
+		address _completeSets,
+		address _chainLink
 	) public {
 		endTime = _endTime;
 		universe = Universe(_universe);
@@ -43,6 +43,8 @@ contract YesNoMarket {
 		);
 	}
 
+	function () public payable {}
+
 	function takePosition(int24 _position) 
 	public
 	payable {
@@ -57,8 +59,7 @@ contract YesNoMarket {
 		require(!disputed);
 		uint256 marketCreationFee = universe.getOrCacheValidityBond();
 		require(msg.value >= marketCreationFee);
-
-		oracle.startDispute.value(address(this).balance)(_correctAnswer);
+		oracle.startDispute.value(address(this).balance)(_correctAnswer, msg.sender);
 		disputed = true;
 	}
 

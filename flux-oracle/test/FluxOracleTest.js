@@ -2,6 +2,7 @@ const Web3 = require("web3");
 const MarketOracleAbi = require("../build/contracts/MarketOracle").abi;
 const YesNoMarketAbi = require("../build/contracts/YesNoMarket").abi;
 const YesNoMarketBytecode = require("../build/contracts/YesNoMarket").bytecode;
+const ERC20Abi = require("../build/contracts/ERC20").abi;
 const FakeLinkAbi = require("../build/contracts/FakeLink").abi;
 const FakeLinkBytecode = require("../build/contracts/FakeLink").bytecode;
 
@@ -19,10 +20,11 @@ const MarketOracleUtils = require('../utils/MarketOracleUtils');
 const ChainLinkOperator = require("../utils/ChainLinkOperator");
 const { getMarketCreationFee } = require("../utils/createAugurMarket");
 const ReportingUtils = require("../utils/ReportingUtils");
+const { getNoShowBondFee } = require("../utils/createAugurMarket");
 const reportingUtils = new ReportingUtils(web3);
 
 const oneEthInWei = toWei("1", "ether");
-const inOneMinute = Math.round(new Date().getTime() + 60 * 60 * 1000);
+const inOneMinute = Math.round(new Date().getTime() + 60);
 
 contract('MarketOracle', () => {
 	let yesNoMarket;
@@ -30,10 +32,10 @@ contract('MarketOracle', () => {
 	let marketOracleWs;
 	let chainLink;
 	let chainLinkWs;
-
+	let repToken;
 
 	it('Reset augur timestamp to now', async () => {
-		await reportingUtils.setTimestamp(toBN(Math.round(new Date().getTime())));
+		await reportingUtils.setTimestamp(toBN(Math.round(new Date().getTime() / 1000)));
 	});
 
 	it('is able to deploy the FakeLink contract', async () => {
@@ -109,8 +111,19 @@ contract('MarketOracle', () => {
 		await sendSignedTransaction(yesNoMarket.address, nonceTwo, dataTwo, hexToNumberString(oneEthInWei));
 	});
 
+	it ("Should be able to create a contract instance of the current REP token", async () => {
+		const repAddress = await marketOracle.methods.getRepToken().call();
+		repToken = new web3.eth.Contract(ERC20Abi, repAddress);
+	});
+
+	it ("Should approve our marketOracle to transfer rep for us", async () => {
+		const noShowBondFee = await getNoShowBondFee(0);
+		const nonce = await web3.eth.getTransactionCount(PUB_KEY);
+		const data = repToken.methods.approve(marketOracle.address, hexToNumberString(noShowBondFee)).encodeABI();
+		await sendSignedTransaction(repToken.address, nonce, data, "0");
+	});
 	
-	it("Should be able to dispute ChainLink's original answer", async () => {
+	it("Should be able to dispute ChainLink's answer by creating an augur market and moving all open interest to said market", async () => {
 		const data = yesNoMarket.methods.dispute(fromAscii("1")).encodeABI();
 		const marketCreationFee = await getMarketCreationFee(0);
 		const nonce = await web3.eth.getTransactionCount(PUB_KEY);
@@ -118,9 +131,10 @@ contract('MarketOracle', () => {
 		assert.equal(receipt.status, true);
 	});
 
-	// it('Sets timestamp to date and time where all markets are going to be able to be finalized', async () => {
-	// 	await reportingUtils.setTimestamp(toBN(Math.round(new Date().getTime() / 1000)));
-	// });
+	it('set timestamp to date and time where the market are going to be able to be finalized', async () => {
+		const disputeEndTime = await marketOracle.methods.getDisputeEndTime().call();
+		await reportingUtils.setTimestamp(toBN(disputeEndTime));
+	});
 
 	// it('finalizes the market', async () => {
 	// 	const nonce = await web3.eth.getTransactionCount(PUB_KEY);

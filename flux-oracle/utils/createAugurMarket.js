@@ -73,7 +73,17 @@ const getMarketCreationFee = (index) => new Promise(async (resolve, reject) => {
 	resolve(marketCreationFee);
 });
 
+const getNoShowBondFee = (index) => new Promise(async (resolve, reject) => {
+	const nonce = (await web3.eth.getTransactionCount(PUB_KEY)) + index;
+	const data = await universe.methods.getOrCacheDesignatedReportNoShowBond().encodeABI();
+	const gotOrCachedValidityBond = await sendSignedTransaction(UNIVERSE, nonce, data, "0x0");
+	if (gotOrCachedValidityBond.status == false) resolve(false);
+	const marketCreationFee = await web3.eth.call({data, to: universe.address});
+	resolve(marketCreationFee);
+});
+
 module.exports = {
 	createAugurMarket,
+	getNoShowBondFee,
 	getMarketCreationFee
 };
