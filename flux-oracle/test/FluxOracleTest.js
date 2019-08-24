@@ -136,16 +136,23 @@ contract('MarketOracle', () => {
 	});
 
 	it('changes timestamp to after reporting phase', async () => {
-		const feeWindow = await marketOracle.methods.getFeeWindow();
+		const feeWindow = await marketOracle.methods.getFeeWindow().call();
 		const feeWindowContract = new web3.eth.Contract(FeeWindowAbi, feeWindow);
-		const feeWindowEndTime = await feeWindowContract.methods.getEndTime.call();
-		// await reportingUtils.setTimestamp(feeWindowEndTime.add(1));
+		const feeWindowEndTime = await feeWindowContract.methods.getEndTime().call();
+		await reportingUtils.setTimestamp(feeWindowEndTime.add(1));
 	});
 	
-	// it('finalizes the market', async () => {
-	// 	const nonce = await web3.eth.getTransactionCount(PUB_KEY);
-	// 	const data = yesNoMarket.methods.finalize().encodeABI();
-	// 	await sendSignedTransaction(yesNoMarket.address, nonce, data, "0");
-	// });
+	it('finalizes the market', async () => {
+		const nonce = await web3.eth.getTransactionCount(PUB_KEY);
+		const data = marketOracle.methods.finalize().encodeABI();
+		await sendSignedTransaction(marketOracle.address, nonce, data, "0");
+	});
+
+	it('sets timestamp three days and one second from when the market was finalized so that proceeds can be claimed', async () => {
+		const threeDaysAndOneSecond = 60 * 60 * 24 * 3 + 1;
+		const reportingEndTime = await marketContracts[marketContracts.length - 1].methods.getFinalizationTime.call()
+		const setTime = await reportingUtils.setTimestamp(reportingEndTime.add(threeDaysAndOneSecond));
+		assert.equal(setTime.status, true);
+	});
 
 });
