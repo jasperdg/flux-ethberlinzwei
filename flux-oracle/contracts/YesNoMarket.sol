@@ -14,7 +14,7 @@ contract YesNoMarket {
 	uint256 constant NUM_TICKS = 10000;
 	mapping (address => mapping(uint256 => uint256)) balances;
 	uint256 outcomes = 2; //cuz binary
-
+	uint256 valueBeforeDispute;
 
 	constructor(
 		string _url, 
@@ -66,7 +66,6 @@ contract YesNoMarket {
 
 	function finalize()
 	public {
-		require(disputed);
 		oracle.finalize();
 	}
 

@@ -174,16 +174,8 @@ contract('MarketOracle', () => {
 	});
 
 	it('is able to verify for each outcome howmuch total should have been earned', async () => {
-		const ownerFalseBalance = await yesNoMarket.methods.getBalanceForOutcome(PUB_KEY, 0).call();
-		const ownerTrueBalance = await yesNoMarket.methods.getBalanceForOutcome(PUB_KEY, 1).call();
-		console.log(ownerFalseBalance.toString(), ownerTrueBalance.toString());
-
-		const firstPn = await marketOracle.methods.getPayoutNumeratorByOutcome(0).call();
-		const secondPn = await marketOracle.methods.getPayoutNumeratorByOutcome(1).call();
-		console.log(firstPn.toString(), secondPn.toString());
-
-		const firstBalance = await yesNoMarket.methods.getPayoutByOutcome(0).call();
-		const secondBalance = await yesNoMarket.methods.getPayoutByOutcome(1).call();
+		const firstBalance = await yesNoMarket.methods.getPayoutByOutcome(0).call({from: PUB_KEY});
+		const secondBalance = await yesNoMarket.methods.getPayoutByOutcome(1).call({from: PUB_KEY});
 		console.log(firstBalance.toString(), secondBalance.toString());
 	});
 
