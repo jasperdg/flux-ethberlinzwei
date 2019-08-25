@@ -28,6 +28,20 @@ cd flux-ethberlinzwei/augur-core
 
 Then start the POA parity chain by entering the following command (this will take a couple minutes):
 
+DISCLAIMER the text between -- is added after the 10am deadline because otherwise the docker wont run, since it's just for getting our container to work and doesnt have anything to do with the core of our solution we hope to be forgiven
+
+--
+You need to init git in augur core
+```
+git init
+```
+And then point origin to the augur-core repo
+```
+git remote add origin https://github.com/AugurProject/augur-core.git
+```
+This will point to the right git repo during the build.
+--
+
 ```
 npm run docker:run:integration:parity
 ```
