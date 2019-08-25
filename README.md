@@ -38,14 +38,14 @@ cd ../flux-oracle
 npm i
 ```
 
-## Setup AugurSets
+## Setup Chainlink <3 Augur
 
 No, the `.pvt` file is not a mistake, this is the hardcoded address that will have a crazy amount of Eth and Rep.
 
 The final step before the tests will run is to copy the contract addresses logged by the parity node into `constants.js` & `/contracts/MarketOracle`. (Sorry for the double work here, when adding chainlink's actual smartcontracts I had too many arguments in my constructor so I had to hardcode some) 
 
 The logs should look something like this (but with different addresses):
-![a screenshot showing how the addresses should look](https://github.com/jasperdg/AugurSets/blob/master/docs/assets/addresses-example.png "screenshot of addressses")
+![a screenshot showing how the addresses should look](https://github.com/jasperdg/flux-ethberlinzwei/blob/master/docs/assets/addresses-example.png "screenshot of addressses")
 
 ### Running the tests
 Make sure you're in the `flux-oracle` directory and run:
