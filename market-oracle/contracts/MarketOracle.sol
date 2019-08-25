@@ -14,6 +14,7 @@ import "./../libraries/augur/source/contracts/Augur.sol";
 import "./../libraries/openzeppelin-solidity/SafeMathLib.sol";
 import "chainlink/contracts/ChainlinkClient.sol";
 
+// We removed time constraints with block timestamps for testing purposes
 contract MarketOracle is ChainlinkClient {
 	address creator;
 	
@@ -89,6 +90,7 @@ contract MarketOracle is ChainlinkClient {
 
 	function () public payable {}
 
+	// Send request to chainlink operators
 	function requestChainlinkUrl() public returns (bytes32 requestId) {
 		Chainlink.Request memory req = buildChainlinkRequest(jobId, this, this.dataFulfilled.selector);
 		req.add("get", url);
@@ -96,6 +98,7 @@ contract MarketOracle is ChainlinkClient {
 		sendChainlinkRequestTo(oracle, req, 0);
 	}
 
+	// Callback function for chainlink operators
 	function dataFulfilled(bytes32 _requestId, bytes32 _answer)
 	public recordChainlinkFulfillment(_requestId)
 	{
@@ -103,6 +106,7 @@ contract MarketOracle is ChainlinkClient {
 		emit dataIsFulfilled(_requestId, _answer);
 	}
 
+	// Start a dispute if users/fishermen disagree with the outcome
 	function startDispute(
 		bytes32 _correctAnswer,
 		bool _invalid,
@@ -144,6 +148,7 @@ contract MarketOracle is ChainlinkClient {
 		emit marketDisputed(disputeMarket);
 	}
 	
+	// returns a user's flat fee for his proceeds
 	function calculateFees(uint256 proceeds) 
 	public 
 	returns(uint256) 
@@ -177,8 +182,8 @@ contract MarketOracle is ChainlinkClient {
 	function finalize()
 	public
 	returns (bool) {
+		// If not testing the line below should be replaced with the commented line
 		require(now >= endTime);
-		// If not testing the line below here should be uncommented
 		// require(now >= endTime + disputeTimeAdded);
 		if (!disputed) {
 			finalized = true;

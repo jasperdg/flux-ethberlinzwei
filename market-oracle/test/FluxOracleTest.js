@@ -13,7 +13,6 @@ const ERC20Abi = require("../build/contracts/ERC20").abi;
 const sendSignedTransaction = require("../utils/sendSignedTransaction")
 const { toWei, hexToNumberString, fromAscii ,hexToUtf8 ,toBN, asciiToHex } = require('web3-utils');
 const {	PARITY_PORT, PARITY_PORT_WS, NUM_TICKS } = require("../constants");
-const { COMPLETE_SETS, CASH, CLAIM_TRADING_PROCEEDS, AUGUR, UNIVERSE } = require("../constants")[0]
 const {	PUB_KEY } = require("../.pvt");
 const web3 = new Web3(`http://localhost:${PARITY_PORT}`);
 const web3Ws = new Web3(`ws://localhost:${PARITY_PORT_WS}`);
@@ -58,7 +57,6 @@ contract('MarketOracle', () => {
 		oracle = new web3.eth.Contract(OracleAbi, contractAddress);
 		oracleWs = new web3Ws.eth.Contract(OracleAbi, contractAddress);
 	});
-	
 	
 	it('Deploys YesNoMarket contract to local node', async () => {
 		const nonce = await web3.eth.getTransactionCount(PUB_KEY);
@@ -143,20 +141,20 @@ contract('MarketOracle', () => {
 		await sendSignedTransaction(marketOracle.address, nonce, data, "0");
 	});
 
-	it('changes timestamp to after reporting phase', async () => {
+	it('Changes timestamp to after reporting phase', async () => {
 		const feeWindow = await marketOracle.methods.getFeeWindow().call();
 		const feeWindowContract = new web3.eth.Contract(FeeWindowAbi, feeWindow);
 		const feeWindowEndTime = await feeWindowContract.methods.getEndTime().call();
 		await reportingUtils.setTimestamp(feeWindowEndTime.add(1));
 	});
 	
-	it('finalizes the market', async () => {
+	it('Finalizes the market', async () => {
 		const nonce = await web3.eth.getTransactionCount(PUB_KEY);
 		const data = marketOracle.methods.finalize().encodeABI();
 		await sendSignedTransaction(marketOracle.address, nonce, data, "0");
 	});
 
-	it('sets timestamp three days and one second from when the market was finalized so that proceeds can be claimed', async () => {
+	it('Sets timestamp three days and one second from when the market was finalized so that proceeds can be claimed', async () => {
 		const threeDaysAndOneSecond = 60 * 60 * 24 * 3 + 1;
 		const reportingEndTime = await marketOracle.methods.getDisputeMarketFinalizationTime.call();
 		const setTime = await reportingUtils.setTimestamp(reportingEndTime.add(threeDaysAndOneSecond));
@@ -173,7 +171,7 @@ contract('MarketOracle', () => {
 		assert.equal(yesnoMarketBalance, "1980000000000000000");
 	});
 
-	it('is able to claim earnings', async () => {
+	it('Is able to claim earnings', async () => {
 		const balanceBefore = await web3.eth.getBalance(PUB_KEY);
 		const nonce = await web3.eth.getTransactionCount(PUB_KEY);
 		const data = await yesNoMarket.methods.payout().encodeABI();

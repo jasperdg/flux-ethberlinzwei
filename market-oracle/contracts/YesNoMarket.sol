@@ -5,6 +5,9 @@ import "./../libraries/openzeppelin-solidity/SafeMathLib.sol";
 import "./../libraries/augur/source/contracts/reporting/Universe.sol";
 import "./MarketOracle.sol";
 
+// This contract is a barebone example of a market contract, this had low priority and was just created to
+// highlight the market-oracle
+
 contract YesNoMarket {
 	using SafeMathLib for uint256;
 	uint256 endTime;
@@ -27,6 +30,7 @@ contract YesNoMarket {
 		address _oracle
 	) public {
 		endTime = _endTime;
+		// Create new oracle
 		oracle = new MarketOracle(
 			_url, 
 			_path, 
@@ -39,8 +43,10 @@ contract YesNoMarket {
 		);
 	}
 
+	// Payable callback function so that we can receive Eth from other contracts
 	function () public payable {}
 
+	// Purchase a position in the market
 	function takePosition(uint256 _outcome) 
 	public
 	payable {
@@ -50,6 +56,7 @@ contract YesNoMarket {
 		balances[msg.sender][_outcome] = balances[msg.sender][_outcome].add(msg.value.div(NUM_TICKS));
 	}
 
+	// Create a dispute around Chainlinks original outcome
 	function dispute(bytes32 _correctAnswer, bool _invalid)
 	public
 	payable {
@@ -58,6 +65,7 @@ contract YesNoMarket {
 		disputed = true;
 	}
 
+	// Return owners balance for certain outcome
 	function getBalanceForOutcome(address _owner, uint256 _outcome)
 	public 
 	view 
@@ -65,12 +73,14 @@ contract YesNoMarket {
 		return balances[_owner][_outcome];
 	}
 
+	// Finalize the market
 	function finalize()
 	public {
 		require (!oracle.isFinalized());
 		oracle.finalize();
 	}
 
+	// Returns the earned payout amount for a user by outcome
 	function getPayoutAmountByOutcome(uint256 _outcome) 
 	internal 
 	returns(uint256)
@@ -82,6 +92,7 @@ contract YesNoMarket {
 		return proceeds;
 	}
 
+	// Function user can claim all his winnings
 	function payout()
 	public 
 	payable
