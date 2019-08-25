@@ -39,6 +39,7 @@
       "type": "function"
     }
   ],
+  "metadata": "",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "sourceMap": "",
@@ -49,14 +50,14 @@
     "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/reporting/IMailbox.sol",
     "exportedSymbols": {
       "IMailbox": [
-        4199
+        5686
       ]
     },
-    "id": 4200,
+    "id": 5687,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4183,
+        "id": 5670,
         "literals": [
           "solidity",
           "^",
@@ -64,16 +65,16 @@
           ".22"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:23"
+        "src": "0:24:34"
       },
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/reporting/IMarket.sol",
         "file": "./../reporting/IMarket.sol",
-        "id": 4184,
+        "id": 5671,
         "nodeType": "ImportDirective",
-        "scope": 4200,
-        "sourceUnit": 4387,
-        "src": "26:36:23",
+        "scope": 5687,
+        "sourceUnit": 5874,
+        "src": "26:36:34",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -83,9 +84,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 4199,
+        "id": 5686,
         "linearizedBaseContracts": [
-          4199
+          5686
         ],
         "name": "IMailbox",
         "nodeType": "ContractDefinition",
@@ -93,7 +94,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 4193,
+            "id": 5680,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -101,16 +102,16 @@
             "name": "initialize",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4189,
+              "id": 5676,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4186,
+                  "id": 5673,
                   "name": "_owner",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4193,
-                  "src": "109:14:23",
+                  "scope": 5680,
+                  "src": "109:14:34",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -118,10 +119,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4185,
+                    "id": 5672,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "109:7:23",
+                    "src": "109:7:34",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -132,26 +133,26 @@
                 },
                 {
                   "constant": false,
-                  "id": 4188,
+                  "id": 5675,
                   "name": "_market",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4193,
-                  "src": "125:15:23",
+                  "scope": 5680,
+                  "src": "125:15:34",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IMarket_$4386",
+                    "typeIdentifier": "t_contract$_IMarket_$5873",
                     "typeString": "contract IMarket"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4187,
+                    "id": 5674,
                     "name": "IMarket",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 4386,
-                    "src": "125:7:23",
+                    "referencedDeclaration": 5873,
+                    "src": "125:7:34",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IMarket_$4386",
+                      "typeIdentifier": "t_contract$_IMarket_$5873",
                       "typeString": "contract IMarket"
                     }
                   },
@@ -159,20 +160,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "108:33:23"
+              "src": "108:33:34"
             },
             "payable": false,
             "returnParameters": {
-              "id": 4192,
+              "id": 5679,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4191,
+                  "id": 5678,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4193,
-                  "src": "158:4:23",
+                  "scope": 5680,
+                  "src": "158:4:34",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -180,10 +181,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 4190,
+                    "id": 5677,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "158:4:23",
+                    "src": "158:4:34",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -193,10 +194,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "157:6:23"
+              "src": "157:6:34"
             },
-            "scope": 4199,
-            "src": "89:75:23",
+            "scope": 5686,
+            "src": "89:75:34",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
@@ -204,7 +205,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 4198,
+            "id": 5685,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -212,23 +213,23 @@
             "name": "depositEther",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4194,
+              "id": 5681,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "190:2:23"
+              "src": "190:2:34"
             },
             "payable": true,
             "returnParameters": {
-              "id": 4197,
+              "id": 5684,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4196,
+                  "id": 5683,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4198,
-                  "src": "217:4:23",
+                  "scope": 5685,
+                  "src": "217:4:34",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -236,10 +237,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 4195,
+                    "id": 5682,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "217:4:23",
+                    "src": "217:4:34",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -249,33 +250,33 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "216:6:23"
+              "src": "216:6:34"
             },
-            "scope": 4199,
-            "src": "169:54:23",
+            "scope": 5686,
+            "src": "169:54:34",
             "stateMutability": "payable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 4200,
-        "src": "65:160:23"
+        "scope": 5687,
+        "src": "65:160:34"
       }
     ],
-    "src": "0:226:23"
+    "src": "0:226:34"
   },
   "legacyAST": {
     "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/reporting/IMailbox.sol",
     "exportedSymbols": {
       "IMailbox": [
-        4199
+        5686
       ]
     },
-    "id": 4200,
+    "id": 5687,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4183,
+        "id": 5670,
         "literals": [
           "solidity",
           "^",
@@ -283,16 +284,16 @@
           ".22"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:23"
+        "src": "0:24:34"
       },
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/reporting/IMarket.sol",
         "file": "./../reporting/IMarket.sol",
-        "id": 4184,
+        "id": 5671,
         "nodeType": "ImportDirective",
-        "scope": 4200,
-        "sourceUnit": 4387,
-        "src": "26:36:23",
+        "scope": 5687,
+        "sourceUnit": 5874,
+        "src": "26:36:34",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -302,9 +303,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 4199,
+        "id": 5686,
         "linearizedBaseContracts": [
-          4199
+          5686
         ],
         "name": "IMailbox",
         "nodeType": "ContractDefinition",
@@ -312,7 +313,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 4193,
+            "id": 5680,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -320,16 +321,16 @@
             "name": "initialize",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4189,
+              "id": 5676,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4186,
+                  "id": 5673,
                   "name": "_owner",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4193,
-                  "src": "109:14:23",
+                  "scope": 5680,
+                  "src": "109:14:34",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -337,10 +338,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4185,
+                    "id": 5672,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "109:7:23",
+                    "src": "109:7:34",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -351,26 +352,26 @@
                 },
                 {
                   "constant": false,
-                  "id": 4188,
+                  "id": 5675,
                   "name": "_market",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4193,
-                  "src": "125:15:23",
+                  "scope": 5680,
+                  "src": "125:15:34",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IMarket_$4386",
+                    "typeIdentifier": "t_contract$_IMarket_$5873",
                     "typeString": "contract IMarket"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4187,
+                    "id": 5674,
                     "name": "IMarket",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 4386,
-                    "src": "125:7:23",
+                    "referencedDeclaration": 5873,
+                    "src": "125:7:34",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IMarket_$4386",
+                      "typeIdentifier": "t_contract$_IMarket_$5873",
                       "typeString": "contract IMarket"
                     }
                   },
@@ -378,20 +379,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "108:33:23"
+              "src": "108:33:34"
             },
             "payable": false,
             "returnParameters": {
-              "id": 4192,
+              "id": 5679,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4191,
+                  "id": 5678,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4193,
-                  "src": "158:4:23",
+                  "scope": 5680,
+                  "src": "158:4:34",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -399,10 +400,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 4190,
+                    "id": 5677,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "158:4:23",
+                    "src": "158:4:34",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -412,10 +413,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "157:6:23"
+              "src": "157:6:34"
             },
-            "scope": 4199,
-            "src": "89:75:23",
+            "scope": 5686,
+            "src": "89:75:34",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
@@ -423,7 +424,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 4198,
+            "id": 5685,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -431,23 +432,23 @@
             "name": "depositEther",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4194,
+              "id": 5681,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "190:2:23"
+              "src": "190:2:34"
             },
             "payable": true,
             "returnParameters": {
-              "id": 4197,
+              "id": 5684,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4196,
+                  "id": 5683,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4198,
-                  "src": "217:4:23",
+                  "scope": 5685,
+                  "src": "217:4:34",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -455,10 +456,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 4195,
+                    "id": 5682,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "217:4:23",
+                    "src": "217:4:34",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -468,28 +469,28 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "216:6:23"
+              "src": "216:6:34"
             },
-            "scope": 4199,
-            "src": "169:54:23",
+            "scope": 5686,
+            "src": "169:54:34",
             "stateMutability": "payable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 4200,
-        "src": "65:160:23"
+        "scope": 5687,
+        "src": "65:160:34"
       }
     ],
-    "src": "0:226:23"
+    "src": "0:226:34"
   },
   "compiler": {
     "name": "solc",
-    "version": "0.4.22+commit.4cb486ee.Emscripten.clang"
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.0.1",
-  "updatedAt": "2019-08-22T08:47:45.269Z",
+  "schemaVersion": "3.0.13",
+  "updatedAt": "2019-08-24T23:51:51.525Z",
   "devdoc": {
     "methods": {}
   },

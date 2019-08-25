@@ -3,25 +3,32 @@ const fetch = require('node-fetch');
 const sendSignedTransaction = require('../utils/sendSignedTransaction');
 const { PUB_KEY } = require('../.pvt');
 
-class ChainLinkOperator {
-	constructor(chainLinkInstance, web3Instance) {
-		this.chainLink = chainLinkInstance;
+class ChainlinkOperator {
+	constructor(oracleInstance, web3Instance) {
+		this.oracle = oracleInstance;
 		this.web3 = web3Instance;
 	}
-	
+
 	async listenForRequests() {
 		const fromBlock = await this.web3.eth.getBlockNumber() - 10;
-		this.chainLink.events.newRequest({
+		this.oracle.events.OracleRequest({
 			fromBlock
 		}).on('data', async (event) => {
 			const nonce = await web3.eth.getTransactionCount(PUB_KEY);
-			const { id, url, path } = event.returnValues;
-			// const result = await fetch(url);
-			// const json = await result.json();
-			const data = this.chainLink.methods.answerAPIData(id, fromAscii("1"), false).encodeABI();
-			const { receipt } = await sendSignedTransaction(this.chainLink.address, nonce, data, "0");
+			const { payment, requestId, callbackAddr, callbackFunctionId, cancelExpiration, data } = event.returnValues;
+
+			const returnData = fromAscii("1");
+			const callData = this.oracle.methods.fulfillOracleRequest(
+				requestId, 
+				payment, 
+				callbackAddr, 
+				callbackFunctionId, 
+				cancelExpiration, 
+				returnData
+			).encodeABI();
+			await sendSignedTransaction(this.oracle.address, nonce, callData, "0");
 		})
 	}
 }
 
-module.exports = ChainLinkOperator;
+module.exports = ChainlinkOperator;

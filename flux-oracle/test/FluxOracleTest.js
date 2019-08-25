@@ -1,16 +1,17 @@
 const Web3 = require("web3");
+const LinkTokenAbi = require("../build/contracts/Linktoken").abi;
+const LinkTokenByteCode= require("../build/contracts/Linktoken").bytecode;
+const OracleAbi = require("../build/contracts/Oracle").abi;
+const OracleByteCode= require("../build/contracts/Oracle").bytecode;
+
 const MarketOracleAbi = require("../build/contracts/MarketOracle").abi;
 const YesNoMarketAbi = require("../build/contracts/YesNoMarket").abi;
 const FeeWindowAbi = require("../build/contracts/FeeWindow").abi;
 const YesNoMarketBytecode = require("../build/contracts/YesNoMarket").bytecode;
 const ERC20Abi = require("../build/contracts/ERC20").abi;
-const FakeLinkAbi = require("../build/contracts/FakeLink").abi;
-const FakeLinkBytecode = require("../build/contracts/FakeLink").bytecode;
 
-// const feeWindowAbi = require("../build/contracts/FeeWindow").abi;
-// const createAugurMarket = require("../utils/createAugurMarket");
 const sendSignedTransaction = require("../utils/sendSignedTransaction")
-const { fromWei, toWei,hexToNumberString ,toAscii,fromAscii ,hexToUtf8 ,toBN, asciiToHex } = require('web3-utils');
+const { toWei, hexToNumberString, fromAscii ,hexToUtf8 ,toBN, asciiToHex } = require('web3-utils');
 const {	PARITY_PORT, PARITY_PORT_WS, NUM_TICKS } = require("../constants");
 const { COMPLETE_SETS, CASH, CLAIM_TRADING_PROCEEDS, AUGUR, UNIVERSE } = require("../constants")[0]
 const {	PUB_KEY } = require("../.pvt");
@@ -18,7 +19,7 @@ const web3 = new Web3(`http://localhost:${PARITY_PORT}`);
 const web3Ws = new Web3(`ws://localhost:${PARITY_PORT_WS}`);
 
 const MarketOracleUtils = require('../utils/MarketOracleUtils');
-const ChainLinkOperator = require("../utils/ChainLinkOperator");
+const ChainlinkOperator = require("../utils/ChainlinkOperator");
 const { getMarketCreationFee } = require("../utils/createAugurMarket");
 const ReportingUtils = require("../utils/ReportingUtils");
 const { getNoShowBondFee } = require("../utils/createAugurMarket");
@@ -28,28 +29,38 @@ const oneEthInWei = toWei("1", "ether");
 const inOneMinute = Math.round(new Date().getTime() / 1000 + 30);
 
 contract('MarketOracle', () => {
-	let yesNoMarket;
 	let marketOracle;
 	let marketOracleWs;
-	let chainLink;
-	let chainLinkWs;
+	let linkToken;
+	let oracle;
+	let oracleWs;
 	let repToken;
 
 	it('Resets augur timestamp to current date/time', async () => {
 		await reportingUtils.setTimestamp(toBN(Math.round(new Date().getTime() / 1000)));
 	});
 
-	it('Deploys ChainLink contracts to local node', async () => {
+	it('Deploy Chainlink Token', async () => {
 		const nonce = await web3.eth.getTransactionCount(PUB_KEY);
-		const data = new web3.eth.Contract(FakeLinkAbi).deploy({ data: FakeLinkBytecode, arguments: [] }).encodeABI();
+		const data = new web3.eth.Contract(LinkTokenAbi).deploy({ data: LinkTokenByteCode, arguments: [] }).encodeABI();
 		const { contractAddress } = await sendSignedTransaction(false, nonce, data, "0");
 		assert(contractAddress);
-		chainLink = new web3.eth.Contract(FakeLinkAbi, contractAddress);
-		chainLinkWs = new web3Ws.eth.Contract(FakeLinkAbi, contractAddress);
+		linkToken = new web3.eth.Contract(LinkTokenAbi, contractAddress);
+	});
 
+	it('Deploy Chainlink Oracle', async () => {
+		const nonce = await web3.eth.getTransactionCount(PUB_KEY);
+		const data = new web3.eth.Contract(OracleAbi).deploy({ data: OracleByteCode, arguments: [
+			linkToken.address
+		] }).encodeABI();
+		const { contractAddress } = await sendSignedTransaction(false, nonce, data, "0");
+		assert(contractAddress);
+		oracle = new web3.eth.Contract(OracleAbi, contractAddress);
+		oracleWs = new web3Ws.eth.Contract(OracleAbi, contractAddress);
 	});
 	
-	it('Deploys YesNoMarket contract ti local node', async () => {
+	
+	it('Deploys YesNoMarket contract to local node', async () => {
 		const nonce = await web3.eth.getTransactionCount(PUB_KEY);
 		const data = new web3.eth.Contract(YesNoMarketAbi).deploy({
 			data: YesNoMarketBytecode,
@@ -59,12 +70,9 @@ contract('MarketOracle', () => {
 				"Will 1 + 1 equal 2 by resolution?",
 				asciiToHex("math"),
 				inOneMinute,
-				UNIVERSE,
-				CASH,
-				AUGUR,
-				COMPLETE_SETS,
-				CLAIM_TRADING_PROCEEDS,
-				chainLink.address
+				linkToken.address,
+				fromAscii("96bf1a27492142b095a8ada21631ebd0"),
+				oracle.address
 			]
 		}).encodeABI();
 
@@ -75,8 +83,8 @@ contract('MarketOracle', () => {
 		marketOracleWs = new web3Ws.eth.Contract(MarketOracleAbi, oracleAddress);
 	});
 
-	it('Initialize new ChainLink operator that listens for query events', async () => {
-		const operator = new ChainLinkOperator(chainLinkWs, web3);
+	it('Initialize new Chainlink operator that listens for query events', async () => {
+		const operator = new ChainlinkOperator(oracleWs, web3);
 		operator.listenForRequests();
 	});
 
@@ -85,22 +93,22 @@ contract('MarketOracle', () => {
 		const data = yesNoMarket.methods.takePosition("0").encodeABI();
 		await sendSignedTransaction(yesNoMarket.address, nonce, data, hexToNumberString(oneEthInWei));
 		const nonceTwo = await web3.eth.getTransactionCount(PUB_KEY);
-		const dataTwo = yesNoMarket.methods.takePosition("0").encodeABI();
+		const dataTwo = yesNoMarket.methods.takePosition("1").encodeABI();
 		await sendSignedTransaction(yesNoMarket.address, nonceTwo, dataTwo, hexToNumberString(oneEthInWei));
 	});
 
-	it('Fire a new ChainLink query event through the Flux oracle bridge', async () => {
+	it('Fire a new Chainlink query event through the Flux oracle bridge', async () => {
 		const nonce = await web3.eth.getTransactionCount(PUB_KEY);
-		const data = marketOracle.methods.requestDataChainLink().encodeABI();
+		const data = marketOracle.methods.requestChainlinkUrl().encodeABI();
 		await sendSignedTransaction(marketOracle.address, nonce, data, "0");
 	});
 
-	it('Wait for the ChainLink to pickup the request and provide a (false) answer', async () => {
+	it('Wait for the Chainlink to pickup the request and provide a (false) answer', async () => {
 		const marketOracleUtils = new MarketOracleUtils(marketOracleWs, web3);
 		await marketOracleUtils.waitMarketDataIsFulfilled();
 	});
 
-	it('Answer the ChainLink node provided was false', async () => {
+	it('Answer the Chainlink node provided was false', async () => {
 		const answer = await marketOracle.methods.getAnswer().call();
 		assert.equal(hexToUtf8(answer), 1);
 	});
@@ -124,7 +132,7 @@ contract('MarketOracle', () => {
 		await sendSignedTransaction(yesNoMarket.address, nonce, data, hexToNumberString(marketCreationFee));
 	});
 
-	it('Set the Augur timestamp to a stamp where the dispute market has just ended', async () => {
+	it('Set the Augur timestamp to a date/time where the dispute market has just ended', async () => {
 		const disputeEndTime = await marketOracle.methods.getDisputeEndTime().call();
 		await reportingUtils.setTimestamp(toBN(disputeEndTime).add(toBN(1)));
 	});
@@ -161,7 +169,22 @@ contract('MarketOracle', () => {
 		await sendSignedTransaction(marketOracle.address, nonce, data, "0");
 		const marketOracleBalance = await web3.eth.getBalance(marketOracle.address);
 		const yesnoMarketBalance = await web3.eth.getBalance(yesNoMarket.address);
-		console.log(marketOracleBalance, yesnoMarketBalance);
+		assert.equal(marketOracleBalance, "0");
+		assert.equal(yesnoMarketBalance, "1980000000000000000");
+	});
+
+	it('is able to verify for each outcome howmuch total should have been earned', async () => {
+		const ownerFalseBalance = await yesNoMarket.methods.getBalanceForOutcome(PUB_KEY, 0).call();
+		const ownerTrueBalance = await yesNoMarket.methods.getBalanceForOutcome(PUB_KEY, 1).call();
+		console.log(ownerFalseBalance.toString(), ownerTrueBalance.toString());
+
+		const firstPn = await marketOracle.methods.getPayoutNumeratorByOutcome(0).call();
+		const secondPn = await marketOracle.methods.getPayoutNumeratorByOutcome(1).call();
+		console.log(firstPn.toString(), secondPn.toString());
+
+		const firstBalance = await yesNoMarket.methods.getPayoutByOutcome(0).call();
+		const secondBalance = await yesNoMarket.methods.getPayoutByOutcome(1).call();
+		console.log(firstBalance.toString(), secondBalance.toString());
 	});
 
 });

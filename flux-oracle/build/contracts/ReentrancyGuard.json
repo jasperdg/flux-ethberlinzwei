@@ -1,24 +1,25 @@
 {
   "contractName": "ReentrancyGuard",
   "abi": [],
-  "bytecode": "0x608060405260008060006101000a81548160ff021916908315150217905550348015602957600080fd5b5060358060376000396000f3006080604052600080fd00a165627a7a7230582029cc86b7d327caaff0f5e261c6f877a28a9bc18175d64f0746329e66c42249310029",
-  "deployedBytecode": "0x6080604052600080fd00a165627a7a7230582029cc86b7d327caaff0f5e261c6f877a28a9bc18175d64f0746329e66c42249310029",
-  "sourceMap": "220:653:15:-;;;353:5;324:34;;;;;;;;;;;;;;;;;;;;220:653;8:9:-1;5:2;;;30:1;27;20:12;5:2;220:653:15;;;;;;;",
-  "deployedSourceMap": "220:653:15:-;;;;;",
+  "metadata": "{\"compiler\":{\"version\":\"0.4.24+commit.e67f0147\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"author\":\"Remco Bloemen <remco@2\\u03c0.com>\",\"methods\":{},\"title\":\"Helps contracts guard agains rentrancy attacks.\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/ReentrancyGuard.sol\":\"ReentrancyGuard\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/ReentrancyGuard.sol\":{\"keccak256\":\"0x5d011566f553cc696c6d42059ab5bd86b067d71d330599f71429c59812ee97d8\",\"urls\":[\"bzzr://3c59e1fd0661dc2fa0e797db5f54abd0d21798d6ad3705d5f3a7f140eaed4a8a\"]}},\"version\":1}",
+  "bytecode": "0x608060405260008060006101000a81548160ff021916908315150217905550348015602957600080fd5b5060358060376000396000f3006080604052600080fd00a165627a7a723058209d1bd7038ace02aeb08975bdec413dfea6db2c4305fed24af6897149c58f317b0029",
+  "deployedBytecode": "0x6080604052600080fd00a165627a7a723058209d1bd7038ace02aeb08975bdec413dfea6db2c4305fed24af6897149c58f317b0029",
+  "sourceMap": "220:653:24:-;;;353:5;324:34;;;;;;;;;;;;;;;;;;;;220:653;8:9:-1;5:2;;;30:1;27;20:12;5:2;220:653:24;;;;;;;",
+  "deployedSourceMap": "220:653:24:-;;;;;",
   "source": "pragma solidity ^0.4.22;\n\n\n/**\n * @title Helps contracts guard agains rentrancy attacks.\n * @author Remco Bloemen <remco@2π.com>\n * @notice If you mark a function `nonReentrant`, you should also mark it `external`.\n */\ncontract ReentrancyGuard {\n    /**\n     * @dev We use a single lock for the whole contract.\n     */\n    bool private rentrancyLock = false;\n\n    /**\n     * @dev Prevents a contract from calling itself, directly or indirectly.\n     * @notice If you mark a function `nonReentrant`, you should also mark it `external`. Calling one nonReentrant function from another is not supported. Instead, you can implement a `private` function doing the actual work, and a `external` wrapper marked as `nonReentrant`.\n     */\n    modifier nonReentrant() {\n        require(!rentrancyLock);\n        rentrancyLock = true;\n        _;\n        rentrancyLock = false;\n    }\n}\n",
   "sourcePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/ReentrancyGuard.sol",
   "ast": {
     "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/ReentrancyGuard.sol",
     "exportedSymbols": {
       "ReentrancyGuard": [
-        3646
+        4670
       ]
     },
-    "id": 3647,
+    "id": 4671,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 3625,
+        "id": 4649,
         "literals": [
           "solidity",
           "^",
@@ -26,7 +27,7 @@
           ".22"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:15"
+        "src": "0:24:24"
       },
       {
         "baseContracts": [],
@@ -34,20 +35,20 @@
         "contractKind": "contract",
         "documentation": "@title Helps contracts guard agains rentrancy attacks.\n@author Remco Bloemen <remco@2π.com>\n@notice If you mark a function `nonReentrant`, you should also mark it `external`.",
         "fullyImplemented": true,
-        "id": 3646,
+        "id": 4670,
         "linearizedBaseContracts": [
-          3646
+          4670
         ],
         "name": "ReentrancyGuard",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 3628,
+            "id": 4652,
             "name": "rentrancyLock",
             "nodeType": "VariableDeclaration",
-            "scope": 3646,
-            "src": "324:34:15",
+            "scope": 4670,
+            "src": "324:34:24",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -55,10 +56,10 @@
               "typeString": "bool"
             },
             "typeName": {
-              "id": 3626,
+              "id": 4650,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
-              "src": "324:4:15",
+              "src": "324:4:24",
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
                 "typeString": "bool"
@@ -67,14 +68,14 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "66616c7365",
-              "id": 3627,
+              "id": 4651,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "kind": "bool",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "353:5:15",
+              "src": "353:5:24",
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
@@ -86,9 +87,9 @@
           },
           {
             "body": {
-              "id": 3644,
+              "id": 4668,
               "nodeType": "Block",
-              "src": "759:112:15",
+              "src": "759:112:24",
               "statements": [
                 {
                   "expression": {
@@ -96,7 +97,7 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 3632,
+                        "id": 4656,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -104,15 +105,15 @@
                         "nodeType": "UnaryOperation",
                         "operator": "!",
                         "prefix": true,
-                        "src": "777:14:15",
+                        "src": "777:14:24",
                         "subExpression": {
                           "argumentTypes": null,
-                          "id": 3631,
+                          "id": 4655,
                           "name": "rentrancyLock",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 3628,
-                          "src": "778:13:15",
+                          "referencedDeclaration": 4652,
+                          "src": "778:13:24",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
                             "typeString": "bool"
@@ -131,21 +132,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 3630,
+                      "id": 4654,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        6924,
-                        6925
+                        14278,
+                        14279
                       ],
-                      "referencedDeclaration": 6924,
-                      "src": "769:7:15",
+                      "referencedDeclaration": 14278,
+                      "src": "769:7:24",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 3633,
+                    "id": 4657,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -153,32 +154,32 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "769:23:15",
+                    "src": "769:23:24",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 3634,
+                  "id": 4658,
                   "nodeType": "ExpressionStatement",
-                  "src": "769:23:15"
+                  "src": "769:23:24"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 3637,
+                    "id": 4661,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 3635,
+                      "id": 4659,
                       "name": "rentrancyLock",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3628,
-                      "src": "802:13:15",
+                      "referencedDeclaration": 4652,
+                      "src": "802:13:24",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -189,14 +190,14 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "74727565",
-                      "id": 3636,
+                      "id": 4660,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "kind": "bool",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "818:4:15",
+                      "src": "818:4:24",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -204,37 +205,37 @@
                       },
                       "value": "true"
                     },
-                    "src": "802:20:15",
+                    "src": "802:20:24",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 3638,
+                  "id": 4662,
                   "nodeType": "ExpressionStatement",
-                  "src": "802:20:15"
+                  "src": "802:20:24"
                 },
                 {
-                  "id": 3639,
+                  "id": 4663,
                   "nodeType": "PlaceholderStatement",
-                  "src": "832:1:15"
+                  "src": "832:1:24"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 3642,
+                    "id": 4666,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 3640,
+                      "id": 4664,
                       "name": "rentrancyLock",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3628,
-                      "src": "843:13:15",
+                      "referencedDeclaration": 4652,
+                      "src": "843:13:24",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -245,14 +246,14 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "66616c7365",
-                      "id": 3641,
+                      "id": 4665,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "kind": "bool",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "859:5:15",
+                      "src": "859:5:24",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -260,50 +261,50 @@
                       },
                       "value": "false"
                     },
-                    "src": "843:21:15",
+                    "src": "843:21:24",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 3643,
+                  "id": 4667,
                   "nodeType": "ExpressionStatement",
-                  "src": "843:21:15"
+                  "src": "843:21:24"
                 }
               ]
             },
             "documentation": "@dev Prevents a contract from calling itself, directly or indirectly.\n@notice If you mark a function `nonReentrant`, you should also mark it `external`. Calling one nonReentrant function from another is not supported. Instead, you can implement a `private` function doing the actual work, and a `external` wrapper marked as `nonReentrant`.",
-            "id": 3645,
+            "id": 4669,
             "name": "nonReentrant",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 3629,
+              "id": 4653,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "756:2:15"
+              "src": "756:2:24"
             },
-            "src": "735:136:15",
+            "src": "735:136:24",
             "visibility": "internal"
           }
         ],
-        "scope": 3647,
-        "src": "220:653:15"
+        "scope": 4671,
+        "src": "220:653:24"
       }
     ],
-    "src": "0:874:15"
+    "src": "0:874:24"
   },
   "legacyAST": {
     "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/ReentrancyGuard.sol",
     "exportedSymbols": {
       "ReentrancyGuard": [
-        3646
+        4670
       ]
     },
-    "id": 3647,
+    "id": 4671,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 3625,
+        "id": 4649,
         "literals": [
           "solidity",
           "^",
@@ -311,7 +312,7 @@
           ".22"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:15"
+        "src": "0:24:24"
       },
       {
         "baseContracts": [],
@@ -319,20 +320,20 @@
         "contractKind": "contract",
         "documentation": "@title Helps contracts guard agains rentrancy attacks.\n@author Remco Bloemen <remco@2π.com>\n@notice If you mark a function `nonReentrant`, you should also mark it `external`.",
         "fullyImplemented": true,
-        "id": 3646,
+        "id": 4670,
         "linearizedBaseContracts": [
-          3646
+          4670
         ],
         "name": "ReentrancyGuard",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 3628,
+            "id": 4652,
             "name": "rentrancyLock",
             "nodeType": "VariableDeclaration",
-            "scope": 3646,
-            "src": "324:34:15",
+            "scope": 4670,
+            "src": "324:34:24",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -340,10 +341,10 @@
               "typeString": "bool"
             },
             "typeName": {
-              "id": 3626,
+              "id": 4650,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
-              "src": "324:4:15",
+              "src": "324:4:24",
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
                 "typeString": "bool"
@@ -352,14 +353,14 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "66616c7365",
-              "id": 3627,
+              "id": 4651,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "kind": "bool",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "353:5:15",
+              "src": "353:5:24",
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
@@ -371,9 +372,9 @@
           },
           {
             "body": {
-              "id": 3644,
+              "id": 4668,
               "nodeType": "Block",
-              "src": "759:112:15",
+              "src": "759:112:24",
               "statements": [
                 {
                   "expression": {
@@ -381,7 +382,7 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 3632,
+                        "id": 4656,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -389,15 +390,15 @@
                         "nodeType": "UnaryOperation",
                         "operator": "!",
                         "prefix": true,
-                        "src": "777:14:15",
+                        "src": "777:14:24",
                         "subExpression": {
                           "argumentTypes": null,
-                          "id": 3631,
+                          "id": 4655,
                           "name": "rentrancyLock",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 3628,
-                          "src": "778:13:15",
+                          "referencedDeclaration": 4652,
+                          "src": "778:13:24",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
                             "typeString": "bool"
@@ -416,21 +417,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 3630,
+                      "id": 4654,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        6924,
-                        6925
+                        14278,
+                        14279
                       ],
-                      "referencedDeclaration": 6924,
-                      "src": "769:7:15",
+                      "referencedDeclaration": 14278,
+                      "src": "769:7:24",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 3633,
+                    "id": 4657,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -438,32 +439,32 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "769:23:15",
+                    "src": "769:23:24",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 3634,
+                  "id": 4658,
                   "nodeType": "ExpressionStatement",
-                  "src": "769:23:15"
+                  "src": "769:23:24"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 3637,
+                    "id": 4661,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 3635,
+                      "id": 4659,
                       "name": "rentrancyLock",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3628,
-                      "src": "802:13:15",
+                      "referencedDeclaration": 4652,
+                      "src": "802:13:24",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -474,14 +475,14 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "74727565",
-                      "id": 3636,
+                      "id": 4660,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "kind": "bool",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "818:4:15",
+                      "src": "818:4:24",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -489,37 +490,37 @@
                       },
                       "value": "true"
                     },
-                    "src": "802:20:15",
+                    "src": "802:20:24",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 3638,
+                  "id": 4662,
                   "nodeType": "ExpressionStatement",
-                  "src": "802:20:15"
+                  "src": "802:20:24"
                 },
                 {
-                  "id": 3639,
+                  "id": 4663,
                   "nodeType": "PlaceholderStatement",
-                  "src": "832:1:15"
+                  "src": "832:1:24"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 3642,
+                    "id": 4666,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 3640,
+                      "id": 4664,
                       "name": "rentrancyLock",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3628,
-                      "src": "843:13:15",
+                      "referencedDeclaration": 4652,
+                      "src": "843:13:24",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -530,14 +531,14 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "66616c7365",
-                      "id": 3641,
+                      "id": 4665,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "kind": "bool",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "859:5:15",
+                      "src": "859:5:24",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -545,45 +546,45 @@
                       },
                       "value": "false"
                     },
-                    "src": "843:21:15",
+                    "src": "843:21:24",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 3643,
+                  "id": 4667,
                   "nodeType": "ExpressionStatement",
-                  "src": "843:21:15"
+                  "src": "843:21:24"
                 }
               ]
             },
             "documentation": "@dev Prevents a contract from calling itself, directly or indirectly.\n@notice If you mark a function `nonReentrant`, you should also mark it `external`. Calling one nonReentrant function from another is not supported. Instead, you can implement a `private` function doing the actual work, and a `external` wrapper marked as `nonReentrant`.",
-            "id": 3645,
+            "id": 4669,
             "name": "nonReentrant",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 3629,
+              "id": 4653,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "756:2:15"
+              "src": "756:2:24"
             },
-            "src": "735:136:15",
+            "src": "735:136:24",
             "visibility": "internal"
           }
         ],
-        "scope": 3647,
-        "src": "220:653:15"
+        "scope": 4671,
+        "src": "220:653:24"
       }
     ],
-    "src": "0:874:15"
+    "src": "0:874:24"
   },
   "compiler": {
     "name": "solc",
-    "version": "0.4.22+commit.4cb486ee.Emscripten.clang"
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.0.1",
-  "updatedAt": "2019-08-22T08:47:45.271Z",
+  "schemaVersion": "3.0.13",
+  "updatedAt": "2019-08-24T23:51:51.500Z",
   "devdoc": {
     "author": "Remco Bloemen <remco@2π.com>",
     "methods": {},

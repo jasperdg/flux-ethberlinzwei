@@ -60,6 +60,7 @@
       "type": "function"
     }
   ],
+  "metadata": "",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "sourceMap": "",
@@ -70,14 +71,14 @@
     "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/trading/ICompleteSets.sol",
     "exportedSymbols": {
       "ICompleteSets": [
-        5910
+        11488
       ]
     },
-    "id": 5911,
+    "id": 11489,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 5884,
+        "id": 11462,
         "literals": [
           "solidity",
           "^",
@@ -85,16 +86,16 @@
           ".22"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:33"
+        "src": "0:24:47"
       },
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/reporting/IMarket.sol",
         "file": "./../reporting/IMarket.sol",
-        "id": 5885,
+        "id": 11463,
         "nodeType": "ImportDirective",
-        "scope": 5911,
-        "sourceUnit": 4387,
-        "src": "27:36:33",
+        "scope": 11489,
+        "sourceUnit": 5874,
+        "src": "27:36:47",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -104,9 +105,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 5910,
+        "id": 11488,
         "linearizedBaseContracts": [
-          5910
+          11488
         ],
         "name": "ICompleteSets",
         "nodeType": "ContractDefinition",
@@ -114,7 +115,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 5896,
+            "id": 11474,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -122,16 +123,16 @@
             "name": "buyCompleteSets",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5892,
+              "id": 11470,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5887,
+                  "id": 11465,
                   "name": "_sender",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5896,
-                  "src": "120:15:33",
+                  "scope": 11474,
+                  "src": "120:15:47",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -139,10 +140,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5886,
+                    "id": 11464,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "120:7:33",
+                    "src": "120:7:47",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -153,26 +154,26 @@
                 },
                 {
                   "constant": false,
-                  "id": 5889,
+                  "id": 11467,
                   "name": "_market",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5896,
-                  "src": "137:15:33",
+                  "scope": 11474,
+                  "src": "137:15:47",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IMarket_$4386",
+                    "typeIdentifier": "t_contract$_IMarket_$5873",
                     "typeString": "contract IMarket"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 5888,
+                    "id": 11466,
                     "name": "IMarket",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 4386,
-                    "src": "137:7:33",
+                    "referencedDeclaration": 5873,
+                    "src": "137:7:47",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IMarket_$4386",
+                      "typeIdentifier": "t_contract$_IMarket_$5873",
                       "typeString": "contract IMarket"
                     }
                   },
@@ -181,11 +182,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 5891,
+                  "id": 11469,
                   "name": "_amount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5896,
-                  "src": "154:15:33",
+                  "scope": 11474,
+                  "src": "154:15:47",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -193,10 +194,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 5890,
+                    "id": 11468,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "154:7:33",
+                    "src": "154:7:47",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -206,20 +207,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "119:51:33"
+              "src": "119:51:47"
             },
             "payable": false,
             "returnParameters": {
-              "id": 5895,
+              "id": 11473,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5894,
+                  "id": 11472,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5896,
-                  "src": "189:4:33",
+                  "scope": 11474,
+                  "src": "189:4:47",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -227,10 +228,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 5893,
+                    "id": 11471,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "189:4:33",
+                    "src": "189:4:47",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -240,10 +241,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "188:6:33"
+              "src": "188:6:47"
             },
-            "scope": 5910,
-            "src": "95:100:33",
+            "scope": 11488,
+            "src": "95:100:47",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "external"
@@ -251,7 +252,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 5909,
+            "id": 11487,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -259,16 +260,16 @@
             "name": "sellCompleteSets",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5903,
+              "id": 11481,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5898,
+                  "id": 11476,
                   "name": "_sender",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5909,
-                  "src": "226:15:33",
+                  "scope": 11487,
+                  "src": "226:15:47",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -276,10 +277,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5897,
+                    "id": 11475,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "226:7:33",
+                    "src": "226:7:47",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -290,26 +291,26 @@
                 },
                 {
                   "constant": false,
-                  "id": 5900,
+                  "id": 11478,
                   "name": "_market",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5909,
-                  "src": "243:15:33",
+                  "scope": 11487,
+                  "src": "243:15:47",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IMarket_$4386",
+                    "typeIdentifier": "t_contract$_IMarket_$5873",
                     "typeString": "contract IMarket"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 5899,
+                    "id": 11477,
                     "name": "IMarket",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 4386,
-                    "src": "243:7:33",
+                    "referencedDeclaration": 5873,
+                    "src": "243:7:47",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IMarket_$4386",
+                      "typeIdentifier": "t_contract$_IMarket_$5873",
                       "typeString": "contract IMarket"
                     }
                   },
@@ -318,11 +319,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 5902,
+                  "id": 11480,
                   "name": "_amount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5909,
-                  "src": "260:15:33",
+                  "scope": 11487,
+                  "src": "260:15:47",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -330,10 +331,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 5901,
+                    "id": 11479,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "260:7:33",
+                    "src": "260:7:47",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -343,20 +344,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "225:51:33"
+              "src": "225:51:47"
             },
             "payable": false,
             "returnParameters": {
-              "id": 5908,
+              "id": 11486,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5905,
+                  "id": 11483,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5909,
-                  "src": "295:7:33",
+                  "scope": 11487,
+                  "src": "295:7:47",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -364,10 +365,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 5904,
+                    "id": 11482,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "295:7:33",
+                    "src": "295:7:47",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -378,11 +379,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 5907,
+                  "id": 11485,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5909,
-                  "src": "304:7:33",
+                  "scope": 11487,
+                  "src": "304:7:47",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -390,10 +391,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 5906,
+                    "id": 11484,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "304:7:33",
+                    "src": "304:7:47",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -403,33 +404,33 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "294:18:33"
+              "src": "294:18:47"
             },
-            "scope": 5910,
-            "src": "200:113:33",
+            "scope": 11488,
+            "src": "200:113:47",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 5911,
-        "src": "66:249:33"
+        "scope": 11489,
+        "src": "66:249:47"
       }
     ],
-    "src": "0:316:33"
+    "src": "0:316:47"
   },
   "legacyAST": {
     "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/trading/ICompleteSets.sol",
     "exportedSymbols": {
       "ICompleteSets": [
-        5910
+        11488
       ]
     },
-    "id": 5911,
+    "id": 11489,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 5884,
+        "id": 11462,
         "literals": [
           "solidity",
           "^",
@@ -437,16 +438,16 @@
           ".22"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:33"
+        "src": "0:24:47"
       },
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/reporting/IMarket.sol",
         "file": "./../reporting/IMarket.sol",
-        "id": 5885,
+        "id": 11463,
         "nodeType": "ImportDirective",
-        "scope": 5911,
-        "sourceUnit": 4387,
-        "src": "27:36:33",
+        "scope": 11489,
+        "sourceUnit": 5874,
+        "src": "27:36:47",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -456,9 +457,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 5910,
+        "id": 11488,
         "linearizedBaseContracts": [
-          5910
+          11488
         ],
         "name": "ICompleteSets",
         "nodeType": "ContractDefinition",
@@ -466,7 +467,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 5896,
+            "id": 11474,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -474,16 +475,16 @@
             "name": "buyCompleteSets",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5892,
+              "id": 11470,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5887,
+                  "id": 11465,
                   "name": "_sender",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5896,
-                  "src": "120:15:33",
+                  "scope": 11474,
+                  "src": "120:15:47",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -491,10 +492,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5886,
+                    "id": 11464,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "120:7:33",
+                    "src": "120:7:47",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -505,26 +506,26 @@
                 },
                 {
                   "constant": false,
-                  "id": 5889,
+                  "id": 11467,
                   "name": "_market",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5896,
-                  "src": "137:15:33",
+                  "scope": 11474,
+                  "src": "137:15:47",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IMarket_$4386",
+                    "typeIdentifier": "t_contract$_IMarket_$5873",
                     "typeString": "contract IMarket"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 5888,
+                    "id": 11466,
                     "name": "IMarket",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 4386,
-                    "src": "137:7:33",
+                    "referencedDeclaration": 5873,
+                    "src": "137:7:47",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IMarket_$4386",
+                      "typeIdentifier": "t_contract$_IMarket_$5873",
                       "typeString": "contract IMarket"
                     }
                   },
@@ -533,11 +534,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 5891,
+                  "id": 11469,
                   "name": "_amount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5896,
-                  "src": "154:15:33",
+                  "scope": 11474,
+                  "src": "154:15:47",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -545,10 +546,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 5890,
+                    "id": 11468,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "154:7:33",
+                    "src": "154:7:47",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -558,20 +559,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "119:51:33"
+              "src": "119:51:47"
             },
             "payable": false,
             "returnParameters": {
-              "id": 5895,
+              "id": 11473,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5894,
+                  "id": 11472,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5896,
-                  "src": "189:4:33",
+                  "scope": 11474,
+                  "src": "189:4:47",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -579,10 +580,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 5893,
+                    "id": 11471,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "189:4:33",
+                    "src": "189:4:47",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -592,10 +593,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "188:6:33"
+              "src": "188:6:47"
             },
-            "scope": 5910,
-            "src": "95:100:33",
+            "scope": 11488,
+            "src": "95:100:47",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "external"
@@ -603,7 +604,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 5909,
+            "id": 11487,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -611,16 +612,16 @@
             "name": "sellCompleteSets",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5903,
+              "id": 11481,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5898,
+                  "id": 11476,
                   "name": "_sender",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5909,
-                  "src": "226:15:33",
+                  "scope": 11487,
+                  "src": "226:15:47",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -628,10 +629,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5897,
+                    "id": 11475,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "226:7:33",
+                    "src": "226:7:47",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -642,26 +643,26 @@
                 },
                 {
                   "constant": false,
-                  "id": 5900,
+                  "id": 11478,
                   "name": "_market",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5909,
-                  "src": "243:15:33",
+                  "scope": 11487,
+                  "src": "243:15:47",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IMarket_$4386",
+                    "typeIdentifier": "t_contract$_IMarket_$5873",
                     "typeString": "contract IMarket"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 5899,
+                    "id": 11477,
                     "name": "IMarket",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 4386,
-                    "src": "243:7:33",
+                    "referencedDeclaration": 5873,
+                    "src": "243:7:47",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IMarket_$4386",
+                      "typeIdentifier": "t_contract$_IMarket_$5873",
                       "typeString": "contract IMarket"
                     }
                   },
@@ -670,11 +671,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 5902,
+                  "id": 11480,
                   "name": "_amount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5909,
-                  "src": "260:15:33",
+                  "scope": 11487,
+                  "src": "260:15:47",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -682,10 +683,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 5901,
+                    "id": 11479,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "260:7:33",
+                    "src": "260:7:47",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -695,20 +696,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "225:51:33"
+              "src": "225:51:47"
             },
             "payable": false,
             "returnParameters": {
-              "id": 5908,
+              "id": 11486,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5905,
+                  "id": 11483,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5909,
-                  "src": "295:7:33",
+                  "scope": 11487,
+                  "src": "295:7:47",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -716,10 +717,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 5904,
+                    "id": 11482,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "295:7:33",
+                    "src": "295:7:47",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -730,11 +731,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 5907,
+                  "id": 11485,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5909,
-                  "src": "304:7:33",
+                  "scope": 11487,
+                  "src": "304:7:47",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -742,10 +743,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 5906,
+                    "id": 11484,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "304:7:33",
+                    "src": "304:7:47",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -755,28 +756,28 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "294:18:33"
+              "src": "294:18:47"
             },
-            "scope": 5910,
-            "src": "200:113:33",
+            "scope": 11488,
+            "src": "200:113:47",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 5911,
-        "src": "66:249:33"
+        "scope": 11489,
+        "src": "66:249:47"
       }
     ],
-    "src": "0:316:33"
+    "src": "0:316:47"
   },
   "compiler": {
     "name": "solc",
-    "version": "0.4.22+commit.4cb486ee.Emscripten.clang"
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.0.1",
-  "updatedAt": "2019-08-22T08:47:45.275Z",
+  "schemaVersion": "3.0.13",
+  "updatedAt": "2019-08-24T23:51:51.654Z",
   "devdoc": {
     "methods": {}
   },

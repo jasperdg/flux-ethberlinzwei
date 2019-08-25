@@ -35,24 +35,25 @@
       "type": "function"
     }
   ],
+  "metadata": "",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "pragma solidity ^0.4.22;\n\n\ncontract IRepPriceOracle {\n    function setRepPriceInAttoEth(uint256 _repPriceInAttoEth) external returns (bool);\n    function getRepPriceInAttoEth() external view returns (uint256);\n}\n",
-  "sourcePath": "/Users/jasperdegooijer/Documents/flux/augurSets/AugurSets/libraries/augur/source/contracts/reporting/IRepPriceOracle.sol",
+  "sourcePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/reporting/IRepPriceOracle.sol",
   "ast": {
-    "absolutePath": "/Users/jasperdegooijer/Documents/flux/augurSets/AugurSets/libraries/augur/source/contracts/reporting/IRepPriceOracle.sol",
+    "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/reporting/IRepPriceOracle.sol",
     "exportedSymbols": {
       "IRepPriceOracle": [
-        7734
+        5888
       ]
     },
-    "id": 7735,
+    "id": 5889,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 7721,
+        "id": 5875,
         "literals": [
           "solidity",
           "^",
@@ -60,7 +61,7 @@
           ".22"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:51"
+        "src": "0:24:36"
       },
       {
         "baseContracts": [],
@@ -68,9 +69,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 7734,
+        "id": 5888,
         "linearizedBaseContracts": [
-          7734
+          5888
         ],
         "name": "IRepPriceOracle",
         "nodeType": "ContractDefinition",
@@ -78,7 +79,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 7728,
+            "id": 5882,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -86,16 +87,16 @@
             "name": "setRepPriceInAttoEth",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7724,
+              "id": 5878,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7723,
+                  "id": 5877,
                   "name": "_repPriceInAttoEth",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7728,
-                  "src": "88:26:51",
+                  "scope": 5882,
+                  "src": "88:26:36",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -103,10 +104,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7722,
+                    "id": 5876,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "88:7:51",
+                    "src": "88:7:36",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -116,20 +117,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "87:28:51"
+              "src": "87:28:36"
             },
             "payable": false,
             "returnParameters": {
-              "id": 7727,
+              "id": 5881,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7726,
+                  "id": 5880,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7728,
-                  "src": "134:4:51",
+                  "scope": 5882,
+                  "src": "134:4:36",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -137,10 +138,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 7725,
+                    "id": 5879,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "134:4:51",
+                    "src": "134:4:36",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -150,10 +151,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "133:6:51"
+              "src": "133:6:36"
             },
-            "scope": 7734,
-            "src": "58:82:51",
+            "scope": 5888,
+            "src": "58:82:36",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "external"
@@ -161,7 +162,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 7733,
+            "id": 5887,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -169,23 +170,23 @@
             "name": "getRepPriceInAttoEth",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7729,
+              "id": 5883,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "174:2:51"
+              "src": "174:2:36"
             },
             "payable": false,
             "returnParameters": {
-              "id": 7732,
+              "id": 5886,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7731,
+                  "id": 5885,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7733,
-                  "src": "200:7:51",
+                  "scope": 5887,
+                  "src": "200:7:36",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -193,10 +194,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7730,
+                    "id": 5884,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "200:7:51",
+                    "src": "200:7:36",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -206,33 +207,33 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "199:9:51"
+              "src": "199:9:36"
             },
-            "scope": 7734,
-            "src": "145:64:51",
+            "scope": 5888,
+            "src": "145:64:36",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 7735,
-        "src": "27:184:51"
+        "scope": 5889,
+        "src": "27:184:36"
       }
     ],
-    "src": "0:212:51"
+    "src": "0:212:36"
   },
   "legacyAST": {
-    "absolutePath": "/Users/jasperdegooijer/Documents/flux/augurSets/AugurSets/libraries/augur/source/contracts/reporting/IRepPriceOracle.sol",
+    "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/reporting/IRepPriceOracle.sol",
     "exportedSymbols": {
       "IRepPriceOracle": [
-        7734
+        5888
       ]
     },
-    "id": 7735,
+    "id": 5889,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 7721,
+        "id": 5875,
         "literals": [
           "solidity",
           "^",
@@ -240,7 +241,7 @@
           ".22"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:51"
+        "src": "0:24:36"
       },
       {
         "baseContracts": [],
@@ -248,9 +249,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 7734,
+        "id": 5888,
         "linearizedBaseContracts": [
-          7734
+          5888
         ],
         "name": "IRepPriceOracle",
         "nodeType": "ContractDefinition",
@@ -258,7 +259,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 7728,
+            "id": 5882,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -266,16 +267,16 @@
             "name": "setRepPriceInAttoEth",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7724,
+              "id": 5878,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7723,
+                  "id": 5877,
                   "name": "_repPriceInAttoEth",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7728,
-                  "src": "88:26:51",
+                  "scope": 5882,
+                  "src": "88:26:36",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -283,10 +284,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7722,
+                    "id": 5876,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "88:7:51",
+                    "src": "88:7:36",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -296,20 +297,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "87:28:51"
+              "src": "87:28:36"
             },
             "payable": false,
             "returnParameters": {
-              "id": 7727,
+              "id": 5881,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7726,
+                  "id": 5880,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7728,
-                  "src": "134:4:51",
+                  "scope": 5882,
+                  "src": "134:4:36",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -317,10 +318,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 7725,
+                    "id": 5879,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "134:4:51",
+                    "src": "134:4:36",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -330,10 +331,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "133:6:51"
+              "src": "133:6:36"
             },
-            "scope": 7734,
-            "src": "58:82:51",
+            "scope": 5888,
+            "src": "58:82:36",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "external"
@@ -341,7 +342,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 7733,
+            "id": 5887,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -349,23 +350,23 @@
             "name": "getRepPriceInAttoEth",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7729,
+              "id": 5883,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "174:2:51"
+              "src": "174:2:36"
             },
             "payable": false,
             "returnParameters": {
-              "id": 7732,
+              "id": 5886,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7731,
+                  "id": 5885,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7733,
-                  "src": "200:7:51",
+                  "scope": 5887,
+                  "src": "200:7:36",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -373,10 +374,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7730,
+                    "id": 5884,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "200:7:51",
+                    "src": "200:7:36",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -386,28 +387,28 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "199:9:51"
+              "src": "199:9:36"
             },
-            "scope": 7734,
-            "src": "145:64:51",
+            "scope": 5888,
+            "src": "145:64:36",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 7735,
-        "src": "27:184:51"
+        "scope": 5889,
+        "src": "27:184:36"
       }
     ],
-    "src": "0:212:51"
+    "src": "0:212:36"
   },
   "compiler": {
     "name": "solc",
-    "version": "0.4.22+commit.4cb486ee.Emscripten.clang"
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.0.1",
-  "updatedAt": "2019-07-15T12:03:29.510Z",
+  "schemaVersion": "3.0.13",
+  "updatedAt": "2019-08-24T23:51:51.531Z",
   "devdoc": {
     "methods": {}
   },

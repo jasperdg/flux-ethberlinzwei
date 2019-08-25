@@ -29,24 +29,25 @@
       "type": "function"
     }
   ],
-  "bytecode": "0x608060405234801561001057600080fd5b506106fa806100206000396000f300608060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680634837435f14610046575b600080fd5b34801561005257600080fd5b506100b5600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080356000191690602001909291905050506100f7565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b600080600085610105610278565b808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001807f556e697665727365000000000000000000000000000000000000000000000000815250602001915050604051809103906000f08015801561017f573d6000803e3d6000fd5b5091508190508073ffffffffffffffffffffffffffffffffffffffff1663be13f47c86866040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001826000191660001916815260200192505050602060405180830381600087803b15801561023057600080fd5b505af1158015610244573d6000803e3d6000fd5b505050506040513d602081101561025a57600080fd5b81019080805190602001909291905050505080925050509392505050565b60405161044680610289833901905600608060405234801561001057600080fd5b506040516040806104468339810180604052810190808051906020019092919080519060200190929190505050336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550816000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055508060018160001916905550505061036d806100d96000396000f300608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680633018205f1461018757806392eefe9b146101de578063bef72fa214610239575b60008060010260015460001916141561006f57610184565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663f39ec1f76001546040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808260001916600019168152602001915050602060405180830381600087803b15801561010957600080fd5b505af115801561011d573d6000803e3d6000fd5b505050506040513d602081101561013357600080fd5b81019080805190602001909291905050509050604051601f19601f36011680820160405236600083376000803684865af4806000811461017f576040513d81016040523d6000823e3d81f35b600080fd5b50005b34801561019357600080fd5b5061019c61026c565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156101ea57600080fd5b5061021f600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610295565b604051808215151515815260200191505060405180910390f35b34801561024557600080fd5b5061024e61033b565b60405180826000191660001916815260200191505060405180910390f35b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156102f257600080fd5b816000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060019050919050565b600154815600a165627a7a723058209cb4996d7f5bd6edbb8f2f4a75cb8beef07657ea2a286a7196dc94864deb8d1d0029a165627a7a723058202475a6a441e39f2799929db40aaa2714958c3e8492ae10d2c564c54a44c053cb0029",
-  "deployedBytecode": "0x608060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680634837435f14610046575b600080fd5b34801561005257600080fd5b506100b5600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080356000191690602001909291905050506100f7565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b600080600085610105610278565b808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001807f556e697665727365000000000000000000000000000000000000000000000000815250602001915050604051809103906000f08015801561017f573d6000803e3d6000fd5b5091508190508073ffffffffffffffffffffffffffffffffffffffff1663be13f47c86866040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001826000191660001916815260200192505050602060405180830381600087803b15801561023057600080fd5b505af1158015610244573d6000803e3d6000fd5b505050506040513d602081101561025a57600080fd5b81019080805190602001909291905050505080925050509392505050565b60405161044680610289833901905600608060405234801561001057600080fd5b506040516040806104468339810180604052810190808051906020019092919080519060200190929190505050336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550816000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055508060018160001916905550505061036d806100d96000396000f300608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680633018205f1461018757806392eefe9b146101de578063bef72fa214610239575b60008060010260015460001916141561006f57610184565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663f39ec1f76001546040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808260001916600019168152602001915050602060405180830381600087803b15801561010957600080fd5b505af115801561011d573d6000803e3d6000fd5b505050506040513d602081101561013357600080fd5b81019080805190602001909291905050509050604051601f19601f36011680820160405236600083376000803684865af4806000811461017f576040513d81016040523d6000823e3d81f35b600080fd5b50005b34801561019357600080fd5b5061019c61026c565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156101ea57600080fd5b5061021f600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610295565b604051808215151515815260200191505060405180910390f35b34801561024557600080fd5b5061024e61033b565b60405180826000191660001916815260200191505060405180910390f35b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156102f257600080fd5b816000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060019050919050565b600154815600a165627a7a723058209cb4996d7f5bd6edbb8f2f4a75cb8beef07657ea2a286a7196dc94864deb8d1d0029a165627a7a723058202475a6a441e39f2799929db40aaa2714958c3e8492ae10d2c564c54a44c053cb0029",
-  "sourceMap": "138:410:7:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;138:410:7;;;;;;;",
-  "deployedSourceMap": "138:410:7:-;;;;;;;;;;;;;;;;;;;;;;;;169:377;;8:9:-1;5:2;;;30:1;27;20:12;5:2;169:377:7;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;300:9;321:20;392:19;358:11;344:38;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;344:38:7;321:61;;424:10;392:43;;445:9;:20;;;466:15;483:29;445:68;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;445:68:7;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;445:68:7;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;445:68:7;;;;;;;;;;;;;;;;;530:9;523:16;;169:377;;;;;;;:::o;138:410::-;;;;;;;;;;:::o",
+  "metadata": "{\"compiler\":{\"version\":\"0.4.24+commit.e67f0147\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"_controller\",\"type\":\"address\"},{\"name\":\"_parentUniverse\",\"type\":\"address\"},{\"name\":\"_parentPayoutDistributionHash\",\"type\":\"bytes32\"}],\"name\":\"createUniverse\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/factories/UniverseFactory.sol\":\"UniverseFactory\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/Controlled.sol\":{\"keccak256\":\"0x941f53cc76b6043b6983f7aa443986c83ab4e318cbc909cf2a69f6043019e474\",\"urls\":[\"bzzr://934526ffc55fb5e60da0c62993a1cf3ebdaef0e8fd47bc7468799c4b0bd664aa\"]},\"/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/IAugur.sol\":{\"keccak256\":\"0x416686a3760851ee59033ccddfe52b452cb085d0b3867641ba017ef7a0d80aa2\",\"urls\":[\"bzzr://5ee6eb65f29b9b63f7e7667592d6b4f87c41f83a59487505a47e9881030f3b67\"]},\"/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/IControlled.sol\":{\"keccak256\":\"0x18d21b3ada3571ee057a9d4eb6f4dae49d21193b56ae7021370fdd342b9f6325\",\"urls\":[\"bzzr://59caee7a18a8e63617d688d1f80e7ef935bdc1fe51b26266babee2da9f8eb50e\"]},\"/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/IController.sol\":{\"keccak256\":\"0x15530498e059a0961e96e0b4456feb6ececd70a0d3b1f84c0637cbb57b1c640c\",\"urls\":[\"bzzr://4b880b467098b47dce4d6e74e33491a97fd5a6ab226f1d36ce33c699381f6274\"]},\"/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/factories/UniverseFactory.sol\":{\"keccak256\":\"0x1d85483340753bfb1425b264102ebb66195c310f87150635531da1908fb640de\",\"urls\":[\"bzzr://837c83373dfd7597d32cc5970aba93d4bee64933250899c275bd1e020d67e1ce\"]},\"/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/DelegationTarget.sol\":{\"keccak256\":\"0xc55c4cc21d93d85bfeda55d0e915793b0737e16db819fc5c1836b055c8d527d1\",\"urls\":[\"bzzr://1a6a886c5a0917278dd99b20f3eab4d4e230254df337459c6645db1aca2b2c1e\"]},\"/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/Delegator.sol\":{\"keccak256\":\"0x73b1d3700c432c6775414e74ede43e0c8f2478a69cfb9ed187ed0bd1f585f5ea\",\"urls\":[\"bzzr://524208eb0aae2795ddaaf515a7a7d26355277d000309a07769a09cfea1df1ee3\"]},\"/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/IOwnable.sol\":{\"keccak256\":\"0xc6100465ac9fa9a347fb4433b4ec1d4cf07e09c5904df9e9615b28c62f8df51f\",\"urls\":[\"bzzr://547ec89621ef8a0a145e955fafd61c53fe9eee54eb12d13d5fc4d5501c0e9999\"]},\"/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/ITyped.sol\":{\"keccak256\":\"0x9c02b5ed60423163bdaf5a844e74ef7a17035b8b47d5fd40b9d1bcc7d3fdc339\",\"urls\":[\"bzzr://b489985ab02a83e5b4ee32e2ebf135f8831d9836e40f6716de03cc4bb3d14563\"]},\"/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/Initializable.sol\":{\"keccak256\":\"0x5660437d0a871588d0776bb2d17fe1905d0587755c3f78e206ede86ee443d645\",\"urls\":[\"bzzr://bed89b8bd8f1c56dda0829d0fb52528365b6401e51854c0dcaf4d1774e68a452\"]},\"/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/math/SafeMathUint256.sol\":{\"keccak256\":\"0xe9670b14d9d2864c785aea842f72b6255cd6d5f9b077eb2781ffaf8a8d964314\",\"urls\":[\"bzzr://09a598864dbef61568f5152849221529f8a4c51fdb34db3f39f1a18b186361f4\"]},\"/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/token/ERC20.sol\":{\"keccak256\":\"0xd4c1dc8bc3559119652ae0d1f19cbd307e1bb7a3ac32e36eb86507fefa443631\",\"urls\":[\"bzzr://b179943fd00dc0c8d3960893d35bb42a3598362909a8d5483390b0d1eac9774d\"]},\"/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/token/ERC20Basic.sol\":{\"keccak256\":\"0x3f5eb38447f98737c402be37c5156f6cd3ff707fad8f1a30e85f4dc599084d4e\",\"urls\":[\"bzzr://2bcf6a26c7037d2430c2f97812e5ef5469d0b4ab2a54514fe864f224ba7a47c1\"]},\"/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/reporting/IDisputeCrowdsourcer.sol\":{\"keccak256\":\"0x2c8b5d7e9c29f30e5254c731163c47f0f9ac462d27c6c66671cc1d29aa999413\",\"urls\":[\"bzzr://a1833b1d1d3bb6d125261264b30e5d704fdd2b15c4e84b822050a9c32d58ca99\"]},\"/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/reporting/IFeeToken.sol\":{\"keccak256\":\"0x4b2c018169b3620bb470ddd457af46ba35a50bfea8e542167952c48337cf7c75\",\"urls\":[\"bzzr://556814d20492aa6adf197f9c1f714cc2485d6381b42708e41ca6e0997643e589\"]},\"/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/reporting/IFeeWindow.sol\":{\"keccak256\":\"0xde9dd86bb3af3cd91589116f082debd0b59c2a89be9c43915b73a92ab02a06a2\",\"urls\":[\"bzzr://0716dd2aead1c3ba02edda5d55092ee30fac63d9bd97c2c9a19fd05398413cde\"]},\"/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/reporting/IMailbox.sol\":{\"keccak256\":\"0x31d0fa5a2db12eb560e0594a68dce2620f9f0286ed59901f5e331e8e541394c1\",\"urls\":[\"bzzr://3414ee3c9a9bfda2cedf0347f72a19cca9c795ecf36c085962944f2ee0024768\"]},\"/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/reporting/IMarket.sol\":{\"keccak256\":\"0x161aa6f58bb8c5136c575e87a2502baa7ed134f7d154a956922e73d75ac556dc\",\"urls\":[\"bzzr://3c29ba63b85bb497b7e538cb8eeac7a53a5a3e196c2421a43fd90be46e6a2ccc\"]},\"/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/reporting/IReportingParticipant.sol\":{\"keccak256\":\"0x894db38392d3b90395e306f27d01d1551e00aeff9067cefd7b7db2b077a2a6ab\",\"urls\":[\"bzzr://f68b2b78b3d756634c637da3b4ac800acb3fa7a53ae20ebf0c67a9e460f336c7\"]},\"/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/reporting/IReputationToken.sol\":{\"keccak256\":\"0xb08051fec96c8a4f35dd84743c0416b457a746a4fa09f8d1d97775d083b9dec0\",\"urls\":[\"bzzr://9e6b12d57d803aa7122908706cd6f8095e287f902a6261c9445bb5705daaf3b8\"]},\"/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/reporting/IUniverse.sol\":{\"keccak256\":\"0xf0522997feb7abf084e03f077928baa60f3f21e76ab1d7474225f1cf7f23ffb9\",\"urls\":[\"bzzr://d284ab5da725b61a6da34a3851ac2e36897179e18292d5c0e36d7fd816dc0baf\"]},\"/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/trading/ICash.sol\":{\"keccak256\":\"0xb4b4ef66b8a5771bfd7ef036ef2a8af5f182a16522742ed39b26b580e332d9cb\",\"urls\":[\"bzzr://b291e22f1364c088cdbebc591002e55a8991e77e940cd5a0a9b44b5a1c21ab03\"]},\"/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/trading/IOrders.sol\":{\"keccak256\":\"0x4839599464e2c7da0310f29ee9cc029e249eb0ab8814fac1d165eab115809611\",\"urls\":[\"bzzr://fe942a2b8d453de945fd082bc1a515ba03952b1e416ba7ea06803062a315bfb5\"]},\"/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/trading/IShareToken.sol\":{\"keccak256\":\"0xc3dc04e92734e076905b55cc29cd1e0a7583982094c641cf4783a13a2546f07f\",\"urls\":[\"bzzr://812c7087a592ab0d802e26020af80490ecb5dba73bfedbe80de3c11e865cbba4\"]},\"/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/trading/Order.sol\":{\"keccak256\":\"0x5539ce84c460d4839e0cc4af9da5698927fb56030ed7a0b2d9ee46f4566def1b\",\"urls\":[\"bzzr://86a9bc942c3b61346f4ca0edb48107e83bef41da70a92a1c0503cf98972aab8a\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506106fa806100206000396000f300608060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680634837435f14610046575b600080fd5b34801561005257600080fd5b506100b5600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080356000191690602001909291905050506100f7565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b600080600085610105610278565b808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001807f556e697665727365000000000000000000000000000000000000000000000000815250602001915050604051809103906000f08015801561017f573d6000803e3d6000fd5b5091508190508073ffffffffffffffffffffffffffffffffffffffff1663be13f47c86866040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001826000191660001916815260200192505050602060405180830381600087803b15801561023057600080fd5b505af1158015610244573d6000803e3d6000fd5b505050506040513d602081101561025a57600080fd5b81019080805190602001909291905050505080925050509392505050565b60405161044680610289833901905600608060405234801561001057600080fd5b506040516040806104468339810180604052810190808051906020019092919080519060200190929190505050336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550816000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055508060018160001916905550505061036d806100d96000396000f300608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680633018205f1461018757806392eefe9b146101de578063bef72fa214610239575b60008060010260015460001916141561006f57610184565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663f39ec1f76001546040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808260001916600019168152602001915050602060405180830381600087803b15801561010957600080fd5b505af115801561011d573d6000803e3d6000fd5b505050506040513d602081101561013357600080fd5b81019080805190602001909291905050509050604051601f19601f36011680820160405236600083376000803684865af4806000811461017f576040513d81016040523d6000823e3d81f35b600080fd5b50005b34801561019357600080fd5b5061019c61026c565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156101ea57600080fd5b5061021f600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610295565b604051808215151515815260200191505060405180910390f35b34801561024557600080fd5b5061024e61033b565b60405180826000191660001916815260200191505060405180910390f35b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156102f257600080fd5b816000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060019050919050565b600154815600a165627a7a723058200a117e64b9b2b71eac615b440f224f5eae5f4f8ced1fc2c6e9a70845aa3e381a0029a165627a7a72305820cf5ed70cdcf9eec8cfe1e542964cd94d810a1a19228ad6f44e1390f08f8360da0029",
+  "deployedBytecode": "0x608060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680634837435f14610046575b600080fd5b34801561005257600080fd5b506100b5600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080356000191690602001909291905050506100f7565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b600080600085610105610278565b808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001807f556e697665727365000000000000000000000000000000000000000000000000815250602001915050604051809103906000f08015801561017f573d6000803e3d6000fd5b5091508190508073ffffffffffffffffffffffffffffffffffffffff1663be13f47c86866040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001826000191660001916815260200192505050602060405180830381600087803b15801561023057600080fd5b505af1158015610244573d6000803e3d6000fd5b505050506040513d602081101561025a57600080fd5b81019080805190602001909291905050505080925050509392505050565b60405161044680610289833901905600608060405234801561001057600080fd5b506040516040806104468339810180604052810190808051906020019092919080519060200190929190505050336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550816000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055508060018160001916905550505061036d806100d96000396000f300608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680633018205f1461018757806392eefe9b146101de578063bef72fa214610239575b60008060010260015460001916141561006f57610184565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663f39ec1f76001546040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808260001916600019168152602001915050602060405180830381600087803b15801561010957600080fd5b505af115801561011d573d6000803e3d6000fd5b505050506040513d602081101561013357600080fd5b81019080805190602001909291905050509050604051601f19601f36011680820160405236600083376000803684865af4806000811461017f576040513d81016040523d6000823e3d81f35b600080fd5b50005b34801561019357600080fd5b5061019c61026c565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156101ea57600080fd5b5061021f600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610295565b604051808215151515815260200191505060405180910390f35b34801561024557600080fd5b5061024e61033b565b60405180826000191660001916815260200191505060405180910390f35b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156102f257600080fd5b816000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060019050919050565b600154815600a165627a7a723058200a117e64b9b2b71eac615b440f224f5eae5f4f8ced1fc2c6e9a70845aa3e381a0029a165627a7a72305820cf5ed70cdcf9eec8cfe1e542964cd94d810a1a19228ad6f44e1390f08f8360da0029",
+  "sourceMap": "138:410:15:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;138:410:15;;;;;;;",
+  "deployedSourceMap": "138:410:15:-;;;;;;;;;;;;;;;;;;;;;;;;169:377;;8:9:-1;5:2;;;30:1;27;20:12;5:2;169:377:15;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;300:9;321:20;392:19;358:11;344:38;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;344:38:15;321:61;;424:10;392:43;;445:9;:20;;;466:15;483:29;445:68;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;445:68:15;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;445:68:15;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;445:68:15;;;;;;;;;;;;;;;;;530:9;523:16;;169:377;;;;;;;:::o;138:410::-;;;;;;;;;;:::o",
   "source": "pragma solidity ^0.4.22;\n\n\nimport './../libraries/Delegator.sol';\nimport './../IController.sol';\nimport './../reporting/IUniverse.sol';\n\n\ncontract UniverseFactory {\n    function createUniverse(IController _controller, IUniverse _parentUniverse, bytes32 _parentPayoutDistributionHash) public returns (IUniverse) {\n        Delegator _delegator = new Delegator(_controller, \"Universe\");\n        IUniverse _universe = IUniverse(_delegator);\n        _universe.initialize(_parentUniverse, _parentPayoutDistributionHash);\n        return _universe;\n    }\n}\n",
   "sourcePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/factories/UniverseFactory.sol",
   "ast": {
     "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/factories/UniverseFactory.sol",
     "exportedSymbols": {
       "UniverseFactory": [
-        3370
+        4321
       ]
     },
-    "id": 3371,
+    "id": 4322,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 3331,
+        "id": 4282,
         "literals": [
           "solidity",
           "^",
@@ -54,89 +55,89 @@
           ".22"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:7"
+        "src": "0:24:15"
       },
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/Delegator.sol",
         "file": "./../libraries/Delegator.sol",
-        "id": 3332,
+        "id": 4283,
         "nodeType": "ImportDirective",
-        "scope": 3371,
-        "sourceUnit": 3521,
-        "src": "27:38:7",
+        "scope": 4322,
+        "sourceUnit": 4472,
+        "src": "27:38:15",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/IController.sol",
         "file": "./../IController.sol",
-        "id": 3333,
+        "id": 4284,
         "nodeType": "ImportDirective",
-        "scope": 3371,
-        "sourceUnit": 3330,
-        "src": "66:30:7",
+        "scope": 4322,
+        "sourceUnit": 3902,
+        "src": "66:30:15",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/reporting/IUniverse.sol",
         "file": "./../reporting/IUniverse.sol",
-        "id": 3334,
+        "id": 4285,
         "nodeType": "ImportDirective",
-        "scope": 3371,
-        "sourceUnit": 4819,
-        "src": "97:38:7",
+        "scope": 4322,
+        "sourceUnit": 6321,
+        "src": "97:38:15",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
         "baseContracts": [],
         "contractDependencies": [
-          3520
+          4471
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 3370,
+        "id": 4321,
         "linearizedBaseContracts": [
-          3370
+          4321
         ],
         "name": "UniverseFactory",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 3368,
+              "id": 4319,
               "nodeType": "Block",
-              "src": "311:235:7",
+              "src": "311:235:15",
               "statements": [
                 {
                   "assignments": [
-                    3346
+                    4297
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 3346,
+                      "id": 4297,
                       "name": "_delegator",
                       "nodeType": "VariableDeclaration",
-                      "scope": 3369,
-                      "src": "321:20:7",
+                      "scope": 4320,
+                      "src": "321:20:15",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Delegator_$3520",
+                        "typeIdentifier": "t_contract$_Delegator_$4471",
                         "typeString": "contract Delegator"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 3345,
+                        "id": 4296,
                         "name": "Delegator",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 3520,
-                        "src": "321:9:7",
+                        "referencedDeclaration": 4471,
+                        "src": "321:9:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Delegator_$3520",
+                          "typeIdentifier": "t_contract$_Delegator_$4471",
                           "typeString": "contract Delegator"
                         }
                       },
@@ -144,34 +145,34 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 3352,
+                  "id": 4303,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 3349,
+                        "id": 4300,
                         "name": "_controller",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3336,
-                        "src": "358:11:7",
+                        "referencedDeclaration": 4287,
+                        "src": "358:11:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IController_$3329",
+                          "typeIdentifier": "t_contract$_IController_$3901",
                           "typeString": "contract IController"
                         }
                       },
                       {
                         "argumentTypes": null,
                         "hexValue": "556e697665727365",
-                        "id": 3350,
+                        "id": 4301,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "371:10:7",
+                        "src": "371:10:15",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_bf202454b1b879dcb0cd9e760a629d8cc0df8da2c26ec8e01882350f749b3a9d",
@@ -183,7 +184,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_IController_$3329",
+                          "typeIdentifier": "t_contract$_IController_$3901",
                           "typeString": "contract IController"
                         },
                         {
@@ -191,31 +192,31 @@
                           "typeString": "literal_string \"Universe\""
                         }
                       ],
-                      "id": 3348,
+                      "id": 4299,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "nodeType": "NewExpression",
-                      "src": "344:13:7",
+                      "src": "344:13:15",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_creation_nonpayable$_t_contract$_IController_$3329_$_t_bytes32_$returns$_t_contract$_Delegator_$3520_$",
+                        "typeIdentifier": "t_function_creation_nonpayable$_t_contract$_IController_$3901_$_t_bytes32_$returns$_t_contract$_Delegator_$4471_$",
                         "typeString": "function (contract IController,bytes32) returns (contract Delegator)"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 3347,
+                        "id": 4298,
                         "name": "Delegator",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 3520,
-                        "src": "348:9:7",
+                        "referencedDeclaration": 4471,
+                        "src": "348:9:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Delegator_$3520",
+                          "typeIdentifier": "t_contract$_Delegator_$4471",
                           "typeString": "contract Delegator"
                         }
                       }
                     },
-                    "id": 3351,
+                    "id": 4302,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -223,42 +224,42 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "344:38:7",
+                    "src": "344:38:15",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Delegator_$3520",
+                      "typeIdentifier": "t_contract$_Delegator_$4471",
                       "typeString": "contract Delegator"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "321:61:7"
+                  "src": "321:61:15"
                 },
                 {
                   "assignments": [
-                    3354
+                    4305
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 3354,
+                      "id": 4305,
                       "name": "_universe",
                       "nodeType": "VariableDeclaration",
-                      "scope": 3369,
-                      "src": "392:19:7",
+                      "scope": 4320,
+                      "src": "392:19:15",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IUniverse_$4818",
+                        "typeIdentifier": "t_contract$_IUniverse_$6320",
                         "typeString": "contract IUniverse"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 3353,
+                        "id": 4304,
                         "name": "IUniverse",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 4818,
-                        "src": "392:9:7",
+                        "referencedDeclaration": 6320,
+                        "src": "392:9:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IUniverse_$4818",
+                          "typeIdentifier": "t_contract$_IUniverse_$6320",
                           "typeString": "contract IUniverse"
                         }
                       },
@@ -266,20 +267,20 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 3358,
+                  "id": 4309,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 3356,
+                        "id": 4307,
                         "name": "_delegator",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3346,
-                        "src": "424:10:7",
+                        "referencedDeclaration": 4297,
+                        "src": "424:10:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Delegator_$3520",
+                          "typeIdentifier": "t_contract$_Delegator_$4471",
                           "typeString": "contract Delegator"
                         }
                       }
@@ -287,22 +288,22 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_Delegator_$3520",
+                          "typeIdentifier": "t_contract$_Delegator_$4471",
                           "typeString": "contract Delegator"
                         }
                       ],
-                      "id": 3355,
+                      "id": 4306,
                       "name": "IUniverse",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4818,
-                      "src": "414:9:7",
+                      "referencedDeclaration": 6320,
+                      "src": "414:9:15",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_IUniverse_$4818_$",
+                        "typeIdentifier": "t_type$_t_contract$_IUniverse_$6320_$",
                         "typeString": "type(contract IUniverse)"
                       }
                     },
-                    "id": 3357,
+                    "id": 4308,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -310,14 +311,14 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "414:21:7",
+                    "src": "414:21:15",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IUniverse_$4818",
+                      "typeIdentifier": "t_contract$_IUniverse_$6320",
                       "typeString": "contract IUniverse"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "392:43:7"
+                  "src": "392:43:15"
                 },
                 {
                   "expression": {
@@ -325,25 +326,25 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 3362,
+                        "id": 4313,
                         "name": "_parentUniverse",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3338,
-                        "src": "466:15:7",
+                        "referencedDeclaration": 4289,
+                        "src": "466:15:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IUniverse_$4818",
+                          "typeIdentifier": "t_contract$_IUniverse_$6320",
                           "typeString": "contract IUniverse"
                         }
                       },
                       {
                         "argumentTypes": null,
-                        "id": 3363,
+                        "id": 4314,
                         "name": "_parentPayoutDistributionHash",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3340,
-                        "src": "483:29:7",
+                        "referencedDeclaration": 4291,
+                        "src": "483:29:15",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
                           "typeString": "bytes32"
@@ -353,7 +354,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_IUniverse_$4818",
+                          "typeIdentifier": "t_contract$_IUniverse_$6320",
                           "typeString": "contract IUniverse"
                         },
                         {
@@ -363,32 +364,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 3359,
+                        "id": 4310,
                         "name": "_universe",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3354,
-                        "src": "445:9:7",
+                        "referencedDeclaration": 4305,
+                        "src": "445:9:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IUniverse_$4818",
+                          "typeIdentifier": "t_contract$_IUniverse_$6320",
                           "typeString": "contract IUniverse"
                         }
                       },
-                      "id": 3361,
+                      "id": 4312,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "initialize",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4567,
-                      "src": "445:20:7",
+                      "referencedDeclaration": 6069,
+                      "src": "445:20:15",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_nonpayable$_t_contract$_IUniverse_$4818_$_t_bytes32_$returns$_t_bool_$",
+                        "typeIdentifier": "t_function_external_nonpayable$_t_contract$_IUniverse_$6320_$_t_bytes32_$returns$_t_bool_$",
                         "typeString": "function (contract IUniverse,bytes32) external returns (bool)"
                       }
                     },
-                    "id": 3364,
+                    "id": 4315,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -396,39 +397,39 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "445:68:7",
+                    "src": "445:68:15",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 3365,
+                  "id": 4316,
                   "nodeType": "ExpressionStatement",
-                  "src": "445:68:7"
+                  "src": "445:68:15"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 3366,
+                    "id": 4317,
                     "name": "_universe",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 3354,
-                    "src": "530:9:7",
+                    "referencedDeclaration": 4305,
+                    "src": "530:9:15",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IUniverse_$4818",
+                      "typeIdentifier": "t_contract$_IUniverse_$6320",
                       "typeString": "contract IUniverse"
                     }
                   },
-                  "functionReturnParameters": 3344,
-                  "id": 3367,
+                  "functionReturnParameters": 4295,
+                  "id": 4318,
                   "nodeType": "Return",
-                  "src": "523:16:7"
+                  "src": "523:16:15"
                 }
               ]
             },
             "documentation": null,
-            "id": 3369,
+            "id": 4320,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -436,31 +437,31 @@
             "name": "createUniverse",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3341,
+              "id": 4292,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3336,
+                  "id": 4287,
                   "name": "_controller",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3369,
-                  "src": "193:23:7",
+                  "scope": 4320,
+                  "src": "193:23:15",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IController_$3329",
+                    "typeIdentifier": "t_contract$_IController_$3901",
                     "typeString": "contract IController"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 3335,
+                    "id": 4286,
                     "name": "IController",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 3329,
-                    "src": "193:11:7",
+                    "referencedDeclaration": 3901,
+                    "src": "193:11:15",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IController_$3329",
+                      "typeIdentifier": "t_contract$_IController_$3901",
                       "typeString": "contract IController"
                     }
                   },
@@ -469,26 +470,26 @@
                 },
                 {
                   "constant": false,
-                  "id": 3338,
+                  "id": 4289,
                   "name": "_parentUniverse",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3369,
-                  "src": "218:25:7",
+                  "scope": 4320,
+                  "src": "218:25:15",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IUniverse_$4818",
+                    "typeIdentifier": "t_contract$_IUniverse_$6320",
                     "typeString": "contract IUniverse"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 3337,
+                    "id": 4288,
                     "name": "IUniverse",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 4818,
-                    "src": "218:9:7",
+                    "referencedDeclaration": 6320,
+                    "src": "218:9:15",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IUniverse_$4818",
+                      "typeIdentifier": "t_contract$_IUniverse_$6320",
                       "typeString": "contract IUniverse"
                     }
                   },
@@ -497,11 +498,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 3340,
+                  "id": 4291,
                   "name": "_parentPayoutDistributionHash",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3369,
-                  "src": "245:37:7",
+                  "scope": 4320,
+                  "src": "245:37:15",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -509,10 +510,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 3339,
+                    "id": 4290,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "245:7:7",
+                    "src": "245:7:15",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -522,35 +523,35 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "192:91:7"
+              "src": "192:91:15"
             },
             "payable": false,
             "returnParameters": {
-              "id": 3344,
+              "id": 4295,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3343,
+                  "id": 4294,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3369,
-                  "src": "300:9:7",
+                  "scope": 4320,
+                  "src": "300:9:15",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IUniverse_$4818",
+                    "typeIdentifier": "t_contract$_IUniverse_$6320",
                     "typeString": "contract IUniverse"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 3342,
+                    "id": 4293,
                     "name": "IUniverse",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 4818,
-                    "src": "300:9:7",
+                    "referencedDeclaration": 6320,
+                    "src": "300:9:15",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IUniverse_$4818",
+                      "typeIdentifier": "t_contract$_IUniverse_$6320",
                       "typeString": "contract IUniverse"
                     }
                   },
@@ -558,33 +559,33 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "299:11:7"
+              "src": "299:11:15"
             },
-            "scope": 3370,
-            "src": "169:377:7",
+            "scope": 4321,
+            "src": "169:377:15",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 3371,
-        "src": "138:410:7"
+        "scope": 4322,
+        "src": "138:410:15"
       }
     ],
-    "src": "0:549:7"
+    "src": "0:549:15"
   },
   "legacyAST": {
     "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/factories/UniverseFactory.sol",
     "exportedSymbols": {
       "UniverseFactory": [
-        3370
+        4321
       ]
     },
-    "id": 3371,
+    "id": 4322,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 3331,
+        "id": 4282,
         "literals": [
           "solidity",
           "^",
@@ -592,89 +593,89 @@
           ".22"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:7"
+        "src": "0:24:15"
       },
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/Delegator.sol",
         "file": "./../libraries/Delegator.sol",
-        "id": 3332,
+        "id": 4283,
         "nodeType": "ImportDirective",
-        "scope": 3371,
-        "sourceUnit": 3521,
-        "src": "27:38:7",
+        "scope": 4322,
+        "sourceUnit": 4472,
+        "src": "27:38:15",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/IController.sol",
         "file": "./../IController.sol",
-        "id": 3333,
+        "id": 4284,
         "nodeType": "ImportDirective",
-        "scope": 3371,
-        "sourceUnit": 3330,
-        "src": "66:30:7",
+        "scope": 4322,
+        "sourceUnit": 3902,
+        "src": "66:30:15",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/reporting/IUniverse.sol",
         "file": "./../reporting/IUniverse.sol",
-        "id": 3334,
+        "id": 4285,
         "nodeType": "ImportDirective",
-        "scope": 3371,
-        "sourceUnit": 4819,
-        "src": "97:38:7",
+        "scope": 4322,
+        "sourceUnit": 6321,
+        "src": "97:38:15",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
         "baseContracts": [],
         "contractDependencies": [
-          3520
+          4471
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 3370,
+        "id": 4321,
         "linearizedBaseContracts": [
-          3370
+          4321
         ],
         "name": "UniverseFactory",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 3368,
+              "id": 4319,
               "nodeType": "Block",
-              "src": "311:235:7",
+              "src": "311:235:15",
               "statements": [
                 {
                   "assignments": [
-                    3346
+                    4297
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 3346,
+                      "id": 4297,
                       "name": "_delegator",
                       "nodeType": "VariableDeclaration",
-                      "scope": 3369,
-                      "src": "321:20:7",
+                      "scope": 4320,
+                      "src": "321:20:15",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Delegator_$3520",
+                        "typeIdentifier": "t_contract$_Delegator_$4471",
                         "typeString": "contract Delegator"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 3345,
+                        "id": 4296,
                         "name": "Delegator",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 3520,
-                        "src": "321:9:7",
+                        "referencedDeclaration": 4471,
+                        "src": "321:9:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Delegator_$3520",
+                          "typeIdentifier": "t_contract$_Delegator_$4471",
                           "typeString": "contract Delegator"
                         }
                       },
@@ -682,34 +683,34 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 3352,
+                  "id": 4303,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 3349,
+                        "id": 4300,
                         "name": "_controller",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3336,
-                        "src": "358:11:7",
+                        "referencedDeclaration": 4287,
+                        "src": "358:11:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IController_$3329",
+                          "typeIdentifier": "t_contract$_IController_$3901",
                           "typeString": "contract IController"
                         }
                       },
                       {
                         "argumentTypes": null,
                         "hexValue": "556e697665727365",
-                        "id": 3350,
+                        "id": 4301,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "371:10:7",
+                        "src": "371:10:15",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_bf202454b1b879dcb0cd9e760a629d8cc0df8da2c26ec8e01882350f749b3a9d",
@@ -721,7 +722,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_IController_$3329",
+                          "typeIdentifier": "t_contract$_IController_$3901",
                           "typeString": "contract IController"
                         },
                         {
@@ -729,31 +730,31 @@
                           "typeString": "literal_string \"Universe\""
                         }
                       ],
-                      "id": 3348,
+                      "id": 4299,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "nodeType": "NewExpression",
-                      "src": "344:13:7",
+                      "src": "344:13:15",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_creation_nonpayable$_t_contract$_IController_$3329_$_t_bytes32_$returns$_t_contract$_Delegator_$3520_$",
+                        "typeIdentifier": "t_function_creation_nonpayable$_t_contract$_IController_$3901_$_t_bytes32_$returns$_t_contract$_Delegator_$4471_$",
                         "typeString": "function (contract IController,bytes32) returns (contract Delegator)"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 3347,
+                        "id": 4298,
                         "name": "Delegator",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 3520,
-                        "src": "348:9:7",
+                        "referencedDeclaration": 4471,
+                        "src": "348:9:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Delegator_$3520",
+                          "typeIdentifier": "t_contract$_Delegator_$4471",
                           "typeString": "contract Delegator"
                         }
                       }
                     },
-                    "id": 3351,
+                    "id": 4302,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -761,42 +762,42 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "344:38:7",
+                    "src": "344:38:15",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Delegator_$3520",
+                      "typeIdentifier": "t_contract$_Delegator_$4471",
                       "typeString": "contract Delegator"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "321:61:7"
+                  "src": "321:61:15"
                 },
                 {
                   "assignments": [
-                    3354
+                    4305
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 3354,
+                      "id": 4305,
                       "name": "_universe",
                       "nodeType": "VariableDeclaration",
-                      "scope": 3369,
-                      "src": "392:19:7",
+                      "scope": 4320,
+                      "src": "392:19:15",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IUniverse_$4818",
+                        "typeIdentifier": "t_contract$_IUniverse_$6320",
                         "typeString": "contract IUniverse"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 3353,
+                        "id": 4304,
                         "name": "IUniverse",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 4818,
-                        "src": "392:9:7",
+                        "referencedDeclaration": 6320,
+                        "src": "392:9:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IUniverse_$4818",
+                          "typeIdentifier": "t_contract$_IUniverse_$6320",
                           "typeString": "contract IUniverse"
                         }
                       },
@@ -804,20 +805,20 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 3358,
+                  "id": 4309,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 3356,
+                        "id": 4307,
                         "name": "_delegator",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3346,
-                        "src": "424:10:7",
+                        "referencedDeclaration": 4297,
+                        "src": "424:10:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Delegator_$3520",
+                          "typeIdentifier": "t_contract$_Delegator_$4471",
                           "typeString": "contract Delegator"
                         }
                       }
@@ -825,22 +826,22 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_Delegator_$3520",
+                          "typeIdentifier": "t_contract$_Delegator_$4471",
                           "typeString": "contract Delegator"
                         }
                       ],
-                      "id": 3355,
+                      "id": 4306,
                       "name": "IUniverse",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4818,
-                      "src": "414:9:7",
+                      "referencedDeclaration": 6320,
+                      "src": "414:9:15",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_IUniverse_$4818_$",
+                        "typeIdentifier": "t_type$_t_contract$_IUniverse_$6320_$",
                         "typeString": "type(contract IUniverse)"
                       }
                     },
-                    "id": 3357,
+                    "id": 4308,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -848,14 +849,14 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "414:21:7",
+                    "src": "414:21:15",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IUniverse_$4818",
+                      "typeIdentifier": "t_contract$_IUniverse_$6320",
                       "typeString": "contract IUniverse"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "392:43:7"
+                  "src": "392:43:15"
                 },
                 {
                   "expression": {
@@ -863,25 +864,25 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 3362,
+                        "id": 4313,
                         "name": "_parentUniverse",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3338,
-                        "src": "466:15:7",
+                        "referencedDeclaration": 4289,
+                        "src": "466:15:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IUniverse_$4818",
+                          "typeIdentifier": "t_contract$_IUniverse_$6320",
                           "typeString": "contract IUniverse"
                         }
                       },
                       {
                         "argumentTypes": null,
-                        "id": 3363,
+                        "id": 4314,
                         "name": "_parentPayoutDistributionHash",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3340,
-                        "src": "483:29:7",
+                        "referencedDeclaration": 4291,
+                        "src": "483:29:15",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
                           "typeString": "bytes32"
@@ -891,7 +892,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_IUniverse_$4818",
+                          "typeIdentifier": "t_contract$_IUniverse_$6320",
                           "typeString": "contract IUniverse"
                         },
                         {
@@ -901,32 +902,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 3359,
+                        "id": 4310,
                         "name": "_universe",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3354,
-                        "src": "445:9:7",
+                        "referencedDeclaration": 4305,
+                        "src": "445:9:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IUniverse_$4818",
+                          "typeIdentifier": "t_contract$_IUniverse_$6320",
                           "typeString": "contract IUniverse"
                         }
                       },
-                      "id": 3361,
+                      "id": 4312,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "initialize",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4567,
-                      "src": "445:20:7",
+                      "referencedDeclaration": 6069,
+                      "src": "445:20:15",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_nonpayable$_t_contract$_IUniverse_$4818_$_t_bytes32_$returns$_t_bool_$",
+                        "typeIdentifier": "t_function_external_nonpayable$_t_contract$_IUniverse_$6320_$_t_bytes32_$returns$_t_bool_$",
                         "typeString": "function (contract IUniverse,bytes32) external returns (bool)"
                       }
                     },
-                    "id": 3364,
+                    "id": 4315,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -934,39 +935,39 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "445:68:7",
+                    "src": "445:68:15",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 3365,
+                  "id": 4316,
                   "nodeType": "ExpressionStatement",
-                  "src": "445:68:7"
+                  "src": "445:68:15"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 3366,
+                    "id": 4317,
                     "name": "_universe",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 3354,
-                    "src": "530:9:7",
+                    "referencedDeclaration": 4305,
+                    "src": "530:9:15",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IUniverse_$4818",
+                      "typeIdentifier": "t_contract$_IUniverse_$6320",
                       "typeString": "contract IUniverse"
                     }
                   },
-                  "functionReturnParameters": 3344,
-                  "id": 3367,
+                  "functionReturnParameters": 4295,
+                  "id": 4318,
                   "nodeType": "Return",
-                  "src": "523:16:7"
+                  "src": "523:16:15"
                 }
               ]
             },
             "documentation": null,
-            "id": 3369,
+            "id": 4320,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -974,31 +975,31 @@
             "name": "createUniverse",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3341,
+              "id": 4292,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3336,
+                  "id": 4287,
                   "name": "_controller",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3369,
-                  "src": "193:23:7",
+                  "scope": 4320,
+                  "src": "193:23:15",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IController_$3329",
+                    "typeIdentifier": "t_contract$_IController_$3901",
                     "typeString": "contract IController"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 3335,
+                    "id": 4286,
                     "name": "IController",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 3329,
-                    "src": "193:11:7",
+                    "referencedDeclaration": 3901,
+                    "src": "193:11:15",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IController_$3329",
+                      "typeIdentifier": "t_contract$_IController_$3901",
                       "typeString": "contract IController"
                     }
                   },
@@ -1007,26 +1008,26 @@
                 },
                 {
                   "constant": false,
-                  "id": 3338,
+                  "id": 4289,
                   "name": "_parentUniverse",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3369,
-                  "src": "218:25:7",
+                  "scope": 4320,
+                  "src": "218:25:15",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IUniverse_$4818",
+                    "typeIdentifier": "t_contract$_IUniverse_$6320",
                     "typeString": "contract IUniverse"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 3337,
+                    "id": 4288,
                     "name": "IUniverse",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 4818,
-                    "src": "218:9:7",
+                    "referencedDeclaration": 6320,
+                    "src": "218:9:15",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IUniverse_$4818",
+                      "typeIdentifier": "t_contract$_IUniverse_$6320",
                       "typeString": "contract IUniverse"
                     }
                   },
@@ -1035,11 +1036,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 3340,
+                  "id": 4291,
                   "name": "_parentPayoutDistributionHash",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3369,
-                  "src": "245:37:7",
+                  "scope": 4320,
+                  "src": "245:37:15",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1047,10 +1048,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 3339,
+                    "id": 4290,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "245:7:7",
+                    "src": "245:7:15",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -1060,35 +1061,35 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "192:91:7"
+              "src": "192:91:15"
             },
             "payable": false,
             "returnParameters": {
-              "id": 3344,
+              "id": 4295,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3343,
+                  "id": 4294,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3369,
-                  "src": "300:9:7",
+                  "scope": 4320,
+                  "src": "300:9:15",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IUniverse_$4818",
+                    "typeIdentifier": "t_contract$_IUniverse_$6320",
                     "typeString": "contract IUniverse"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 3342,
+                    "id": 4293,
                     "name": "IUniverse",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 4818,
-                    "src": "300:9:7",
+                    "referencedDeclaration": 6320,
+                    "src": "300:9:15",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IUniverse_$4818",
+                      "typeIdentifier": "t_contract$_IUniverse_$6320",
                       "typeString": "contract IUniverse"
                     }
                   },
@@ -1096,28 +1097,28 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "299:11:7"
+              "src": "299:11:15"
             },
-            "scope": 3370,
-            "src": "169:377:7",
+            "scope": 4321,
+            "src": "169:377:15",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 3371,
-        "src": "138:410:7"
+        "scope": 4322,
+        "src": "138:410:15"
       }
     ],
-    "src": "0:549:7"
+    "src": "0:549:15"
   },
   "compiler": {
     "name": "solc",
-    "version": "0.4.22+commit.4cb486ee.Emscripten.clang"
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.0.1",
-  "updatedAt": "2019-08-22T08:47:45.284Z",
+  "schemaVersion": "3.0.13",
+  "updatedAt": "2019-08-24T23:51:51.488Z",
   "devdoc": {
     "methods": {}
   },

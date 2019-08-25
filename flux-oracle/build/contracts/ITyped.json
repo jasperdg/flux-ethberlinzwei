@@ -16,6 +16,7 @@
       "type": "function"
     }
   ],
+  "metadata": "",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "sourceMap": "",
@@ -26,14 +27,14 @@
     "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/ITyped.sol",
     "exportedSymbols": {
       "ITyped": [
-        3543
+        4494
       ]
     },
-    "id": 3544,
+    "id": 4495,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 3537,
+        "id": 4488,
         "literals": [
           "solidity",
           "^",
@@ -41,7 +42,7 @@
           ".22"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:12"
+        "src": "0:24:20"
       },
       {
         "baseContracts": [],
@@ -49,9 +50,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 3543,
+        "id": 4494,
         "linearizedBaseContracts": [
-          3543
+          4494
         ],
         "name": "ITyped",
         "nodeType": "ContractDefinition",
@@ -59,7 +60,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 3542,
+            "id": 4493,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -67,23 +68,23 @@
             "name": "getTypeName",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3538,
+              "id": 4489,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "69:2:12"
+              "src": "69:2:20"
             },
             "payable": false,
             "returnParameters": {
-              "id": 3541,
+              "id": 4492,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3540,
+                  "id": 4491,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3542,
-                  "src": "93:7:12",
+                  "scope": 4493,
+                  "src": "93:7:20",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -91,10 +92,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 3539,
+                    "id": 4490,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "93:7:12",
+                    "src": "93:7:20",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -104,33 +105,33 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "92:9:12"
+              "src": "92:9:20"
             },
-            "scope": 3543,
-            "src": "49:53:12",
+            "scope": 4494,
+            "src": "49:53:20",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 3544,
-        "src": "27:77:12"
+        "scope": 4495,
+        "src": "27:77:20"
       }
     ],
-    "src": "0:105:12"
+    "src": "0:105:20"
   },
   "legacyAST": {
     "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/ITyped.sol",
     "exportedSymbols": {
       "ITyped": [
-        3543
+        4494
       ]
     },
-    "id": 3544,
+    "id": 4495,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 3537,
+        "id": 4488,
         "literals": [
           "solidity",
           "^",
@@ -138,7 +139,7 @@
           ".22"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:12"
+        "src": "0:24:20"
       },
       {
         "baseContracts": [],
@@ -146,9 +147,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 3543,
+        "id": 4494,
         "linearizedBaseContracts": [
-          3543
+          4494
         ],
         "name": "ITyped",
         "nodeType": "ContractDefinition",
@@ -156,7 +157,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 3542,
+            "id": 4493,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -164,23 +165,23 @@
             "name": "getTypeName",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3538,
+              "id": 4489,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "69:2:12"
+              "src": "69:2:20"
             },
             "payable": false,
             "returnParameters": {
-              "id": 3541,
+              "id": 4492,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3540,
+                  "id": 4491,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3542,
-                  "src": "93:7:12",
+                  "scope": 4493,
+                  "src": "93:7:20",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -188,10 +189,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 3539,
+                    "id": 4490,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "93:7:12",
+                    "src": "93:7:20",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -201,28 +202,28 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "92:9:12"
+              "src": "92:9:20"
             },
-            "scope": 3543,
-            "src": "49:53:12",
+            "scope": 4494,
+            "src": "49:53:20",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 3544,
-        "src": "27:77:12"
+        "scope": 4495,
+        "src": "27:77:20"
       }
     ],
-    "src": "0:105:12"
+    "src": "0:105:20"
   },
   "compiler": {
     "name": "solc",
-    "version": "0.4.22+commit.4cb486ee.Emscripten.clang"
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.0.1",
-  "updatedAt": "2019-08-22T08:47:45.267Z",
+  "schemaVersion": "3.0.13",
+  "updatedAt": "2019-08-24T23:51:51.495Z",
   "devdoc": {
     "methods": {}
   },
