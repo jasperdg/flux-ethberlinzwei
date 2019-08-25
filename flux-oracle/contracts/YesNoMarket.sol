@@ -45,6 +45,7 @@ contract YesNoMarket {
 	public
 	payable {
 		require (msg.value > NUM_TICKS);
+		require (!oracle.isFinalized());
 		// require (now < endTime);
 		balances[msg.sender][_outcome] = balances[msg.sender][_outcome].add(msg.value.div(NUM_TICKS));
 	}
@@ -52,7 +53,7 @@ contract YesNoMarket {
 	function dispute(bytes32 _correctAnswer, bool _invalid)
 	public
 	payable {
-		require(!disputed);
+		require(!oracle.isFinalized() && !disputed);
 		oracle.startDispute.value(address(this).balance)(_correctAnswer, _invalid,msg.sender);
 		disputed = true;
 	}
@@ -66,18 +67,34 @@ contract YesNoMarket {
 
 	function finalize()
 	public {
+		require (!oracle.isFinalized());
 		oracle.finalize();
 	}
 
-	function getPayoutByOutcome(uint256 _outcome) 
-	public 
+	function getPayoutAmountByOutcome(uint256 _outcome) 
+	internal 
 	returns(uint256)
 	{
 		uint256 payoutMultiplier = oracle.getPayoutNumeratorByOutcome(_outcome);
 		uint256 balanceInAttoWei = getBalanceForOutcome(msg.sender, _outcome);
-		uint256 balance = balanceInAttoWei.mul(payoutMultiplier);
-		return balance;
+		uint256 proceeds = balanceInAttoWei.mul(payoutMultiplier).mul(2);
+		proceeds = proceeds.sub(oracle.calculateFees(proceeds));
+		return proceeds;
 	}
+
+	function payout()
+	public 
+	payable
+	{
+		require(oracle.isFinalized());
+		uint totalPayout = 0;
+		for (uint256 i = 0; i < outcomes; i++) {
+			totalPayout = totalPayout.add(getPayoutAmountByOutcome(i));
+			balances[msg.sender][i] = 0;
+		}
+		msg.sender.transfer(totalPayout);
+	}
+
 
 	function getOracle()
 	public 

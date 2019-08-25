@@ -46,14 +46,14 @@
     "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/MarketValidator.sol",
     "exportedSymbols": {
       "MarketValidator": [
-        4574
+        4706
       ]
     },
-    "id": 4575,
+    "id": 4707,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4541,
+        "id": 4673,
         "literals": [
           "solidity",
           "^",
@@ -66,10 +66,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/reporting/IMarket.sol",
         "file": "./../reporting/IMarket.sol",
-        "id": 4542,
+        "id": 4674,
         "nodeType": "ImportDirective",
-        "scope": 4575,
-        "sourceUnit": 5874,
+        "scope": 4707,
+        "sourceUnit": 6006,
         "src": "26:36:22",
         "symbolAliases": [],
         "unitAlias": ""
@@ -77,10 +77,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/Controlled.sol",
         "file": "./../Controlled.sol",
-        "id": 4543,
+        "id": 4675,
         "nodeType": "ImportDirective",
-        "scope": 4575,
-        "sourceUnit": 3246,
+        "scope": 4707,
+        "sourceUnit": 3378,
         "src": "63:29:22",
         "symbolAliases": [],
         "unitAlias": ""
@@ -91,70 +91,70 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 4544,
+              "id": 4676,
               "name": "Controlled",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 3245,
+              "referencedDeclaration": 3377,
               "src": "123:10:22",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Controlled_$3245",
+                "typeIdentifier": "t_contract$_Controlled_$3377",
                 "typeString": "contract Controlled"
               }
             },
-            "id": 4545,
+            "id": 4677,
             "nodeType": "InheritanceSpecifier",
             "src": "123:10:22"
           }
         ],
         "contractDependencies": [
-          3245,
-          3858
+          3377,
+          3990
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 4574,
+        "id": 4706,
         "linearizedBaseContracts": [
-          4574,
-          3245,
-          3858
+          4706,
+          3377,
+          3990
         ],
         "name": "MarketValidator",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 4572,
+              "id": 4704,
               "nodeType": "Block",
               "src": "180:196:22",
               "statements": [
                 {
                   "assignments": [
-                    4550
+                    4682
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4550,
+                      "id": 4682,
                       "name": "_universe",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4573,
+                      "scope": 4705,
                       "src": "190:19:22",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IUniverse_$6320",
+                        "typeIdentifier": "t_contract$_IUniverse_$6452",
                         "typeString": "contract IUniverse"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 4549,
+                        "id": 4681,
                         "name": "IUniverse",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 6320,
+                        "referencedDeclaration": 6452,
                         "src": "190:9:22",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IUniverse_$6320",
+                          "typeIdentifier": "t_contract$_IUniverse_$6452",
                           "typeString": "contract IUniverse"
                         }
                       },
@@ -162,7 +162,7 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4554,
+                  "id": 4686,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [],
@@ -170,32 +170,32 @@
                       "argumentTypes": [],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 4551,
+                        "id": 4683,
                         "name": "_market",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4547,
+                        "referencedDeclaration": 4679,
                         "src": "212:7:22",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IMarket_$5873",
+                          "typeIdentifier": "t_contract$_IMarket_$6005",
                           "typeString": "contract IMarket"
                         }
                       },
-                      "id": 4552,
+                      "id": 4684,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "getUniverse",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 5742,
+                      "referencedDeclaration": 5874,
                       "src": "212:19:22",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_view$__$returns$_t_contract$_IUniverse_$6320_$",
+                        "typeIdentifier": "t_function_external_view$__$returns$_t_contract$_IUniverse_$6452_$",
                         "typeString": "function () view external returns (contract IUniverse)"
                       }
                     },
-                    "id": 4553,
+                    "id": 4685,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -205,7 +205,7 @@
                     "nodeType": "FunctionCall",
                     "src": "212:21:22",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IUniverse_$6320",
+                      "typeIdentifier": "t_contract$_IUniverse_$6452",
                       "typeString": "contract IUniverse"
                     }
                   },
@@ -221,14 +221,14 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 4560,
+                            "id": 4692,
                             "name": "_universe",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4550,
+                            "referencedDeclaration": 4682,
                             "src": "289:9:22",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_IUniverse_$6320",
+                              "typeIdentifier": "t_contract$_IUniverse_$6452",
                               "typeString": "contract IUniverse"
                             }
                           }
@@ -236,7 +236,7 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_IUniverse_$6320",
+                              "typeIdentifier": "t_contract$_IUniverse_$6452",
                               "typeString": "contract IUniverse"
                             }
                           ],
@@ -247,32 +247,32 @@
                               "argumentTypes": [],
                               "expression": {
                                 "argumentTypes": null,
-                                "id": 4556,
+                                "id": 4688,
                                 "name": "controller",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 3148,
+                                "referencedDeclaration": 3280,
                                 "src": "251:10:22",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_contract$_IController_$3901",
+                                  "typeIdentifier": "t_contract$_IController_$4033",
                                   "typeString": "contract IController"
                                 }
                               },
-                              "id": 4557,
+                              "id": 4689,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
                               "lValueRequested": false,
                               "memberName": "getAugur",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 3890,
+                              "referencedDeclaration": 4022,
                               "src": "251:19:22",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_function_external_view$__$returns$_t_contract$_IAugur_$3841_$",
+                                "typeIdentifier": "t_function_external_view$__$returns$_t_contract$_IAugur_$3973_$",
                                 "typeString": "function () view external returns (contract IAugur)"
                               }
                             },
-                            "id": 4558,
+                            "id": 4690,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -282,25 +282,25 @@
                             "nodeType": "FunctionCall",
                             "src": "251:21:22",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_IAugur_$3841",
+                              "typeIdentifier": "t_contract$_IAugur_$3973",
                               "typeString": "contract IAugur"
                             }
                           },
-                          "id": 4559,
+                          "id": 4691,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "isKnownUniverse",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 3271,
+                          "referencedDeclaration": 3403,
                           "src": "251:37:22",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_function_external_view$_t_contract$_IUniverse_$6320_$returns$_t_bool_$",
+                            "typeIdentifier": "t_function_external_view$_t_contract$_IUniverse_$6452_$returns$_t_bool_$",
                             "typeString": "function (contract IUniverse) view external returns (bool)"
                           }
                         },
-                        "id": 4561,
+                        "id": 4693,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -322,21 +322,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 4555,
+                      "id": 4687,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        14278,
-                        14279
+                        14410,
+                        14411
                       ],
-                      "referencedDeclaration": 14278,
+                      "referencedDeclaration": 14410,
                       "src": "243:7:22",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 4562,
+                    "id": 4694,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -350,7 +350,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 4563,
+                  "id": 4695,
                   "nodeType": "ExpressionStatement",
                   "src": "243:57:22"
                 },
@@ -363,14 +363,14 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 4567,
+                            "id": 4699,
                             "name": "_market",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4547,
+                            "referencedDeclaration": 4679,
                             "src": "349:7:22",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_IMarket_$5873",
+                              "typeIdentifier": "t_contract$_IMarket_$6005",
                               "typeString": "contract IMarket"
                             }
                           }
@@ -378,38 +378,38 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_IMarket_$5873",
+                              "typeIdentifier": "t_contract$_IMarket_$6005",
                               "typeString": "contract IMarket"
                             }
                           ],
                           "expression": {
                             "argumentTypes": null,
-                            "id": 4565,
+                            "id": 4697,
                             "name": "_universe",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4550,
+                            "referencedDeclaration": 4682,
                             "src": "318:9:22",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_IUniverse_$6320",
+                              "typeIdentifier": "t_contract$_IUniverse_$6452",
                               "typeString": "contract IUniverse"
                             }
                           },
-                          "id": 4566,
+                          "id": 4698,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "isContainerForMarket",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 6250,
+                          "referencedDeclaration": 6382,
                           "src": "318:30:22",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_function_external_view$_t_contract$_IMarket_$5873_$returns$_t_bool_$",
+                            "typeIdentifier": "t_function_external_view$_t_contract$_IMarket_$6005_$returns$_t_bool_$",
                             "typeString": "function (contract IMarket) view external returns (bool)"
                           }
                         },
-                        "id": 4568,
+                        "id": 4700,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -431,21 +431,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 4564,
+                      "id": 4696,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        14278,
-                        14279
+                        14410,
+                        14411
                       ],
-                      "referencedDeclaration": 14278,
+                      "referencedDeclaration": 14410,
                       "src": "310:7:22",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 4569,
+                    "id": 4701,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -459,47 +459,47 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 4570,
+                  "id": 4702,
                   "nodeType": "ExpressionStatement",
                   "src": "310:48:22"
                 },
                 {
-                  "id": 4571,
+                  "id": 4703,
                   "nodeType": "PlaceholderStatement",
                   "src": "368:1:22"
                 }
               ]
             },
             "documentation": null,
-            "id": 4573,
+            "id": 4705,
             "name": "marketIsLegit",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 4548,
+              "id": 4680,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4547,
+                  "id": 4679,
                   "name": "_market",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4573,
+                  "scope": 4705,
                   "src": "163:15:22",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IMarket_$5873",
+                    "typeIdentifier": "t_contract$_IMarket_$6005",
                     "typeString": "contract IMarket"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4546,
+                    "id": 4678,
                     "name": "IMarket",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 5873,
+                    "referencedDeclaration": 6005,
                     "src": "163:7:22",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IMarket_$5873",
+                      "typeIdentifier": "t_contract$_IMarket_$6005",
                       "typeString": "contract IMarket"
                     }
                   },
@@ -513,7 +513,7 @@
             "visibility": "internal"
           }
         ],
-        "scope": 4575,
+        "scope": 4707,
         "src": "95:283:22"
       }
     ],
@@ -523,14 +523,14 @@
     "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/MarketValidator.sol",
     "exportedSymbols": {
       "MarketValidator": [
-        4574
+        4706
       ]
     },
-    "id": 4575,
+    "id": 4707,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4541,
+        "id": 4673,
         "literals": [
           "solidity",
           "^",
@@ -543,10 +543,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/reporting/IMarket.sol",
         "file": "./../reporting/IMarket.sol",
-        "id": 4542,
+        "id": 4674,
         "nodeType": "ImportDirective",
-        "scope": 4575,
-        "sourceUnit": 5874,
+        "scope": 4707,
+        "sourceUnit": 6006,
         "src": "26:36:22",
         "symbolAliases": [],
         "unitAlias": ""
@@ -554,10 +554,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/Controlled.sol",
         "file": "./../Controlled.sol",
-        "id": 4543,
+        "id": 4675,
         "nodeType": "ImportDirective",
-        "scope": 4575,
-        "sourceUnit": 3246,
+        "scope": 4707,
+        "sourceUnit": 3378,
         "src": "63:29:22",
         "symbolAliases": [],
         "unitAlias": ""
@@ -568,70 +568,70 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 4544,
+              "id": 4676,
               "name": "Controlled",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 3245,
+              "referencedDeclaration": 3377,
               "src": "123:10:22",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Controlled_$3245",
+                "typeIdentifier": "t_contract$_Controlled_$3377",
                 "typeString": "contract Controlled"
               }
             },
-            "id": 4545,
+            "id": 4677,
             "nodeType": "InheritanceSpecifier",
             "src": "123:10:22"
           }
         ],
         "contractDependencies": [
-          3245,
-          3858
+          3377,
+          3990
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 4574,
+        "id": 4706,
         "linearizedBaseContracts": [
-          4574,
-          3245,
-          3858
+          4706,
+          3377,
+          3990
         ],
         "name": "MarketValidator",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 4572,
+              "id": 4704,
               "nodeType": "Block",
               "src": "180:196:22",
               "statements": [
                 {
                   "assignments": [
-                    4550
+                    4682
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4550,
+                      "id": 4682,
                       "name": "_universe",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4573,
+                      "scope": 4705,
                       "src": "190:19:22",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IUniverse_$6320",
+                        "typeIdentifier": "t_contract$_IUniverse_$6452",
                         "typeString": "contract IUniverse"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 4549,
+                        "id": 4681,
                         "name": "IUniverse",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 6320,
+                        "referencedDeclaration": 6452,
                         "src": "190:9:22",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IUniverse_$6320",
+                          "typeIdentifier": "t_contract$_IUniverse_$6452",
                           "typeString": "contract IUniverse"
                         }
                       },
@@ -639,7 +639,7 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4554,
+                  "id": 4686,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [],
@@ -647,32 +647,32 @@
                       "argumentTypes": [],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 4551,
+                        "id": 4683,
                         "name": "_market",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4547,
+                        "referencedDeclaration": 4679,
                         "src": "212:7:22",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IMarket_$5873",
+                          "typeIdentifier": "t_contract$_IMarket_$6005",
                           "typeString": "contract IMarket"
                         }
                       },
-                      "id": 4552,
+                      "id": 4684,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "getUniverse",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 5742,
+                      "referencedDeclaration": 5874,
                       "src": "212:19:22",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_view$__$returns$_t_contract$_IUniverse_$6320_$",
+                        "typeIdentifier": "t_function_external_view$__$returns$_t_contract$_IUniverse_$6452_$",
                         "typeString": "function () view external returns (contract IUniverse)"
                       }
                     },
-                    "id": 4553,
+                    "id": 4685,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -682,7 +682,7 @@
                     "nodeType": "FunctionCall",
                     "src": "212:21:22",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IUniverse_$6320",
+                      "typeIdentifier": "t_contract$_IUniverse_$6452",
                       "typeString": "contract IUniverse"
                     }
                   },
@@ -698,14 +698,14 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 4560,
+                            "id": 4692,
                             "name": "_universe",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4550,
+                            "referencedDeclaration": 4682,
                             "src": "289:9:22",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_IUniverse_$6320",
+                              "typeIdentifier": "t_contract$_IUniverse_$6452",
                               "typeString": "contract IUniverse"
                             }
                           }
@@ -713,7 +713,7 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_IUniverse_$6320",
+                              "typeIdentifier": "t_contract$_IUniverse_$6452",
                               "typeString": "contract IUniverse"
                             }
                           ],
@@ -724,32 +724,32 @@
                               "argumentTypes": [],
                               "expression": {
                                 "argumentTypes": null,
-                                "id": 4556,
+                                "id": 4688,
                                 "name": "controller",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 3148,
+                                "referencedDeclaration": 3280,
                                 "src": "251:10:22",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_contract$_IController_$3901",
+                                  "typeIdentifier": "t_contract$_IController_$4033",
                                   "typeString": "contract IController"
                                 }
                               },
-                              "id": 4557,
+                              "id": 4689,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
                               "lValueRequested": false,
                               "memberName": "getAugur",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 3890,
+                              "referencedDeclaration": 4022,
                               "src": "251:19:22",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_function_external_view$__$returns$_t_contract$_IAugur_$3841_$",
+                                "typeIdentifier": "t_function_external_view$__$returns$_t_contract$_IAugur_$3973_$",
                                 "typeString": "function () view external returns (contract IAugur)"
                               }
                             },
-                            "id": 4558,
+                            "id": 4690,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -759,25 +759,25 @@
                             "nodeType": "FunctionCall",
                             "src": "251:21:22",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_IAugur_$3841",
+                              "typeIdentifier": "t_contract$_IAugur_$3973",
                               "typeString": "contract IAugur"
                             }
                           },
-                          "id": 4559,
+                          "id": 4691,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "isKnownUniverse",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 3271,
+                          "referencedDeclaration": 3403,
                           "src": "251:37:22",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_function_external_view$_t_contract$_IUniverse_$6320_$returns$_t_bool_$",
+                            "typeIdentifier": "t_function_external_view$_t_contract$_IUniverse_$6452_$returns$_t_bool_$",
                             "typeString": "function (contract IUniverse) view external returns (bool)"
                           }
                         },
-                        "id": 4561,
+                        "id": 4693,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -799,21 +799,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 4555,
+                      "id": 4687,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        14278,
-                        14279
+                        14410,
+                        14411
                       ],
-                      "referencedDeclaration": 14278,
+                      "referencedDeclaration": 14410,
                       "src": "243:7:22",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 4562,
+                    "id": 4694,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -827,7 +827,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 4563,
+                  "id": 4695,
                   "nodeType": "ExpressionStatement",
                   "src": "243:57:22"
                 },
@@ -840,14 +840,14 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 4567,
+                            "id": 4699,
                             "name": "_market",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4547,
+                            "referencedDeclaration": 4679,
                             "src": "349:7:22",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_IMarket_$5873",
+                              "typeIdentifier": "t_contract$_IMarket_$6005",
                               "typeString": "contract IMarket"
                             }
                           }
@@ -855,38 +855,38 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_IMarket_$5873",
+                              "typeIdentifier": "t_contract$_IMarket_$6005",
                               "typeString": "contract IMarket"
                             }
                           ],
                           "expression": {
                             "argumentTypes": null,
-                            "id": 4565,
+                            "id": 4697,
                             "name": "_universe",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4550,
+                            "referencedDeclaration": 4682,
                             "src": "318:9:22",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_IUniverse_$6320",
+                              "typeIdentifier": "t_contract$_IUniverse_$6452",
                               "typeString": "contract IUniverse"
                             }
                           },
-                          "id": 4566,
+                          "id": 4698,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "isContainerForMarket",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 6250,
+                          "referencedDeclaration": 6382,
                           "src": "318:30:22",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_function_external_view$_t_contract$_IMarket_$5873_$returns$_t_bool_$",
+                            "typeIdentifier": "t_function_external_view$_t_contract$_IMarket_$6005_$returns$_t_bool_$",
                             "typeString": "function (contract IMarket) view external returns (bool)"
                           }
                         },
-                        "id": 4568,
+                        "id": 4700,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -908,21 +908,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 4564,
+                      "id": 4696,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        14278,
-                        14279
+                        14410,
+                        14411
                       ],
-                      "referencedDeclaration": 14278,
+                      "referencedDeclaration": 14410,
                       "src": "310:7:22",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 4569,
+                    "id": 4701,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -936,47 +936,47 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 4570,
+                  "id": 4702,
                   "nodeType": "ExpressionStatement",
                   "src": "310:48:22"
                 },
                 {
-                  "id": 4571,
+                  "id": 4703,
                   "nodeType": "PlaceholderStatement",
                   "src": "368:1:22"
                 }
               ]
             },
             "documentation": null,
-            "id": 4573,
+            "id": 4705,
             "name": "marketIsLegit",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 4548,
+              "id": 4680,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4547,
+                  "id": 4679,
                   "name": "_market",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4573,
+                  "scope": 4705,
                   "src": "163:15:22",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IMarket_$5873",
+                    "typeIdentifier": "t_contract$_IMarket_$6005",
                     "typeString": "contract IMarket"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4546,
+                    "id": 4678,
                     "name": "IMarket",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 5873,
+                    "referencedDeclaration": 6005,
                     "src": "163:7:22",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IMarket_$5873",
+                      "typeIdentifier": "t_contract$_IMarket_$6005",
                       "typeString": "contract IMarket"
                     }
                   },
@@ -990,7 +990,7 @@
             "visibility": "internal"
           }
         ],
-        "scope": 4575,
+        "scope": 4707,
         "src": "95:283:22"
       }
     ],
@@ -1002,7 +1002,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.13",
-  "updatedAt": "2019-08-24T23:51:51.497Z",
+  "updatedAt": "2019-08-25T01:25:40.735Z",
   "devdoc": {
     "methods": {}
   },

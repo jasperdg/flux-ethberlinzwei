@@ -12,14 +12,14 @@
     "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/reporting/Reporting.sol",
     "exportedSymbols": {
       "Reporting": [
-        8607
+        8739
       ]
     },
-    "id": 8608,
+    "id": 8740,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 8418,
+        "id": 8550,
         "literals": [
           "solidity",
           "^",
@@ -35,19 +35,19 @@
         "contractKind": "library",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 8607,
+        "id": 8739,
         "linearizedBaseContracts": [
-          8607
+          8739
         ],
         "name": "Reporting",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": true,
-            "id": 8421,
+            "id": 8553,
             "name": "DESIGNATED_REPORTING_DURATION_SECONDS",
             "nodeType": "VariableDeclaration",
-            "scope": 8607,
+            "scope": 8739,
             "src": "51:71:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -56,7 +56,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 8419,
+              "id": 8551,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "51:7:41",
@@ -68,7 +68,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "33",
-              "id": 8420,
+              "id": 8552,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -87,10 +87,10 @@
           },
           {
             "constant": true,
-            "id": 8424,
+            "id": 8556,
             "name": "DISPUTE_ROUND_DURATION_SECONDS",
             "nodeType": "VariableDeclaration",
-            "scope": 8607,
+            "scope": 8739,
             "src": "128:64:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -99,7 +99,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 8422,
+              "id": 8554,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "128:7:41",
@@ -111,7 +111,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "37",
-              "id": 8423,
+              "id": 8555,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -130,10 +130,10 @@
           },
           {
             "constant": true,
-            "id": 8427,
+            "id": 8559,
             "name": "CLAIM_PROCEEDS_WAIT_TIME",
             "nodeType": "VariableDeclaration",
-            "scope": 8607,
+            "scope": 8739,
             "src": "198:58:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -142,7 +142,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 8425,
+              "id": 8557,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "198:7:41",
@@ -154,7 +154,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "33",
-              "id": 8426,
+              "id": 8558,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -173,10 +173,10 @@
           },
           {
             "constant": true,
-            "id": 8430,
+            "id": 8562,
             "name": "FORK_DURATION_SECONDS",
             "nodeType": "VariableDeclaration",
-            "scope": 8607,
+            "scope": 8739,
             "src": "262:56:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -185,7 +185,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 8428,
+              "id": 8560,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "262:7:41",
@@ -197,7 +197,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "3630",
-              "id": 8429,
+              "id": 8561,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -216,10 +216,10 @@
           },
           {
             "constant": true,
-            "id": 8441,
+            "id": 8573,
             "name": "INITIAL_REP_SUPPLY",
             "nodeType": "VariableDeclaration",
-            "scope": 8607,
+            "scope": 8739,
             "src": "325:69:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -228,7 +228,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 8431,
+              "id": 8563,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "325:7:41",
@@ -243,7 +243,7 @@
                 "typeIdentifier": "t_rational_11000000000000000000000000_by_1",
                 "typeString": "int_const 11000000000000000000000000"
               },
-              "id": 8440,
+              "id": 8572,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -254,7 +254,7 @@
                   "typeIdentifier": "t_rational_11000000_by_1",
                   "typeString": "int_const 11000000"
                 },
-                "id": 8436,
+                "id": 8568,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -262,7 +262,7 @@
                 "leftExpression": {
                   "argumentTypes": null,
                   "hexValue": "3131",
-                  "id": 8432,
+                  "id": 8564,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -285,7 +285,7 @@
                     "typeIdentifier": "t_rational_1000000_by_1",
                     "typeString": "int_const 1000000"
                   },
-                  "id": 8435,
+                  "id": 8567,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -293,7 +293,7 @@
                   "leftExpression": {
                     "argumentTypes": null,
                     "hexValue": "3130",
-                    "id": 8433,
+                    "id": 8565,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -313,7 +313,7 @@
                   "rightExpression": {
                     "argumentTypes": null,
                     "hexValue": "36",
-                    "id": 8434,
+                    "id": 8566,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -348,7 +348,7 @@
                   "typeIdentifier": "t_rational_1000000000000000000_by_1",
                   "typeString": "int_const 1000000000000000000"
                 },
-                "id": 8439,
+                "id": 8571,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -356,7 +356,7 @@
                 "leftExpression": {
                   "argumentTypes": null,
                   "hexValue": "3130",
-                  "id": 8437,
+                  "id": 8569,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -376,7 +376,7 @@
                 "rightExpression": {
                   "argumentTypes": null,
                   "hexValue": "3138",
-                  "id": 8438,
+                  "id": 8570,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -407,10 +407,10 @@
           },
           {
             "constant": true,
-            "id": 8446,
+            "id": 8578,
             "name": "DEFAULT_VALIDITY_BOND",
             "nodeType": "VariableDeclaration",
-            "scope": 8607,
+            "scope": 8739,
             "src": "419:62:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -419,7 +419,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 8442,
+              "id": 8574,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "419:7:41",
@@ -434,7 +434,7 @@
                 "typeIdentifier": "t_rational_10000000000000000_by_1",
                 "typeString": "int_const 10000000000000000"
               },
-              "id": 8445,
+              "id": 8577,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -442,7 +442,7 @@
               "leftExpression": {
                 "argumentTypes": null,
                 "hexValue": "31",
-                "id": 8443,
+                "id": 8575,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -462,7 +462,7 @@
               "rightExpression": {
                 "argumentTypes": null,
                 "hexValue": "313030",
-                "id": 8444,
+                "id": 8576,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -487,10 +487,10 @@
           },
           {
             "constant": true,
-            "id": 8451,
+            "id": 8583,
             "name": "VALIDITY_BOND_FLOOR",
             "nodeType": "VariableDeclaration",
-            "scope": 8607,
+            "scope": 8739,
             "src": "487:60:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -499,7 +499,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 8447,
+              "id": 8579,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "487:7:41",
@@ -514,7 +514,7 @@
                 "typeIdentifier": "t_rational_10000000000000000_by_1",
                 "typeString": "int_const 10000000000000000"
               },
-              "id": 8450,
+              "id": 8582,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -522,7 +522,7 @@
               "leftExpression": {
                 "argumentTypes": null,
                 "hexValue": "31",
-                "id": 8448,
+                "id": 8580,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -542,7 +542,7 @@
               "rightExpression": {
                 "argumentTypes": null,
                 "hexValue": "313030",
-                "id": 8449,
+                "id": 8581,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -567,10 +567,10 @@
           },
           {
             "constant": true,
-            "id": 8454,
+            "id": 8586,
             "name": "DEFAULT_REPORTING_FEE_DIVISOR",
             "nodeType": "VariableDeclaration",
-            "scope": 8607,
+            "scope": 8739,
             "src": "553:60:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -579,7 +579,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 8452,
+              "id": 8584,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "553:7:41",
@@ -591,7 +591,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "313030",
-              "id": 8453,
+              "id": 8585,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -610,10 +610,10 @@
           },
           {
             "constant": true,
-            "id": 8457,
+            "id": 8589,
             "name": "MAXIMUM_REPORTING_FEE_DIVISOR",
             "nodeType": "VariableDeclaration",
-            "scope": 8607,
+            "scope": 8739,
             "src": "630:62:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -622,7 +622,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 8455,
+              "id": 8587,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "630:7:41",
@@ -634,7 +634,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "3130303030",
-              "id": 8456,
+              "id": 8588,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -653,10 +653,10 @@
           },
           {
             "constant": true,
-            "id": 8460,
+            "id": 8592,
             "name": "MINIMUM_REPORTING_FEE_DIVISOR",
             "nodeType": "VariableDeclaration",
-            "scope": 8607,
+            "scope": 8739,
             "src": "719:58:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -665,7 +665,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 8458,
+              "id": 8590,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "719:7:41",
@@ -677,7 +677,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "33",
-              "id": 8459,
+              "id": 8591,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -696,10 +696,10 @@
           },
           {
             "constant": true,
-            "id": 8463,
+            "id": 8595,
             "name": "TARGET_INVALID_MARKETS_DIVISOR",
             "nodeType": "VariableDeclaration",
-            "scope": 8607,
+            "scope": 8739,
             "src": "909:61:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -708,7 +708,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 8461,
+              "id": 8593,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "909:7:41",
@@ -720,7 +720,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "313030",
-              "id": 8462,
+              "id": 8594,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -739,10 +739,10 @@
           },
           {
             "constant": true,
-            "id": 8466,
+            "id": 8598,
             "name": "TARGET_INCORRECT_DESIGNATED_REPORT_MARKETS_DIVISOR",
             "nodeType": "VariableDeclaration",
-            "scope": 8607,
+            "scope": 8739,
             "src": "1020:81:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -751,7 +751,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 8464,
+              "id": 8596,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "1020:7:41",
@@ -763,7 +763,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "313030",
-              "id": 8465,
+              "id": 8597,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -782,10 +782,10 @@
           },
           {
             "constant": true,
-            "id": 8469,
+            "id": 8601,
             "name": "TARGET_DESIGNATED_REPORT_NO_SHOWS_DIVISOR",
             "nodeType": "VariableDeclaration",
-            "scope": 8607,
+            "scope": 8739,
             "src": "1175:72:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -794,7 +794,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 8467,
+              "id": 8599,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "1175:7:41",
@@ -806,7 +806,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "313030",
-              "id": 8468,
+              "id": 8600,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -825,10 +825,10 @@
           },
           {
             "constant": true,
-            "id": 8472,
+            "id": 8604,
             "name": "TARGET_REP_MARKET_CAP_MULTIPLIER",
             "nodeType": "VariableDeclaration",
-            "scope": 8607,
+            "scope": 8739,
             "src": "1321:62:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -837,7 +837,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 8470,
+              "id": 8602,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "1321:7:41",
@@ -849,7 +849,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "3135",
-              "id": 8471,
+              "id": 8603,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -868,10 +868,10 @@
           },
           {
             "constant": true,
-            "id": 8475,
+            "id": 8607,
             "name": "TARGET_REP_MARKET_CAP_DIVISOR",
             "nodeType": "VariableDeclaration",
-            "scope": 8607,
+            "scope": 8739,
             "src": "1483:58:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -880,7 +880,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 8473,
+              "id": 8605,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "1483:7:41",
@@ -892,7 +892,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "32",
-              "id": 8474,
+              "id": 8606,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -911,10 +911,10 @@
           },
           {
             "constant": true,
-            "id": 8478,
+            "id": 8610,
             "name": "FORK_MIGRATION_PERCENTAGE_BONUS_DIVISOR",
             "nodeType": "VariableDeclaration",
-            "scope": 8607,
+            "scope": 8739,
             "src": "1548:69:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -923,7 +923,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 8476,
+              "id": 8608,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "1548:7:41",
@@ -935,7 +935,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "3230",
-              "id": 8477,
+              "id": 8609,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -954,33 +954,33 @@
           },
           {
             "body": {
-              "id": 8485,
+              "id": 8617,
               "nodeType": "Block",
               "src": "1751:49:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8483,
+                    "id": 8615,
                     "name": "DESIGNATED_REPORTING_DURATION_SECONDS",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 8421,
+                    "referencedDeclaration": 8553,
                     "src": "1760:37:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 8482,
-                  "id": 8484,
+                  "functionReturnParameters": 8614,
+                  "id": 8616,
                   "nodeType": "Return",
                   "src": "1753:44:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 8486,
+            "id": 8618,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -988,22 +988,22 @@
             "name": "getDesignatedReportingDurationSeconds",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8479,
+              "id": 8611,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1716:2:41"
             },
             "payable": false,
             "returnParameters": {
-              "id": 8482,
+              "id": 8614,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8481,
+                  "id": 8613,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8486,
+                  "scope": 8618,
                   "src": "1742:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1012,7 +1012,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 8480,
+                    "id": 8612,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1742:7:41",
@@ -1027,7 +1027,7 @@
               ],
               "src": "1741:9:41"
             },
-            "scope": 8607,
+            "scope": 8739,
             "src": "1670:130:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -1035,33 +1035,33 @@
           },
           {
             "body": {
-              "id": 8493,
+              "id": 8625,
               "nodeType": "Block",
               "src": "1879:42:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8491,
+                    "id": 8623,
                     "name": "DISPUTE_ROUND_DURATION_SECONDS",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 8424,
+                    "referencedDeclaration": 8556,
                     "src": "1888:30:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 8490,
-                  "id": 8492,
+                  "functionReturnParameters": 8622,
+                  "id": 8624,
                   "nodeType": "Return",
                   "src": "1881:37:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 8494,
+            "id": 8626,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1069,22 +1069,22 @@
             "name": "getDisputeRoundDurationSeconds",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8487,
+              "id": 8619,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1844:2:41"
             },
             "payable": false,
             "returnParameters": {
-              "id": 8490,
+              "id": 8622,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8489,
+                  "id": 8621,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8494,
+                  "scope": 8626,
                   "src": "1870:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1093,7 +1093,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 8488,
+                    "id": 8620,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1870:7:41",
@@ -1108,7 +1108,7 @@
               ],
               "src": "1869:9:41"
             },
-            "scope": 8607,
+            "scope": 8739,
             "src": "1805:116:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -1116,33 +1116,33 @@
           },
           {
             "body": {
-              "id": 8501,
+              "id": 8633,
               "nodeType": "Block",
               "src": "2001:36:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8499,
+                    "id": 8631,
                     "name": "CLAIM_PROCEEDS_WAIT_TIME",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 8427,
+                    "referencedDeclaration": 8559,
                     "src": "2010:24:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 8498,
-                  "id": 8500,
+                  "functionReturnParameters": 8630,
+                  "id": 8632,
                   "nodeType": "Return",
                   "src": "2003:31:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 8502,
+            "id": 8634,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1150,22 +1150,22 @@
             "name": "getClaimTradingProceedsWaitTime",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8495,
+              "id": 8627,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1966:2:41"
             },
             "payable": false,
             "returnParameters": {
-              "id": 8498,
+              "id": 8630,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8497,
+                  "id": 8629,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8502,
+                  "scope": 8634,
                   "src": "1992:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1174,7 +1174,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 8496,
+                    "id": 8628,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1992:7:41",
@@ -1189,7 +1189,7 @@
               ],
               "src": "1991:9:41"
             },
-            "scope": 8607,
+            "scope": 8739,
             "src": "1926:111:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -1197,33 +1197,33 @@
           },
           {
             "body": {
-              "id": 8509,
+              "id": 8641,
               "nodeType": "Block",
               "src": "2108:33:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8507,
+                    "id": 8639,
                     "name": "FORK_DURATION_SECONDS",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 8430,
+                    "referencedDeclaration": 8562,
                     "src": "2117:21:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 8506,
-                  "id": 8508,
+                  "functionReturnParameters": 8638,
+                  "id": 8640,
                   "nodeType": "Return",
                   "src": "2110:28:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 8510,
+            "id": 8642,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1231,22 +1231,22 @@
             "name": "getForkDurationSeconds",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8503,
+              "id": 8635,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2073:2:41"
             },
             "payable": false,
             "returnParameters": {
-              "id": 8506,
+              "id": 8638,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8505,
+                  "id": 8637,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8510,
+                  "scope": 8642,
                   "src": "2099:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1255,7 +1255,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 8504,
+                    "id": 8636,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2099:7:41",
@@ -1270,7 +1270,7 @@
               ],
               "src": "2098:9:41"
             },
-            "scope": 8607,
+            "scope": 8739,
             "src": "2042:99:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -1278,33 +1278,33 @@
           },
           {
             "body": {
-              "id": 8517,
+              "id": 8649,
               "nodeType": "Block",
               "src": "2212:33:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8515,
+                    "id": 8647,
                     "name": "DEFAULT_VALIDITY_BOND",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 8446,
+                    "referencedDeclaration": 8578,
                     "src": "2221:21:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 8514,
-                  "id": 8516,
+                  "functionReturnParameters": 8646,
+                  "id": 8648,
                   "nodeType": "Return",
                   "src": "2214:28:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 8518,
+            "id": 8650,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1312,22 +1312,22 @@
             "name": "getDefaultValidityBond",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8511,
+              "id": 8643,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2177:2:41"
             },
             "payable": false,
             "returnParameters": {
-              "id": 8514,
+              "id": 8646,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8513,
+                  "id": 8645,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8518,
+                  "scope": 8650,
                   "src": "2203:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1336,7 +1336,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 8512,
+                    "id": 8644,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2203:7:41",
@@ -1351,7 +1351,7 @@
               ],
               "src": "2202:9:41"
             },
-            "scope": 8607,
+            "scope": 8739,
             "src": "2146:99:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -1359,33 +1359,33 @@
           },
           {
             "body": {
-              "id": 8525,
+              "id": 8657,
               "nodeType": "Block",
               "src": "2314:31:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8523,
+                    "id": 8655,
                     "name": "VALIDITY_BOND_FLOOR",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 8451,
+                    "referencedDeclaration": 8583,
                     "src": "2323:19:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 8522,
-                  "id": 8524,
+                  "functionReturnParameters": 8654,
+                  "id": 8656,
                   "nodeType": "Return",
                   "src": "2316:26:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 8526,
+            "id": 8658,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1393,22 +1393,22 @@
             "name": "getValidityBondFloor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8519,
+              "id": 8651,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2279:2:41"
             },
             "payable": false,
             "returnParameters": {
-              "id": 8522,
+              "id": 8654,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8521,
+                  "id": 8653,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8526,
+                  "scope": 8658,
                   "src": "2305:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1417,7 +1417,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 8520,
+                    "id": 8652,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2305:7:41",
@@ -1432,7 +1432,7 @@
               ],
               "src": "2304:9:41"
             },
-            "scope": 8607,
+            "scope": 8739,
             "src": "2250:95:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -1440,33 +1440,33 @@
           },
           {
             "body": {
-              "id": 8533,
+              "id": 8665,
               "nodeType": "Block",
               "src": "2424:42:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8531,
+                    "id": 8663,
                     "name": "TARGET_INVALID_MARKETS_DIVISOR",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 8463,
+                    "referencedDeclaration": 8595,
                     "src": "2433:30:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 8530,
-                  "id": 8532,
+                  "functionReturnParameters": 8662,
+                  "id": 8664,
                   "nodeType": "Return",
                   "src": "2426:37:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 8534,
+            "id": 8666,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1474,22 +1474,22 @@
             "name": "getTargetInvalidMarketsDivisor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8527,
+              "id": 8659,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2389:2:41"
             },
             "payable": false,
             "returnParameters": {
-              "id": 8530,
+              "id": 8662,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8529,
+                  "id": 8661,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8534,
+                  "scope": 8666,
                   "src": "2415:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1498,7 +1498,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 8528,
+                    "id": 8660,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2415:7:41",
@@ -1513,7 +1513,7 @@
               ],
               "src": "2414:9:41"
             },
-            "scope": 8607,
+            "scope": 8739,
             "src": "2350:116:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -1521,33 +1521,33 @@
           },
           {
             "body": {
-              "id": 8541,
+              "id": 8673,
               "nodeType": "Block",
               "src": "2563:62:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8539,
+                    "id": 8671,
                     "name": "TARGET_INCORRECT_DESIGNATED_REPORT_MARKETS_DIVISOR",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 8466,
+                    "referencedDeclaration": 8598,
                     "src": "2572:50:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 8538,
-                  "id": 8540,
+                  "functionReturnParameters": 8670,
+                  "id": 8672,
                   "nodeType": "Return",
                   "src": "2565:57:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 8542,
+            "id": 8674,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1555,22 +1555,22 @@
             "name": "getTargetIncorrectDesignatedReportMarketsDivisor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8535,
+              "id": 8667,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2528:2:41"
             },
             "payable": false,
             "returnParameters": {
-              "id": 8538,
+              "id": 8670,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8537,
+                  "id": 8669,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8542,
+                  "scope": 8674,
                   "src": "2554:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1579,7 +1579,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 8536,
+                    "id": 8668,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2554:7:41",
@@ -1594,7 +1594,7 @@
               ],
               "src": "2553:9:41"
             },
-            "scope": 8607,
+            "scope": 8739,
             "src": "2471:154:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -1602,33 +1602,33 @@
           },
           {
             "body": {
-              "id": 8549,
+              "id": 8681,
               "nodeType": "Block",
               "src": "2713:53:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8547,
+                    "id": 8679,
                     "name": "TARGET_DESIGNATED_REPORT_NO_SHOWS_DIVISOR",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 8469,
+                    "referencedDeclaration": 8601,
                     "src": "2722:41:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 8546,
-                  "id": 8548,
+                  "functionReturnParameters": 8678,
+                  "id": 8680,
                   "nodeType": "Return",
                   "src": "2715:48:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 8550,
+            "id": 8682,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1636,22 +1636,22 @@
             "name": "getTargetDesignatedReportNoShowsDivisor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8543,
+              "id": 8675,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2678:2:41"
             },
             "payable": false,
             "returnParameters": {
-              "id": 8546,
+              "id": 8678,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8545,
+                  "id": 8677,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8550,
+                  "scope": 8682,
                   "src": "2704:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1660,7 +1660,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 8544,
+                    "id": 8676,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2704:7:41",
@@ -1675,7 +1675,7 @@
               ],
               "src": "2703:9:41"
             },
-            "scope": 8607,
+            "scope": 8739,
             "src": "2630:136:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -1683,33 +1683,33 @@
           },
           {
             "body": {
-              "id": 8557,
+              "id": 8689,
               "nodeType": "Block",
               "src": "2846:44:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8555,
+                    "id": 8687,
                     "name": "TARGET_REP_MARKET_CAP_MULTIPLIER",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 8472,
+                    "referencedDeclaration": 8604,
                     "src": "2855:32:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 8554,
-                  "id": 8556,
+                  "functionReturnParameters": 8686,
+                  "id": 8688,
                   "nodeType": "Return",
                   "src": "2848:39:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 8558,
+            "id": 8690,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1717,22 +1717,22 @@
             "name": "getTargetRepMarketCapMultiplier",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8551,
+              "id": 8683,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2811:2:41"
             },
             "payable": false,
             "returnParameters": {
-              "id": 8554,
+              "id": 8686,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8553,
+                  "id": 8685,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8558,
+                  "scope": 8690,
                   "src": "2837:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1741,7 +1741,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 8552,
+                    "id": 8684,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2837:7:41",
@@ -1756,7 +1756,7 @@
               ],
               "src": "2836:9:41"
             },
-            "scope": 8607,
+            "scope": 8739,
             "src": "2771:119:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -1764,33 +1764,33 @@
           },
           {
             "body": {
-              "id": 8565,
+              "id": 8697,
               "nodeType": "Block",
               "src": "2967:41:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8563,
+                    "id": 8695,
                     "name": "TARGET_REP_MARKET_CAP_DIVISOR",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 8475,
+                    "referencedDeclaration": 8607,
                     "src": "2976:29:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 8562,
-                  "id": 8564,
+                  "functionReturnParameters": 8694,
+                  "id": 8696,
                   "nodeType": "Return",
                   "src": "2969:36:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 8566,
+            "id": 8698,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1798,22 +1798,22 @@
             "name": "getTargetRepMarketCapDivisor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8559,
+              "id": 8691,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2932:2:41"
             },
             "payable": false,
             "returnParameters": {
-              "id": 8562,
+              "id": 8694,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8561,
+                  "id": 8693,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8566,
+                  "scope": 8698,
                   "src": "2958:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1822,7 +1822,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 8560,
+                    "id": 8692,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2958:7:41",
@@ -1837,7 +1837,7 @@
               ],
               "src": "2957:9:41"
             },
-            "scope": 8607,
+            "scope": 8739,
             "src": "2895:113:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -1845,33 +1845,33 @@
           },
           {
             "body": {
-              "id": 8573,
+              "id": 8705,
               "nodeType": "Block",
               "src": "3095:51:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8571,
+                    "id": 8703,
                     "name": "FORK_MIGRATION_PERCENTAGE_BONUS_DIVISOR",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 8478,
+                    "referencedDeclaration": 8610,
                     "src": "3104:39:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 8570,
-                  "id": 8572,
+                  "functionReturnParameters": 8702,
+                  "id": 8704,
                   "nodeType": "Return",
                   "src": "3097:46:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 8574,
+            "id": 8706,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1879,22 +1879,22 @@
             "name": "getForkMigrationPercentageBonusDivisor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8567,
+              "id": 8699,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "3060:2:41"
             },
             "payable": false,
             "returnParameters": {
-              "id": 8570,
+              "id": 8702,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8569,
+                  "id": 8701,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8574,
+                  "scope": 8706,
                   "src": "3086:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1903,7 +1903,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 8568,
+                    "id": 8700,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "3086:7:41",
@@ -1918,7 +1918,7 @@
               ],
               "src": "3085:9:41"
             },
-            "scope": 8607,
+            "scope": 8739,
             "src": "3013:133:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -1926,33 +1926,33 @@
           },
           {
             "body": {
-              "id": 8581,
+              "id": 8713,
               "nodeType": "Block",
               "src": "3224:41:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8579,
+                    "id": 8711,
                     "name": "MAXIMUM_REPORTING_FEE_DIVISOR",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 8457,
+                    "referencedDeclaration": 8589,
                     "src": "3233:29:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 8578,
-                  "id": 8580,
+                  "functionReturnParameters": 8710,
+                  "id": 8712,
                   "nodeType": "Return",
                   "src": "3226:36:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 8582,
+            "id": 8714,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1960,22 +1960,22 @@
             "name": "getMaximumReportingFeeDivisor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8575,
+              "id": 8707,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "3189:2:41"
             },
             "payable": false,
             "returnParameters": {
-              "id": 8578,
+              "id": 8710,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8577,
+                  "id": 8709,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8582,
+                  "scope": 8714,
                   "src": "3215:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1984,7 +1984,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 8576,
+                    "id": 8708,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "3215:7:41",
@@ -1999,7 +1999,7 @@
               ],
               "src": "3214:9:41"
             },
-            "scope": 8607,
+            "scope": 8739,
             "src": "3151:114:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -2007,33 +2007,33 @@
           },
           {
             "body": {
-              "id": 8589,
+              "id": 8721,
               "nodeType": "Block",
               "src": "3343:41:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8587,
+                    "id": 8719,
                     "name": "MINIMUM_REPORTING_FEE_DIVISOR",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 8460,
+                    "referencedDeclaration": 8592,
                     "src": "3352:29:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 8586,
-                  "id": 8588,
+                  "functionReturnParameters": 8718,
+                  "id": 8720,
                   "nodeType": "Return",
                   "src": "3345:36:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 8590,
+            "id": 8722,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -2041,22 +2041,22 @@
             "name": "getMinimumReportingFeeDivisor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8583,
+              "id": 8715,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "3308:2:41"
             },
             "payable": false,
             "returnParameters": {
-              "id": 8586,
+              "id": 8718,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8585,
+                  "id": 8717,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8590,
+                  "scope": 8722,
                   "src": "3334:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2065,7 +2065,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 8584,
+                    "id": 8716,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "3334:7:41",
@@ -2080,7 +2080,7 @@
               ],
               "src": "3333:9:41"
             },
-            "scope": 8607,
+            "scope": 8739,
             "src": "3270:114:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -2088,33 +2088,33 @@
           },
           {
             "body": {
-              "id": 8597,
+              "id": 8729,
               "nodeType": "Block",
               "src": "3462:41:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8595,
+                    "id": 8727,
                     "name": "DEFAULT_REPORTING_FEE_DIVISOR",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 8454,
+                    "referencedDeclaration": 8586,
                     "src": "3471:29:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 8594,
-                  "id": 8596,
+                  "functionReturnParameters": 8726,
+                  "id": 8728,
                   "nodeType": "Return",
                   "src": "3464:36:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 8598,
+            "id": 8730,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -2122,22 +2122,22 @@
             "name": "getDefaultReportingFeeDivisor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8591,
+              "id": 8723,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "3427:2:41"
             },
             "payable": false,
             "returnParameters": {
-              "id": 8594,
+              "id": 8726,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8593,
+                  "id": 8725,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8598,
+                  "scope": 8730,
                   "src": "3453:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2146,7 +2146,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 8592,
+                    "id": 8724,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "3453:7:41",
@@ -2161,7 +2161,7 @@
               ],
               "src": "3452:9:41"
             },
-            "scope": 8607,
+            "scope": 8739,
             "src": "3389:114:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -2169,33 +2169,33 @@
           },
           {
             "body": {
-              "id": 8605,
+              "id": 8737,
               "nodeType": "Block",
               "src": "3571:30:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8603,
+                    "id": 8735,
                     "name": "INITIAL_REP_SUPPLY",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 8441,
+                    "referencedDeclaration": 8573,
                     "src": "3580:18:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 8602,
-                  "id": 8604,
+                  "functionReturnParameters": 8734,
+                  "id": 8736,
                   "nodeType": "Return",
                   "src": "3573:25:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 8606,
+            "id": 8738,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -2203,22 +2203,22 @@
             "name": "getInitialREPSupply",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8599,
+              "id": 8731,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "3536:2:41"
             },
             "payable": false,
             "returnParameters": {
-              "id": 8602,
+              "id": 8734,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8601,
+                  "id": 8733,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8606,
+                  "scope": 8738,
                   "src": "3562:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2227,7 +2227,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 8600,
+                    "id": 8732,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "3562:7:41",
@@ -2242,14 +2242,14 @@
               ],
               "src": "3561:9:41"
             },
-            "scope": 8607,
+            "scope": 8739,
             "src": "3508:93:41",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "internal"
           }
         ],
-        "scope": 8608,
+        "scope": 8740,
         "src": "27:3576:41"
       }
     ],
@@ -2259,14 +2259,14 @@
     "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/reporting/Reporting.sol",
     "exportedSymbols": {
       "Reporting": [
-        8607
+        8739
       ]
     },
-    "id": 8608,
+    "id": 8740,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 8418,
+        "id": 8550,
         "literals": [
           "solidity",
           "^",
@@ -2282,19 +2282,19 @@
         "contractKind": "library",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 8607,
+        "id": 8739,
         "linearizedBaseContracts": [
-          8607
+          8739
         ],
         "name": "Reporting",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": true,
-            "id": 8421,
+            "id": 8553,
             "name": "DESIGNATED_REPORTING_DURATION_SECONDS",
             "nodeType": "VariableDeclaration",
-            "scope": 8607,
+            "scope": 8739,
             "src": "51:71:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2303,7 +2303,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 8419,
+              "id": 8551,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "51:7:41",
@@ -2315,7 +2315,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "33",
-              "id": 8420,
+              "id": 8552,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -2334,10 +2334,10 @@
           },
           {
             "constant": true,
-            "id": 8424,
+            "id": 8556,
             "name": "DISPUTE_ROUND_DURATION_SECONDS",
             "nodeType": "VariableDeclaration",
-            "scope": 8607,
+            "scope": 8739,
             "src": "128:64:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2346,7 +2346,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 8422,
+              "id": 8554,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "128:7:41",
@@ -2358,7 +2358,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "37",
-              "id": 8423,
+              "id": 8555,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -2377,10 +2377,10 @@
           },
           {
             "constant": true,
-            "id": 8427,
+            "id": 8559,
             "name": "CLAIM_PROCEEDS_WAIT_TIME",
             "nodeType": "VariableDeclaration",
-            "scope": 8607,
+            "scope": 8739,
             "src": "198:58:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2389,7 +2389,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 8425,
+              "id": 8557,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "198:7:41",
@@ -2401,7 +2401,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "33",
-              "id": 8426,
+              "id": 8558,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -2420,10 +2420,10 @@
           },
           {
             "constant": true,
-            "id": 8430,
+            "id": 8562,
             "name": "FORK_DURATION_SECONDS",
             "nodeType": "VariableDeclaration",
-            "scope": 8607,
+            "scope": 8739,
             "src": "262:56:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2432,7 +2432,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 8428,
+              "id": 8560,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "262:7:41",
@@ -2444,7 +2444,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "3630",
-              "id": 8429,
+              "id": 8561,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -2463,10 +2463,10 @@
           },
           {
             "constant": true,
-            "id": 8441,
+            "id": 8573,
             "name": "INITIAL_REP_SUPPLY",
             "nodeType": "VariableDeclaration",
-            "scope": 8607,
+            "scope": 8739,
             "src": "325:69:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2475,7 +2475,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 8431,
+              "id": 8563,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "325:7:41",
@@ -2490,7 +2490,7 @@
                 "typeIdentifier": "t_rational_11000000000000000000000000_by_1",
                 "typeString": "int_const 11000000000000000000000000"
               },
-              "id": 8440,
+              "id": 8572,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -2501,7 +2501,7 @@
                   "typeIdentifier": "t_rational_11000000_by_1",
                   "typeString": "int_const 11000000"
                 },
-                "id": 8436,
+                "id": 8568,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -2509,7 +2509,7 @@
                 "leftExpression": {
                   "argumentTypes": null,
                   "hexValue": "3131",
-                  "id": 8432,
+                  "id": 8564,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -2532,7 +2532,7 @@
                     "typeIdentifier": "t_rational_1000000_by_1",
                     "typeString": "int_const 1000000"
                   },
-                  "id": 8435,
+                  "id": 8567,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -2540,7 +2540,7 @@
                   "leftExpression": {
                     "argumentTypes": null,
                     "hexValue": "3130",
-                    "id": 8433,
+                    "id": 8565,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -2560,7 +2560,7 @@
                   "rightExpression": {
                     "argumentTypes": null,
                     "hexValue": "36",
-                    "id": 8434,
+                    "id": 8566,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -2595,7 +2595,7 @@
                   "typeIdentifier": "t_rational_1000000000000000000_by_1",
                   "typeString": "int_const 1000000000000000000"
                 },
-                "id": 8439,
+                "id": 8571,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -2603,7 +2603,7 @@
                 "leftExpression": {
                   "argumentTypes": null,
                   "hexValue": "3130",
-                  "id": 8437,
+                  "id": 8569,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -2623,7 +2623,7 @@
                 "rightExpression": {
                   "argumentTypes": null,
                   "hexValue": "3138",
-                  "id": 8438,
+                  "id": 8570,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -2654,10 +2654,10 @@
           },
           {
             "constant": true,
-            "id": 8446,
+            "id": 8578,
             "name": "DEFAULT_VALIDITY_BOND",
             "nodeType": "VariableDeclaration",
-            "scope": 8607,
+            "scope": 8739,
             "src": "419:62:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2666,7 +2666,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 8442,
+              "id": 8574,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "419:7:41",
@@ -2681,7 +2681,7 @@
                 "typeIdentifier": "t_rational_10000000000000000_by_1",
                 "typeString": "int_const 10000000000000000"
               },
-              "id": 8445,
+              "id": 8577,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -2689,7 +2689,7 @@
               "leftExpression": {
                 "argumentTypes": null,
                 "hexValue": "31",
-                "id": 8443,
+                "id": 8575,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -2709,7 +2709,7 @@
               "rightExpression": {
                 "argumentTypes": null,
                 "hexValue": "313030",
-                "id": 8444,
+                "id": 8576,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -2734,10 +2734,10 @@
           },
           {
             "constant": true,
-            "id": 8451,
+            "id": 8583,
             "name": "VALIDITY_BOND_FLOOR",
             "nodeType": "VariableDeclaration",
-            "scope": 8607,
+            "scope": 8739,
             "src": "487:60:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2746,7 +2746,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 8447,
+              "id": 8579,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "487:7:41",
@@ -2761,7 +2761,7 @@
                 "typeIdentifier": "t_rational_10000000000000000_by_1",
                 "typeString": "int_const 10000000000000000"
               },
-              "id": 8450,
+              "id": 8582,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -2769,7 +2769,7 @@
               "leftExpression": {
                 "argumentTypes": null,
                 "hexValue": "31",
-                "id": 8448,
+                "id": 8580,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -2789,7 +2789,7 @@
               "rightExpression": {
                 "argumentTypes": null,
                 "hexValue": "313030",
-                "id": 8449,
+                "id": 8581,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -2814,10 +2814,10 @@
           },
           {
             "constant": true,
-            "id": 8454,
+            "id": 8586,
             "name": "DEFAULT_REPORTING_FEE_DIVISOR",
             "nodeType": "VariableDeclaration",
-            "scope": 8607,
+            "scope": 8739,
             "src": "553:60:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2826,7 +2826,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 8452,
+              "id": 8584,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "553:7:41",
@@ -2838,7 +2838,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "313030",
-              "id": 8453,
+              "id": 8585,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -2857,10 +2857,10 @@
           },
           {
             "constant": true,
-            "id": 8457,
+            "id": 8589,
             "name": "MAXIMUM_REPORTING_FEE_DIVISOR",
             "nodeType": "VariableDeclaration",
-            "scope": 8607,
+            "scope": 8739,
             "src": "630:62:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2869,7 +2869,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 8455,
+              "id": 8587,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "630:7:41",
@@ -2881,7 +2881,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "3130303030",
-              "id": 8456,
+              "id": 8588,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -2900,10 +2900,10 @@
           },
           {
             "constant": true,
-            "id": 8460,
+            "id": 8592,
             "name": "MINIMUM_REPORTING_FEE_DIVISOR",
             "nodeType": "VariableDeclaration",
-            "scope": 8607,
+            "scope": 8739,
             "src": "719:58:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2912,7 +2912,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 8458,
+              "id": 8590,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "719:7:41",
@@ -2924,7 +2924,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "33",
-              "id": 8459,
+              "id": 8591,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -2943,10 +2943,10 @@
           },
           {
             "constant": true,
-            "id": 8463,
+            "id": 8595,
             "name": "TARGET_INVALID_MARKETS_DIVISOR",
             "nodeType": "VariableDeclaration",
-            "scope": 8607,
+            "scope": 8739,
             "src": "909:61:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2955,7 +2955,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 8461,
+              "id": 8593,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "909:7:41",
@@ -2967,7 +2967,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "313030",
-              "id": 8462,
+              "id": 8594,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -2986,10 +2986,10 @@
           },
           {
             "constant": true,
-            "id": 8466,
+            "id": 8598,
             "name": "TARGET_INCORRECT_DESIGNATED_REPORT_MARKETS_DIVISOR",
             "nodeType": "VariableDeclaration",
-            "scope": 8607,
+            "scope": 8739,
             "src": "1020:81:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2998,7 +2998,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 8464,
+              "id": 8596,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "1020:7:41",
@@ -3010,7 +3010,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "313030",
-              "id": 8465,
+              "id": 8597,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -3029,10 +3029,10 @@
           },
           {
             "constant": true,
-            "id": 8469,
+            "id": 8601,
             "name": "TARGET_DESIGNATED_REPORT_NO_SHOWS_DIVISOR",
             "nodeType": "VariableDeclaration",
-            "scope": 8607,
+            "scope": 8739,
             "src": "1175:72:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -3041,7 +3041,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 8467,
+              "id": 8599,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "1175:7:41",
@@ -3053,7 +3053,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "313030",
-              "id": 8468,
+              "id": 8600,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -3072,10 +3072,10 @@
           },
           {
             "constant": true,
-            "id": 8472,
+            "id": 8604,
             "name": "TARGET_REP_MARKET_CAP_MULTIPLIER",
             "nodeType": "VariableDeclaration",
-            "scope": 8607,
+            "scope": 8739,
             "src": "1321:62:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -3084,7 +3084,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 8470,
+              "id": 8602,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "1321:7:41",
@@ -3096,7 +3096,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "3135",
-              "id": 8471,
+              "id": 8603,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -3115,10 +3115,10 @@
           },
           {
             "constant": true,
-            "id": 8475,
+            "id": 8607,
             "name": "TARGET_REP_MARKET_CAP_DIVISOR",
             "nodeType": "VariableDeclaration",
-            "scope": 8607,
+            "scope": 8739,
             "src": "1483:58:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -3127,7 +3127,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 8473,
+              "id": 8605,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "1483:7:41",
@@ -3139,7 +3139,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "32",
-              "id": 8474,
+              "id": 8606,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -3158,10 +3158,10 @@
           },
           {
             "constant": true,
-            "id": 8478,
+            "id": 8610,
             "name": "FORK_MIGRATION_PERCENTAGE_BONUS_DIVISOR",
             "nodeType": "VariableDeclaration",
-            "scope": 8607,
+            "scope": 8739,
             "src": "1548:69:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -3170,7 +3170,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 8476,
+              "id": 8608,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "1548:7:41",
@@ -3182,7 +3182,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "3230",
-              "id": 8477,
+              "id": 8609,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -3201,33 +3201,33 @@
           },
           {
             "body": {
-              "id": 8485,
+              "id": 8617,
               "nodeType": "Block",
               "src": "1751:49:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8483,
+                    "id": 8615,
                     "name": "DESIGNATED_REPORTING_DURATION_SECONDS",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 8421,
+                    "referencedDeclaration": 8553,
                     "src": "1760:37:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 8482,
-                  "id": 8484,
+                  "functionReturnParameters": 8614,
+                  "id": 8616,
                   "nodeType": "Return",
                   "src": "1753:44:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 8486,
+            "id": 8618,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -3235,22 +3235,22 @@
             "name": "getDesignatedReportingDurationSeconds",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8479,
+              "id": 8611,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1716:2:41"
             },
             "payable": false,
             "returnParameters": {
-              "id": 8482,
+              "id": 8614,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8481,
+                  "id": 8613,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8486,
+                  "scope": 8618,
                   "src": "1742:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3259,7 +3259,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 8480,
+                    "id": 8612,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1742:7:41",
@@ -3274,7 +3274,7 @@
               ],
               "src": "1741:9:41"
             },
-            "scope": 8607,
+            "scope": 8739,
             "src": "1670:130:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -3282,33 +3282,33 @@
           },
           {
             "body": {
-              "id": 8493,
+              "id": 8625,
               "nodeType": "Block",
               "src": "1879:42:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8491,
+                    "id": 8623,
                     "name": "DISPUTE_ROUND_DURATION_SECONDS",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 8424,
+                    "referencedDeclaration": 8556,
                     "src": "1888:30:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 8490,
-                  "id": 8492,
+                  "functionReturnParameters": 8622,
+                  "id": 8624,
                   "nodeType": "Return",
                   "src": "1881:37:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 8494,
+            "id": 8626,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -3316,22 +3316,22 @@
             "name": "getDisputeRoundDurationSeconds",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8487,
+              "id": 8619,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1844:2:41"
             },
             "payable": false,
             "returnParameters": {
-              "id": 8490,
+              "id": 8622,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8489,
+                  "id": 8621,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8494,
+                  "scope": 8626,
                   "src": "1870:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3340,7 +3340,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 8488,
+                    "id": 8620,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1870:7:41",
@@ -3355,7 +3355,7 @@
               ],
               "src": "1869:9:41"
             },
-            "scope": 8607,
+            "scope": 8739,
             "src": "1805:116:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -3363,33 +3363,33 @@
           },
           {
             "body": {
-              "id": 8501,
+              "id": 8633,
               "nodeType": "Block",
               "src": "2001:36:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8499,
+                    "id": 8631,
                     "name": "CLAIM_PROCEEDS_WAIT_TIME",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 8427,
+                    "referencedDeclaration": 8559,
                     "src": "2010:24:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 8498,
-                  "id": 8500,
+                  "functionReturnParameters": 8630,
+                  "id": 8632,
                   "nodeType": "Return",
                   "src": "2003:31:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 8502,
+            "id": 8634,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -3397,22 +3397,22 @@
             "name": "getClaimTradingProceedsWaitTime",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8495,
+              "id": 8627,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1966:2:41"
             },
             "payable": false,
             "returnParameters": {
-              "id": 8498,
+              "id": 8630,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8497,
+                  "id": 8629,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8502,
+                  "scope": 8634,
                   "src": "1992:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3421,7 +3421,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 8496,
+                    "id": 8628,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1992:7:41",
@@ -3436,7 +3436,7 @@
               ],
               "src": "1991:9:41"
             },
-            "scope": 8607,
+            "scope": 8739,
             "src": "1926:111:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -3444,33 +3444,33 @@
           },
           {
             "body": {
-              "id": 8509,
+              "id": 8641,
               "nodeType": "Block",
               "src": "2108:33:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8507,
+                    "id": 8639,
                     "name": "FORK_DURATION_SECONDS",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 8430,
+                    "referencedDeclaration": 8562,
                     "src": "2117:21:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 8506,
-                  "id": 8508,
+                  "functionReturnParameters": 8638,
+                  "id": 8640,
                   "nodeType": "Return",
                   "src": "2110:28:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 8510,
+            "id": 8642,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -3478,22 +3478,22 @@
             "name": "getForkDurationSeconds",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8503,
+              "id": 8635,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2073:2:41"
             },
             "payable": false,
             "returnParameters": {
-              "id": 8506,
+              "id": 8638,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8505,
+                  "id": 8637,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8510,
+                  "scope": 8642,
                   "src": "2099:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3502,7 +3502,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 8504,
+                    "id": 8636,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2099:7:41",
@@ -3517,7 +3517,7 @@
               ],
               "src": "2098:9:41"
             },
-            "scope": 8607,
+            "scope": 8739,
             "src": "2042:99:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -3525,33 +3525,33 @@
           },
           {
             "body": {
-              "id": 8517,
+              "id": 8649,
               "nodeType": "Block",
               "src": "2212:33:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8515,
+                    "id": 8647,
                     "name": "DEFAULT_VALIDITY_BOND",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 8446,
+                    "referencedDeclaration": 8578,
                     "src": "2221:21:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 8514,
-                  "id": 8516,
+                  "functionReturnParameters": 8646,
+                  "id": 8648,
                   "nodeType": "Return",
                   "src": "2214:28:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 8518,
+            "id": 8650,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -3559,22 +3559,22 @@
             "name": "getDefaultValidityBond",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8511,
+              "id": 8643,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2177:2:41"
             },
             "payable": false,
             "returnParameters": {
-              "id": 8514,
+              "id": 8646,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8513,
+                  "id": 8645,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8518,
+                  "scope": 8650,
                   "src": "2203:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3583,7 +3583,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 8512,
+                    "id": 8644,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2203:7:41",
@@ -3598,7 +3598,7 @@
               ],
               "src": "2202:9:41"
             },
-            "scope": 8607,
+            "scope": 8739,
             "src": "2146:99:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -3606,33 +3606,33 @@
           },
           {
             "body": {
-              "id": 8525,
+              "id": 8657,
               "nodeType": "Block",
               "src": "2314:31:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8523,
+                    "id": 8655,
                     "name": "VALIDITY_BOND_FLOOR",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 8451,
+                    "referencedDeclaration": 8583,
                     "src": "2323:19:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 8522,
-                  "id": 8524,
+                  "functionReturnParameters": 8654,
+                  "id": 8656,
                   "nodeType": "Return",
                   "src": "2316:26:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 8526,
+            "id": 8658,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -3640,22 +3640,22 @@
             "name": "getValidityBondFloor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8519,
+              "id": 8651,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2279:2:41"
             },
             "payable": false,
             "returnParameters": {
-              "id": 8522,
+              "id": 8654,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8521,
+                  "id": 8653,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8526,
+                  "scope": 8658,
                   "src": "2305:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3664,7 +3664,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 8520,
+                    "id": 8652,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2305:7:41",
@@ -3679,7 +3679,7 @@
               ],
               "src": "2304:9:41"
             },
-            "scope": 8607,
+            "scope": 8739,
             "src": "2250:95:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -3687,33 +3687,33 @@
           },
           {
             "body": {
-              "id": 8533,
+              "id": 8665,
               "nodeType": "Block",
               "src": "2424:42:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8531,
+                    "id": 8663,
                     "name": "TARGET_INVALID_MARKETS_DIVISOR",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 8463,
+                    "referencedDeclaration": 8595,
                     "src": "2433:30:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 8530,
-                  "id": 8532,
+                  "functionReturnParameters": 8662,
+                  "id": 8664,
                   "nodeType": "Return",
                   "src": "2426:37:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 8534,
+            "id": 8666,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -3721,22 +3721,22 @@
             "name": "getTargetInvalidMarketsDivisor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8527,
+              "id": 8659,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2389:2:41"
             },
             "payable": false,
             "returnParameters": {
-              "id": 8530,
+              "id": 8662,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8529,
+                  "id": 8661,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8534,
+                  "scope": 8666,
                   "src": "2415:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3745,7 +3745,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 8528,
+                    "id": 8660,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2415:7:41",
@@ -3760,7 +3760,7 @@
               ],
               "src": "2414:9:41"
             },
-            "scope": 8607,
+            "scope": 8739,
             "src": "2350:116:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -3768,33 +3768,33 @@
           },
           {
             "body": {
-              "id": 8541,
+              "id": 8673,
               "nodeType": "Block",
               "src": "2563:62:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8539,
+                    "id": 8671,
                     "name": "TARGET_INCORRECT_DESIGNATED_REPORT_MARKETS_DIVISOR",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 8466,
+                    "referencedDeclaration": 8598,
                     "src": "2572:50:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 8538,
-                  "id": 8540,
+                  "functionReturnParameters": 8670,
+                  "id": 8672,
                   "nodeType": "Return",
                   "src": "2565:57:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 8542,
+            "id": 8674,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -3802,22 +3802,22 @@
             "name": "getTargetIncorrectDesignatedReportMarketsDivisor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8535,
+              "id": 8667,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2528:2:41"
             },
             "payable": false,
             "returnParameters": {
-              "id": 8538,
+              "id": 8670,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8537,
+                  "id": 8669,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8542,
+                  "scope": 8674,
                   "src": "2554:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3826,7 +3826,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 8536,
+                    "id": 8668,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2554:7:41",
@@ -3841,7 +3841,7 @@
               ],
               "src": "2553:9:41"
             },
-            "scope": 8607,
+            "scope": 8739,
             "src": "2471:154:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -3849,33 +3849,33 @@
           },
           {
             "body": {
-              "id": 8549,
+              "id": 8681,
               "nodeType": "Block",
               "src": "2713:53:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8547,
+                    "id": 8679,
                     "name": "TARGET_DESIGNATED_REPORT_NO_SHOWS_DIVISOR",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 8469,
+                    "referencedDeclaration": 8601,
                     "src": "2722:41:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 8546,
-                  "id": 8548,
+                  "functionReturnParameters": 8678,
+                  "id": 8680,
                   "nodeType": "Return",
                   "src": "2715:48:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 8550,
+            "id": 8682,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -3883,22 +3883,22 @@
             "name": "getTargetDesignatedReportNoShowsDivisor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8543,
+              "id": 8675,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2678:2:41"
             },
             "payable": false,
             "returnParameters": {
-              "id": 8546,
+              "id": 8678,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8545,
+                  "id": 8677,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8550,
+                  "scope": 8682,
                   "src": "2704:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3907,7 +3907,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 8544,
+                    "id": 8676,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2704:7:41",
@@ -3922,7 +3922,7 @@
               ],
               "src": "2703:9:41"
             },
-            "scope": 8607,
+            "scope": 8739,
             "src": "2630:136:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -3930,33 +3930,33 @@
           },
           {
             "body": {
-              "id": 8557,
+              "id": 8689,
               "nodeType": "Block",
               "src": "2846:44:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8555,
+                    "id": 8687,
                     "name": "TARGET_REP_MARKET_CAP_MULTIPLIER",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 8472,
+                    "referencedDeclaration": 8604,
                     "src": "2855:32:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 8554,
-                  "id": 8556,
+                  "functionReturnParameters": 8686,
+                  "id": 8688,
                   "nodeType": "Return",
                   "src": "2848:39:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 8558,
+            "id": 8690,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -3964,22 +3964,22 @@
             "name": "getTargetRepMarketCapMultiplier",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8551,
+              "id": 8683,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2811:2:41"
             },
             "payable": false,
             "returnParameters": {
-              "id": 8554,
+              "id": 8686,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8553,
+                  "id": 8685,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8558,
+                  "scope": 8690,
                   "src": "2837:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3988,7 +3988,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 8552,
+                    "id": 8684,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2837:7:41",
@@ -4003,7 +4003,7 @@
               ],
               "src": "2836:9:41"
             },
-            "scope": 8607,
+            "scope": 8739,
             "src": "2771:119:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -4011,33 +4011,33 @@
           },
           {
             "body": {
-              "id": 8565,
+              "id": 8697,
               "nodeType": "Block",
               "src": "2967:41:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8563,
+                    "id": 8695,
                     "name": "TARGET_REP_MARKET_CAP_DIVISOR",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 8475,
+                    "referencedDeclaration": 8607,
                     "src": "2976:29:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 8562,
-                  "id": 8564,
+                  "functionReturnParameters": 8694,
+                  "id": 8696,
                   "nodeType": "Return",
                   "src": "2969:36:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 8566,
+            "id": 8698,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -4045,22 +4045,22 @@
             "name": "getTargetRepMarketCapDivisor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8559,
+              "id": 8691,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2932:2:41"
             },
             "payable": false,
             "returnParameters": {
-              "id": 8562,
+              "id": 8694,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8561,
+                  "id": 8693,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8566,
+                  "scope": 8698,
                   "src": "2958:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4069,7 +4069,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 8560,
+                    "id": 8692,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2958:7:41",
@@ -4084,7 +4084,7 @@
               ],
               "src": "2957:9:41"
             },
-            "scope": 8607,
+            "scope": 8739,
             "src": "2895:113:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -4092,33 +4092,33 @@
           },
           {
             "body": {
-              "id": 8573,
+              "id": 8705,
               "nodeType": "Block",
               "src": "3095:51:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8571,
+                    "id": 8703,
                     "name": "FORK_MIGRATION_PERCENTAGE_BONUS_DIVISOR",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 8478,
+                    "referencedDeclaration": 8610,
                     "src": "3104:39:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 8570,
-                  "id": 8572,
+                  "functionReturnParameters": 8702,
+                  "id": 8704,
                   "nodeType": "Return",
                   "src": "3097:46:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 8574,
+            "id": 8706,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -4126,22 +4126,22 @@
             "name": "getForkMigrationPercentageBonusDivisor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8567,
+              "id": 8699,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "3060:2:41"
             },
             "payable": false,
             "returnParameters": {
-              "id": 8570,
+              "id": 8702,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8569,
+                  "id": 8701,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8574,
+                  "scope": 8706,
                   "src": "3086:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4150,7 +4150,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 8568,
+                    "id": 8700,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "3086:7:41",
@@ -4165,7 +4165,7 @@
               ],
               "src": "3085:9:41"
             },
-            "scope": 8607,
+            "scope": 8739,
             "src": "3013:133:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -4173,33 +4173,33 @@
           },
           {
             "body": {
-              "id": 8581,
+              "id": 8713,
               "nodeType": "Block",
               "src": "3224:41:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8579,
+                    "id": 8711,
                     "name": "MAXIMUM_REPORTING_FEE_DIVISOR",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 8457,
+                    "referencedDeclaration": 8589,
                     "src": "3233:29:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 8578,
-                  "id": 8580,
+                  "functionReturnParameters": 8710,
+                  "id": 8712,
                   "nodeType": "Return",
                   "src": "3226:36:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 8582,
+            "id": 8714,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -4207,22 +4207,22 @@
             "name": "getMaximumReportingFeeDivisor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8575,
+              "id": 8707,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "3189:2:41"
             },
             "payable": false,
             "returnParameters": {
-              "id": 8578,
+              "id": 8710,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8577,
+                  "id": 8709,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8582,
+                  "scope": 8714,
                   "src": "3215:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4231,7 +4231,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 8576,
+                    "id": 8708,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "3215:7:41",
@@ -4246,7 +4246,7 @@
               ],
               "src": "3214:9:41"
             },
-            "scope": 8607,
+            "scope": 8739,
             "src": "3151:114:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -4254,33 +4254,33 @@
           },
           {
             "body": {
-              "id": 8589,
+              "id": 8721,
               "nodeType": "Block",
               "src": "3343:41:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8587,
+                    "id": 8719,
                     "name": "MINIMUM_REPORTING_FEE_DIVISOR",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 8460,
+                    "referencedDeclaration": 8592,
                     "src": "3352:29:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 8586,
-                  "id": 8588,
+                  "functionReturnParameters": 8718,
+                  "id": 8720,
                   "nodeType": "Return",
                   "src": "3345:36:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 8590,
+            "id": 8722,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -4288,22 +4288,22 @@
             "name": "getMinimumReportingFeeDivisor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8583,
+              "id": 8715,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "3308:2:41"
             },
             "payable": false,
             "returnParameters": {
-              "id": 8586,
+              "id": 8718,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8585,
+                  "id": 8717,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8590,
+                  "scope": 8722,
                   "src": "3334:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4312,7 +4312,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 8584,
+                    "id": 8716,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "3334:7:41",
@@ -4327,7 +4327,7 @@
               ],
               "src": "3333:9:41"
             },
-            "scope": 8607,
+            "scope": 8739,
             "src": "3270:114:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -4335,33 +4335,33 @@
           },
           {
             "body": {
-              "id": 8597,
+              "id": 8729,
               "nodeType": "Block",
               "src": "3462:41:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8595,
+                    "id": 8727,
                     "name": "DEFAULT_REPORTING_FEE_DIVISOR",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 8454,
+                    "referencedDeclaration": 8586,
                     "src": "3471:29:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 8594,
-                  "id": 8596,
+                  "functionReturnParameters": 8726,
+                  "id": 8728,
                   "nodeType": "Return",
                   "src": "3464:36:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 8598,
+            "id": 8730,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -4369,22 +4369,22 @@
             "name": "getDefaultReportingFeeDivisor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8591,
+              "id": 8723,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "3427:2:41"
             },
             "payable": false,
             "returnParameters": {
-              "id": 8594,
+              "id": 8726,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8593,
+                  "id": 8725,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8598,
+                  "scope": 8730,
                   "src": "3453:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4393,7 +4393,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 8592,
+                    "id": 8724,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "3453:7:41",
@@ -4408,7 +4408,7 @@
               ],
               "src": "3452:9:41"
             },
-            "scope": 8607,
+            "scope": 8739,
             "src": "3389:114:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -4416,33 +4416,33 @@
           },
           {
             "body": {
-              "id": 8605,
+              "id": 8737,
               "nodeType": "Block",
               "src": "3571:30:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8603,
+                    "id": 8735,
                     "name": "INITIAL_REP_SUPPLY",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 8441,
+                    "referencedDeclaration": 8573,
                     "src": "3580:18:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 8602,
-                  "id": 8604,
+                  "functionReturnParameters": 8734,
+                  "id": 8736,
                   "nodeType": "Return",
                   "src": "3573:25:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 8606,
+            "id": 8738,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -4450,22 +4450,22 @@
             "name": "getInitialREPSupply",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8599,
+              "id": 8731,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "3536:2:41"
             },
             "payable": false,
             "returnParameters": {
-              "id": 8602,
+              "id": 8734,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8601,
+                  "id": 8733,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8606,
+                  "scope": 8738,
                   "src": "3562:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4474,7 +4474,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 8600,
+                    "id": 8732,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "3562:7:41",
@@ -4489,14 +4489,14 @@
               ],
               "src": "3561:9:41"
             },
-            "scope": 8607,
+            "scope": 8739,
             "src": "3508:93:41",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "internal"
           }
         ],
-        "scope": 8608,
+        "scope": 8740,
         "src": "27:3576:41"
       }
     ],
@@ -4508,7 +4508,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.13",
-  "updatedAt": "2019-08-24T23:51:51.574Z",
+  "updatedAt": "2019-08-25T01:25:40.810Z",
   "devdoc": {
     "methods": {}
   },

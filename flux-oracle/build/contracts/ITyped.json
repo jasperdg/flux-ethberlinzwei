@@ -27,14 +27,14 @@
     "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/ITyped.sol",
     "exportedSymbols": {
       "ITyped": [
-        4494
+        4626
       ]
     },
-    "id": 4495,
+    "id": 4627,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4488,
+        "id": 4620,
         "literals": [
           "solidity",
           "^",
@@ -50,9 +50,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 4494,
+        "id": 4626,
         "linearizedBaseContracts": [
-          4494
+          4626
         ],
         "name": "ITyped",
         "nodeType": "ContractDefinition",
@@ -60,7 +60,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 4493,
+            "id": 4625,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -68,22 +68,22 @@
             "name": "getTypeName",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4489,
+              "id": 4621,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "69:2:20"
             },
             "payable": false,
             "returnParameters": {
-              "id": 4492,
+              "id": 4624,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4491,
+                  "id": 4623,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4493,
+                  "scope": 4625,
                   "src": "93:7:20",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -92,7 +92,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 4490,
+                    "id": 4622,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "93:7:20",
@@ -107,14 +107,14 @@
               ],
               "src": "92:9:20"
             },
-            "scope": 4494,
+            "scope": 4626,
             "src": "49:53:20",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 4495,
+        "scope": 4627,
         "src": "27:77:20"
       }
     ],
@@ -124,14 +124,14 @@
     "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/ITyped.sol",
     "exportedSymbols": {
       "ITyped": [
-        4494
+        4626
       ]
     },
-    "id": 4495,
+    "id": 4627,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4488,
+        "id": 4620,
         "literals": [
           "solidity",
           "^",
@@ -147,9 +147,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 4494,
+        "id": 4626,
         "linearizedBaseContracts": [
-          4494
+          4626
         ],
         "name": "ITyped",
         "nodeType": "ContractDefinition",
@@ -157,7 +157,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 4493,
+            "id": 4625,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -165,22 +165,22 @@
             "name": "getTypeName",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4489,
+              "id": 4621,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "69:2:20"
             },
             "payable": false,
             "returnParameters": {
-              "id": 4492,
+              "id": 4624,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4491,
+                  "id": 4623,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4493,
+                  "scope": 4625,
                   "src": "93:7:20",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -189,7 +189,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 4490,
+                    "id": 4622,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "93:7:20",
@@ -204,14 +204,14 @@
               ],
               "src": "92:9:20"
             },
-            "scope": 4494,
+            "scope": 4626,
             "src": "49:53:20",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 4495,
+        "scope": 4627,
         "src": "27:77:20"
       }
     ],
@@ -223,7 +223,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.13",
-  "updatedAt": "2019-08-24T23:51:51.495Z",
+  "updatedAt": "2019-08-25T01:25:40.732Z",
   "devdoc": {
     "methods": {}
   },

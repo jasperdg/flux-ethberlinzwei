@@ -60,14 +60,14 @@
     "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/DelegationTarget.sol",
     "exportedSymbols": {
       "DelegationTarget": [
-        4430
+        4562
       ]
     },
-    "id": 4431,
+    "id": 4563,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4424,
+        "id": 4556,
         "literals": [
           "solidity",
           "^",
@@ -80,10 +80,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/Controlled.sol",
         "file": "./../Controlled.sol",
-        "id": 4425,
+        "id": 4557,
         "nodeType": "ImportDirective",
-        "scope": 4431,
-        "sourceUnit": 3246,
+        "scope": 4563,
+        "sourceUnit": 3378,
         "src": "27:29:17",
         "symbolAliases": [],
         "unitAlias": ""
@@ -94,43 +94,43 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 4426,
+              "id": 4558,
               "name": "Controlled",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 3245,
+              "referencedDeclaration": 3377,
               "src": "88:10:17",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Controlled_$3245",
+                "typeIdentifier": "t_contract$_Controlled_$3377",
                 "typeString": "contract Controlled"
               }
             },
-            "id": 4427,
+            "id": 4559,
             "nodeType": "InheritanceSpecifier",
             "src": "88:10:17"
           }
         ],
         "contractDependencies": [
-          3245,
-          3858
+          3377,
+          3990
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 4430,
+        "id": 4562,
         "linearizedBaseContracts": [
-          4430,
-          3245,
-          3858
+          4562,
+          3377,
+          3990
         ],
         "name": "DelegationTarget",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 4429,
+            "id": 4561,
             "name": "controllerLookupName",
             "nodeType": "VariableDeclaration",
-            "scope": 4430,
+            "scope": 4562,
             "src": "105:35:17",
             "stateVariable": true,
             "storageLocation": "default",
@@ -139,7 +139,7 @@
               "typeString": "bytes32"
             },
             "typeName": {
-              "id": 4428,
+              "id": 4560,
               "name": "bytes32",
               "nodeType": "ElementaryTypeName",
               "src": "105:7:17",
@@ -152,7 +152,7 @@
             "visibility": "public"
           }
         ],
-        "scope": 4431,
+        "scope": 4563,
         "src": "59:84:17"
       }
     ],
@@ -162,14 +162,14 @@
     "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/DelegationTarget.sol",
     "exportedSymbols": {
       "DelegationTarget": [
-        4430
+        4562
       ]
     },
-    "id": 4431,
+    "id": 4563,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4424,
+        "id": 4556,
         "literals": [
           "solidity",
           "^",
@@ -182,10 +182,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/Controlled.sol",
         "file": "./../Controlled.sol",
-        "id": 4425,
+        "id": 4557,
         "nodeType": "ImportDirective",
-        "scope": 4431,
-        "sourceUnit": 3246,
+        "scope": 4563,
+        "sourceUnit": 3378,
         "src": "27:29:17",
         "symbolAliases": [],
         "unitAlias": ""
@@ -196,43 +196,43 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 4426,
+              "id": 4558,
               "name": "Controlled",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 3245,
+              "referencedDeclaration": 3377,
               "src": "88:10:17",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Controlled_$3245",
+                "typeIdentifier": "t_contract$_Controlled_$3377",
                 "typeString": "contract Controlled"
               }
             },
-            "id": 4427,
+            "id": 4559,
             "nodeType": "InheritanceSpecifier",
             "src": "88:10:17"
           }
         ],
         "contractDependencies": [
-          3245,
-          3858
+          3377,
+          3990
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 4430,
+        "id": 4562,
         "linearizedBaseContracts": [
-          4430,
-          3245,
-          3858
+          4562,
+          3377,
+          3990
         ],
         "name": "DelegationTarget",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 4429,
+            "id": 4561,
             "name": "controllerLookupName",
             "nodeType": "VariableDeclaration",
-            "scope": 4430,
+            "scope": 4562,
             "src": "105:35:17",
             "stateVariable": true,
             "storageLocation": "default",
@@ -241,7 +241,7 @@
               "typeString": "bytes32"
             },
             "typeName": {
-              "id": 4428,
+              "id": 4560,
               "name": "bytes32",
               "nodeType": "ElementaryTypeName",
               "src": "105:7:17",
@@ -254,7 +254,7 @@
             "visibility": "public"
           }
         ],
-        "scope": 4431,
+        "scope": 4563,
         "src": "59:84:17"
       }
     ],
@@ -266,7 +266,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.13",
-  "updatedAt": "2019-08-24T23:51:51.491Z",
+  "updatedAt": "2019-08-25T01:25:40.730Z",
   "devdoc": {
     "methods": {}
   },

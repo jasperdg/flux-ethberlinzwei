@@ -40,14 +40,14 @@
     "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/factories/InitialReporterFactory.sol",
     "exportedSymbols": {
       "InitialReporterFactory": [
-        4037
+        4169
       ]
     },
-    "id": 4038,
+    "id": 4170,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 3997,
+        "id": 4129,
         "literals": [
           "solidity",
           "^",
@@ -60,10 +60,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/Delegator.sol",
         "file": "./../libraries/Delegator.sol",
-        "id": 3998,
+        "id": 4130,
         "nodeType": "ImportDirective",
-        "scope": 4038,
-        "sourceUnit": 4472,
+        "scope": 4170,
+        "sourceUnit": 4604,
         "src": "26:38:9",
         "symbolAliases": [],
         "unitAlias": ""
@@ -71,10 +71,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/reporting/IInitialReporter.sol",
         "file": "./../reporting/IInitialReporter.sol",
-        "id": 3999,
+        "id": 4131,
         "nodeType": "ImportDirective",
-        "scope": 4038,
-        "sourceUnit": 5669,
+        "scope": 4170,
+        "sourceUnit": 5801,
         "src": "65:45:9",
         "symbolAliases": [],
         "unitAlias": ""
@@ -82,10 +82,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/reporting/IMarket.sol",
         "file": "./../reporting/IMarket.sol",
-        "id": 4000,
+        "id": 4132,
         "nodeType": "ImportDirective",
-        "scope": 4038,
-        "sourceUnit": 5874,
+        "scope": 4170,
+        "sourceUnit": 6006,
         "src": "111:36:9",
         "symbolAliases": [],
         "unitAlias": ""
@@ -93,10 +93,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/IController.sol",
         "file": "./../IController.sol",
-        "id": 4001,
+        "id": 4133,
         "nodeType": "ImportDirective",
-        "scope": 4038,
-        "sourceUnit": 3902,
+        "scope": 4170,
+        "sourceUnit": 4034,
         "src": "148:30:9",
         "symbolAliases": [],
         "unitAlias": ""
@@ -104,51 +104,51 @@
       {
         "baseContracts": [],
         "contractDependencies": [
-          4471
+          4603
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 4037,
+        "id": 4169,
         "linearizedBaseContracts": [
-          4037
+          4169
         ],
         "name": "InitialReporterFactory",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 4035,
+              "id": 4167,
               "nodeType": "Block",
               "src": "355:259:9",
               "statements": [
                 {
                   "assignments": [
-                    4013
+                    4145
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4013,
+                      "id": 4145,
                       "name": "_delegator",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4036,
+                      "scope": 4168,
                       "src": "365:20:9",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Delegator_$4471",
+                        "typeIdentifier": "t_contract$_Delegator_$4603",
                         "typeString": "contract Delegator"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 4012,
+                        "id": 4144,
                         "name": "Delegator",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 4471,
+                        "referencedDeclaration": 4603,
                         "src": "365:9:9",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Delegator_$4471",
+                          "typeIdentifier": "t_contract$_Delegator_$4603",
                           "typeString": "contract Delegator"
                         }
                       },
@@ -156,27 +156,27 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4019,
+                  "id": 4151,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 4016,
+                        "id": 4148,
                         "name": "_controller",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4003,
+                        "referencedDeclaration": 4135,
                         "src": "402:11:9",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IController_$3901",
+                          "typeIdentifier": "t_contract$_IController_$4033",
                           "typeString": "contract IController"
                         }
                       },
                       {
                         "argumentTypes": null,
                         "hexValue": "496e697469616c5265706f72746572",
-                        "id": 4017,
+                        "id": 4149,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -195,7 +195,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_IController_$3901",
+                          "typeIdentifier": "t_contract$_IController_$4033",
                           "typeString": "contract IController"
                         },
                         {
@@ -203,7 +203,7 @@
                           "typeString": "literal_string \"InitialReporter\""
                         }
                       ],
-                      "id": 4015,
+                      "id": 4147,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -211,23 +211,23 @@
                       "nodeType": "NewExpression",
                       "src": "388:13:9",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_creation_nonpayable$_t_contract$_IController_$3901_$_t_bytes32_$returns$_t_contract$_Delegator_$4471_$",
+                        "typeIdentifier": "t_function_creation_nonpayable$_t_contract$_IController_$4033_$_t_bytes32_$returns$_t_contract$_Delegator_$4603_$",
                         "typeString": "function (contract IController,bytes32) returns (contract Delegator)"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 4014,
+                        "id": 4146,
                         "name": "Delegator",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 4471,
+                        "referencedDeclaration": 4603,
                         "src": "392:9:9",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Delegator_$4471",
+                          "typeIdentifier": "t_contract$_Delegator_$4603",
                           "typeString": "contract Delegator"
                         }
                       }
                     },
-                    "id": 4018,
+                    "id": 4150,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -237,7 +237,7 @@
                     "nodeType": "FunctionCall",
                     "src": "388:45:9",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Delegator_$4471",
+                      "typeIdentifier": "t_contract$_Delegator_$4603",
                       "typeString": "contract Delegator"
                     }
                   },
@@ -246,31 +246,31 @@
                 },
                 {
                   "assignments": [
-                    4021
+                    4153
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4021,
+                      "id": 4153,
                       "name": "_initialReporter",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4036,
+                      "scope": 4168,
                       "src": "443:33:9",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IInitialReporter_$5668",
+                        "typeIdentifier": "t_contract$_IInitialReporter_$5800",
                         "typeString": "contract IInitialReporter"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 4020,
+                        "id": 4152,
                         "name": "IInitialReporter",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 5668,
+                        "referencedDeclaration": 5800,
                         "src": "443:16:9",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IInitialReporter_$5668",
+                          "typeIdentifier": "t_contract$_IInitialReporter_$5800",
                           "typeString": "contract IInitialReporter"
                         }
                       },
@@ -278,20 +278,20 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4025,
+                  "id": 4157,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 4023,
+                        "id": 4155,
                         "name": "_delegator",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4013,
+                        "referencedDeclaration": 4145,
                         "src": "496:10:9",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Delegator_$4471",
+                          "typeIdentifier": "t_contract$_Delegator_$4603",
                           "typeString": "contract Delegator"
                         }
                       }
@@ -299,22 +299,22 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_Delegator_$4471",
+                          "typeIdentifier": "t_contract$_Delegator_$4603",
                           "typeString": "contract Delegator"
                         }
                       ],
-                      "id": 4022,
+                      "id": 4154,
                       "name": "IInitialReporter",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5668,
+                      "referencedDeclaration": 5800,
                       "src": "479:16:9",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_IInitialReporter_$5668_$",
+                        "typeIdentifier": "t_type$_t_contract$_IInitialReporter_$5800_$",
                         "typeString": "type(contract IInitialReporter)"
                       }
                     },
-                    "id": 4024,
+                    "id": 4156,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -324,7 +324,7 @@
                     "nodeType": "FunctionCall",
                     "src": "479:28:9",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IInitialReporter_$5668",
+                      "typeIdentifier": "t_contract$_IInitialReporter_$5800",
                       "typeString": "contract IInitialReporter"
                     }
                   },
@@ -337,24 +337,24 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 4029,
+                        "id": 4161,
                         "name": "_market",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4005,
+                        "referencedDeclaration": 4137,
                         "src": "545:7:9",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IMarket_$5873",
+                          "typeIdentifier": "t_contract$_IMarket_$6005",
                           "typeString": "contract IMarket"
                         }
                       },
                       {
                         "argumentTypes": null,
-                        "id": 4030,
+                        "id": 4162,
                         "name": "_designatedReporter",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4007,
+                        "referencedDeclaration": 4139,
                         "src": "554:19:9",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -365,7 +365,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_IMarket_$5873",
+                          "typeIdentifier": "t_contract$_IMarket_$6005",
                           "typeString": "contract IMarket"
                         },
                         {
@@ -375,32 +375,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 4026,
+                        "id": 4158,
                         "name": "_initialReporter",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4021,
+                        "referencedDeclaration": 4153,
                         "src": "517:16:9",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IInitialReporter_$5668",
+                          "typeIdentifier": "t_contract$_IInitialReporter_$5800",
                           "typeString": "contract IInitialReporter"
                         }
                       },
-                      "id": 4028,
+                      "id": 4160,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "initialize",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 5623,
+                      "referencedDeclaration": 5755,
                       "src": "517:27:9",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_nonpayable$_t_contract$_IMarket_$5873_$_t_address_$returns$_t_bool_$",
+                        "typeIdentifier": "t_function_external_nonpayable$_t_contract$_IMarket_$6005_$_t_address_$returns$_t_bool_$",
                         "typeString": "function (contract IMarket,address) external returns (bool)"
                       }
                     },
-                    "id": 4031,
+                    "id": 4163,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -414,33 +414,33 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 4032,
+                  "id": 4164,
                   "nodeType": "ExpressionStatement",
                   "src": "517:57:9"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 4033,
+                    "id": 4165,
                     "name": "_initialReporter",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 4021,
+                    "referencedDeclaration": 4153,
                     "src": "591:16:9",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IInitialReporter_$5668",
+                      "typeIdentifier": "t_contract$_IInitialReporter_$5800",
                       "typeString": "contract IInitialReporter"
                     }
                   },
-                  "functionReturnParameters": 4011,
-                  "id": 4034,
+                  "functionReturnParameters": 4143,
+                  "id": 4166,
                   "nodeType": "Return",
                   "src": "584:23:9"
                 }
               ]
             },
             "documentation": null,
-            "id": 4036,
+            "id": 4168,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -448,31 +448,31 @@
             "name": "createInitialReporter",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4008,
+              "id": 4140,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4003,
+                  "id": 4135,
                   "name": "_controller",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4036,
+                  "scope": 4168,
                   "src": "250:23:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IController_$3901",
+                    "typeIdentifier": "t_contract$_IController_$4033",
                     "typeString": "contract IController"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4002,
+                    "id": 4134,
                     "name": "IController",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 3901,
+                    "referencedDeclaration": 4033,
                     "src": "250:11:9",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IController_$3901",
+                      "typeIdentifier": "t_contract$_IController_$4033",
                       "typeString": "contract IController"
                     }
                   },
@@ -481,26 +481,26 @@
                 },
                 {
                   "constant": false,
-                  "id": 4005,
+                  "id": 4137,
                   "name": "_market",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4036,
+                  "scope": 4168,
                   "src": "275:15:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IMarket_$5873",
+                    "typeIdentifier": "t_contract$_IMarket_$6005",
                     "typeString": "contract IMarket"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4004,
+                    "id": 4136,
                     "name": "IMarket",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 5873,
+                    "referencedDeclaration": 6005,
                     "src": "275:7:9",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IMarket_$5873",
+                      "typeIdentifier": "t_contract$_IMarket_$6005",
                       "typeString": "contract IMarket"
                     }
                   },
@@ -509,10 +509,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 4007,
+                  "id": 4139,
                   "name": "_designatedReporter",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4036,
+                  "scope": 4168,
                   "src": "292:27:9",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -521,7 +521,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4006,
+                    "id": 4138,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "292:7:9",
@@ -538,31 +538,31 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 4011,
+              "id": 4143,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4010,
+                  "id": 4142,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4036,
+                  "scope": 4168,
                   "src": "337:16:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IInitialReporter_$5668",
+                    "typeIdentifier": "t_contract$_IInitialReporter_$5800",
                     "typeString": "contract IInitialReporter"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4009,
+                    "id": 4141,
                     "name": "IInitialReporter",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 5668,
+                    "referencedDeclaration": 5800,
                     "src": "337:16:9",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IInitialReporter_$5668",
+                      "typeIdentifier": "t_contract$_IInitialReporter_$5800",
                       "typeString": "contract IInitialReporter"
                     }
                   },
@@ -572,14 +572,14 @@
               ],
               "src": "336:18:9"
             },
-            "scope": 4037,
+            "scope": 4169,
             "src": "219:395:9",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 4038,
+        "scope": 4170,
         "src": "181:435:9"
       }
     ],
@@ -589,14 +589,14 @@
     "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/factories/InitialReporterFactory.sol",
     "exportedSymbols": {
       "InitialReporterFactory": [
-        4037
+        4169
       ]
     },
-    "id": 4038,
+    "id": 4170,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 3997,
+        "id": 4129,
         "literals": [
           "solidity",
           "^",
@@ -609,10 +609,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/Delegator.sol",
         "file": "./../libraries/Delegator.sol",
-        "id": 3998,
+        "id": 4130,
         "nodeType": "ImportDirective",
-        "scope": 4038,
-        "sourceUnit": 4472,
+        "scope": 4170,
+        "sourceUnit": 4604,
         "src": "26:38:9",
         "symbolAliases": [],
         "unitAlias": ""
@@ -620,10 +620,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/reporting/IInitialReporter.sol",
         "file": "./../reporting/IInitialReporter.sol",
-        "id": 3999,
+        "id": 4131,
         "nodeType": "ImportDirective",
-        "scope": 4038,
-        "sourceUnit": 5669,
+        "scope": 4170,
+        "sourceUnit": 5801,
         "src": "65:45:9",
         "symbolAliases": [],
         "unitAlias": ""
@@ -631,10 +631,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/reporting/IMarket.sol",
         "file": "./../reporting/IMarket.sol",
-        "id": 4000,
+        "id": 4132,
         "nodeType": "ImportDirective",
-        "scope": 4038,
-        "sourceUnit": 5874,
+        "scope": 4170,
+        "sourceUnit": 6006,
         "src": "111:36:9",
         "symbolAliases": [],
         "unitAlias": ""
@@ -642,10 +642,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/IController.sol",
         "file": "./../IController.sol",
-        "id": 4001,
+        "id": 4133,
         "nodeType": "ImportDirective",
-        "scope": 4038,
-        "sourceUnit": 3902,
+        "scope": 4170,
+        "sourceUnit": 4034,
         "src": "148:30:9",
         "symbolAliases": [],
         "unitAlias": ""
@@ -653,51 +653,51 @@
       {
         "baseContracts": [],
         "contractDependencies": [
-          4471
+          4603
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 4037,
+        "id": 4169,
         "linearizedBaseContracts": [
-          4037
+          4169
         ],
         "name": "InitialReporterFactory",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 4035,
+              "id": 4167,
               "nodeType": "Block",
               "src": "355:259:9",
               "statements": [
                 {
                   "assignments": [
-                    4013
+                    4145
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4013,
+                      "id": 4145,
                       "name": "_delegator",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4036,
+                      "scope": 4168,
                       "src": "365:20:9",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Delegator_$4471",
+                        "typeIdentifier": "t_contract$_Delegator_$4603",
                         "typeString": "contract Delegator"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 4012,
+                        "id": 4144,
                         "name": "Delegator",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 4471,
+                        "referencedDeclaration": 4603,
                         "src": "365:9:9",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Delegator_$4471",
+                          "typeIdentifier": "t_contract$_Delegator_$4603",
                           "typeString": "contract Delegator"
                         }
                       },
@@ -705,27 +705,27 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4019,
+                  "id": 4151,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 4016,
+                        "id": 4148,
                         "name": "_controller",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4003,
+                        "referencedDeclaration": 4135,
                         "src": "402:11:9",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IController_$3901",
+                          "typeIdentifier": "t_contract$_IController_$4033",
                           "typeString": "contract IController"
                         }
                       },
                       {
                         "argumentTypes": null,
                         "hexValue": "496e697469616c5265706f72746572",
-                        "id": 4017,
+                        "id": 4149,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -744,7 +744,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_IController_$3901",
+                          "typeIdentifier": "t_contract$_IController_$4033",
                           "typeString": "contract IController"
                         },
                         {
@@ -752,7 +752,7 @@
                           "typeString": "literal_string \"InitialReporter\""
                         }
                       ],
-                      "id": 4015,
+                      "id": 4147,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -760,23 +760,23 @@
                       "nodeType": "NewExpression",
                       "src": "388:13:9",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_creation_nonpayable$_t_contract$_IController_$3901_$_t_bytes32_$returns$_t_contract$_Delegator_$4471_$",
+                        "typeIdentifier": "t_function_creation_nonpayable$_t_contract$_IController_$4033_$_t_bytes32_$returns$_t_contract$_Delegator_$4603_$",
                         "typeString": "function (contract IController,bytes32) returns (contract Delegator)"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 4014,
+                        "id": 4146,
                         "name": "Delegator",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 4471,
+                        "referencedDeclaration": 4603,
                         "src": "392:9:9",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Delegator_$4471",
+                          "typeIdentifier": "t_contract$_Delegator_$4603",
                           "typeString": "contract Delegator"
                         }
                       }
                     },
-                    "id": 4018,
+                    "id": 4150,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -786,7 +786,7 @@
                     "nodeType": "FunctionCall",
                     "src": "388:45:9",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Delegator_$4471",
+                      "typeIdentifier": "t_contract$_Delegator_$4603",
                       "typeString": "contract Delegator"
                     }
                   },
@@ -795,31 +795,31 @@
                 },
                 {
                   "assignments": [
-                    4021
+                    4153
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4021,
+                      "id": 4153,
                       "name": "_initialReporter",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4036,
+                      "scope": 4168,
                       "src": "443:33:9",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IInitialReporter_$5668",
+                        "typeIdentifier": "t_contract$_IInitialReporter_$5800",
                         "typeString": "contract IInitialReporter"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 4020,
+                        "id": 4152,
                         "name": "IInitialReporter",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 5668,
+                        "referencedDeclaration": 5800,
                         "src": "443:16:9",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IInitialReporter_$5668",
+                          "typeIdentifier": "t_contract$_IInitialReporter_$5800",
                           "typeString": "contract IInitialReporter"
                         }
                       },
@@ -827,20 +827,20 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4025,
+                  "id": 4157,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 4023,
+                        "id": 4155,
                         "name": "_delegator",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4013,
+                        "referencedDeclaration": 4145,
                         "src": "496:10:9",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Delegator_$4471",
+                          "typeIdentifier": "t_contract$_Delegator_$4603",
                           "typeString": "contract Delegator"
                         }
                       }
@@ -848,22 +848,22 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_Delegator_$4471",
+                          "typeIdentifier": "t_contract$_Delegator_$4603",
                           "typeString": "contract Delegator"
                         }
                       ],
-                      "id": 4022,
+                      "id": 4154,
                       "name": "IInitialReporter",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5668,
+                      "referencedDeclaration": 5800,
                       "src": "479:16:9",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_IInitialReporter_$5668_$",
+                        "typeIdentifier": "t_type$_t_contract$_IInitialReporter_$5800_$",
                         "typeString": "type(contract IInitialReporter)"
                       }
                     },
-                    "id": 4024,
+                    "id": 4156,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -873,7 +873,7 @@
                     "nodeType": "FunctionCall",
                     "src": "479:28:9",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IInitialReporter_$5668",
+                      "typeIdentifier": "t_contract$_IInitialReporter_$5800",
                       "typeString": "contract IInitialReporter"
                     }
                   },
@@ -886,24 +886,24 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 4029,
+                        "id": 4161,
                         "name": "_market",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4005,
+                        "referencedDeclaration": 4137,
                         "src": "545:7:9",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IMarket_$5873",
+                          "typeIdentifier": "t_contract$_IMarket_$6005",
                           "typeString": "contract IMarket"
                         }
                       },
                       {
                         "argumentTypes": null,
-                        "id": 4030,
+                        "id": 4162,
                         "name": "_designatedReporter",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4007,
+                        "referencedDeclaration": 4139,
                         "src": "554:19:9",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -914,7 +914,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_IMarket_$5873",
+                          "typeIdentifier": "t_contract$_IMarket_$6005",
                           "typeString": "contract IMarket"
                         },
                         {
@@ -924,32 +924,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 4026,
+                        "id": 4158,
                         "name": "_initialReporter",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4021,
+                        "referencedDeclaration": 4153,
                         "src": "517:16:9",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IInitialReporter_$5668",
+                          "typeIdentifier": "t_contract$_IInitialReporter_$5800",
                           "typeString": "contract IInitialReporter"
                         }
                       },
-                      "id": 4028,
+                      "id": 4160,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "initialize",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 5623,
+                      "referencedDeclaration": 5755,
                       "src": "517:27:9",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_nonpayable$_t_contract$_IMarket_$5873_$_t_address_$returns$_t_bool_$",
+                        "typeIdentifier": "t_function_external_nonpayable$_t_contract$_IMarket_$6005_$_t_address_$returns$_t_bool_$",
                         "typeString": "function (contract IMarket,address) external returns (bool)"
                       }
                     },
-                    "id": 4031,
+                    "id": 4163,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -963,33 +963,33 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 4032,
+                  "id": 4164,
                   "nodeType": "ExpressionStatement",
                   "src": "517:57:9"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 4033,
+                    "id": 4165,
                     "name": "_initialReporter",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 4021,
+                    "referencedDeclaration": 4153,
                     "src": "591:16:9",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IInitialReporter_$5668",
+                      "typeIdentifier": "t_contract$_IInitialReporter_$5800",
                       "typeString": "contract IInitialReporter"
                     }
                   },
-                  "functionReturnParameters": 4011,
-                  "id": 4034,
+                  "functionReturnParameters": 4143,
+                  "id": 4166,
                   "nodeType": "Return",
                   "src": "584:23:9"
                 }
               ]
             },
             "documentation": null,
-            "id": 4036,
+            "id": 4168,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -997,31 +997,31 @@
             "name": "createInitialReporter",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4008,
+              "id": 4140,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4003,
+                  "id": 4135,
                   "name": "_controller",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4036,
+                  "scope": 4168,
                   "src": "250:23:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IController_$3901",
+                    "typeIdentifier": "t_contract$_IController_$4033",
                     "typeString": "contract IController"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4002,
+                    "id": 4134,
                     "name": "IController",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 3901,
+                    "referencedDeclaration": 4033,
                     "src": "250:11:9",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IController_$3901",
+                      "typeIdentifier": "t_contract$_IController_$4033",
                       "typeString": "contract IController"
                     }
                   },
@@ -1030,26 +1030,26 @@
                 },
                 {
                   "constant": false,
-                  "id": 4005,
+                  "id": 4137,
                   "name": "_market",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4036,
+                  "scope": 4168,
                   "src": "275:15:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IMarket_$5873",
+                    "typeIdentifier": "t_contract$_IMarket_$6005",
                     "typeString": "contract IMarket"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4004,
+                    "id": 4136,
                     "name": "IMarket",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 5873,
+                    "referencedDeclaration": 6005,
                     "src": "275:7:9",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IMarket_$5873",
+                      "typeIdentifier": "t_contract$_IMarket_$6005",
                       "typeString": "contract IMarket"
                     }
                   },
@@ -1058,10 +1058,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 4007,
+                  "id": 4139,
                   "name": "_designatedReporter",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4036,
+                  "scope": 4168,
                   "src": "292:27:9",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1070,7 +1070,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4006,
+                    "id": 4138,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "292:7:9",
@@ -1087,31 +1087,31 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 4011,
+              "id": 4143,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4010,
+                  "id": 4142,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4036,
+                  "scope": 4168,
                   "src": "337:16:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IInitialReporter_$5668",
+                    "typeIdentifier": "t_contract$_IInitialReporter_$5800",
                     "typeString": "contract IInitialReporter"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4009,
+                    "id": 4141,
                     "name": "IInitialReporter",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 5668,
+                    "referencedDeclaration": 5800,
                     "src": "337:16:9",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IInitialReporter_$5668",
+                      "typeIdentifier": "t_contract$_IInitialReporter_$5800",
                       "typeString": "contract IInitialReporter"
                     }
                   },
@@ -1121,14 +1121,14 @@
               ],
               "src": "336:18:9"
             },
-            "scope": 4037,
+            "scope": 4169,
             "src": "219:395:9",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 4038,
+        "scope": 4170,
         "src": "181:435:9"
       }
     ],
@@ -1140,7 +1140,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.13",
-  "updatedAt": "2019-08-24T23:51:51.479Z",
+  "updatedAt": "2019-08-25T01:25:40.720Z",
   "devdoc": {
     "methods": {}
   },

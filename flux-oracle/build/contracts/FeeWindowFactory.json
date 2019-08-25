@@ -40,14 +40,14 @@
     "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/factories/FeeWindowFactory.sol",
     "exportedSymbols": {
       "FeeWindowFactory": [
-        3995
+        4127
       ]
     },
-    "id": 3996,
+    "id": 4128,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 3955,
+        "id": 4087,
         "literals": [
           "solidity",
           "^",
@@ -60,10 +60,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/Delegator.sol",
         "file": "./../libraries/Delegator.sol",
-        "id": 3956,
+        "id": 4088,
         "nodeType": "ImportDirective",
-        "scope": 3996,
-        "sourceUnit": 4472,
+        "scope": 4128,
+        "sourceUnit": 4604,
         "src": "26:38:8",
         "symbolAliases": [],
         "unitAlias": ""
@@ -71,10 +71,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/IController.sol",
         "file": "./../IController.sol",
-        "id": 3957,
+        "id": 4089,
         "nodeType": "ImportDirective",
-        "scope": 3996,
-        "sourceUnit": 3902,
+        "scope": 4128,
+        "sourceUnit": 4034,
         "src": "65:30:8",
         "symbolAliases": [],
         "unitAlias": ""
@@ -82,10 +82,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/reporting/IUniverse.sol",
         "file": "./../reporting/IUniverse.sol",
-        "id": 3958,
+        "id": 4090,
         "nodeType": "ImportDirective",
-        "scope": 3996,
-        "sourceUnit": 6321,
+        "scope": 4128,
+        "sourceUnit": 6453,
         "src": "96:38:8",
         "symbolAliases": [],
         "unitAlias": ""
@@ -93,10 +93,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/reporting/IFeeWindow.sol",
         "file": "./../reporting/IFeeWindow.sol",
-        "id": 3959,
+        "id": 4091,
         "nodeType": "ImportDirective",
-        "scope": 3996,
-        "sourceUnit": 5609,
+        "scope": 4128,
+        "sourceUnit": 5741,
         "src": "135:39:8",
         "symbolAliases": [],
         "unitAlias": ""
@@ -104,51 +104,51 @@
       {
         "baseContracts": [],
         "contractDependencies": [
-          4471
+          4603
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 3995,
+        "id": 4127,
         "linearizedBaseContracts": [
-          3995
+          4127
         ],
         "name": "FeeWindowFactory",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 3993,
+              "id": 4125,
               "nodeType": "Block",
               "src": "330:218:8",
               "statements": [
                 {
                   "assignments": [
-                    3971
+                    4103
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 3971,
+                      "id": 4103,
                       "name": "_delegator",
                       "nodeType": "VariableDeclaration",
-                      "scope": 3994,
+                      "scope": 4126,
                       "src": "340:20:8",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Delegator_$4471",
+                        "typeIdentifier": "t_contract$_Delegator_$4603",
                         "typeString": "contract Delegator"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 3970,
+                        "id": 4102,
                         "name": "Delegator",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 4471,
+                        "referencedDeclaration": 4603,
                         "src": "340:9:8",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Delegator_$4471",
+                          "typeIdentifier": "t_contract$_Delegator_$4603",
                           "typeString": "contract Delegator"
                         }
                       },
@@ -156,27 +156,27 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 3977,
+                  "id": 4109,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 3974,
+                        "id": 4106,
                         "name": "_controller",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3961,
+                        "referencedDeclaration": 4093,
                         "src": "377:11:8",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IController_$3901",
+                          "typeIdentifier": "t_contract$_IController_$4033",
                           "typeString": "contract IController"
                         }
                       },
                       {
                         "argumentTypes": null,
                         "hexValue": "46656557696e646f77",
-                        "id": 3975,
+                        "id": 4107,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -195,7 +195,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_IController_$3901",
+                          "typeIdentifier": "t_contract$_IController_$4033",
                           "typeString": "contract IController"
                         },
                         {
@@ -203,7 +203,7 @@
                           "typeString": "literal_string \"FeeWindow\""
                         }
                       ],
-                      "id": 3973,
+                      "id": 4105,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -211,23 +211,23 @@
                       "nodeType": "NewExpression",
                       "src": "363:13:8",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_creation_nonpayable$_t_contract$_IController_$3901_$_t_bytes32_$returns$_t_contract$_Delegator_$4471_$",
+                        "typeIdentifier": "t_function_creation_nonpayable$_t_contract$_IController_$4033_$_t_bytes32_$returns$_t_contract$_Delegator_$4603_$",
                         "typeString": "function (contract IController,bytes32) returns (contract Delegator)"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 3972,
+                        "id": 4104,
                         "name": "Delegator",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 4471,
+                        "referencedDeclaration": 4603,
                         "src": "367:9:8",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Delegator_$4471",
+                          "typeIdentifier": "t_contract$_Delegator_$4603",
                           "typeString": "contract Delegator"
                         }
                       }
                     },
-                    "id": 3976,
+                    "id": 4108,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -237,7 +237,7 @@
                     "nodeType": "FunctionCall",
                     "src": "363:39:8",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Delegator_$4471",
+                      "typeIdentifier": "t_contract$_Delegator_$4603",
                       "typeString": "contract Delegator"
                     }
                   },
@@ -246,31 +246,31 @@
                 },
                 {
                   "assignments": [
-                    3979
+                    4111
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 3979,
+                      "id": 4111,
                       "name": "_feeWindow",
                       "nodeType": "VariableDeclaration",
-                      "scope": 3994,
+                      "scope": 4126,
                       "src": "412:21:8",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IFeeWindow_$5608",
+                        "typeIdentifier": "t_contract$_IFeeWindow_$5740",
                         "typeString": "contract IFeeWindow"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 3978,
+                        "id": 4110,
                         "name": "IFeeWindow",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 5608,
+                        "referencedDeclaration": 5740,
                         "src": "412:10:8",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IFeeWindow_$5608",
+                          "typeIdentifier": "t_contract$_IFeeWindow_$5740",
                           "typeString": "contract IFeeWindow"
                         }
                       },
@@ -278,20 +278,20 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 3983,
+                  "id": 4115,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 3981,
+                        "id": 4113,
                         "name": "_delegator",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3971,
+                        "referencedDeclaration": 4103,
                         "src": "447:10:8",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Delegator_$4471",
+                          "typeIdentifier": "t_contract$_Delegator_$4603",
                           "typeString": "contract Delegator"
                         }
                       }
@@ -299,22 +299,22 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_Delegator_$4471",
+                          "typeIdentifier": "t_contract$_Delegator_$4603",
                           "typeString": "contract Delegator"
                         }
                       ],
-                      "id": 3980,
+                      "id": 4112,
                       "name": "IFeeWindow",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5608,
+                      "referencedDeclaration": 5740,
                       "src": "436:10:8",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_IFeeWindow_$5608_$",
+                        "typeIdentifier": "t_type$_t_contract$_IFeeWindow_$5740_$",
                         "typeString": "type(contract IFeeWindow)"
                       }
                     },
-                    "id": 3982,
+                    "id": 4114,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -324,7 +324,7 @@
                     "nodeType": "FunctionCall",
                     "src": "436:22:8",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IFeeWindow_$5608",
+                      "typeIdentifier": "t_contract$_IFeeWindow_$5740",
                       "typeString": "contract IFeeWindow"
                     }
                   },
@@ -337,24 +337,24 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 3987,
+                        "id": 4119,
                         "name": "_universe",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3963,
+                        "referencedDeclaration": 4095,
                         "src": "490:9:8",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IUniverse_$6320",
+                          "typeIdentifier": "t_contract$_IUniverse_$6452",
                           "typeString": "contract IUniverse"
                         }
                       },
                       {
                         "argumentTypes": null,
-                        "id": 3988,
+                        "id": 4120,
                         "name": "_feeWindowId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3965,
+                        "referencedDeclaration": 4097,
                         "src": "501:12:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -365,7 +365,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_IUniverse_$6320",
+                          "typeIdentifier": "t_contract$_IUniverse_$6452",
                           "typeString": "contract IUniverse"
                         },
                         {
@@ -375,32 +375,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 3984,
+                        "id": 4116,
                         "name": "_feeWindow",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3979,
+                        "referencedDeclaration": 4111,
                         "src": "468:10:8",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IFeeWindow_$5608",
+                          "typeIdentifier": "t_contract$_IFeeWindow_$5740",
                           "typeString": "contract IFeeWindow"
                         }
                       },
-                      "id": 3986,
+                      "id": 4118,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "initialize",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 5512,
+                      "referencedDeclaration": 5644,
                       "src": "468:21:8",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_nonpayable$_t_contract$_IUniverse_$6320_$_t_uint256_$returns$_t_bool_$",
+                        "typeIdentifier": "t_function_external_nonpayable$_t_contract$_IUniverse_$6452_$_t_uint256_$returns$_t_bool_$",
                         "typeString": "function (contract IUniverse,uint256) external returns (bool)"
                       }
                     },
-                    "id": 3989,
+                    "id": 4121,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -414,33 +414,33 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 3990,
+                  "id": 4122,
                   "nodeType": "ExpressionStatement",
                   "src": "468:46:8"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 3991,
+                    "id": 4123,
                     "name": "_feeWindow",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 3979,
+                    "referencedDeclaration": 4111,
                     "src": "531:10:8",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IFeeWindow_$5608",
+                      "typeIdentifier": "t_contract$_IFeeWindow_$5740",
                       "typeString": "contract IFeeWindow"
                     }
                   },
-                  "functionReturnParameters": 3969,
-                  "id": 3992,
+                  "functionReturnParameters": 4101,
+                  "id": 4124,
                   "nodeType": "Return",
                   "src": "524:17:8"
                 }
               ]
             },
             "documentation": null,
-            "id": 3994,
+            "id": 4126,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -448,31 +448,31 @@
             "name": "createFeeWindow",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3966,
+              "id": 4098,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3961,
+                  "id": 4093,
                   "name": "_controller",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3994,
+                  "scope": 4126,
                   "src": "234:23:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IController_$3901",
+                    "typeIdentifier": "t_contract$_IController_$4033",
                     "typeString": "contract IController"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 3960,
+                    "id": 4092,
                     "name": "IController",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 3901,
+                    "referencedDeclaration": 4033,
                     "src": "234:11:8",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IController_$3901",
+                      "typeIdentifier": "t_contract$_IController_$4033",
                       "typeString": "contract IController"
                     }
                   },
@@ -481,26 +481,26 @@
                 },
                 {
                   "constant": false,
-                  "id": 3963,
+                  "id": 4095,
                   "name": "_universe",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3994,
+                  "scope": 4126,
                   "src": "259:19:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IUniverse_$6320",
+                    "typeIdentifier": "t_contract$_IUniverse_$6452",
                     "typeString": "contract IUniverse"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 3962,
+                    "id": 4094,
                     "name": "IUniverse",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 6320,
+                    "referencedDeclaration": 6452,
                     "src": "259:9:8",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IUniverse_$6320",
+                      "typeIdentifier": "t_contract$_IUniverse_$6452",
                       "typeString": "contract IUniverse"
                     }
                   },
@@ -509,10 +509,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 3965,
+                  "id": 4097,
                   "name": "_feeWindowId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3994,
+                  "scope": 4126,
                   "src": "280:20:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -521,7 +521,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3964,
+                    "id": 4096,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "280:7:8",
@@ -538,31 +538,31 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 3969,
+              "id": 4101,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3968,
+                  "id": 4100,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3994,
+                  "scope": 4126,
                   "src": "318:10:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IFeeWindow_$5608",
+                    "typeIdentifier": "t_contract$_IFeeWindow_$5740",
                     "typeString": "contract IFeeWindow"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 3967,
+                    "id": 4099,
                     "name": "IFeeWindow",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 5608,
+                    "referencedDeclaration": 5740,
                     "src": "318:10:8",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IFeeWindow_$5608",
+                      "typeIdentifier": "t_contract$_IFeeWindow_$5740",
                       "typeString": "contract IFeeWindow"
                     }
                   },
@@ -572,14 +572,14 @@
               ],
               "src": "317:12:8"
             },
-            "scope": 3995,
+            "scope": 4127,
             "src": "209:339:8",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 3996,
+        "scope": 4128,
         "src": "177:373:8"
       }
     ],
@@ -589,14 +589,14 @@
     "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/factories/FeeWindowFactory.sol",
     "exportedSymbols": {
       "FeeWindowFactory": [
-        3995
+        4127
       ]
     },
-    "id": 3996,
+    "id": 4128,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 3955,
+        "id": 4087,
         "literals": [
           "solidity",
           "^",
@@ -609,10 +609,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/Delegator.sol",
         "file": "./../libraries/Delegator.sol",
-        "id": 3956,
+        "id": 4088,
         "nodeType": "ImportDirective",
-        "scope": 3996,
-        "sourceUnit": 4472,
+        "scope": 4128,
+        "sourceUnit": 4604,
         "src": "26:38:8",
         "symbolAliases": [],
         "unitAlias": ""
@@ -620,10 +620,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/IController.sol",
         "file": "./../IController.sol",
-        "id": 3957,
+        "id": 4089,
         "nodeType": "ImportDirective",
-        "scope": 3996,
-        "sourceUnit": 3902,
+        "scope": 4128,
+        "sourceUnit": 4034,
         "src": "65:30:8",
         "symbolAliases": [],
         "unitAlias": ""
@@ -631,10 +631,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/reporting/IUniverse.sol",
         "file": "./../reporting/IUniverse.sol",
-        "id": 3958,
+        "id": 4090,
         "nodeType": "ImportDirective",
-        "scope": 3996,
-        "sourceUnit": 6321,
+        "scope": 4128,
+        "sourceUnit": 6453,
         "src": "96:38:8",
         "symbolAliases": [],
         "unitAlias": ""
@@ -642,10 +642,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/reporting/IFeeWindow.sol",
         "file": "./../reporting/IFeeWindow.sol",
-        "id": 3959,
+        "id": 4091,
         "nodeType": "ImportDirective",
-        "scope": 3996,
-        "sourceUnit": 5609,
+        "scope": 4128,
+        "sourceUnit": 5741,
         "src": "135:39:8",
         "symbolAliases": [],
         "unitAlias": ""
@@ -653,51 +653,51 @@
       {
         "baseContracts": [],
         "contractDependencies": [
-          4471
+          4603
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 3995,
+        "id": 4127,
         "linearizedBaseContracts": [
-          3995
+          4127
         ],
         "name": "FeeWindowFactory",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 3993,
+              "id": 4125,
               "nodeType": "Block",
               "src": "330:218:8",
               "statements": [
                 {
                   "assignments": [
-                    3971
+                    4103
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 3971,
+                      "id": 4103,
                       "name": "_delegator",
                       "nodeType": "VariableDeclaration",
-                      "scope": 3994,
+                      "scope": 4126,
                       "src": "340:20:8",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Delegator_$4471",
+                        "typeIdentifier": "t_contract$_Delegator_$4603",
                         "typeString": "contract Delegator"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 3970,
+                        "id": 4102,
                         "name": "Delegator",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 4471,
+                        "referencedDeclaration": 4603,
                         "src": "340:9:8",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Delegator_$4471",
+                          "typeIdentifier": "t_contract$_Delegator_$4603",
                           "typeString": "contract Delegator"
                         }
                       },
@@ -705,27 +705,27 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 3977,
+                  "id": 4109,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 3974,
+                        "id": 4106,
                         "name": "_controller",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3961,
+                        "referencedDeclaration": 4093,
                         "src": "377:11:8",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IController_$3901",
+                          "typeIdentifier": "t_contract$_IController_$4033",
                           "typeString": "contract IController"
                         }
                       },
                       {
                         "argumentTypes": null,
                         "hexValue": "46656557696e646f77",
-                        "id": 3975,
+                        "id": 4107,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -744,7 +744,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_IController_$3901",
+                          "typeIdentifier": "t_contract$_IController_$4033",
                           "typeString": "contract IController"
                         },
                         {
@@ -752,7 +752,7 @@
                           "typeString": "literal_string \"FeeWindow\""
                         }
                       ],
-                      "id": 3973,
+                      "id": 4105,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -760,23 +760,23 @@
                       "nodeType": "NewExpression",
                       "src": "363:13:8",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_creation_nonpayable$_t_contract$_IController_$3901_$_t_bytes32_$returns$_t_contract$_Delegator_$4471_$",
+                        "typeIdentifier": "t_function_creation_nonpayable$_t_contract$_IController_$4033_$_t_bytes32_$returns$_t_contract$_Delegator_$4603_$",
                         "typeString": "function (contract IController,bytes32) returns (contract Delegator)"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 3972,
+                        "id": 4104,
                         "name": "Delegator",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 4471,
+                        "referencedDeclaration": 4603,
                         "src": "367:9:8",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Delegator_$4471",
+                          "typeIdentifier": "t_contract$_Delegator_$4603",
                           "typeString": "contract Delegator"
                         }
                       }
                     },
-                    "id": 3976,
+                    "id": 4108,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -786,7 +786,7 @@
                     "nodeType": "FunctionCall",
                     "src": "363:39:8",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Delegator_$4471",
+                      "typeIdentifier": "t_contract$_Delegator_$4603",
                       "typeString": "contract Delegator"
                     }
                   },
@@ -795,31 +795,31 @@
                 },
                 {
                   "assignments": [
-                    3979
+                    4111
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 3979,
+                      "id": 4111,
                       "name": "_feeWindow",
                       "nodeType": "VariableDeclaration",
-                      "scope": 3994,
+                      "scope": 4126,
                       "src": "412:21:8",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IFeeWindow_$5608",
+                        "typeIdentifier": "t_contract$_IFeeWindow_$5740",
                         "typeString": "contract IFeeWindow"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 3978,
+                        "id": 4110,
                         "name": "IFeeWindow",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 5608,
+                        "referencedDeclaration": 5740,
                         "src": "412:10:8",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IFeeWindow_$5608",
+                          "typeIdentifier": "t_contract$_IFeeWindow_$5740",
                           "typeString": "contract IFeeWindow"
                         }
                       },
@@ -827,20 +827,20 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 3983,
+                  "id": 4115,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 3981,
+                        "id": 4113,
                         "name": "_delegator",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3971,
+                        "referencedDeclaration": 4103,
                         "src": "447:10:8",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Delegator_$4471",
+                          "typeIdentifier": "t_contract$_Delegator_$4603",
                           "typeString": "contract Delegator"
                         }
                       }
@@ -848,22 +848,22 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_Delegator_$4471",
+                          "typeIdentifier": "t_contract$_Delegator_$4603",
                           "typeString": "contract Delegator"
                         }
                       ],
-                      "id": 3980,
+                      "id": 4112,
                       "name": "IFeeWindow",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5608,
+                      "referencedDeclaration": 5740,
                       "src": "436:10:8",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_IFeeWindow_$5608_$",
+                        "typeIdentifier": "t_type$_t_contract$_IFeeWindow_$5740_$",
                         "typeString": "type(contract IFeeWindow)"
                       }
                     },
-                    "id": 3982,
+                    "id": 4114,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -873,7 +873,7 @@
                     "nodeType": "FunctionCall",
                     "src": "436:22:8",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IFeeWindow_$5608",
+                      "typeIdentifier": "t_contract$_IFeeWindow_$5740",
                       "typeString": "contract IFeeWindow"
                     }
                   },
@@ -886,24 +886,24 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 3987,
+                        "id": 4119,
                         "name": "_universe",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3963,
+                        "referencedDeclaration": 4095,
                         "src": "490:9:8",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IUniverse_$6320",
+                          "typeIdentifier": "t_contract$_IUniverse_$6452",
                           "typeString": "contract IUniverse"
                         }
                       },
                       {
                         "argumentTypes": null,
-                        "id": 3988,
+                        "id": 4120,
                         "name": "_feeWindowId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3965,
+                        "referencedDeclaration": 4097,
                         "src": "501:12:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -914,7 +914,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_IUniverse_$6320",
+                          "typeIdentifier": "t_contract$_IUniverse_$6452",
                           "typeString": "contract IUniverse"
                         },
                         {
@@ -924,32 +924,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 3984,
+                        "id": 4116,
                         "name": "_feeWindow",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3979,
+                        "referencedDeclaration": 4111,
                         "src": "468:10:8",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IFeeWindow_$5608",
+                          "typeIdentifier": "t_contract$_IFeeWindow_$5740",
                           "typeString": "contract IFeeWindow"
                         }
                       },
-                      "id": 3986,
+                      "id": 4118,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "initialize",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 5512,
+                      "referencedDeclaration": 5644,
                       "src": "468:21:8",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_nonpayable$_t_contract$_IUniverse_$6320_$_t_uint256_$returns$_t_bool_$",
+                        "typeIdentifier": "t_function_external_nonpayable$_t_contract$_IUniverse_$6452_$_t_uint256_$returns$_t_bool_$",
                         "typeString": "function (contract IUniverse,uint256) external returns (bool)"
                       }
                     },
-                    "id": 3989,
+                    "id": 4121,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -963,33 +963,33 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 3990,
+                  "id": 4122,
                   "nodeType": "ExpressionStatement",
                   "src": "468:46:8"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 3991,
+                    "id": 4123,
                     "name": "_feeWindow",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 3979,
+                    "referencedDeclaration": 4111,
                     "src": "531:10:8",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IFeeWindow_$5608",
+                      "typeIdentifier": "t_contract$_IFeeWindow_$5740",
                       "typeString": "contract IFeeWindow"
                     }
                   },
-                  "functionReturnParameters": 3969,
-                  "id": 3992,
+                  "functionReturnParameters": 4101,
+                  "id": 4124,
                   "nodeType": "Return",
                   "src": "524:17:8"
                 }
               ]
             },
             "documentation": null,
-            "id": 3994,
+            "id": 4126,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -997,31 +997,31 @@
             "name": "createFeeWindow",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3966,
+              "id": 4098,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3961,
+                  "id": 4093,
                   "name": "_controller",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3994,
+                  "scope": 4126,
                   "src": "234:23:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IController_$3901",
+                    "typeIdentifier": "t_contract$_IController_$4033",
                     "typeString": "contract IController"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 3960,
+                    "id": 4092,
                     "name": "IController",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 3901,
+                    "referencedDeclaration": 4033,
                     "src": "234:11:8",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IController_$3901",
+                      "typeIdentifier": "t_contract$_IController_$4033",
                       "typeString": "contract IController"
                     }
                   },
@@ -1030,26 +1030,26 @@
                 },
                 {
                   "constant": false,
-                  "id": 3963,
+                  "id": 4095,
                   "name": "_universe",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3994,
+                  "scope": 4126,
                   "src": "259:19:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IUniverse_$6320",
+                    "typeIdentifier": "t_contract$_IUniverse_$6452",
                     "typeString": "contract IUniverse"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 3962,
+                    "id": 4094,
                     "name": "IUniverse",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 6320,
+                    "referencedDeclaration": 6452,
                     "src": "259:9:8",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IUniverse_$6320",
+                      "typeIdentifier": "t_contract$_IUniverse_$6452",
                       "typeString": "contract IUniverse"
                     }
                   },
@@ -1058,10 +1058,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 3965,
+                  "id": 4097,
                   "name": "_feeWindowId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3994,
+                  "scope": 4126,
                   "src": "280:20:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1070,7 +1070,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3964,
+                    "id": 4096,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "280:7:8",
@@ -1087,31 +1087,31 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 3969,
+              "id": 4101,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3968,
+                  "id": 4100,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3994,
+                  "scope": 4126,
                   "src": "318:10:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IFeeWindow_$5608",
+                    "typeIdentifier": "t_contract$_IFeeWindow_$5740",
                     "typeString": "contract IFeeWindow"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 3967,
+                    "id": 4099,
                     "name": "IFeeWindow",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 5608,
+                    "referencedDeclaration": 5740,
                     "src": "318:10:8",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IFeeWindow_$5608",
+                      "typeIdentifier": "t_contract$_IFeeWindow_$5740",
                       "typeString": "contract IFeeWindow"
                     }
                   },
@@ -1121,14 +1121,14 @@
               ],
               "src": "317:12:8"
             },
-            "scope": 3995,
+            "scope": 4127,
             "src": "209:339:8",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 3996,
+        "scope": 4128,
         "src": "177:373:8"
       }
     ],
@@ -1140,7 +1140,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.13",
-  "updatedAt": "2019-08-24T23:51:51.477Z",
+  "updatedAt": "2019-08-25T01:25:40.718Z",
   "devdoc": {
     "methods": {}
   },

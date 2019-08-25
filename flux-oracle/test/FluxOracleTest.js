@@ -173,10 +173,15 @@ contract('MarketOracle', () => {
 		assert.equal(yesnoMarketBalance, "1980000000000000000");
 	});
 
-	it('is able to verify for each outcome howmuch total should have been earned', async () => {
-		const firstBalance = await yesNoMarket.methods.getPayoutByOutcome(0).call({from: PUB_KEY});
-		const secondBalance = await yesNoMarket.methods.getPayoutByOutcome(1).call({from: PUB_KEY});
-		console.log(firstBalance.toString(), secondBalance.toString());
+	it('is able to claim earnings', async () => {
+		const balanceBefore = await web3.eth.getBalance(PUB_KEY);
+		const nonce = await web3.eth.getTransactionCount(PUB_KEY);
+		const data = await yesNoMarket.methods.payout().encodeABI();
+		await sendSignedTransaction(yesNoMarket.address, nonce, data, "0");
+		const balanceAfter = await web3.eth.getBalance(PUB_KEY);
+		
+		assert.equal(toBN(balanceAfter).sub(toBN(balanceBefore)).toString(), "1980000000000000000");
 	});
+
 
 });

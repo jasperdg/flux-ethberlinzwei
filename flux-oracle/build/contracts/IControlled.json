@@ -46,14 +46,14 @@
     "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/IControlled.sol",
     "exportedSymbols": {
       "IControlled": [
-        3858
+        3990
       ]
     },
-    "id": 3859,
+    "id": 3991,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 3843,
+        "id": 3975,
         "literals": [
           "solidity",
           "^",
@@ -66,10 +66,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/IController.sol",
         "file": "./IController.sol",
-        "id": 3844,
+        "id": 3976,
         "nodeType": "ImportDirective",
-        "scope": 3859,
-        "sourceUnit": 3902,
+        "scope": 3991,
+        "sourceUnit": 4034,
         "src": "27:27:5",
         "symbolAliases": [],
         "unitAlias": ""
@@ -77,10 +77,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/token/ERC20Basic.sol",
         "file": "./libraries/token/ERC20Basic.sol",
-        "id": 3845,
+        "id": 3977,
         "nodeType": "ImportDirective",
-        "scope": 3859,
-        "sourceUnit": 5416,
+        "scope": 3991,
+        "sourceUnit": 5548,
         "src": "55:42:5",
         "symbolAliases": [],
         "unitAlias": ""
@@ -91,9 +91,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 3858,
+        "id": 3990,
         "linearizedBaseContracts": [
-          3858
+          3990
         ],
         "name": "IControlled",
         "nodeType": "ContractDefinition",
@@ -101,7 +101,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 3850,
+            "id": 3982,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -109,38 +109,38 @@
             "name": "getController",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3846,
+              "id": 3978,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "149:2:5"
             },
             "payable": false,
             "returnParameters": {
-              "id": 3849,
+              "id": 3981,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3848,
+                  "id": 3980,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3850,
+                  "scope": 3982,
                   "src": "173:11:5",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IController_$3901",
+                    "typeIdentifier": "t_contract$_IController_$4033",
                     "typeString": "contract IController"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 3847,
+                    "id": 3979,
                     "name": "IController",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 3901,
+                    "referencedDeclaration": 4033,
                     "src": "173:11:5",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IController_$3901",
+                      "typeIdentifier": "t_contract$_IController_$4033",
                       "typeString": "contract IController"
                     }
                   },
@@ -150,7 +150,7 @@
               ],
               "src": "172:13:5"
             },
-            "scope": 3858,
+            "scope": 3990,
             "src": "127:59:5",
             "stateMutability": "view",
             "superFunction": null,
@@ -159,7 +159,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 3857,
+            "id": 3989,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -167,31 +167,31 @@
             "name": "setController",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3853,
+              "id": 3985,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3852,
+                  "id": 3984,
                   "name": "_controller",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3857,
+                  "scope": 3989,
                   "src": "214:23:5",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IController_$3901",
+                    "typeIdentifier": "t_contract$_IController_$4033",
                     "typeString": "contract IController"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 3851,
+                    "id": 3983,
                     "name": "IController",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 3901,
+                    "referencedDeclaration": 4033,
                     "src": "214:11:5",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IController_$3901",
+                      "typeIdentifier": "t_contract$_IController_$4033",
                       "typeString": "contract IController"
                     }
                   },
@@ -203,15 +203,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 3856,
+              "id": 3988,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3855,
+                  "id": 3987,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3857,
+                  "scope": 3989,
                   "src": "254:4:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -220,7 +220,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 3854,
+                    "id": 3986,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "254:4:5",
@@ -235,14 +235,14 @@
               ],
               "src": "253:6:5"
             },
-            "scope": 3858,
+            "scope": 3990,
             "src": "191:69:5",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 3859,
+        "scope": 3991,
         "src": "100:162:5"
       }
     ],
@@ -252,14 +252,14 @@
     "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/IControlled.sol",
     "exportedSymbols": {
       "IControlled": [
-        3858
+        3990
       ]
     },
-    "id": 3859,
+    "id": 3991,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 3843,
+        "id": 3975,
         "literals": [
           "solidity",
           "^",
@@ -272,10 +272,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/IController.sol",
         "file": "./IController.sol",
-        "id": 3844,
+        "id": 3976,
         "nodeType": "ImportDirective",
-        "scope": 3859,
-        "sourceUnit": 3902,
+        "scope": 3991,
+        "sourceUnit": 4034,
         "src": "27:27:5",
         "symbolAliases": [],
         "unitAlias": ""
@@ -283,10 +283,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/token/ERC20Basic.sol",
         "file": "./libraries/token/ERC20Basic.sol",
-        "id": 3845,
+        "id": 3977,
         "nodeType": "ImportDirective",
-        "scope": 3859,
-        "sourceUnit": 5416,
+        "scope": 3991,
+        "sourceUnit": 5548,
         "src": "55:42:5",
         "symbolAliases": [],
         "unitAlias": ""
@@ -297,9 +297,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 3858,
+        "id": 3990,
         "linearizedBaseContracts": [
-          3858
+          3990
         ],
         "name": "IControlled",
         "nodeType": "ContractDefinition",
@@ -307,7 +307,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 3850,
+            "id": 3982,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -315,38 +315,38 @@
             "name": "getController",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3846,
+              "id": 3978,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "149:2:5"
             },
             "payable": false,
             "returnParameters": {
-              "id": 3849,
+              "id": 3981,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3848,
+                  "id": 3980,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3850,
+                  "scope": 3982,
                   "src": "173:11:5",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IController_$3901",
+                    "typeIdentifier": "t_contract$_IController_$4033",
                     "typeString": "contract IController"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 3847,
+                    "id": 3979,
                     "name": "IController",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 3901,
+                    "referencedDeclaration": 4033,
                     "src": "173:11:5",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IController_$3901",
+                      "typeIdentifier": "t_contract$_IController_$4033",
                       "typeString": "contract IController"
                     }
                   },
@@ -356,7 +356,7 @@
               ],
               "src": "172:13:5"
             },
-            "scope": 3858,
+            "scope": 3990,
             "src": "127:59:5",
             "stateMutability": "view",
             "superFunction": null,
@@ -365,7 +365,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 3857,
+            "id": 3989,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -373,31 +373,31 @@
             "name": "setController",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3853,
+              "id": 3985,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3852,
+                  "id": 3984,
                   "name": "_controller",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3857,
+                  "scope": 3989,
                   "src": "214:23:5",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IController_$3901",
+                    "typeIdentifier": "t_contract$_IController_$4033",
                     "typeString": "contract IController"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 3851,
+                    "id": 3983,
                     "name": "IController",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 3901,
+                    "referencedDeclaration": 4033,
                     "src": "214:11:5",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IController_$3901",
+                      "typeIdentifier": "t_contract$_IController_$4033",
                       "typeString": "contract IController"
                     }
                   },
@@ -409,15 +409,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 3856,
+              "id": 3988,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3855,
+                  "id": 3987,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3857,
+                  "scope": 3989,
                   "src": "254:4:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -426,7 +426,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 3854,
+                    "id": 3986,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "254:4:5",
@@ -441,14 +441,14 @@
               ],
               "src": "253:6:5"
             },
-            "scope": 3858,
+            "scope": 3990,
             "src": "191:69:5",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 3859,
+        "scope": 3991,
         "src": "100:162:5"
       }
     ],
@@ -460,7 +460,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.13",
-  "updatedAt": "2019-08-24T23:51:51.473Z",
+  "updatedAt": "2019-08-25T01:25:40.712Z",
   "devdoc": {
     "methods": {}
   },

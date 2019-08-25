@@ -80,14 +80,14 @@
     "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/Delegator.sol",
     "exportedSymbols": {
       "Delegator": [
-        4471
+        4603
       ]
     },
-    "id": 4472,
+    "id": 4604,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4432,
+        "id": 4564,
         "literals": [
           "solidity",
           "^",
@@ -100,10 +100,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/IController.sol",
         "file": "./../IController.sol",
-        "id": 4433,
+        "id": 4565,
         "nodeType": "ImportDirective",
-        "scope": 4472,
-        "sourceUnit": 3902,
+        "scope": 4604,
+        "sourceUnit": 4034,
         "src": "27:30:18",
         "symbolAliases": [],
         "unitAlias": ""
@@ -111,10 +111,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/DelegationTarget.sol",
         "file": "./../libraries/DelegationTarget.sol",
-        "id": 4434,
+        "id": 4566,
         "nodeType": "ImportDirective",
-        "scope": 4472,
-        "sourceUnit": 4431,
+        "scope": 4604,
+        "sourceUnit": 4563,
         "src": "58:45:18",
         "symbolAliases": [],
         "unitAlias": ""
@@ -125,63 +125,63 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 4435,
+              "id": 4567,
               "name": "DelegationTarget",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 4430,
+              "referencedDeclaration": 4562,
               "src": "128:16:18",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_DelegationTarget_$4430",
+                "typeIdentifier": "t_contract$_DelegationTarget_$4562",
                 "typeString": "contract DelegationTarget"
               }
             },
-            "id": 4436,
+            "id": 4568,
             "nodeType": "InheritanceSpecifier",
             "src": "128:16:18"
           }
         ],
         "contractDependencies": [
-          3245,
-          3858,
-          4430
+          3377,
+          3990,
+          4562
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 4471,
+        "id": 4603,
         "linearizedBaseContracts": [
-          4471,
-          4430,
-          3245,
-          3858
+          4603,
+          4562,
+          3377,
+          3990
         ],
         "name": "Delegator",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 4451,
+              "id": 4583,
               "nodeType": "Block",
               "src": "233:95:18",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 4445,
+                    "id": 4577,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 4443,
+                      "id": 4575,
                       "name": "controller",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3148,
+                      "referencedDeclaration": 3280,
                       "src": "243:10:18",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IController_$3901",
+                        "typeIdentifier": "t_contract$_IController_$4033",
                         "typeString": "contract IController"
                       }
                     },
@@ -189,42 +189,42 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 4444,
+                      "id": 4576,
                       "name": "_controller",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4438,
+                      "referencedDeclaration": 4570,
                       "src": "256:11:18",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IController_$3901",
+                        "typeIdentifier": "t_contract$_IController_$4033",
                         "typeString": "contract IController"
                       }
                     },
                     "src": "243:24:18",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IController_$3901",
+                      "typeIdentifier": "t_contract$_IController_$4033",
                       "typeString": "contract IController"
                     }
                   },
-                  "id": 4446,
+                  "id": 4578,
                   "nodeType": "ExpressionStatement",
                   "src": "243:24:18"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 4449,
+                    "id": 4581,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 4447,
+                      "id": 4579,
                       "name": "controllerLookupName",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4429,
+                      "referencedDeclaration": 4561,
                       "src": "277:20:18",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
@@ -235,11 +235,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 4448,
+                      "id": 4580,
                       "name": "_controllerLookupName",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4440,
+                      "referencedDeclaration": 4572,
                       "src": "300:21:18",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
@@ -252,14 +252,14 @@
                       "typeString": "bytes32"
                     }
                   },
-                  "id": 4450,
+                  "id": 4582,
                   "nodeType": "ExpressionStatement",
                   "src": "277:44:18"
                 }
               ]
             },
             "documentation": null,
-            "id": 4452,
+            "id": 4584,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -267,31 +267,31 @@
             "name": "Delegator",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4441,
+              "id": 4573,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4438,
+                  "id": 4570,
                   "name": "_controller",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4452,
+                  "scope": 4584,
                   "src": "170:23:18",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IController_$3901",
+                    "typeIdentifier": "t_contract$_IController_$4033",
                     "typeString": "contract IController"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4437,
+                    "id": 4569,
                     "name": "IController",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 3901,
+                    "referencedDeclaration": 4033,
                     "src": "170:11:18",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IController_$3901",
+                      "typeIdentifier": "t_contract$_IController_$4033",
                       "typeString": "contract IController"
                     }
                   },
@@ -300,10 +300,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 4440,
+                  "id": 4572,
                   "name": "_controllerLookupName",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4452,
+                  "scope": 4584,
                   "src": "195:29:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -312,7 +312,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 4439,
+                    "id": 4571,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "195:7:18",
@@ -329,12 +329,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 4442,
+              "id": 4574,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "233:0:18"
             },
-            "scope": 4471,
+            "scope": 4603,
             "src": "151:177:18",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -342,7 +342,7 @@
           },
           {
             "body": {
-              "id": 4469,
+              "id": 4601,
               "nodeType": "Block",
               "src": "362:1829:18",
               "statements": [
@@ -353,18 +353,18 @@
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
                     },
-                    "id": 4457,
+                    "id": 4589,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
                       "argumentTypes": null,
-                      "id": 4455,
+                      "id": 4587,
                       "name": "controllerLookupName",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4429,
+                      "referencedDeclaration": 4561,
                       "src": "460:20:18",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
@@ -376,7 +376,7 @@
                     "rightExpression": {
                       "argumentTypes": null,
                       "hexValue": "30",
-                      "id": 4456,
+                      "id": 4588,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -398,18 +398,18 @@
                     }
                   },
                   "falseBody": null,
-                  "id": 4460,
+                  "id": 4592,
                   "nodeType": "IfStatement",
                   "src": "456:62:18",
                   "trueBody": {
-                    "id": 4459,
+                    "id": 4591,
                     "nodeType": "Block",
                     "src": "487:31:18",
                     "statements": [
                       {
                         "expression": null,
-                        "functionReturnParameters": 4454,
-                        "id": 4458,
+                        "functionReturnParameters": 4586,
+                        "id": 4590,
                         "nodeType": "Return",
                         "src": "501:7:18"
                       }
@@ -418,15 +418,15 @@
                 },
                 {
                   "assignments": [
-                    4462
+                    4594
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4462,
+                      "id": 4594,
                       "name": "_target",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4470,
+                      "scope": 4602,
                       "src": "574:15:18",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -435,7 +435,7 @@
                         "typeString": "address"
                       },
                       "typeName": {
-                        "id": 4461,
+                        "id": 4593,
                         "name": "address",
                         "nodeType": "ElementaryTypeName",
                         "src": "574:7:18",
@@ -448,17 +448,17 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4467,
+                  "id": 4599,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 4465,
+                        "id": 4597,
                         "name": "controllerLookupName",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4429,
+                        "referencedDeclaration": 4561,
                         "src": "610:20:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -475,32 +475,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 4463,
+                        "id": 4595,
                         "name": "controller",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3148,
+                        "referencedDeclaration": 3280,
                         "src": "592:10:18",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IController_$3901",
+                          "typeIdentifier": "t_contract$_IController_$4033",
                           "typeString": "contract IController"
                         }
                       },
-                      "id": 4464,
+                      "id": 4596,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "lookup",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3875,
+                      "referencedDeclaration": 4007,
                       "src": "592:17:18",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$_t_bytes32_$returns$_t_address_$",
                         "typeString": "function (bytes32) view external returns (address)"
                       }
                     },
-                    "id": 4466,
+                    "id": 4598,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -521,7 +521,7 @@
                   "externalReferences": [
                     {
                       "_target": {
-                        "declaration": 4462,
+                        "declaration": 4594,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "1444:7:18",
@@ -529,7 +529,7 @@
                       }
                     }
                   ],
-                  "id": 4468,
+                  "id": 4600,
                   "nodeType": "InlineAssembly",
                   "operations": "{\n    let _calldataMemoryOffset := mload(0x40)\n    let _size := and(add(calldatasize(), 0x1f), not(0x1f))\n    mstore(0x40, add(_calldataMemoryOffset, _size))\n    calldatacopy(_calldataMemoryOffset, 0x0, calldatasize())\n    let _retval := delegatecall(gas(), _target, _calldataMemoryOffset, calldatasize(), 0, 0)\n    switch _retval\n    case 0 {\n        revert(0, 0)\n    }\n    default {\n        let _returndataMemoryOffset := mload(0x40)\n        mstore(0x40, add(_returndataMemoryOffset, returndatasize()))\n        returndatacopy(_returndataMemoryOffset, 0x0, returndatasize())\n        return(_returndataMemoryOffset, returndatasize())\n    }\n}",
                   "src": "642:1549:18"
@@ -537,7 +537,7 @@
               ]
             },
             "documentation": null,
-            "id": 4470,
+            "id": 4602,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -545,26 +545,26 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4453,
+              "id": 4585,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "342:2:18"
             },
             "payable": true,
             "returnParameters": {
-              "id": 4454,
+              "id": 4586,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "362:0:18"
             },
-            "scope": 4471,
+            "scope": 4603,
             "src": "334:1857:18",
             "stateMutability": "payable",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 4472,
+        "scope": 4604,
         "src": "106:2087:18"
       }
     ],
@@ -574,14 +574,14 @@
     "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/Delegator.sol",
     "exportedSymbols": {
       "Delegator": [
-        4471
+        4603
       ]
     },
-    "id": 4472,
+    "id": 4604,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4432,
+        "id": 4564,
         "literals": [
           "solidity",
           "^",
@@ -594,10 +594,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/IController.sol",
         "file": "./../IController.sol",
-        "id": 4433,
+        "id": 4565,
         "nodeType": "ImportDirective",
-        "scope": 4472,
-        "sourceUnit": 3902,
+        "scope": 4604,
+        "sourceUnit": 4034,
         "src": "27:30:18",
         "symbolAliases": [],
         "unitAlias": ""
@@ -605,10 +605,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/DelegationTarget.sol",
         "file": "./../libraries/DelegationTarget.sol",
-        "id": 4434,
+        "id": 4566,
         "nodeType": "ImportDirective",
-        "scope": 4472,
-        "sourceUnit": 4431,
+        "scope": 4604,
+        "sourceUnit": 4563,
         "src": "58:45:18",
         "symbolAliases": [],
         "unitAlias": ""
@@ -619,63 +619,63 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 4435,
+              "id": 4567,
               "name": "DelegationTarget",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 4430,
+              "referencedDeclaration": 4562,
               "src": "128:16:18",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_DelegationTarget_$4430",
+                "typeIdentifier": "t_contract$_DelegationTarget_$4562",
                 "typeString": "contract DelegationTarget"
               }
             },
-            "id": 4436,
+            "id": 4568,
             "nodeType": "InheritanceSpecifier",
             "src": "128:16:18"
           }
         ],
         "contractDependencies": [
-          3245,
-          3858,
-          4430
+          3377,
+          3990,
+          4562
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 4471,
+        "id": 4603,
         "linearizedBaseContracts": [
-          4471,
-          4430,
-          3245,
-          3858
+          4603,
+          4562,
+          3377,
+          3990
         ],
         "name": "Delegator",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 4451,
+              "id": 4583,
               "nodeType": "Block",
               "src": "233:95:18",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 4445,
+                    "id": 4577,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 4443,
+                      "id": 4575,
                       "name": "controller",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3148,
+                      "referencedDeclaration": 3280,
                       "src": "243:10:18",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IController_$3901",
+                        "typeIdentifier": "t_contract$_IController_$4033",
                         "typeString": "contract IController"
                       }
                     },
@@ -683,42 +683,42 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 4444,
+                      "id": 4576,
                       "name": "_controller",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4438,
+                      "referencedDeclaration": 4570,
                       "src": "256:11:18",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IController_$3901",
+                        "typeIdentifier": "t_contract$_IController_$4033",
                         "typeString": "contract IController"
                       }
                     },
                     "src": "243:24:18",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IController_$3901",
+                      "typeIdentifier": "t_contract$_IController_$4033",
                       "typeString": "contract IController"
                     }
                   },
-                  "id": 4446,
+                  "id": 4578,
                   "nodeType": "ExpressionStatement",
                   "src": "243:24:18"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 4449,
+                    "id": 4581,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 4447,
+                      "id": 4579,
                       "name": "controllerLookupName",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4429,
+                      "referencedDeclaration": 4561,
                       "src": "277:20:18",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
@@ -729,11 +729,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 4448,
+                      "id": 4580,
                       "name": "_controllerLookupName",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4440,
+                      "referencedDeclaration": 4572,
                       "src": "300:21:18",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
@@ -746,14 +746,14 @@
                       "typeString": "bytes32"
                     }
                   },
-                  "id": 4450,
+                  "id": 4582,
                   "nodeType": "ExpressionStatement",
                   "src": "277:44:18"
                 }
               ]
             },
             "documentation": null,
-            "id": 4452,
+            "id": 4584,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -761,31 +761,31 @@
             "name": "Delegator",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4441,
+              "id": 4573,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4438,
+                  "id": 4570,
                   "name": "_controller",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4452,
+                  "scope": 4584,
                   "src": "170:23:18",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IController_$3901",
+                    "typeIdentifier": "t_contract$_IController_$4033",
                     "typeString": "contract IController"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4437,
+                    "id": 4569,
                     "name": "IController",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 3901,
+                    "referencedDeclaration": 4033,
                     "src": "170:11:18",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IController_$3901",
+                      "typeIdentifier": "t_contract$_IController_$4033",
                       "typeString": "contract IController"
                     }
                   },
@@ -794,10 +794,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 4440,
+                  "id": 4572,
                   "name": "_controllerLookupName",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4452,
+                  "scope": 4584,
                   "src": "195:29:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -806,7 +806,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 4439,
+                    "id": 4571,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "195:7:18",
@@ -823,12 +823,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 4442,
+              "id": 4574,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "233:0:18"
             },
-            "scope": 4471,
+            "scope": 4603,
             "src": "151:177:18",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -836,7 +836,7 @@
           },
           {
             "body": {
-              "id": 4469,
+              "id": 4601,
               "nodeType": "Block",
               "src": "362:1829:18",
               "statements": [
@@ -847,18 +847,18 @@
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
                     },
-                    "id": 4457,
+                    "id": 4589,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
                       "argumentTypes": null,
-                      "id": 4455,
+                      "id": 4587,
                       "name": "controllerLookupName",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4429,
+                      "referencedDeclaration": 4561,
                       "src": "460:20:18",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
@@ -870,7 +870,7 @@
                     "rightExpression": {
                       "argumentTypes": null,
                       "hexValue": "30",
-                      "id": 4456,
+                      "id": 4588,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -892,18 +892,18 @@
                     }
                   },
                   "falseBody": null,
-                  "id": 4460,
+                  "id": 4592,
                   "nodeType": "IfStatement",
                   "src": "456:62:18",
                   "trueBody": {
-                    "id": 4459,
+                    "id": 4591,
                     "nodeType": "Block",
                     "src": "487:31:18",
                     "statements": [
                       {
                         "expression": null,
-                        "functionReturnParameters": 4454,
-                        "id": 4458,
+                        "functionReturnParameters": 4586,
+                        "id": 4590,
                         "nodeType": "Return",
                         "src": "501:7:18"
                       }
@@ -912,15 +912,15 @@
                 },
                 {
                   "assignments": [
-                    4462
+                    4594
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4462,
+                      "id": 4594,
                       "name": "_target",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4470,
+                      "scope": 4602,
                       "src": "574:15:18",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -929,7 +929,7 @@
                         "typeString": "address"
                       },
                       "typeName": {
-                        "id": 4461,
+                        "id": 4593,
                         "name": "address",
                         "nodeType": "ElementaryTypeName",
                         "src": "574:7:18",
@@ -942,17 +942,17 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4467,
+                  "id": 4599,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 4465,
+                        "id": 4597,
                         "name": "controllerLookupName",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4429,
+                        "referencedDeclaration": 4561,
                         "src": "610:20:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -969,32 +969,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 4463,
+                        "id": 4595,
                         "name": "controller",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3148,
+                        "referencedDeclaration": 3280,
                         "src": "592:10:18",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IController_$3901",
+                          "typeIdentifier": "t_contract$_IController_$4033",
                           "typeString": "contract IController"
                         }
                       },
-                      "id": 4464,
+                      "id": 4596,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "lookup",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3875,
+                      "referencedDeclaration": 4007,
                       "src": "592:17:18",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$_t_bytes32_$returns$_t_address_$",
                         "typeString": "function (bytes32) view external returns (address)"
                       }
                     },
-                    "id": 4466,
+                    "id": 4598,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1015,7 +1015,7 @@
                   "externalReferences": [
                     {
                       "_target": {
-                        "declaration": 4462,
+                        "declaration": 4594,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "1444:7:18",
@@ -1023,7 +1023,7 @@
                       }
                     }
                   ],
-                  "id": 4468,
+                  "id": 4600,
                   "nodeType": "InlineAssembly",
                   "operations": "{\n    let _calldataMemoryOffset := mload(0x40)\n    let _size := and(add(calldatasize(), 0x1f), not(0x1f))\n    mstore(0x40, add(_calldataMemoryOffset, _size))\n    calldatacopy(_calldataMemoryOffset, 0x0, calldatasize())\n    let _retval := delegatecall(gas(), _target, _calldataMemoryOffset, calldatasize(), 0, 0)\n    switch _retval\n    case 0 {\n        revert(0, 0)\n    }\n    default {\n        let _returndataMemoryOffset := mload(0x40)\n        mstore(0x40, add(_returndataMemoryOffset, returndatasize()))\n        returndatacopy(_returndataMemoryOffset, 0x0, returndatasize())\n        return(_returndataMemoryOffset, returndatasize())\n    }\n}",
                   "src": "642:1549:18"
@@ -1031,7 +1031,7 @@
               ]
             },
             "documentation": null,
-            "id": 4470,
+            "id": 4602,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1039,26 +1039,26 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4453,
+              "id": 4585,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "342:2:18"
             },
             "payable": true,
             "returnParameters": {
-              "id": 4454,
+              "id": 4586,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "362:0:18"
             },
-            "scope": 4471,
+            "scope": 4603,
             "src": "334:1857:18",
             "stateMutability": "payable",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 4472,
+        "scope": 4604,
         "src": "106:2087:18"
       }
     ],
@@ -1070,7 +1070,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.13",
-  "updatedAt": "2019-08-24T23:51:51.493Z",
+  "updatedAt": "2019-08-25T01:25:40.731Z",
   "devdoc": {
     "methods": {}
   },

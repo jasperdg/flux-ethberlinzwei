@@ -12,14 +12,14 @@
     "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/ReentrancyGuard.sol",
     "exportedSymbols": {
       "ReentrancyGuard": [
-        4670
+        4802
       ]
     },
-    "id": 4671,
+    "id": 4803,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4649,
+        "id": 4781,
         "literals": [
           "solidity",
           "^",
@@ -35,19 +35,19 @@
         "contractKind": "contract",
         "documentation": "@title Helps contracts guard agains rentrancy attacks.\n@author Remco Bloemen <remco@2π.com>\n@notice If you mark a function `nonReentrant`, you should also mark it `external`.",
         "fullyImplemented": true,
-        "id": 4670,
+        "id": 4802,
         "linearizedBaseContracts": [
-          4670
+          4802
         ],
         "name": "ReentrancyGuard",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 4652,
+            "id": 4784,
             "name": "rentrancyLock",
             "nodeType": "VariableDeclaration",
-            "scope": 4670,
+            "scope": 4802,
             "src": "324:34:24",
             "stateVariable": true,
             "storageLocation": "default",
@@ -56,7 +56,7 @@
               "typeString": "bool"
             },
             "typeName": {
-              "id": 4650,
+              "id": 4782,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
               "src": "324:4:24",
@@ -68,7 +68,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "66616c7365",
-              "id": 4651,
+              "id": 4783,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -87,7 +87,7 @@
           },
           {
             "body": {
-              "id": 4668,
+              "id": 4800,
               "nodeType": "Block",
               "src": "759:112:24",
               "statements": [
@@ -97,7 +97,7 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 4656,
+                        "id": 4788,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -108,11 +108,11 @@
                         "src": "777:14:24",
                         "subExpression": {
                           "argumentTypes": null,
-                          "id": 4655,
+                          "id": 4787,
                           "name": "rentrancyLock",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 4652,
+                          "referencedDeclaration": 4784,
                           "src": "778:13:24",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
@@ -132,21 +132,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 4654,
+                      "id": 4786,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        14278,
-                        14279
+                        14410,
+                        14411
                       ],
-                      "referencedDeclaration": 14278,
+                      "referencedDeclaration": 14410,
                       "src": "769:7:24",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 4657,
+                    "id": 4789,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -160,25 +160,25 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 4658,
+                  "id": 4790,
                   "nodeType": "ExpressionStatement",
                   "src": "769:23:24"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 4661,
+                    "id": 4793,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 4659,
+                      "id": 4791,
                       "name": "rentrancyLock",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4652,
+                      "referencedDeclaration": 4784,
                       "src": "802:13:24",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -190,7 +190,7 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "74727565",
-                      "id": 4660,
+                      "id": 4792,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -211,30 +211,30 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 4662,
+                  "id": 4794,
                   "nodeType": "ExpressionStatement",
                   "src": "802:20:24"
                 },
                 {
-                  "id": 4663,
+                  "id": 4795,
                   "nodeType": "PlaceholderStatement",
                   "src": "832:1:24"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 4666,
+                    "id": 4798,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 4664,
+                      "id": 4796,
                       "name": "rentrancyLock",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4652,
+                      "referencedDeclaration": 4784,
                       "src": "843:13:24",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -246,7 +246,7 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "66616c7365",
-                      "id": 4665,
+                      "id": 4797,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -267,18 +267,18 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 4667,
+                  "id": 4799,
                   "nodeType": "ExpressionStatement",
                   "src": "843:21:24"
                 }
               ]
             },
             "documentation": "@dev Prevents a contract from calling itself, directly or indirectly.\n@notice If you mark a function `nonReentrant`, you should also mark it `external`. Calling one nonReentrant function from another is not supported. Instead, you can implement a `private` function doing the actual work, and a `external` wrapper marked as `nonReentrant`.",
-            "id": 4669,
+            "id": 4801,
             "name": "nonReentrant",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 4653,
+              "id": 4785,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "756:2:24"
@@ -287,7 +287,7 @@
             "visibility": "internal"
           }
         ],
-        "scope": 4671,
+        "scope": 4803,
         "src": "220:653:24"
       }
     ],
@@ -297,14 +297,14 @@
     "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/ReentrancyGuard.sol",
     "exportedSymbols": {
       "ReentrancyGuard": [
-        4670
+        4802
       ]
     },
-    "id": 4671,
+    "id": 4803,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4649,
+        "id": 4781,
         "literals": [
           "solidity",
           "^",
@@ -320,19 +320,19 @@
         "contractKind": "contract",
         "documentation": "@title Helps contracts guard agains rentrancy attacks.\n@author Remco Bloemen <remco@2π.com>\n@notice If you mark a function `nonReentrant`, you should also mark it `external`.",
         "fullyImplemented": true,
-        "id": 4670,
+        "id": 4802,
         "linearizedBaseContracts": [
-          4670
+          4802
         ],
         "name": "ReentrancyGuard",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 4652,
+            "id": 4784,
             "name": "rentrancyLock",
             "nodeType": "VariableDeclaration",
-            "scope": 4670,
+            "scope": 4802,
             "src": "324:34:24",
             "stateVariable": true,
             "storageLocation": "default",
@@ -341,7 +341,7 @@
               "typeString": "bool"
             },
             "typeName": {
-              "id": 4650,
+              "id": 4782,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
               "src": "324:4:24",
@@ -353,7 +353,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "66616c7365",
-              "id": 4651,
+              "id": 4783,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -372,7 +372,7 @@
           },
           {
             "body": {
-              "id": 4668,
+              "id": 4800,
               "nodeType": "Block",
               "src": "759:112:24",
               "statements": [
@@ -382,7 +382,7 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 4656,
+                        "id": 4788,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -393,11 +393,11 @@
                         "src": "777:14:24",
                         "subExpression": {
                           "argumentTypes": null,
-                          "id": 4655,
+                          "id": 4787,
                           "name": "rentrancyLock",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 4652,
+                          "referencedDeclaration": 4784,
                           "src": "778:13:24",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
@@ -417,21 +417,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 4654,
+                      "id": 4786,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        14278,
-                        14279
+                        14410,
+                        14411
                       ],
-                      "referencedDeclaration": 14278,
+                      "referencedDeclaration": 14410,
                       "src": "769:7:24",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 4657,
+                    "id": 4789,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -445,25 +445,25 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 4658,
+                  "id": 4790,
                   "nodeType": "ExpressionStatement",
                   "src": "769:23:24"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 4661,
+                    "id": 4793,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 4659,
+                      "id": 4791,
                       "name": "rentrancyLock",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4652,
+                      "referencedDeclaration": 4784,
                       "src": "802:13:24",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -475,7 +475,7 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "74727565",
-                      "id": 4660,
+                      "id": 4792,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -496,30 +496,30 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 4662,
+                  "id": 4794,
                   "nodeType": "ExpressionStatement",
                   "src": "802:20:24"
                 },
                 {
-                  "id": 4663,
+                  "id": 4795,
                   "nodeType": "PlaceholderStatement",
                   "src": "832:1:24"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 4666,
+                    "id": 4798,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 4664,
+                      "id": 4796,
                       "name": "rentrancyLock",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4652,
+                      "referencedDeclaration": 4784,
                       "src": "843:13:24",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -531,7 +531,7 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "66616c7365",
-                      "id": 4665,
+                      "id": 4797,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -552,18 +552,18 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 4667,
+                  "id": 4799,
                   "nodeType": "ExpressionStatement",
                   "src": "843:21:24"
                 }
               ]
             },
             "documentation": "@dev Prevents a contract from calling itself, directly or indirectly.\n@notice If you mark a function `nonReentrant`, you should also mark it `external`. Calling one nonReentrant function from another is not supported. Instead, you can implement a `private` function doing the actual work, and a `external` wrapper marked as `nonReentrant`.",
-            "id": 4669,
+            "id": 4801,
             "name": "nonReentrant",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 4653,
+              "id": 4785,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "756:2:24"
@@ -572,7 +572,7 @@
             "visibility": "internal"
           }
         ],
-        "scope": 4671,
+        "scope": 4803,
         "src": "220:653:24"
       }
     ],
@@ -584,7 +584,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.13",
-  "updatedAt": "2019-08-24T23:51:51.500Z",
+  "updatedAt": "2019-08-25T01:25:40.739Z",
   "devdoc": {
     "author": "Remco Bloemen <remco@2π.com>",
     "methods": {},

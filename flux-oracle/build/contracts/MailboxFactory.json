@@ -40,14 +40,14 @@
     "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/factories/MailboxFactory.sol",
     "exportedSymbols": {
       "MailboxFactory": [
-        4079
+        4211
       ]
     },
-    "id": 4080,
+    "id": 4212,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4039,
+        "id": 4171,
         "literals": [
           "solidity",
           "^",
@@ -60,10 +60,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/Delegator.sol",
         "file": "./../libraries/Delegator.sol",
-        "id": 4040,
+        "id": 4172,
         "nodeType": "ImportDirective",
-        "scope": 4080,
-        "sourceUnit": 4472,
+        "scope": 4212,
+        "sourceUnit": 4604,
         "src": "26:38:10",
         "symbolAliases": [],
         "unitAlias": ""
@@ -71,10 +71,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/IController.sol",
         "file": "./../IController.sol",
-        "id": 4041,
+        "id": 4173,
         "nodeType": "ImportDirective",
-        "scope": 4080,
-        "sourceUnit": 3902,
+        "scope": 4212,
+        "sourceUnit": 4034,
         "src": "65:30:10",
         "symbolAliases": [],
         "unitAlias": ""
@@ -82,10 +82,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/reporting/IMailbox.sol",
         "file": "./../reporting/IMailbox.sol",
-        "id": 4042,
+        "id": 4174,
         "nodeType": "ImportDirective",
-        "scope": 4080,
-        "sourceUnit": 5687,
+        "scope": 4212,
+        "sourceUnit": 5819,
         "src": "96:37:10",
         "symbolAliases": [],
         "unitAlias": ""
@@ -93,10 +93,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/reporting/IMarket.sol",
         "file": "./../reporting/IMarket.sol",
-        "id": 4043,
+        "id": 4175,
         "nodeType": "ImportDirective",
-        "scope": 4080,
-        "sourceUnit": 5874,
+        "scope": 4212,
+        "sourceUnit": 6006,
         "src": "134:36:10",
         "symbolAliases": [],
         "unitAlias": ""
@@ -104,51 +104,51 @@
       {
         "baseContracts": [],
         "contractDependencies": [
-          4471
+          4603
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 4079,
+        "id": 4211,
         "linearizedBaseContracts": [
-          4079
+          4211
         ],
         "name": "MailboxFactory",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 4077,
+              "id": 4209,
               "nodeType": "Block",
               "src": "310:198:10",
               "statements": [
                 {
                   "assignments": [
-                    4055
+                    4187
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4055,
+                      "id": 4187,
                       "name": "_delegator",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4078,
+                      "scope": 4210,
                       "src": "320:20:10",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Delegator_$4471",
+                        "typeIdentifier": "t_contract$_Delegator_$4603",
                         "typeString": "contract Delegator"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 4054,
+                        "id": 4186,
                         "name": "Delegator",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 4471,
+                        "referencedDeclaration": 4603,
                         "src": "320:9:10",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Delegator_$4471",
+                          "typeIdentifier": "t_contract$_Delegator_$4603",
                           "typeString": "contract Delegator"
                         }
                       },
@@ -156,27 +156,27 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4061,
+                  "id": 4193,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 4058,
+                        "id": 4190,
                         "name": "_controller",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4045,
+                        "referencedDeclaration": 4177,
                         "src": "357:11:10",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IController_$3901",
+                          "typeIdentifier": "t_contract$_IController_$4033",
                           "typeString": "contract IController"
                         }
                       },
                       {
                         "argumentTypes": null,
                         "hexValue": "4d61696c626f78",
-                        "id": 4059,
+                        "id": 4191,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -195,7 +195,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_IController_$3901",
+                          "typeIdentifier": "t_contract$_IController_$4033",
                           "typeString": "contract IController"
                         },
                         {
@@ -203,7 +203,7 @@
                           "typeString": "literal_string \"Mailbox\""
                         }
                       ],
-                      "id": 4057,
+                      "id": 4189,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -211,23 +211,23 @@
                       "nodeType": "NewExpression",
                       "src": "343:13:10",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_creation_nonpayable$_t_contract$_IController_$3901_$_t_bytes32_$returns$_t_contract$_Delegator_$4471_$",
+                        "typeIdentifier": "t_function_creation_nonpayable$_t_contract$_IController_$4033_$_t_bytes32_$returns$_t_contract$_Delegator_$4603_$",
                         "typeString": "function (contract IController,bytes32) returns (contract Delegator)"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 4056,
+                        "id": 4188,
                         "name": "Delegator",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 4471,
+                        "referencedDeclaration": 4603,
                         "src": "347:9:10",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Delegator_$4471",
+                          "typeIdentifier": "t_contract$_Delegator_$4603",
                           "typeString": "contract Delegator"
                         }
                       }
                     },
-                    "id": 4060,
+                    "id": 4192,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -237,7 +237,7 @@
                     "nodeType": "FunctionCall",
                     "src": "343:37:10",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Delegator_$4471",
+                      "typeIdentifier": "t_contract$_Delegator_$4603",
                       "typeString": "contract Delegator"
                     }
                   },
@@ -246,31 +246,31 @@
                 },
                 {
                   "assignments": [
-                    4063
+                    4195
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4063,
+                      "id": 4195,
                       "name": "_mailbox",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4078,
+                      "scope": 4210,
                       "src": "390:17:10",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IMailbox_$5686",
+                        "typeIdentifier": "t_contract$_IMailbox_$5818",
                         "typeString": "contract IMailbox"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 4062,
+                        "id": 4194,
                         "name": "IMailbox",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 5686,
+                        "referencedDeclaration": 5818,
                         "src": "390:8:10",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IMailbox_$5686",
+                          "typeIdentifier": "t_contract$_IMailbox_$5818",
                           "typeString": "contract IMailbox"
                         }
                       },
@@ -278,20 +278,20 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4067,
+                  "id": 4199,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 4065,
+                        "id": 4197,
                         "name": "_delegator",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4055,
+                        "referencedDeclaration": 4187,
                         "src": "419:10:10",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Delegator_$4471",
+                          "typeIdentifier": "t_contract$_Delegator_$4603",
                           "typeString": "contract Delegator"
                         }
                       }
@@ -299,22 +299,22 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_Delegator_$4471",
+                          "typeIdentifier": "t_contract$_Delegator_$4603",
                           "typeString": "contract Delegator"
                         }
                       ],
-                      "id": 4064,
+                      "id": 4196,
                       "name": "IMailbox",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5686,
+                      "referencedDeclaration": 5818,
                       "src": "410:8:10",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_IMailbox_$5686_$",
+                        "typeIdentifier": "t_type$_t_contract$_IMailbox_$5818_$",
                         "typeString": "type(contract IMailbox)"
                       }
                     },
-                    "id": 4066,
+                    "id": 4198,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -324,7 +324,7 @@
                     "nodeType": "FunctionCall",
                     "src": "410:20:10",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IMailbox_$5686",
+                      "typeIdentifier": "t_contract$_IMailbox_$5818",
                       "typeString": "contract IMailbox"
                     }
                   },
@@ -337,11 +337,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 4071,
+                        "id": 4203,
                         "name": "_owner",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4047,
+                        "referencedDeclaration": 4179,
                         "src": "460:6:10",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -350,14 +350,14 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 4072,
+                        "id": 4204,
                         "name": "_market",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4049,
+                        "referencedDeclaration": 4181,
                         "src": "468:7:10",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IMarket_$5873",
+                          "typeIdentifier": "t_contract$_IMarket_$6005",
                           "typeString": "contract IMarket"
                         }
                       }
@@ -369,38 +369,38 @@
                           "typeString": "address"
                         },
                         {
-                          "typeIdentifier": "t_contract$_IMarket_$5873",
+                          "typeIdentifier": "t_contract$_IMarket_$6005",
                           "typeString": "contract IMarket"
                         }
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 4068,
+                        "id": 4200,
                         "name": "_mailbox",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4063,
+                        "referencedDeclaration": 4195,
                         "src": "440:8:10",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IMailbox_$5686",
+                          "typeIdentifier": "t_contract$_IMailbox_$5818",
                           "typeString": "contract IMailbox"
                         }
                       },
-                      "id": 4070,
+                      "id": 4202,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "initialize",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 5680,
+                      "referencedDeclaration": 5812,
                       "src": "440:19:10",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_contract$_IMarket_$5873_$returns$_t_bool_$",
+                        "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_contract$_IMarket_$6005_$returns$_t_bool_$",
                         "typeString": "function (address,contract IMarket) external returns (bool)"
                       }
                     },
-                    "id": 4073,
+                    "id": 4205,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -414,33 +414,33 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 4074,
+                  "id": 4206,
                   "nodeType": "ExpressionStatement",
                   "src": "440:36:10"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 4075,
+                    "id": 4207,
                     "name": "_mailbox",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 4063,
+                    "referencedDeclaration": 4195,
                     "src": "493:8:10",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IMailbox_$5686",
+                      "typeIdentifier": "t_contract$_IMailbox_$5818",
                       "typeString": "contract IMailbox"
                     }
                   },
-                  "functionReturnParameters": 4053,
-                  "id": 4076,
+                  "functionReturnParameters": 4185,
+                  "id": 4208,
                   "nodeType": "Return",
                   "src": "486:15:10"
                 }
               ]
             },
             "documentation": null,
-            "id": 4078,
+            "id": 4210,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -448,31 +448,31 @@
             "name": "createMailbox",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4050,
+              "id": 4182,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4045,
+                  "id": 4177,
                   "name": "_controller",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4078,
+                  "scope": 4210,
                   "src": "226:23:10",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IController_$3901",
+                    "typeIdentifier": "t_contract$_IController_$4033",
                     "typeString": "contract IController"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4044,
+                    "id": 4176,
                     "name": "IController",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 3901,
+                    "referencedDeclaration": 4033,
                     "src": "226:11:10",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IController_$3901",
+                      "typeIdentifier": "t_contract$_IController_$4033",
                       "typeString": "contract IController"
                     }
                   },
@@ -481,10 +481,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 4047,
+                  "id": 4179,
                   "name": "_owner",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4078,
+                  "scope": 4210,
                   "src": "251:14:10",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -493,7 +493,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4046,
+                    "id": 4178,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "251:7:10",
@@ -507,26 +507,26 @@
                 },
                 {
                   "constant": false,
-                  "id": 4049,
+                  "id": 4181,
                   "name": "_market",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4078,
+                  "scope": 4210,
                   "src": "267:15:10",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IMarket_$5873",
+                    "typeIdentifier": "t_contract$_IMarket_$6005",
                     "typeString": "contract IMarket"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4048,
+                    "id": 4180,
                     "name": "IMarket",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 5873,
+                    "referencedDeclaration": 6005,
                     "src": "267:7:10",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IMarket_$5873",
+                      "typeIdentifier": "t_contract$_IMarket_$6005",
                       "typeString": "contract IMarket"
                     }
                   },
@@ -538,31 +538,31 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 4053,
+              "id": 4185,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4052,
+                  "id": 4184,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4078,
+                  "scope": 4210,
                   "src": "300:8:10",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IMailbox_$5686",
+                    "typeIdentifier": "t_contract$_IMailbox_$5818",
                     "typeString": "contract IMailbox"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4051,
+                    "id": 4183,
                     "name": "IMailbox",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 5686,
+                    "referencedDeclaration": 5818,
                     "src": "300:8:10",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IMailbox_$5686",
+                      "typeIdentifier": "t_contract$_IMailbox_$5818",
                       "typeString": "contract IMailbox"
                     }
                   },
@@ -572,14 +572,14 @@
               ],
               "src": "299:10:10"
             },
-            "scope": 4079,
+            "scope": 4211,
             "src": "203:305:10",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 4080,
+        "scope": 4212,
         "src": "173:337:10"
       }
     ],
@@ -589,14 +589,14 @@
     "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/factories/MailboxFactory.sol",
     "exportedSymbols": {
       "MailboxFactory": [
-        4079
+        4211
       ]
     },
-    "id": 4080,
+    "id": 4212,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4039,
+        "id": 4171,
         "literals": [
           "solidity",
           "^",
@@ -609,10 +609,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/Delegator.sol",
         "file": "./../libraries/Delegator.sol",
-        "id": 4040,
+        "id": 4172,
         "nodeType": "ImportDirective",
-        "scope": 4080,
-        "sourceUnit": 4472,
+        "scope": 4212,
+        "sourceUnit": 4604,
         "src": "26:38:10",
         "symbolAliases": [],
         "unitAlias": ""
@@ -620,10 +620,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/IController.sol",
         "file": "./../IController.sol",
-        "id": 4041,
+        "id": 4173,
         "nodeType": "ImportDirective",
-        "scope": 4080,
-        "sourceUnit": 3902,
+        "scope": 4212,
+        "sourceUnit": 4034,
         "src": "65:30:10",
         "symbolAliases": [],
         "unitAlias": ""
@@ -631,10 +631,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/reporting/IMailbox.sol",
         "file": "./../reporting/IMailbox.sol",
-        "id": 4042,
+        "id": 4174,
         "nodeType": "ImportDirective",
-        "scope": 4080,
-        "sourceUnit": 5687,
+        "scope": 4212,
+        "sourceUnit": 5819,
         "src": "96:37:10",
         "symbolAliases": [],
         "unitAlias": ""
@@ -642,10 +642,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/reporting/IMarket.sol",
         "file": "./../reporting/IMarket.sol",
-        "id": 4043,
+        "id": 4175,
         "nodeType": "ImportDirective",
-        "scope": 4080,
-        "sourceUnit": 5874,
+        "scope": 4212,
+        "sourceUnit": 6006,
         "src": "134:36:10",
         "symbolAliases": [],
         "unitAlias": ""
@@ -653,51 +653,51 @@
       {
         "baseContracts": [],
         "contractDependencies": [
-          4471
+          4603
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 4079,
+        "id": 4211,
         "linearizedBaseContracts": [
-          4079
+          4211
         ],
         "name": "MailboxFactory",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 4077,
+              "id": 4209,
               "nodeType": "Block",
               "src": "310:198:10",
               "statements": [
                 {
                   "assignments": [
-                    4055
+                    4187
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4055,
+                      "id": 4187,
                       "name": "_delegator",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4078,
+                      "scope": 4210,
                       "src": "320:20:10",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Delegator_$4471",
+                        "typeIdentifier": "t_contract$_Delegator_$4603",
                         "typeString": "contract Delegator"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 4054,
+                        "id": 4186,
                         "name": "Delegator",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 4471,
+                        "referencedDeclaration": 4603,
                         "src": "320:9:10",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Delegator_$4471",
+                          "typeIdentifier": "t_contract$_Delegator_$4603",
                           "typeString": "contract Delegator"
                         }
                       },
@@ -705,27 +705,27 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4061,
+                  "id": 4193,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 4058,
+                        "id": 4190,
                         "name": "_controller",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4045,
+                        "referencedDeclaration": 4177,
                         "src": "357:11:10",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IController_$3901",
+                          "typeIdentifier": "t_contract$_IController_$4033",
                           "typeString": "contract IController"
                         }
                       },
                       {
                         "argumentTypes": null,
                         "hexValue": "4d61696c626f78",
-                        "id": 4059,
+                        "id": 4191,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -744,7 +744,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_IController_$3901",
+                          "typeIdentifier": "t_contract$_IController_$4033",
                           "typeString": "contract IController"
                         },
                         {
@@ -752,7 +752,7 @@
                           "typeString": "literal_string \"Mailbox\""
                         }
                       ],
-                      "id": 4057,
+                      "id": 4189,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -760,23 +760,23 @@
                       "nodeType": "NewExpression",
                       "src": "343:13:10",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_creation_nonpayable$_t_contract$_IController_$3901_$_t_bytes32_$returns$_t_contract$_Delegator_$4471_$",
+                        "typeIdentifier": "t_function_creation_nonpayable$_t_contract$_IController_$4033_$_t_bytes32_$returns$_t_contract$_Delegator_$4603_$",
                         "typeString": "function (contract IController,bytes32) returns (contract Delegator)"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 4056,
+                        "id": 4188,
                         "name": "Delegator",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 4471,
+                        "referencedDeclaration": 4603,
                         "src": "347:9:10",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Delegator_$4471",
+                          "typeIdentifier": "t_contract$_Delegator_$4603",
                           "typeString": "contract Delegator"
                         }
                       }
                     },
-                    "id": 4060,
+                    "id": 4192,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -786,7 +786,7 @@
                     "nodeType": "FunctionCall",
                     "src": "343:37:10",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Delegator_$4471",
+                      "typeIdentifier": "t_contract$_Delegator_$4603",
                       "typeString": "contract Delegator"
                     }
                   },
@@ -795,31 +795,31 @@
                 },
                 {
                   "assignments": [
-                    4063
+                    4195
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4063,
+                      "id": 4195,
                       "name": "_mailbox",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4078,
+                      "scope": 4210,
                       "src": "390:17:10",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IMailbox_$5686",
+                        "typeIdentifier": "t_contract$_IMailbox_$5818",
                         "typeString": "contract IMailbox"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 4062,
+                        "id": 4194,
                         "name": "IMailbox",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 5686,
+                        "referencedDeclaration": 5818,
                         "src": "390:8:10",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IMailbox_$5686",
+                          "typeIdentifier": "t_contract$_IMailbox_$5818",
                           "typeString": "contract IMailbox"
                         }
                       },
@@ -827,20 +827,20 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4067,
+                  "id": 4199,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 4065,
+                        "id": 4197,
                         "name": "_delegator",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4055,
+                        "referencedDeclaration": 4187,
                         "src": "419:10:10",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Delegator_$4471",
+                          "typeIdentifier": "t_contract$_Delegator_$4603",
                           "typeString": "contract Delegator"
                         }
                       }
@@ -848,22 +848,22 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_Delegator_$4471",
+                          "typeIdentifier": "t_contract$_Delegator_$4603",
                           "typeString": "contract Delegator"
                         }
                       ],
-                      "id": 4064,
+                      "id": 4196,
                       "name": "IMailbox",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5686,
+                      "referencedDeclaration": 5818,
                       "src": "410:8:10",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_IMailbox_$5686_$",
+                        "typeIdentifier": "t_type$_t_contract$_IMailbox_$5818_$",
                         "typeString": "type(contract IMailbox)"
                       }
                     },
-                    "id": 4066,
+                    "id": 4198,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -873,7 +873,7 @@
                     "nodeType": "FunctionCall",
                     "src": "410:20:10",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IMailbox_$5686",
+                      "typeIdentifier": "t_contract$_IMailbox_$5818",
                       "typeString": "contract IMailbox"
                     }
                   },
@@ -886,11 +886,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 4071,
+                        "id": 4203,
                         "name": "_owner",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4047,
+                        "referencedDeclaration": 4179,
                         "src": "460:6:10",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -899,14 +899,14 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 4072,
+                        "id": 4204,
                         "name": "_market",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4049,
+                        "referencedDeclaration": 4181,
                         "src": "468:7:10",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IMarket_$5873",
+                          "typeIdentifier": "t_contract$_IMarket_$6005",
                           "typeString": "contract IMarket"
                         }
                       }
@@ -918,38 +918,38 @@
                           "typeString": "address"
                         },
                         {
-                          "typeIdentifier": "t_contract$_IMarket_$5873",
+                          "typeIdentifier": "t_contract$_IMarket_$6005",
                           "typeString": "contract IMarket"
                         }
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 4068,
+                        "id": 4200,
                         "name": "_mailbox",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4063,
+                        "referencedDeclaration": 4195,
                         "src": "440:8:10",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IMailbox_$5686",
+                          "typeIdentifier": "t_contract$_IMailbox_$5818",
                           "typeString": "contract IMailbox"
                         }
                       },
-                      "id": 4070,
+                      "id": 4202,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "initialize",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 5680,
+                      "referencedDeclaration": 5812,
                       "src": "440:19:10",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_contract$_IMarket_$5873_$returns$_t_bool_$",
+                        "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_contract$_IMarket_$6005_$returns$_t_bool_$",
                         "typeString": "function (address,contract IMarket) external returns (bool)"
                       }
                     },
-                    "id": 4073,
+                    "id": 4205,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -963,33 +963,33 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 4074,
+                  "id": 4206,
                   "nodeType": "ExpressionStatement",
                   "src": "440:36:10"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 4075,
+                    "id": 4207,
                     "name": "_mailbox",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 4063,
+                    "referencedDeclaration": 4195,
                     "src": "493:8:10",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IMailbox_$5686",
+                      "typeIdentifier": "t_contract$_IMailbox_$5818",
                       "typeString": "contract IMailbox"
                     }
                   },
-                  "functionReturnParameters": 4053,
-                  "id": 4076,
+                  "functionReturnParameters": 4185,
+                  "id": 4208,
                   "nodeType": "Return",
                   "src": "486:15:10"
                 }
               ]
             },
             "documentation": null,
-            "id": 4078,
+            "id": 4210,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -997,31 +997,31 @@
             "name": "createMailbox",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4050,
+              "id": 4182,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4045,
+                  "id": 4177,
                   "name": "_controller",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4078,
+                  "scope": 4210,
                   "src": "226:23:10",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IController_$3901",
+                    "typeIdentifier": "t_contract$_IController_$4033",
                     "typeString": "contract IController"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4044,
+                    "id": 4176,
                     "name": "IController",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 3901,
+                    "referencedDeclaration": 4033,
                     "src": "226:11:10",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IController_$3901",
+                      "typeIdentifier": "t_contract$_IController_$4033",
                       "typeString": "contract IController"
                     }
                   },
@@ -1030,10 +1030,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 4047,
+                  "id": 4179,
                   "name": "_owner",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4078,
+                  "scope": 4210,
                   "src": "251:14:10",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1042,7 +1042,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4046,
+                    "id": 4178,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "251:7:10",
@@ -1056,26 +1056,26 @@
                 },
                 {
                   "constant": false,
-                  "id": 4049,
+                  "id": 4181,
                   "name": "_market",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4078,
+                  "scope": 4210,
                   "src": "267:15:10",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IMarket_$5873",
+                    "typeIdentifier": "t_contract$_IMarket_$6005",
                     "typeString": "contract IMarket"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4048,
+                    "id": 4180,
                     "name": "IMarket",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 5873,
+                    "referencedDeclaration": 6005,
                     "src": "267:7:10",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IMarket_$5873",
+                      "typeIdentifier": "t_contract$_IMarket_$6005",
                       "typeString": "contract IMarket"
                     }
                   },
@@ -1087,31 +1087,31 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 4053,
+              "id": 4185,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4052,
+                  "id": 4184,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4078,
+                  "scope": 4210,
                   "src": "300:8:10",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IMailbox_$5686",
+                    "typeIdentifier": "t_contract$_IMailbox_$5818",
                     "typeString": "contract IMailbox"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4051,
+                    "id": 4183,
                     "name": "IMailbox",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 5686,
+                    "referencedDeclaration": 5818,
                     "src": "300:8:10",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IMailbox_$5686",
+                      "typeIdentifier": "t_contract$_IMailbox_$5818",
                       "typeString": "contract IMailbox"
                     }
                   },
@@ -1121,14 +1121,14 @@
               ],
               "src": "299:10:10"
             },
-            "scope": 4079,
+            "scope": 4211,
             "src": "203:305:10",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 4080,
+        "scope": 4212,
         "src": "173:337:10"
       }
     ],
@@ -1140,7 +1140,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.13",
-  "updatedAt": "2019-08-24T23:51:51.480Z",
+  "updatedAt": "2019-08-25T01:25:40.722Z",
   "devdoc": {
     "methods": {}
   },

@@ -121,14 +121,14 @@
     "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/IController.sol",
     "exportedSymbols": {
       "IController": [
-        3901
+        4033
       ]
     },
-    "id": 3902,
+    "id": 4034,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 3860,
+        "id": 3992,
         "literals": [
           "solidity",
           "^",
@@ -141,10 +141,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/IAugur.sol",
         "file": "./IAugur.sol",
-        "id": 3861,
+        "id": 3993,
         "nodeType": "ImportDirective",
-        "scope": 3902,
-        "sourceUnit": 3842,
+        "scope": 4034,
+        "sourceUnit": 3974,
         "src": "26:22:6",
         "symbolAliases": [],
         "unitAlias": ""
@@ -155,9 +155,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 3901,
+        "id": 4033,
         "linearizedBaseContracts": [
-          3901
+          4033
         ],
         "name": "IController",
         "nodeType": "ContractDefinition",
@@ -165,7 +165,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 3868,
+            "id": 4000,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -173,15 +173,15 @@
             "name": "assertIsWhitelisted",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3864,
+              "id": 3996,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3863,
+                  "id": 3995,
                   "name": "_target",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3868,
+                  "scope": 4000,
                   "src": "107:15:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -190,7 +190,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 3862,
+                    "id": 3994,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "107:7:6",
@@ -207,15 +207,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 3867,
+              "id": 3999,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3866,
+                  "id": 3998,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3868,
+                  "scope": 4000,
                   "src": "144:4:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -224,7 +224,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 3865,
+                    "id": 3997,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "144:4:6",
@@ -239,7 +239,7 @@
               ],
               "src": "143:6:6"
             },
-            "scope": 3901,
+            "scope": 4033,
             "src": "78:72:6",
             "stateMutability": "view",
             "superFunction": null,
@@ -248,7 +248,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 3875,
+            "id": 4007,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -256,15 +256,15 @@
             "name": "lookup",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3871,
+              "id": 4003,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3870,
+                  "id": 4002,
                   "name": "_key",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3875,
+                  "scope": 4007,
                   "src": "171:12:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -273,7 +273,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 3869,
+                    "id": 4001,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "171:7:6",
@@ -290,15 +290,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 3874,
+              "id": 4006,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3873,
+                  "id": 4005,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3875,
+                  "scope": 4007,
                   "src": "205:7:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -307,7 +307,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 3872,
+                    "id": 4004,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "205:7:6",
@@ -322,7 +322,7 @@
               ],
               "src": "204:9:6"
             },
-            "scope": 3901,
+            "scope": 4033,
             "src": "155:59:6",
             "stateMutability": "view",
             "superFunction": null,
@@ -331,7 +331,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 3880,
+            "id": 4012,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -339,22 +339,22 @@
             "name": "stopInEmergency",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3876,
+              "id": 4008,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "243:2:6"
             },
             "payable": false,
             "returnParameters": {
-              "id": 3879,
+              "id": 4011,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3878,
+                  "id": 4010,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3880,
+                  "scope": 4012,
                   "src": "266:4:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -363,7 +363,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 3877,
+                    "id": 4009,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "266:4:6",
@@ -378,7 +378,7 @@
               ],
               "src": "265:6:6"
             },
-            "scope": 3901,
+            "scope": 4033,
             "src": "219:53:6",
             "stateMutability": "view",
             "superFunction": null,
@@ -387,7 +387,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 3885,
+            "id": 4017,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -395,22 +395,22 @@
             "name": "onlyInEmergency",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3881,
+              "id": 4013,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "301:2:6"
             },
             "payable": false,
             "returnParameters": {
-              "id": 3884,
+              "id": 4016,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3883,
+                  "id": 4015,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3885,
+                  "scope": 4017,
                   "src": "324:4:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -419,7 +419,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 3882,
+                    "id": 4014,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "324:4:6",
@@ -434,7 +434,7 @@
               ],
               "src": "323:6:6"
             },
-            "scope": 3901,
+            "scope": 4033,
             "src": "277:53:6",
             "stateMutability": "view",
             "superFunction": null,
@@ -443,7 +443,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 3890,
+            "id": 4022,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -451,38 +451,38 @@
             "name": "getAugur",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3886,
+              "id": 4018,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "352:2:6"
             },
             "payable": false,
             "returnParameters": {
-              "id": 3889,
+              "id": 4021,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3888,
+                  "id": 4020,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3890,
+                  "scope": 4022,
                   "src": "376:6:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IAugur_$3841",
+                    "typeIdentifier": "t_contract$_IAugur_$3973",
                     "typeString": "contract IAugur"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 3887,
+                    "id": 4019,
                     "name": "IAugur",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 3841,
+                    "referencedDeclaration": 3973,
                     "src": "376:6:6",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IAugur_$3841",
+                      "typeIdentifier": "t_contract$_IAugur_$3973",
                       "typeString": "contract IAugur"
                     }
                   },
@@ -492,7 +492,7 @@
               ],
               "src": "375:8:6"
             },
-            "scope": 3901,
+            "scope": 4033,
             "src": "335:49:6",
             "stateMutability": "view",
             "superFunction": null,
@@ -501,7 +501,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 3895,
+            "id": 4027,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -509,22 +509,22 @@
             "name": "getTimestamp",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3891,
+              "id": 4023,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "410:2:6"
             },
             "payable": false,
             "returnParameters": {
-              "id": 3894,
+              "id": 4026,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3893,
+                  "id": 4025,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3895,
+                  "scope": 4027,
                   "src": "434:7:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -533,7 +533,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3892,
+                    "id": 4024,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "434:7:6",
@@ -548,7 +548,7 @@
               ],
               "src": "433:9:6"
             },
-            "scope": 3901,
+            "scope": 4033,
             "src": "389:54:6",
             "stateMutability": "view",
             "superFunction": null,
@@ -557,7 +557,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 3900,
+            "id": 4032,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -565,22 +565,22 @@
             "name": "emergencyStop",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3896,
+              "id": 4028,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "470:2:6"
             },
             "payable": false,
             "returnParameters": {
-              "id": 3899,
+              "id": 4031,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3898,
+                  "id": 4030,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3900,
+                  "scope": 4032,
                   "src": "489:4:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -589,7 +589,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 3897,
+                    "id": 4029,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "489:4:6",
@@ -604,14 +604,14 @@
               ],
               "src": "488:6:6"
             },
-            "scope": 3901,
+            "scope": 4033,
             "src": "448:47:6",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 3902,
+        "scope": 4034,
         "src": "51:446:6"
       }
     ],
@@ -621,14 +621,14 @@
     "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/IController.sol",
     "exportedSymbols": {
       "IController": [
-        3901
+        4033
       ]
     },
-    "id": 3902,
+    "id": 4034,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 3860,
+        "id": 3992,
         "literals": [
           "solidity",
           "^",
@@ -641,10 +641,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/IAugur.sol",
         "file": "./IAugur.sol",
-        "id": 3861,
+        "id": 3993,
         "nodeType": "ImportDirective",
-        "scope": 3902,
-        "sourceUnit": 3842,
+        "scope": 4034,
+        "sourceUnit": 3974,
         "src": "26:22:6",
         "symbolAliases": [],
         "unitAlias": ""
@@ -655,9 +655,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 3901,
+        "id": 4033,
         "linearizedBaseContracts": [
-          3901
+          4033
         ],
         "name": "IController",
         "nodeType": "ContractDefinition",
@@ -665,7 +665,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 3868,
+            "id": 4000,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -673,15 +673,15 @@
             "name": "assertIsWhitelisted",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3864,
+              "id": 3996,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3863,
+                  "id": 3995,
                   "name": "_target",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3868,
+                  "scope": 4000,
                   "src": "107:15:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -690,7 +690,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 3862,
+                    "id": 3994,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "107:7:6",
@@ -707,15 +707,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 3867,
+              "id": 3999,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3866,
+                  "id": 3998,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3868,
+                  "scope": 4000,
                   "src": "144:4:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -724,7 +724,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 3865,
+                    "id": 3997,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "144:4:6",
@@ -739,7 +739,7 @@
               ],
               "src": "143:6:6"
             },
-            "scope": 3901,
+            "scope": 4033,
             "src": "78:72:6",
             "stateMutability": "view",
             "superFunction": null,
@@ -748,7 +748,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 3875,
+            "id": 4007,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -756,15 +756,15 @@
             "name": "lookup",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3871,
+              "id": 4003,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3870,
+                  "id": 4002,
                   "name": "_key",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3875,
+                  "scope": 4007,
                   "src": "171:12:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -773,7 +773,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 3869,
+                    "id": 4001,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "171:7:6",
@@ -790,15 +790,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 3874,
+              "id": 4006,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3873,
+                  "id": 4005,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3875,
+                  "scope": 4007,
                   "src": "205:7:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -807,7 +807,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 3872,
+                    "id": 4004,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "205:7:6",
@@ -822,7 +822,7 @@
               ],
               "src": "204:9:6"
             },
-            "scope": 3901,
+            "scope": 4033,
             "src": "155:59:6",
             "stateMutability": "view",
             "superFunction": null,
@@ -831,7 +831,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 3880,
+            "id": 4012,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -839,22 +839,22 @@
             "name": "stopInEmergency",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3876,
+              "id": 4008,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "243:2:6"
             },
             "payable": false,
             "returnParameters": {
-              "id": 3879,
+              "id": 4011,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3878,
+                  "id": 4010,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3880,
+                  "scope": 4012,
                   "src": "266:4:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -863,7 +863,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 3877,
+                    "id": 4009,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "266:4:6",
@@ -878,7 +878,7 @@
               ],
               "src": "265:6:6"
             },
-            "scope": 3901,
+            "scope": 4033,
             "src": "219:53:6",
             "stateMutability": "view",
             "superFunction": null,
@@ -887,7 +887,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 3885,
+            "id": 4017,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -895,22 +895,22 @@
             "name": "onlyInEmergency",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3881,
+              "id": 4013,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "301:2:6"
             },
             "payable": false,
             "returnParameters": {
-              "id": 3884,
+              "id": 4016,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3883,
+                  "id": 4015,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3885,
+                  "scope": 4017,
                   "src": "324:4:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -919,7 +919,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 3882,
+                    "id": 4014,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "324:4:6",
@@ -934,7 +934,7 @@
               ],
               "src": "323:6:6"
             },
-            "scope": 3901,
+            "scope": 4033,
             "src": "277:53:6",
             "stateMutability": "view",
             "superFunction": null,
@@ -943,7 +943,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 3890,
+            "id": 4022,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -951,38 +951,38 @@
             "name": "getAugur",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3886,
+              "id": 4018,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "352:2:6"
             },
             "payable": false,
             "returnParameters": {
-              "id": 3889,
+              "id": 4021,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3888,
+                  "id": 4020,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3890,
+                  "scope": 4022,
                   "src": "376:6:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IAugur_$3841",
+                    "typeIdentifier": "t_contract$_IAugur_$3973",
                     "typeString": "contract IAugur"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 3887,
+                    "id": 4019,
                     "name": "IAugur",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 3841,
+                    "referencedDeclaration": 3973,
                     "src": "376:6:6",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IAugur_$3841",
+                      "typeIdentifier": "t_contract$_IAugur_$3973",
                       "typeString": "contract IAugur"
                     }
                   },
@@ -992,7 +992,7 @@
               ],
               "src": "375:8:6"
             },
-            "scope": 3901,
+            "scope": 4033,
             "src": "335:49:6",
             "stateMutability": "view",
             "superFunction": null,
@@ -1001,7 +1001,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 3895,
+            "id": 4027,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1009,22 +1009,22 @@
             "name": "getTimestamp",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3891,
+              "id": 4023,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "410:2:6"
             },
             "payable": false,
             "returnParameters": {
-              "id": 3894,
+              "id": 4026,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3893,
+                  "id": 4025,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3895,
+                  "scope": 4027,
                   "src": "434:7:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1033,7 +1033,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3892,
+                    "id": 4024,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "434:7:6",
@@ -1048,7 +1048,7 @@
               ],
               "src": "433:9:6"
             },
-            "scope": 3901,
+            "scope": 4033,
             "src": "389:54:6",
             "stateMutability": "view",
             "superFunction": null,
@@ -1057,7 +1057,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 3900,
+            "id": 4032,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1065,22 +1065,22 @@
             "name": "emergencyStop",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3896,
+              "id": 4028,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "470:2:6"
             },
             "payable": false,
             "returnParameters": {
-              "id": 3899,
+              "id": 4031,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3898,
+                  "id": 4030,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3900,
+                  "scope": 4032,
                   "src": "489:4:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1089,7 +1089,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 3897,
+                    "id": 4029,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "489:4:6",
@@ -1104,14 +1104,14 @@
               ],
               "src": "488:6:6"
             },
-            "scope": 3901,
+            "scope": 4033,
             "src": "448:47:6",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 3902,
+        "scope": 4034,
         "src": "51:446:6"
       }
     ],
@@ -1123,7 +1123,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.13",
-  "updatedAt": "2019-08-24T23:51:51.474Z",
+  "updatedAt": "2019-08-25T01:25:40.715Z",
   "devdoc": {
     "methods": {}
   },

@@ -36,14 +36,14 @@
     "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/factories/MapFactory.sol",
     "exportedSymbols": {
       "MapFactory": [
-        4117
+        4249
       ]
     },
-    "id": 4118,
+    "id": 4250,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4081,
+        "id": 4213,
         "literals": [
           "solidity",
           "^",
@@ -56,10 +56,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/Delegator.sol",
         "file": "./../libraries/Delegator.sol",
-        "id": 4082,
+        "id": 4214,
         "nodeType": "ImportDirective",
-        "scope": 4118,
-        "sourceUnit": 4472,
+        "scope": 4250,
+        "sourceUnit": 4604,
         "src": "27:38:11",
         "symbolAliases": [],
         "unitAlias": ""
@@ -67,10 +67,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/IController.sol",
         "file": "./../IController.sol",
-        "id": 4083,
+        "id": 4215,
         "nodeType": "ImportDirective",
-        "scope": 4118,
-        "sourceUnit": 3902,
+        "scope": 4250,
+        "sourceUnit": 4034,
         "src": "66:30:11",
         "symbolAliases": [],
         "unitAlias": ""
@@ -78,10 +78,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/collections/Map.sol",
         "file": "./../libraries/collections/Map.sol",
-        "id": 4084,
+        "id": 4216,
         "nodeType": "ImportDirective",
-        "scope": 4118,
-        "sourceUnit": 4887,
+        "scope": 4250,
+        "sourceUnit": 5019,
         "src": "97:44:11",
         "symbolAliases": [],
         "unitAlias": ""
@@ -89,51 +89,51 @@
       {
         "baseContracts": [],
         "contractDependencies": [
-          4471
+          4603
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 4117,
+        "id": 4249,
         "linearizedBaseContracts": [
-          4117
+          4249
         ],
         "name": "MapFactory",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 4115,
+              "id": 4247,
               "nodeType": "Block",
               "src": "251:163:11",
               "statements": [
                 {
                   "assignments": [
-                    4094
+                    4226
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4094,
+                      "id": 4226,
                       "name": "_delegator",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4116,
+                      "scope": 4248,
                       "src": "261:20:11",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Delegator_$4471",
+                        "typeIdentifier": "t_contract$_Delegator_$4603",
                         "typeString": "contract Delegator"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 4093,
+                        "id": 4225,
                         "name": "Delegator",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 4471,
+                        "referencedDeclaration": 4603,
                         "src": "261:9:11",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Delegator_$4471",
+                          "typeIdentifier": "t_contract$_Delegator_$4603",
                           "typeString": "contract Delegator"
                         }
                       },
@@ -141,27 +141,27 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4100,
+                  "id": 4232,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 4097,
+                        "id": 4229,
                         "name": "_controller",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4086,
+                        "referencedDeclaration": 4218,
                         "src": "298:11:11",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IController_$3901",
+                          "typeIdentifier": "t_contract$_IController_$4033",
                           "typeString": "contract IController"
                         }
                       },
                       {
                         "argumentTypes": null,
                         "hexValue": "4d6170",
-                        "id": 4098,
+                        "id": 4230,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -180,7 +180,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_IController_$3901",
+                          "typeIdentifier": "t_contract$_IController_$4033",
                           "typeString": "contract IController"
                         },
                         {
@@ -188,7 +188,7 @@
                           "typeString": "literal_string \"Map\""
                         }
                       ],
-                      "id": 4096,
+                      "id": 4228,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -196,23 +196,23 @@
                       "nodeType": "NewExpression",
                       "src": "284:13:11",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_creation_nonpayable$_t_contract$_IController_$3901_$_t_bytes32_$returns$_t_contract$_Delegator_$4471_$",
+                        "typeIdentifier": "t_function_creation_nonpayable$_t_contract$_IController_$4033_$_t_bytes32_$returns$_t_contract$_Delegator_$4603_$",
                         "typeString": "function (contract IController,bytes32) returns (contract Delegator)"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 4095,
+                        "id": 4227,
                         "name": "Delegator",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 4471,
+                        "referencedDeclaration": 4603,
                         "src": "288:9:11",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Delegator_$4471",
+                          "typeIdentifier": "t_contract$_Delegator_$4603",
                           "typeString": "contract Delegator"
                         }
                       }
                     },
-                    "id": 4099,
+                    "id": 4231,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -222,7 +222,7 @@
                     "nodeType": "FunctionCall",
                     "src": "284:33:11",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Delegator_$4471",
+                      "typeIdentifier": "t_contract$_Delegator_$4603",
                       "typeString": "contract Delegator"
                     }
                   },
@@ -231,31 +231,31 @@
                 },
                 {
                   "assignments": [
-                    4102
+                    4234
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4102,
+                      "id": 4234,
                       "name": "_map",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4116,
+                      "scope": 4248,
                       "src": "327:8:11",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Map_$4886",
+                        "typeIdentifier": "t_contract$_Map_$5018",
                         "typeString": "contract Map"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 4101,
+                        "id": 4233,
                         "name": "Map",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 4886,
+                        "referencedDeclaration": 5018,
                         "src": "327:3:11",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Map_$4886",
+                          "typeIdentifier": "t_contract$_Map_$5018",
                           "typeString": "contract Map"
                         }
                       },
@@ -263,20 +263,20 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4106,
+                  "id": 4238,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 4104,
+                        "id": 4236,
                         "name": "_delegator",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4094,
+                        "referencedDeclaration": 4226,
                         "src": "342:10:11",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Delegator_$4471",
+                          "typeIdentifier": "t_contract$_Delegator_$4603",
                           "typeString": "contract Delegator"
                         }
                       }
@@ -284,22 +284,22 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_Delegator_$4471",
+                          "typeIdentifier": "t_contract$_Delegator_$4603",
                           "typeString": "contract Delegator"
                         }
                       ],
-                      "id": 4103,
+                      "id": 4235,
                       "name": "Map",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4886,
+                      "referencedDeclaration": 5018,
                       "src": "338:3:11",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_Map_$4886_$",
+                        "typeIdentifier": "t_type$_t_contract$_Map_$5018_$",
                         "typeString": "type(contract Map)"
                       }
                     },
-                    "id": 4105,
+                    "id": 4237,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -309,7 +309,7 @@
                     "nodeType": "FunctionCall",
                     "src": "338:15:11",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Map_$4886",
+                      "typeIdentifier": "t_contract$_Map_$5018",
                       "typeString": "contract Map"
                     }
                   },
@@ -322,11 +322,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 4110,
+                        "id": 4242,
                         "name": "_owner",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4088,
+                        "referencedDeclaration": 4220,
                         "src": "379:6:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -343,32 +343,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 4107,
+                        "id": 4239,
                         "name": "_map",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4102,
+                        "referencedDeclaration": 4234,
                         "src": "363:4:11",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Map_$4886",
+                          "typeIdentifier": "t_contract$_Map_$5018",
                           "typeString": "contract Map"
                         }
                       },
-                      "id": 4109,
+                      "id": 4241,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "initialize",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4706,
+                      "referencedDeclaration": 4838,
                       "src": "363:15:11",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$returns$_t_bool_$",
                         "typeString": "function (address) external returns (bool)"
                       }
                     },
-                    "id": 4111,
+                    "id": 4243,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -382,33 +382,33 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 4112,
+                  "id": 4244,
                   "nodeType": "ExpressionStatement",
                   "src": "363:23:11"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 4113,
+                    "id": 4245,
                     "name": "_map",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 4102,
+                    "referencedDeclaration": 4234,
                     "src": "403:4:11",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Map_$4886",
+                      "typeIdentifier": "t_contract$_Map_$5018",
                       "typeString": "contract Map"
                     }
                   },
-                  "functionReturnParameters": 4092,
-                  "id": 4114,
+                  "functionReturnParameters": 4224,
+                  "id": 4246,
                   "nodeType": "Return",
                   "src": "396:11:11"
                 }
               ]
             },
             "documentation": null,
-            "id": 4116,
+            "id": 4248,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -416,31 +416,31 @@
             "name": "createMap",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4089,
+              "id": 4221,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4086,
+                  "id": 4218,
                   "name": "_controller",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4116,
+                  "scope": 4248,
                   "src": "189:23:11",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IController_$3901",
+                    "typeIdentifier": "t_contract$_IController_$4033",
                     "typeString": "contract IController"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4085,
+                    "id": 4217,
                     "name": "IController",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 3901,
+                    "referencedDeclaration": 4033,
                     "src": "189:11:11",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IController_$3901",
+                      "typeIdentifier": "t_contract$_IController_$4033",
                       "typeString": "contract IController"
                     }
                   },
@@ -449,10 +449,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 4088,
+                  "id": 4220,
                   "name": "_owner",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4116,
+                  "scope": 4248,
                   "src": "214:14:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -461,7 +461,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4087,
+                    "id": 4219,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "214:7:11",
@@ -478,31 +478,31 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 4092,
+              "id": 4224,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4091,
+                  "id": 4223,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4116,
+                  "scope": 4248,
                   "src": "246:3:11",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_Map_$4886",
+                    "typeIdentifier": "t_contract$_Map_$5018",
                     "typeString": "contract Map"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4090,
+                    "id": 4222,
                     "name": "Map",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 4886,
+                    "referencedDeclaration": 5018,
                     "src": "246:3:11",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Map_$4886",
+                      "typeIdentifier": "t_contract$_Map_$5018",
                       "typeString": "contract Map"
                     }
                   },
@@ -512,14 +512,14 @@
               ],
               "src": "245:5:11"
             },
-            "scope": 4117,
+            "scope": 4249,
             "src": "170:244:11",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 4118,
+        "scope": 4250,
         "src": "144:272:11"
       }
     ],
@@ -529,14 +529,14 @@
     "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/factories/MapFactory.sol",
     "exportedSymbols": {
       "MapFactory": [
-        4117
+        4249
       ]
     },
-    "id": 4118,
+    "id": 4250,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4081,
+        "id": 4213,
         "literals": [
           "solidity",
           "^",
@@ -549,10 +549,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/Delegator.sol",
         "file": "./../libraries/Delegator.sol",
-        "id": 4082,
+        "id": 4214,
         "nodeType": "ImportDirective",
-        "scope": 4118,
-        "sourceUnit": 4472,
+        "scope": 4250,
+        "sourceUnit": 4604,
         "src": "27:38:11",
         "symbolAliases": [],
         "unitAlias": ""
@@ -560,10 +560,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/IController.sol",
         "file": "./../IController.sol",
-        "id": 4083,
+        "id": 4215,
         "nodeType": "ImportDirective",
-        "scope": 4118,
-        "sourceUnit": 3902,
+        "scope": 4250,
+        "sourceUnit": 4034,
         "src": "66:30:11",
         "symbolAliases": [],
         "unitAlias": ""
@@ -571,10 +571,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/collections/Map.sol",
         "file": "./../libraries/collections/Map.sol",
-        "id": 4084,
+        "id": 4216,
         "nodeType": "ImportDirective",
-        "scope": 4118,
-        "sourceUnit": 4887,
+        "scope": 4250,
+        "sourceUnit": 5019,
         "src": "97:44:11",
         "symbolAliases": [],
         "unitAlias": ""
@@ -582,51 +582,51 @@
       {
         "baseContracts": [],
         "contractDependencies": [
-          4471
+          4603
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 4117,
+        "id": 4249,
         "linearizedBaseContracts": [
-          4117
+          4249
         ],
         "name": "MapFactory",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 4115,
+              "id": 4247,
               "nodeType": "Block",
               "src": "251:163:11",
               "statements": [
                 {
                   "assignments": [
-                    4094
+                    4226
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4094,
+                      "id": 4226,
                       "name": "_delegator",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4116,
+                      "scope": 4248,
                       "src": "261:20:11",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Delegator_$4471",
+                        "typeIdentifier": "t_contract$_Delegator_$4603",
                         "typeString": "contract Delegator"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 4093,
+                        "id": 4225,
                         "name": "Delegator",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 4471,
+                        "referencedDeclaration": 4603,
                         "src": "261:9:11",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Delegator_$4471",
+                          "typeIdentifier": "t_contract$_Delegator_$4603",
                           "typeString": "contract Delegator"
                         }
                       },
@@ -634,27 +634,27 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4100,
+                  "id": 4232,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 4097,
+                        "id": 4229,
                         "name": "_controller",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4086,
+                        "referencedDeclaration": 4218,
                         "src": "298:11:11",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IController_$3901",
+                          "typeIdentifier": "t_contract$_IController_$4033",
                           "typeString": "contract IController"
                         }
                       },
                       {
                         "argumentTypes": null,
                         "hexValue": "4d6170",
-                        "id": 4098,
+                        "id": 4230,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -673,7 +673,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_IController_$3901",
+                          "typeIdentifier": "t_contract$_IController_$4033",
                           "typeString": "contract IController"
                         },
                         {
@@ -681,7 +681,7 @@
                           "typeString": "literal_string \"Map\""
                         }
                       ],
-                      "id": 4096,
+                      "id": 4228,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -689,23 +689,23 @@
                       "nodeType": "NewExpression",
                       "src": "284:13:11",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_creation_nonpayable$_t_contract$_IController_$3901_$_t_bytes32_$returns$_t_contract$_Delegator_$4471_$",
+                        "typeIdentifier": "t_function_creation_nonpayable$_t_contract$_IController_$4033_$_t_bytes32_$returns$_t_contract$_Delegator_$4603_$",
                         "typeString": "function (contract IController,bytes32) returns (contract Delegator)"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 4095,
+                        "id": 4227,
                         "name": "Delegator",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 4471,
+                        "referencedDeclaration": 4603,
                         "src": "288:9:11",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Delegator_$4471",
+                          "typeIdentifier": "t_contract$_Delegator_$4603",
                           "typeString": "contract Delegator"
                         }
                       }
                     },
-                    "id": 4099,
+                    "id": 4231,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -715,7 +715,7 @@
                     "nodeType": "FunctionCall",
                     "src": "284:33:11",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Delegator_$4471",
+                      "typeIdentifier": "t_contract$_Delegator_$4603",
                       "typeString": "contract Delegator"
                     }
                   },
@@ -724,31 +724,31 @@
                 },
                 {
                   "assignments": [
-                    4102
+                    4234
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4102,
+                      "id": 4234,
                       "name": "_map",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4116,
+                      "scope": 4248,
                       "src": "327:8:11",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Map_$4886",
+                        "typeIdentifier": "t_contract$_Map_$5018",
                         "typeString": "contract Map"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 4101,
+                        "id": 4233,
                         "name": "Map",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 4886,
+                        "referencedDeclaration": 5018,
                         "src": "327:3:11",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Map_$4886",
+                          "typeIdentifier": "t_contract$_Map_$5018",
                           "typeString": "contract Map"
                         }
                       },
@@ -756,20 +756,20 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4106,
+                  "id": 4238,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 4104,
+                        "id": 4236,
                         "name": "_delegator",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4094,
+                        "referencedDeclaration": 4226,
                         "src": "342:10:11",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Delegator_$4471",
+                          "typeIdentifier": "t_contract$_Delegator_$4603",
                           "typeString": "contract Delegator"
                         }
                       }
@@ -777,22 +777,22 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_Delegator_$4471",
+                          "typeIdentifier": "t_contract$_Delegator_$4603",
                           "typeString": "contract Delegator"
                         }
                       ],
-                      "id": 4103,
+                      "id": 4235,
                       "name": "Map",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4886,
+                      "referencedDeclaration": 5018,
                       "src": "338:3:11",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_Map_$4886_$",
+                        "typeIdentifier": "t_type$_t_contract$_Map_$5018_$",
                         "typeString": "type(contract Map)"
                       }
                     },
-                    "id": 4105,
+                    "id": 4237,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -802,7 +802,7 @@
                     "nodeType": "FunctionCall",
                     "src": "338:15:11",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Map_$4886",
+                      "typeIdentifier": "t_contract$_Map_$5018",
                       "typeString": "contract Map"
                     }
                   },
@@ -815,11 +815,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 4110,
+                        "id": 4242,
                         "name": "_owner",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4088,
+                        "referencedDeclaration": 4220,
                         "src": "379:6:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -836,32 +836,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 4107,
+                        "id": 4239,
                         "name": "_map",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4102,
+                        "referencedDeclaration": 4234,
                         "src": "363:4:11",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Map_$4886",
+                          "typeIdentifier": "t_contract$_Map_$5018",
                           "typeString": "contract Map"
                         }
                       },
-                      "id": 4109,
+                      "id": 4241,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "initialize",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4706,
+                      "referencedDeclaration": 4838,
                       "src": "363:15:11",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$returns$_t_bool_$",
                         "typeString": "function (address) external returns (bool)"
                       }
                     },
-                    "id": 4111,
+                    "id": 4243,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -875,33 +875,33 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 4112,
+                  "id": 4244,
                   "nodeType": "ExpressionStatement",
                   "src": "363:23:11"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 4113,
+                    "id": 4245,
                     "name": "_map",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 4102,
+                    "referencedDeclaration": 4234,
                     "src": "403:4:11",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Map_$4886",
+                      "typeIdentifier": "t_contract$_Map_$5018",
                       "typeString": "contract Map"
                     }
                   },
-                  "functionReturnParameters": 4092,
-                  "id": 4114,
+                  "functionReturnParameters": 4224,
+                  "id": 4246,
                   "nodeType": "Return",
                   "src": "396:11:11"
                 }
               ]
             },
             "documentation": null,
-            "id": 4116,
+            "id": 4248,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -909,31 +909,31 @@
             "name": "createMap",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4089,
+              "id": 4221,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4086,
+                  "id": 4218,
                   "name": "_controller",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4116,
+                  "scope": 4248,
                   "src": "189:23:11",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IController_$3901",
+                    "typeIdentifier": "t_contract$_IController_$4033",
                     "typeString": "contract IController"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4085,
+                    "id": 4217,
                     "name": "IController",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 3901,
+                    "referencedDeclaration": 4033,
                     "src": "189:11:11",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IController_$3901",
+                      "typeIdentifier": "t_contract$_IController_$4033",
                       "typeString": "contract IController"
                     }
                   },
@@ -942,10 +942,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 4088,
+                  "id": 4220,
                   "name": "_owner",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4116,
+                  "scope": 4248,
                   "src": "214:14:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -954,7 +954,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4087,
+                    "id": 4219,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "214:7:11",
@@ -971,31 +971,31 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 4092,
+              "id": 4224,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4091,
+                  "id": 4223,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4116,
+                  "scope": 4248,
                   "src": "246:3:11",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_Map_$4886",
+                    "typeIdentifier": "t_contract$_Map_$5018",
                     "typeString": "contract Map"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4090,
+                    "id": 4222,
                     "name": "Map",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 4886,
+                    "referencedDeclaration": 5018,
                     "src": "246:3:11",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Map_$4886",
+                      "typeIdentifier": "t_contract$_Map_$5018",
                       "typeString": "contract Map"
                     }
                   },
@@ -1005,14 +1005,14 @@
               ],
               "src": "245:5:11"
             },
-            "scope": 4117,
+            "scope": 4249,
             "src": "170:244:11",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 4118,
+        "scope": 4250,
         "src": "144:272:11"
       }
     ],
@@ -1024,7 +1024,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.13",
-  "updatedAt": "2019-08-24T23:51:51.482Z",
+  "updatedAt": "2019-08-25T01:25:40.724Z",
   "devdoc": {
     "methods": {}
   },

@@ -27,14 +27,14 @@
     "absolutePath": "chainlink/contracts/interfaces/PointerInterface.sol",
     "exportedSymbols": {
       "PointerInterface": [
-        13863
+        13995
       ]
     },
-    "id": 13864,
+    "id": 13996,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 13857,
+        "id": 13989,
         "literals": [
           "solidity",
           "0.4",
@@ -49,9 +49,9 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 13863,
+        "id": 13995,
         "linearizedBaseContracts": [
-          13863
+          13995
         ],
         "name": "PointerInterface",
         "nodeType": "ContractDefinition",
@@ -59,7 +59,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 13862,
+            "id": 13994,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -67,22 +67,22 @@
             "name": "getAddress",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 13858,
+              "id": 13990,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "75:2:59"
             },
             "payable": false,
             "returnParameters": {
-              "id": 13861,
+              "id": 13993,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 13860,
+                  "id": 13992,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 13862,
+                  "scope": 13994,
                   "src": "101:7:59",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -91,7 +91,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 13859,
+                    "id": 13991,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "101:7:59",
@@ -106,14 +106,14 @@
               ],
               "src": "100:9:59"
             },
-            "scope": 13863,
+            "scope": 13995,
             "src": "56:54:59",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 13864,
+        "scope": 13996,
         "src": "25:87:59"
       }
     ],
@@ -123,14 +123,14 @@
     "absolutePath": "chainlink/contracts/interfaces/PointerInterface.sol",
     "exportedSymbols": {
       "PointerInterface": [
-        13863
+        13995
       ]
     },
-    "id": 13864,
+    "id": 13996,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 13857,
+        "id": 13989,
         "literals": [
           "solidity",
           "0.4",
@@ -145,9 +145,9 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 13863,
+        "id": 13995,
         "linearizedBaseContracts": [
-          13863
+          13995
         ],
         "name": "PointerInterface",
         "nodeType": "ContractDefinition",
@@ -155,7 +155,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 13862,
+            "id": 13994,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -163,22 +163,22 @@
             "name": "getAddress",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 13858,
+              "id": 13990,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "75:2:59"
             },
             "payable": false,
             "returnParameters": {
-              "id": 13861,
+              "id": 13993,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 13860,
+                  "id": 13992,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 13862,
+                  "scope": 13994,
                   "src": "101:7:59",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -187,7 +187,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 13859,
+                    "id": 13991,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "101:7:59",
@@ -202,14 +202,14 @@
               ],
               "src": "100:9:59"
             },
-            "scope": 13863,
+            "scope": 13995,
             "src": "56:54:59",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 13864,
+        "scope": 13996,
         "src": "25:87:59"
       }
     ],
@@ -221,7 +221,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.13",
-  "updatedAt": "2019-08-24T23:51:51.748Z",
+  "updatedAt": "2019-08-25T01:25:40.900Z",
   "devdoc": {
     "methods": {}
   },

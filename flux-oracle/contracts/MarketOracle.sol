@@ -23,7 +23,7 @@ contract MarketOracle is ChainlinkClient {
 	address oracle; 
 
 	bool disputed;
-	bool resoluted;
+	bool finalized;
 	bool isInvalid;
 	bool disputeIsInvalid;
 	uint256 endTime;
@@ -36,11 +36,11 @@ contract MarketOracle is ChainlinkClient {
 	string marketDescription;
 	bytes32 marketTopic;
 	
-	Augur constant augur = Augur(0x25ff5dc79a7c4e34254ff0f4a19d69e491201dd3);
-	ICash constant cash = ICash(0x3e18b476f3f51127cbb01504aa03c7ae3d16d441);
-	Universe constant universe = Universe(0x6a424c1bd008c82191db24ba1528e60ca92314ca);
-	CompleteSets constant completeSets = CompleteSets(0xb03cf72bc5a9a344aac43534d664917927367487);
-	ClaimTradingProceeds constant claimTradingProceeds = ClaimTradingProceeds(0x3c6721551c2ba3973560aef3e11d34ce05db4047);
+	Augur constant augur = Augur({ENTER_ADDRESS_FROM_CORE});
+	ICash constant cash = ICash({ENTER_ADDRESS_FROM_CORE});
+	Universe constant universe = Universe({ENTER_ADDRESS_FROM_CORE});
+	CompleteSets constant completeSets = CompleteSets({ENTER_ADDRESS_FROM_CORE});
+	ClaimTradingProceeds constant claimTradingProceeds = ClaimTradingProceeds({ENTER_ADDRESS_FROM_CORE});
 
 	uint256 constant NUM_TICKS = 10000;
 	uint256 constant TEN_MINUTES = 60 * 10;
@@ -143,8 +143,19 @@ contract MarketOracle is ChainlinkClient {
 		disputed = true;
 		emit marketDisputed(disputeMarket);
 	}
+	
+	function calculateFees(uint256 proceeds) 
+	public 
+	returns(uint256) 
+	{
+		uint256 flatFee = disputeMarket.deriveMarketCreatorFeeAmount(proceeds);
+		uint256 reportingFeeDevisor = universe.getOrCacheReportingFeeDivisor();
+		flatFee = flatFee.add(proceeds.div(reportingFeeDevisor));
+		return flatFee;
+	}
 
-	function submitInitialReport(uint256[] payoutNumerators) public {
+	function submitInitialReport(uint256[] payoutNumerators) 
+	public {
 		require(answerToPayoutDistributionHash(disputeAnswer, disputeIsInvalid) == keccak256(payoutNumerators));
 		Market(address(disputeMarket)).doInitialReport(payoutNumerators, disputeIsInvalid);
 	}
@@ -170,10 +181,10 @@ contract MarketOracle is ChainlinkClient {
 		// If not testing the line below here should be uncommented
 		// require(now >= endTime + disputeTimeAdded);
 		if (!disputed) {
-			resoluted = true;
+			finalized = true;
 			payoutDistributionHash = answerToPayoutDistributionHash(answer, isInvalid);
 		} else {
-			resoluted = true;
+			finalized = true;
 			require(!disputeMarket.isFinalized());
 			disputeMarket.finalize();
 		}
@@ -183,7 +194,7 @@ contract MarketOracle is ChainlinkClient {
 	public
 	view
 	returns (uint256) {
-		require(resoluted == true);
+		require(finalized == true);
 		if (disputed) {
 			return disputeMarket.getWinningPayoutNumerator(_outcome);
 		} else {
@@ -201,6 +212,13 @@ contract MarketOracle is ChainlinkClient {
 		claimTradingProceeds.claimTradingProceeds(disputeMarket, address(this));
 		uint256 balanceAfter = address(this).balance;
 		creator.transfer(balanceAfter.sub(balanceBefore));
+	}
+
+	function isFinalized()
+	public
+	view 
+	returns(bool) {
+		return finalized;
 	}
 
 	function getDisputeMarketFinalizationTime()

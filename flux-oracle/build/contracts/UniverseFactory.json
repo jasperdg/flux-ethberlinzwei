@@ -40,14 +40,14 @@
     "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/factories/UniverseFactory.sol",
     "exportedSymbols": {
       "UniverseFactory": [
-        4321
+        4453
       ]
     },
-    "id": 4322,
+    "id": 4454,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4282,
+        "id": 4414,
         "literals": [
           "solidity",
           "^",
@@ -60,10 +60,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/Delegator.sol",
         "file": "./../libraries/Delegator.sol",
-        "id": 4283,
+        "id": 4415,
         "nodeType": "ImportDirective",
-        "scope": 4322,
-        "sourceUnit": 4472,
+        "scope": 4454,
+        "sourceUnit": 4604,
         "src": "27:38:15",
         "symbolAliases": [],
         "unitAlias": ""
@@ -71,10 +71,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/IController.sol",
         "file": "./../IController.sol",
-        "id": 4284,
+        "id": 4416,
         "nodeType": "ImportDirective",
-        "scope": 4322,
-        "sourceUnit": 3902,
+        "scope": 4454,
+        "sourceUnit": 4034,
         "src": "66:30:15",
         "symbolAliases": [],
         "unitAlias": ""
@@ -82,10 +82,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/reporting/IUniverse.sol",
         "file": "./../reporting/IUniverse.sol",
-        "id": 4285,
+        "id": 4417,
         "nodeType": "ImportDirective",
-        "scope": 4322,
-        "sourceUnit": 6321,
+        "scope": 4454,
+        "sourceUnit": 6453,
         "src": "97:38:15",
         "symbolAliases": [],
         "unitAlias": ""
@@ -93,51 +93,51 @@
       {
         "baseContracts": [],
         "contractDependencies": [
-          4471
+          4603
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 4321,
+        "id": 4453,
         "linearizedBaseContracts": [
-          4321
+          4453
         ],
         "name": "UniverseFactory",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 4319,
+              "id": 4451,
               "nodeType": "Block",
               "src": "311:235:15",
               "statements": [
                 {
                   "assignments": [
-                    4297
+                    4429
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4297,
+                      "id": 4429,
                       "name": "_delegator",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4320,
+                      "scope": 4452,
                       "src": "321:20:15",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Delegator_$4471",
+                        "typeIdentifier": "t_contract$_Delegator_$4603",
                         "typeString": "contract Delegator"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 4296,
+                        "id": 4428,
                         "name": "Delegator",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 4471,
+                        "referencedDeclaration": 4603,
                         "src": "321:9:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Delegator_$4471",
+                          "typeIdentifier": "t_contract$_Delegator_$4603",
                           "typeString": "contract Delegator"
                         }
                       },
@@ -145,27 +145,27 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4303,
+                  "id": 4435,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 4300,
+                        "id": 4432,
                         "name": "_controller",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4287,
+                        "referencedDeclaration": 4419,
                         "src": "358:11:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IController_$3901",
+                          "typeIdentifier": "t_contract$_IController_$4033",
                           "typeString": "contract IController"
                         }
                       },
                       {
                         "argumentTypes": null,
                         "hexValue": "556e697665727365",
-                        "id": 4301,
+                        "id": 4433,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -184,7 +184,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_IController_$3901",
+                          "typeIdentifier": "t_contract$_IController_$4033",
                           "typeString": "contract IController"
                         },
                         {
@@ -192,7 +192,7 @@
                           "typeString": "literal_string \"Universe\""
                         }
                       ],
-                      "id": 4299,
+                      "id": 4431,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -200,23 +200,23 @@
                       "nodeType": "NewExpression",
                       "src": "344:13:15",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_creation_nonpayable$_t_contract$_IController_$3901_$_t_bytes32_$returns$_t_contract$_Delegator_$4471_$",
+                        "typeIdentifier": "t_function_creation_nonpayable$_t_contract$_IController_$4033_$_t_bytes32_$returns$_t_contract$_Delegator_$4603_$",
                         "typeString": "function (contract IController,bytes32) returns (contract Delegator)"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 4298,
+                        "id": 4430,
                         "name": "Delegator",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 4471,
+                        "referencedDeclaration": 4603,
                         "src": "348:9:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Delegator_$4471",
+                          "typeIdentifier": "t_contract$_Delegator_$4603",
                           "typeString": "contract Delegator"
                         }
                       }
                     },
-                    "id": 4302,
+                    "id": 4434,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -226,7 +226,7 @@
                     "nodeType": "FunctionCall",
                     "src": "344:38:15",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Delegator_$4471",
+                      "typeIdentifier": "t_contract$_Delegator_$4603",
                       "typeString": "contract Delegator"
                     }
                   },
@@ -235,31 +235,31 @@
                 },
                 {
                   "assignments": [
-                    4305
+                    4437
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4305,
+                      "id": 4437,
                       "name": "_universe",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4320,
+                      "scope": 4452,
                       "src": "392:19:15",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IUniverse_$6320",
+                        "typeIdentifier": "t_contract$_IUniverse_$6452",
                         "typeString": "contract IUniverse"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 4304,
+                        "id": 4436,
                         "name": "IUniverse",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 6320,
+                        "referencedDeclaration": 6452,
                         "src": "392:9:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IUniverse_$6320",
+                          "typeIdentifier": "t_contract$_IUniverse_$6452",
                           "typeString": "contract IUniverse"
                         }
                       },
@@ -267,20 +267,20 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4309,
+                  "id": 4441,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 4307,
+                        "id": 4439,
                         "name": "_delegator",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4297,
+                        "referencedDeclaration": 4429,
                         "src": "424:10:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Delegator_$4471",
+                          "typeIdentifier": "t_contract$_Delegator_$4603",
                           "typeString": "contract Delegator"
                         }
                       }
@@ -288,22 +288,22 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_Delegator_$4471",
+                          "typeIdentifier": "t_contract$_Delegator_$4603",
                           "typeString": "contract Delegator"
                         }
                       ],
-                      "id": 4306,
+                      "id": 4438,
                       "name": "IUniverse",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 6320,
+                      "referencedDeclaration": 6452,
                       "src": "414:9:15",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_IUniverse_$6320_$",
+                        "typeIdentifier": "t_type$_t_contract$_IUniverse_$6452_$",
                         "typeString": "type(contract IUniverse)"
                       }
                     },
-                    "id": 4308,
+                    "id": 4440,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -313,7 +313,7 @@
                     "nodeType": "FunctionCall",
                     "src": "414:21:15",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IUniverse_$6320",
+                      "typeIdentifier": "t_contract$_IUniverse_$6452",
                       "typeString": "contract IUniverse"
                     }
                   },
@@ -326,24 +326,24 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 4313,
+                        "id": 4445,
                         "name": "_parentUniverse",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4289,
+                        "referencedDeclaration": 4421,
                         "src": "466:15:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IUniverse_$6320",
+                          "typeIdentifier": "t_contract$_IUniverse_$6452",
                           "typeString": "contract IUniverse"
                         }
                       },
                       {
                         "argumentTypes": null,
-                        "id": 4314,
+                        "id": 4446,
                         "name": "_parentPayoutDistributionHash",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4291,
+                        "referencedDeclaration": 4423,
                         "src": "483:29:15",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -354,7 +354,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_IUniverse_$6320",
+                          "typeIdentifier": "t_contract$_IUniverse_$6452",
                           "typeString": "contract IUniverse"
                         },
                         {
@@ -364,32 +364,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 4310,
+                        "id": 4442,
                         "name": "_universe",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4305,
+                        "referencedDeclaration": 4437,
                         "src": "445:9:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IUniverse_$6320",
+                          "typeIdentifier": "t_contract$_IUniverse_$6452",
                           "typeString": "contract IUniverse"
                         }
                       },
-                      "id": 4312,
+                      "id": 4444,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "initialize",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 6069,
+                      "referencedDeclaration": 6201,
                       "src": "445:20:15",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_nonpayable$_t_contract$_IUniverse_$6320_$_t_bytes32_$returns$_t_bool_$",
+                        "typeIdentifier": "t_function_external_nonpayable$_t_contract$_IUniverse_$6452_$_t_bytes32_$returns$_t_bool_$",
                         "typeString": "function (contract IUniverse,bytes32) external returns (bool)"
                       }
                     },
-                    "id": 4315,
+                    "id": 4447,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -403,33 +403,33 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 4316,
+                  "id": 4448,
                   "nodeType": "ExpressionStatement",
                   "src": "445:68:15"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 4317,
+                    "id": 4449,
                     "name": "_universe",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 4305,
+                    "referencedDeclaration": 4437,
                     "src": "530:9:15",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IUniverse_$6320",
+                      "typeIdentifier": "t_contract$_IUniverse_$6452",
                       "typeString": "contract IUniverse"
                     }
                   },
-                  "functionReturnParameters": 4295,
-                  "id": 4318,
+                  "functionReturnParameters": 4427,
+                  "id": 4450,
                   "nodeType": "Return",
                   "src": "523:16:15"
                 }
               ]
             },
             "documentation": null,
-            "id": 4320,
+            "id": 4452,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -437,31 +437,31 @@
             "name": "createUniverse",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4292,
+              "id": 4424,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4287,
+                  "id": 4419,
                   "name": "_controller",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4320,
+                  "scope": 4452,
                   "src": "193:23:15",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IController_$3901",
+                    "typeIdentifier": "t_contract$_IController_$4033",
                     "typeString": "contract IController"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4286,
+                    "id": 4418,
                     "name": "IController",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 3901,
+                    "referencedDeclaration": 4033,
                     "src": "193:11:15",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IController_$3901",
+                      "typeIdentifier": "t_contract$_IController_$4033",
                       "typeString": "contract IController"
                     }
                   },
@@ -470,26 +470,26 @@
                 },
                 {
                   "constant": false,
-                  "id": 4289,
+                  "id": 4421,
                   "name": "_parentUniverse",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4320,
+                  "scope": 4452,
                   "src": "218:25:15",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IUniverse_$6320",
+                    "typeIdentifier": "t_contract$_IUniverse_$6452",
                     "typeString": "contract IUniverse"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4288,
+                    "id": 4420,
                     "name": "IUniverse",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 6320,
+                    "referencedDeclaration": 6452,
                     "src": "218:9:15",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IUniverse_$6320",
+                      "typeIdentifier": "t_contract$_IUniverse_$6452",
                       "typeString": "contract IUniverse"
                     }
                   },
@@ -498,10 +498,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 4291,
+                  "id": 4423,
                   "name": "_parentPayoutDistributionHash",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4320,
+                  "scope": 4452,
                   "src": "245:37:15",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -510,7 +510,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 4290,
+                    "id": 4422,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "245:7:15",
@@ -527,31 +527,31 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 4295,
+              "id": 4427,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4294,
+                  "id": 4426,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4320,
+                  "scope": 4452,
                   "src": "300:9:15",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IUniverse_$6320",
+                    "typeIdentifier": "t_contract$_IUniverse_$6452",
                     "typeString": "contract IUniverse"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4293,
+                    "id": 4425,
                     "name": "IUniverse",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 6320,
+                    "referencedDeclaration": 6452,
                     "src": "300:9:15",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IUniverse_$6320",
+                      "typeIdentifier": "t_contract$_IUniverse_$6452",
                       "typeString": "contract IUniverse"
                     }
                   },
@@ -561,14 +561,14 @@
               ],
               "src": "299:11:15"
             },
-            "scope": 4321,
+            "scope": 4453,
             "src": "169:377:15",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 4322,
+        "scope": 4454,
         "src": "138:410:15"
       }
     ],
@@ -578,14 +578,14 @@
     "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/factories/UniverseFactory.sol",
     "exportedSymbols": {
       "UniverseFactory": [
-        4321
+        4453
       ]
     },
-    "id": 4322,
+    "id": 4454,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4282,
+        "id": 4414,
         "literals": [
           "solidity",
           "^",
@@ -598,10 +598,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/Delegator.sol",
         "file": "./../libraries/Delegator.sol",
-        "id": 4283,
+        "id": 4415,
         "nodeType": "ImportDirective",
-        "scope": 4322,
-        "sourceUnit": 4472,
+        "scope": 4454,
+        "sourceUnit": 4604,
         "src": "27:38:15",
         "symbolAliases": [],
         "unitAlias": ""
@@ -609,10 +609,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/IController.sol",
         "file": "./../IController.sol",
-        "id": 4284,
+        "id": 4416,
         "nodeType": "ImportDirective",
-        "scope": 4322,
-        "sourceUnit": 3902,
+        "scope": 4454,
+        "sourceUnit": 4034,
         "src": "66:30:15",
         "symbolAliases": [],
         "unitAlias": ""
@@ -620,10 +620,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/reporting/IUniverse.sol",
         "file": "./../reporting/IUniverse.sol",
-        "id": 4285,
+        "id": 4417,
         "nodeType": "ImportDirective",
-        "scope": 4322,
-        "sourceUnit": 6321,
+        "scope": 4454,
+        "sourceUnit": 6453,
         "src": "97:38:15",
         "symbolAliases": [],
         "unitAlias": ""
@@ -631,51 +631,51 @@
       {
         "baseContracts": [],
         "contractDependencies": [
-          4471
+          4603
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 4321,
+        "id": 4453,
         "linearizedBaseContracts": [
-          4321
+          4453
         ],
         "name": "UniverseFactory",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 4319,
+              "id": 4451,
               "nodeType": "Block",
               "src": "311:235:15",
               "statements": [
                 {
                   "assignments": [
-                    4297
+                    4429
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4297,
+                      "id": 4429,
                       "name": "_delegator",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4320,
+                      "scope": 4452,
                       "src": "321:20:15",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Delegator_$4471",
+                        "typeIdentifier": "t_contract$_Delegator_$4603",
                         "typeString": "contract Delegator"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 4296,
+                        "id": 4428,
                         "name": "Delegator",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 4471,
+                        "referencedDeclaration": 4603,
                         "src": "321:9:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Delegator_$4471",
+                          "typeIdentifier": "t_contract$_Delegator_$4603",
                           "typeString": "contract Delegator"
                         }
                       },
@@ -683,27 +683,27 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4303,
+                  "id": 4435,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 4300,
+                        "id": 4432,
                         "name": "_controller",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4287,
+                        "referencedDeclaration": 4419,
                         "src": "358:11:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IController_$3901",
+                          "typeIdentifier": "t_contract$_IController_$4033",
                           "typeString": "contract IController"
                         }
                       },
                       {
                         "argumentTypes": null,
                         "hexValue": "556e697665727365",
-                        "id": 4301,
+                        "id": 4433,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -722,7 +722,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_IController_$3901",
+                          "typeIdentifier": "t_contract$_IController_$4033",
                           "typeString": "contract IController"
                         },
                         {
@@ -730,7 +730,7 @@
                           "typeString": "literal_string \"Universe\""
                         }
                       ],
-                      "id": 4299,
+                      "id": 4431,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -738,23 +738,23 @@
                       "nodeType": "NewExpression",
                       "src": "344:13:15",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_creation_nonpayable$_t_contract$_IController_$3901_$_t_bytes32_$returns$_t_contract$_Delegator_$4471_$",
+                        "typeIdentifier": "t_function_creation_nonpayable$_t_contract$_IController_$4033_$_t_bytes32_$returns$_t_contract$_Delegator_$4603_$",
                         "typeString": "function (contract IController,bytes32) returns (contract Delegator)"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 4298,
+                        "id": 4430,
                         "name": "Delegator",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 4471,
+                        "referencedDeclaration": 4603,
                         "src": "348:9:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Delegator_$4471",
+                          "typeIdentifier": "t_contract$_Delegator_$4603",
                           "typeString": "contract Delegator"
                         }
                       }
                     },
-                    "id": 4302,
+                    "id": 4434,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -764,7 +764,7 @@
                     "nodeType": "FunctionCall",
                     "src": "344:38:15",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Delegator_$4471",
+                      "typeIdentifier": "t_contract$_Delegator_$4603",
                       "typeString": "contract Delegator"
                     }
                   },
@@ -773,31 +773,31 @@
                 },
                 {
                   "assignments": [
-                    4305
+                    4437
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4305,
+                      "id": 4437,
                       "name": "_universe",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4320,
+                      "scope": 4452,
                       "src": "392:19:15",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IUniverse_$6320",
+                        "typeIdentifier": "t_contract$_IUniverse_$6452",
                         "typeString": "contract IUniverse"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 4304,
+                        "id": 4436,
                         "name": "IUniverse",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 6320,
+                        "referencedDeclaration": 6452,
                         "src": "392:9:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IUniverse_$6320",
+                          "typeIdentifier": "t_contract$_IUniverse_$6452",
                           "typeString": "contract IUniverse"
                         }
                       },
@@ -805,20 +805,20 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4309,
+                  "id": 4441,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 4307,
+                        "id": 4439,
                         "name": "_delegator",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4297,
+                        "referencedDeclaration": 4429,
                         "src": "424:10:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Delegator_$4471",
+                          "typeIdentifier": "t_contract$_Delegator_$4603",
                           "typeString": "contract Delegator"
                         }
                       }
@@ -826,22 +826,22 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_Delegator_$4471",
+                          "typeIdentifier": "t_contract$_Delegator_$4603",
                           "typeString": "contract Delegator"
                         }
                       ],
-                      "id": 4306,
+                      "id": 4438,
                       "name": "IUniverse",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 6320,
+                      "referencedDeclaration": 6452,
                       "src": "414:9:15",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_IUniverse_$6320_$",
+                        "typeIdentifier": "t_type$_t_contract$_IUniverse_$6452_$",
                         "typeString": "type(contract IUniverse)"
                       }
                     },
-                    "id": 4308,
+                    "id": 4440,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -851,7 +851,7 @@
                     "nodeType": "FunctionCall",
                     "src": "414:21:15",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IUniverse_$6320",
+                      "typeIdentifier": "t_contract$_IUniverse_$6452",
                       "typeString": "contract IUniverse"
                     }
                   },
@@ -864,24 +864,24 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 4313,
+                        "id": 4445,
                         "name": "_parentUniverse",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4289,
+                        "referencedDeclaration": 4421,
                         "src": "466:15:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IUniverse_$6320",
+                          "typeIdentifier": "t_contract$_IUniverse_$6452",
                           "typeString": "contract IUniverse"
                         }
                       },
                       {
                         "argumentTypes": null,
-                        "id": 4314,
+                        "id": 4446,
                         "name": "_parentPayoutDistributionHash",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4291,
+                        "referencedDeclaration": 4423,
                         "src": "483:29:15",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -892,7 +892,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_IUniverse_$6320",
+                          "typeIdentifier": "t_contract$_IUniverse_$6452",
                           "typeString": "contract IUniverse"
                         },
                         {
@@ -902,32 +902,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 4310,
+                        "id": 4442,
                         "name": "_universe",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4305,
+                        "referencedDeclaration": 4437,
                         "src": "445:9:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IUniverse_$6320",
+                          "typeIdentifier": "t_contract$_IUniverse_$6452",
                           "typeString": "contract IUniverse"
                         }
                       },
-                      "id": 4312,
+                      "id": 4444,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "initialize",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 6069,
+                      "referencedDeclaration": 6201,
                       "src": "445:20:15",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_nonpayable$_t_contract$_IUniverse_$6320_$_t_bytes32_$returns$_t_bool_$",
+                        "typeIdentifier": "t_function_external_nonpayable$_t_contract$_IUniverse_$6452_$_t_bytes32_$returns$_t_bool_$",
                         "typeString": "function (contract IUniverse,bytes32) external returns (bool)"
                       }
                     },
-                    "id": 4315,
+                    "id": 4447,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -941,33 +941,33 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 4316,
+                  "id": 4448,
                   "nodeType": "ExpressionStatement",
                   "src": "445:68:15"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 4317,
+                    "id": 4449,
                     "name": "_universe",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 4305,
+                    "referencedDeclaration": 4437,
                     "src": "530:9:15",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IUniverse_$6320",
+                      "typeIdentifier": "t_contract$_IUniverse_$6452",
                       "typeString": "contract IUniverse"
                     }
                   },
-                  "functionReturnParameters": 4295,
-                  "id": 4318,
+                  "functionReturnParameters": 4427,
+                  "id": 4450,
                   "nodeType": "Return",
                   "src": "523:16:15"
                 }
               ]
             },
             "documentation": null,
-            "id": 4320,
+            "id": 4452,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -975,31 +975,31 @@
             "name": "createUniverse",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4292,
+              "id": 4424,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4287,
+                  "id": 4419,
                   "name": "_controller",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4320,
+                  "scope": 4452,
                   "src": "193:23:15",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IController_$3901",
+                    "typeIdentifier": "t_contract$_IController_$4033",
                     "typeString": "contract IController"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4286,
+                    "id": 4418,
                     "name": "IController",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 3901,
+                    "referencedDeclaration": 4033,
                     "src": "193:11:15",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IController_$3901",
+                      "typeIdentifier": "t_contract$_IController_$4033",
                       "typeString": "contract IController"
                     }
                   },
@@ -1008,26 +1008,26 @@
                 },
                 {
                   "constant": false,
-                  "id": 4289,
+                  "id": 4421,
                   "name": "_parentUniverse",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4320,
+                  "scope": 4452,
                   "src": "218:25:15",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IUniverse_$6320",
+                    "typeIdentifier": "t_contract$_IUniverse_$6452",
                     "typeString": "contract IUniverse"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4288,
+                    "id": 4420,
                     "name": "IUniverse",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 6320,
+                    "referencedDeclaration": 6452,
                     "src": "218:9:15",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IUniverse_$6320",
+                      "typeIdentifier": "t_contract$_IUniverse_$6452",
                       "typeString": "contract IUniverse"
                     }
                   },
@@ -1036,10 +1036,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 4291,
+                  "id": 4423,
                   "name": "_parentPayoutDistributionHash",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4320,
+                  "scope": 4452,
                   "src": "245:37:15",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1048,7 +1048,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 4290,
+                    "id": 4422,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "245:7:15",
@@ -1065,31 +1065,31 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 4295,
+              "id": 4427,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4294,
+                  "id": 4426,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4320,
+                  "scope": 4452,
                   "src": "300:9:15",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IUniverse_$6320",
+                    "typeIdentifier": "t_contract$_IUniverse_$6452",
                     "typeString": "contract IUniverse"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4293,
+                    "id": 4425,
                     "name": "IUniverse",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 6320,
+                    "referencedDeclaration": 6452,
                     "src": "300:9:15",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IUniverse_$6320",
+                      "typeIdentifier": "t_contract$_IUniverse_$6452",
                       "typeString": "contract IUniverse"
                     }
                   },
@@ -1099,14 +1099,14 @@
               ],
               "src": "299:11:15"
             },
-            "scope": 4321,
+            "scope": 4453,
             "src": "169:377:15",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 4322,
+        "scope": 4454,
         "src": "138:410:15"
       }
     ],
@@ -1118,7 +1118,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.13",
-  "updatedAt": "2019-08-24T23:51:51.488Z",
+  "updatedAt": "2019-08-25T01:25:40.728Z",
   "devdoc": {
     "methods": {}
   },

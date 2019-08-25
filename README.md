@@ -1,4 +1,4 @@
-# Chainlink <3 Augur
+# Chainlink \u2661 Augur
 
 We combined Chainlink & Augur to get the best of both worlds.
 
@@ -6,7 +6,7 @@ Disclaimer: This code is created in a 32 hour timespan, by one person, with next
 
 ## Getting Started
 
-These intstructions will get a copy of Chainlink <3 Augur running on your machine and will allow you to run unit tests.
+These intstructions will get a copy of Chainlink /u2661 Augur running on your machine and will allow you to run unit tests.
 
 ### Prerequisites
 To run this version you're required you to have [docker](https://www.docker.com/), [nodejs](https://nodejs.org/en/) and [truffle](https://www.trufflesuite.com/) installed.
@@ -38,7 +38,7 @@ cd ../flux-oracle
 npm i
 ```
 
-## Setup Chainlink <3 Augur
+## Setup Chainlink /u2661 Augur
 
 No, the `.pvt` file is not a mistake, this is the hardcoded address that will have a crazy amount of Eth and Rep.
 

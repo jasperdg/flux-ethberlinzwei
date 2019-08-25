@@ -12,14 +12,14 @@
     "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/trading/IClaimTradingProceeds.sol",
     "exportedSymbols": {
       "IClaimTradingProceeds": [
-        11460
+        11592
       ]
     },
-    "id": 11461,
+    "id": 11593,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 11459,
+        "id": 11591,
         "literals": [
           "solidity",
           "^",
@@ -35,14 +35,14 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 11460,
+        "id": 11592,
         "linearizedBaseContracts": [
-          11460
+          11592
         ],
         "name": "IClaimTradingProceeds",
         "nodeType": "ContractDefinition",
         "nodes": [],
-        "scope": 11461,
+        "scope": 11593,
         "src": "28:35:46"
       }
     ],
@@ -52,14 +52,14 @@
     "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/trading/IClaimTradingProceeds.sol",
     "exportedSymbols": {
       "IClaimTradingProceeds": [
-        11460
+        11592
       ]
     },
-    "id": 11461,
+    "id": 11593,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 11459,
+        "id": 11591,
         "literals": [
           "solidity",
           "^",
@@ -75,14 +75,14 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 11460,
+        "id": 11592,
         "linearizedBaseContracts": [
-          11460
+          11592
         ],
         "name": "IClaimTradingProceeds",
         "nodeType": "ContractDefinition",
         "nodes": [],
-        "scope": 11461,
+        "scope": 11593,
         "src": "28:35:46"
       }
     ],
@@ -94,7 +94,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.13",
-  "updatedAt": "2019-08-24T23:51:51.652Z",
+  "updatedAt": "2019-08-25T01:25:40.858Z",
   "devdoc": {
     "methods": {}
   },

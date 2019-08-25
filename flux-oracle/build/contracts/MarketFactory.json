@@ -64,14 +64,14 @@
     "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/factories/MarketFactory.sol",
     "exportedSymbols": {
       "MarketFactory": [
-        4200
+        4332
       ]
     },
-    "id": 4201,
+    "id": 4333,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4119,
+        "id": 4251,
         "literals": [
           "solidity",
           "^",
@@ -84,10 +84,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/Delegator.sol",
         "file": "./../libraries/Delegator.sol",
-        "id": 4120,
+        "id": 4252,
         "nodeType": "ImportDirective",
-        "scope": 4201,
-        "sourceUnit": 4472,
+        "scope": 4333,
+        "sourceUnit": 4604,
         "src": "27:38:12",
         "symbolAliases": [],
         "unitAlias": ""
@@ -95,10 +95,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/reporting/IMarket.sol",
         "file": "./../reporting/IMarket.sol",
-        "id": 4121,
+        "id": 4253,
         "nodeType": "ImportDirective",
-        "scope": 4201,
-        "sourceUnit": 5874,
+        "scope": 4333,
+        "sourceUnit": 6006,
         "src": "66:36:12",
         "symbolAliases": [],
         "unitAlias": ""
@@ -106,10 +106,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/reporting/IReputationToken.sol",
         "file": "./../reporting/IReputationToken.sol",
-        "id": 4122,
+        "id": 4254,
         "nodeType": "ImportDirective",
-        "scope": 4201,
-        "sourceUnit": 6049,
+        "scope": 4333,
+        "sourceUnit": 6181,
         "src": "103:45:12",
         "symbolAliases": [],
         "unitAlias": ""
@@ -117,10 +117,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/trading/ICash.sol",
         "file": "./../trading/ICash.sol",
-        "id": 4123,
+        "id": 4255,
         "nodeType": "ImportDirective",
-        "scope": 4201,
-        "sourceUnit": 11458,
+        "scope": 4333,
+        "sourceUnit": 11590,
         "src": "149:32:12",
         "symbolAliases": [],
         "unitAlias": ""
@@ -128,10 +128,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/IController.sol",
         "file": "./../IController.sol",
-        "id": 4124,
+        "id": 4256,
         "nodeType": "ImportDirective",
-        "scope": 4201,
-        "sourceUnit": 3902,
+        "scope": 4333,
+        "sourceUnit": 4034,
         "src": "182:30:12",
         "symbolAliases": [],
         "unitAlias": ""
@@ -139,51 +139,51 @@
       {
         "baseContracts": [],
         "contractDependencies": [
-          4471
+          4603
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 4200,
+        "id": 4332,
         "linearizedBaseContracts": [
-          4200
+          4332
         ],
         "name": "MarketFactory",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 4198,
+              "id": 4330,
               "nodeType": "Block",
               "src": "516:467:12",
               "statements": [
                 {
                   "assignments": [
-                    4148
+                    4280
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4148,
+                      "id": 4280,
                       "name": "_delegator",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4199,
+                      "scope": 4331,
                       "src": "526:20:12",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Delegator_$4471",
+                        "typeIdentifier": "t_contract$_Delegator_$4603",
                         "typeString": "contract Delegator"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 4147,
+                        "id": 4279,
                         "name": "Delegator",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 4471,
+                        "referencedDeclaration": 4603,
                         "src": "526:9:12",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Delegator_$4471",
+                          "typeIdentifier": "t_contract$_Delegator_$4603",
                           "typeString": "contract Delegator"
                         }
                       },
@@ -191,27 +191,27 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4154,
+                  "id": 4286,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 4151,
+                        "id": 4283,
                         "name": "_controller",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4126,
+                        "referencedDeclaration": 4258,
                         "src": "563:11:12",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IController_$3901",
+                          "typeIdentifier": "t_contract$_IController_$4033",
                           "typeString": "contract IController"
                         }
                       },
                       {
                         "argumentTypes": null,
                         "hexValue": "4d61726b6574",
-                        "id": 4152,
+                        "id": 4284,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -230,7 +230,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_IController_$3901",
+                          "typeIdentifier": "t_contract$_IController_$4033",
                           "typeString": "contract IController"
                         },
                         {
@@ -238,7 +238,7 @@
                           "typeString": "literal_string \"Market\""
                         }
                       ],
-                      "id": 4150,
+                      "id": 4282,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -246,23 +246,23 @@
                       "nodeType": "NewExpression",
                       "src": "549:13:12",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_creation_nonpayable$_t_contract$_IController_$3901_$_t_bytes32_$returns$_t_contract$_Delegator_$4471_$",
+                        "typeIdentifier": "t_function_creation_nonpayable$_t_contract$_IController_$4033_$_t_bytes32_$returns$_t_contract$_Delegator_$4603_$",
                         "typeString": "function (contract IController,bytes32) returns (contract Delegator)"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 4149,
+                        "id": 4281,
                         "name": "Delegator",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 4471,
+                        "referencedDeclaration": 4603,
                         "src": "553:9:12",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Delegator_$4471",
+                          "typeIdentifier": "t_contract$_Delegator_$4603",
                           "typeString": "contract Delegator"
                         }
                       }
                     },
-                    "id": 4153,
+                    "id": 4285,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -272,7 +272,7 @@
                     "nodeType": "FunctionCall",
                     "src": "549:36:12",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Delegator_$4471",
+                      "typeIdentifier": "t_contract$_Delegator_$4603",
                       "typeString": "contract Delegator"
                     }
                   },
@@ -282,21 +282,21 @@
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 4159,
+                    "id": 4291,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 4155,
+                      "id": 4287,
                       "name": "_market",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4145,
+                      "referencedDeclaration": 4277,
                       "src": "595:7:12",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IMarket_$5873",
+                        "typeIdentifier": "t_contract$_IMarket_$6005",
                         "typeString": "contract IMarket"
                       }
                     },
@@ -307,14 +307,14 @@
                       "arguments": [
                         {
                           "argumentTypes": null,
-                          "id": 4157,
+                          "id": 4289,
                           "name": "_delegator",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 4148,
+                          "referencedDeclaration": 4280,
                           "src": "613:10:12",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_Delegator_$4471",
+                            "typeIdentifier": "t_contract$_Delegator_$4603",
                             "typeString": "contract Delegator"
                           }
                         }
@@ -322,22 +322,22 @@
                       "expression": {
                         "argumentTypes": [
                           {
-                            "typeIdentifier": "t_contract$_Delegator_$4471",
+                            "typeIdentifier": "t_contract$_Delegator_$4603",
                             "typeString": "contract Delegator"
                           }
                         ],
-                        "id": 4156,
+                        "id": 4288,
                         "name": "IMarket",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5873,
+                        "referencedDeclaration": 6005,
                         "src": "605:7:12",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_IMarket_$5873_$",
+                          "typeIdentifier": "t_type$_t_contract$_IMarket_$6005_$",
                           "typeString": "type(contract IMarket)"
                         }
                       },
-                      "id": 4158,
+                      "id": 4290,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -347,47 +347,47 @@
                       "nodeType": "FunctionCall",
                       "src": "605:19:12",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IMarket_$5873",
+                        "typeIdentifier": "t_contract$_IMarket_$6005",
                         "typeString": "contract IMarket"
                       }
                     },
                     "src": "595:29:12",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IMarket_$5873",
+                      "typeIdentifier": "t_contract$_IMarket_$6005",
                       "typeString": "contract IMarket"
                     }
                   },
-                  "id": 4160,
+                  "id": 4292,
                   "nodeType": "ExpressionStatement",
                   "src": "595:29:12"
                 },
                 {
                   "assignments": [
-                    4162
+                    4294
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4162,
+                      "id": 4294,
                       "name": "_reputationToken",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4199,
+                      "scope": 4331,
                       "src": "634:33:12",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IReputationToken_$6048",
+                        "typeIdentifier": "t_contract$_IReputationToken_$6180",
                         "typeString": "contract IReputationToken"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 4161,
+                        "id": 4293,
                         "name": "IReputationToken",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 6048,
+                        "referencedDeclaration": 6180,
                         "src": "634:16:12",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IReputationToken_$6048",
+                          "typeIdentifier": "t_contract$_IReputationToken_$6180",
                           "typeString": "contract IReputationToken"
                         }
                       },
@@ -395,7 +395,7 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4166,
+                  "id": 4298,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [],
@@ -403,32 +403,32 @@
                       "argumentTypes": [],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 4163,
+                        "id": 4295,
                         "name": "_universe",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4128,
+                        "referencedDeclaration": 4260,
                         "src": "670:9:12",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IUniverse_$6320",
+                          "typeIdentifier": "t_contract$_IUniverse_$6452",
                           "typeString": "contract IUniverse"
                         }
                       },
-                      "id": 4164,
+                      "id": 4296,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "getReputationToken",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 6101,
+                      "referencedDeclaration": 6233,
                       "src": "670:28:12",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_view$__$returns$_t_contract$_IReputationToken_$6048_$",
+                        "typeIdentifier": "t_function_external_view$__$returns$_t_contract$_IReputationToken_$6180_$",
                         "typeString": "function () view external returns (contract IReputationToken)"
                       }
                     },
-                    "id": 4165,
+                    "id": 4297,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -438,7 +438,7 @@
                     "nodeType": "FunctionCall",
                     "src": "670:30:12",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IReputationToken_$6048",
+                      "typeIdentifier": "t_contract$_IReputationToken_$6180",
                       "typeString": "contract IReputationToken"
                     }
                   },
@@ -454,14 +454,14 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 4170,
+                            "id": 4302,
                             "name": "_market",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4145,
+                            "referencedDeclaration": 4277,
                             "src": "744:7:12",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_IMarket_$5873",
+                              "typeIdentifier": "t_contract$_IMarket_$6005",
                               "typeString": "contract IMarket"
                             }
                           },
@@ -470,14 +470,14 @@
                             "arguments": [
                               {
                                 "argumentTypes": null,
-                                "id": 4173,
+                                "id": 4305,
                                 "name": "this",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 14342,
+                                "referencedDeclaration": 14474,
                                 "src": "780:4:12",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_contract$_MarketFactory_$4200",
+                                  "typeIdentifier": "t_contract$_MarketFactory_$4332",
                                   "typeString": "contract MarketFactory"
                                 }
                               }
@@ -485,38 +485,38 @@
                             "expression": {
                               "argumentTypes": [
                                 {
-                                  "typeIdentifier": "t_contract$_MarketFactory_$4200",
+                                  "typeIdentifier": "t_contract$_MarketFactory_$4332",
                                   "typeString": "contract MarketFactory"
                                 }
                               ],
                               "expression": {
                                 "argumentTypes": null,
-                                "id": 4171,
+                                "id": 4303,
                                 "name": "_reputationToken",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 4162,
+                                "referencedDeclaration": 4294,
                                 "src": "753:16:12",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_contract$_IReputationToken_$6048",
+                                  "typeIdentifier": "t_contract$_IReputationToken_$6180",
                                   "typeString": "contract IReputationToken"
                                 }
                               },
-                              "id": 4172,
+                              "id": 4304,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
                               "lValueRequested": false,
                               "memberName": "balanceOf",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 5400,
+                              "referencedDeclaration": 5532,
                               "src": "753:26:12",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_uint256_$",
                                 "typeString": "function (address) view external returns (uint256)"
                               }
                             },
-                            "id": 4174,
+                            "id": 4306,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -534,7 +534,7 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_IMarket_$5873",
+                              "typeIdentifier": "t_contract$_IMarket_$6005",
                               "typeString": "contract IMarket"
                             },
                             {
@@ -544,32 +544,32 @@
                           ],
                           "expression": {
                             "argumentTypes": null,
-                            "id": 4168,
+                            "id": 4300,
                             "name": "_reputationToken",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4162,
+                            "referencedDeclaration": 4294,
                             "src": "718:16:12",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_IReputationToken_$6048",
+                              "typeIdentifier": "t_contract$_IReputationToken_$6180",
                               "typeString": "contract IReputationToken"
                             }
                           },
-                          "id": 4169,
+                          "id": 4301,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "transfer",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 5409,
+                          "referencedDeclaration": 5541,
                           "src": "718:25:12",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$_t_bool_$",
                             "typeString": "function (address,uint256) external returns (bool)"
                           }
                         },
-                        "id": 4175,
+                        "id": 4307,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -591,21 +591,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 4167,
+                      "id": 4299,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        14278,
-                        14279
+                        14410,
+                        14411
                       ],
-                      "referencedDeclaration": 14278,
+                      "referencedDeclaration": 14410,
                       "src": "710:7:12",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 4176,
+                    "id": 4308,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -619,7 +619,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 4177,
+                  "id": 4309,
                   "nodeType": "ExpressionStatement",
                   "src": "710:77:12"
                 },
@@ -629,24 +629,24 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 4186,
+                        "id": 4318,
                         "name": "_universe",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4128,
+                        "referencedDeclaration": 4260,
                         "src": "833:9:12",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IUniverse_$6320",
+                          "typeIdentifier": "t_contract$_IUniverse_$6452",
                           "typeString": "contract IUniverse"
                         }
                       },
                       {
                         "argumentTypes": null,
-                        "id": 4187,
+                        "id": 4319,
                         "name": "_endTime",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4130,
+                        "referencedDeclaration": 4262,
                         "src": "844:8:12",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -655,11 +655,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 4188,
+                        "id": 4320,
                         "name": "_feePerEthInWei",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4132,
+                        "referencedDeclaration": 4264,
                         "src": "854:15:12",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -668,24 +668,24 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 4189,
+                        "id": 4321,
                         "name": "_denominationToken",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4134,
+                        "referencedDeclaration": 4266,
                         "src": "871:18:12",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ICash_$11457",
+                          "typeIdentifier": "t_contract$_ICash_$11589",
                           "typeString": "contract ICash"
                         }
                       },
                       {
                         "argumentTypes": null,
-                        "id": 4190,
+                        "id": 4322,
                         "name": "_designatedReporterAddress",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4136,
+                        "referencedDeclaration": 4268,
                         "src": "891:26:12",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -694,11 +694,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 4191,
+                        "id": 4323,
                         "name": "_sender",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4138,
+                        "referencedDeclaration": 4270,
                         "src": "919:7:12",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -707,11 +707,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 4192,
+                        "id": 4324,
                         "name": "_numOutcomes",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4140,
+                        "referencedDeclaration": 4272,
                         "src": "928:12:12",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -720,11 +720,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 4193,
+                        "id": 4325,
                         "name": "_numTicks",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4142,
+                        "referencedDeclaration": 4274,
                         "src": "942:9:12",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -735,7 +735,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_IUniverse_$6320",
+                          "typeIdentifier": "t_contract$_IUniverse_$6452",
                           "typeString": "contract IUniverse"
                         },
                         {
@@ -747,7 +747,7 @@
                           "typeString": "uint256"
                         },
                         {
-                          "typeIdentifier": "t_contract$_ICash_$11457",
+                          "typeIdentifier": "t_contract$_ICash_$11589",
                           "typeString": "contract ICash"
                         },
                         {
@@ -772,18 +772,18 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 4183,
+                            "id": 4315,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 14275,
+                            "referencedDeclaration": 14407,
                             "src": "822:3:12",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
                             }
                           },
-                          "id": 4184,
+                          "id": 4316,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -809,32 +809,32 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 4178,
+                            "id": 4310,
                             "name": "_market",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4145,
+                            "referencedDeclaration": 4277,
                             "src": "797:7:12",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_IMarket_$5873",
+                              "typeIdentifier": "t_contract$_IMarket_$6005",
                               "typeString": "contract IMarket"
                             }
                           },
-                          "id": 4181,
+                          "id": 4313,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "initialize",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 5727,
+                          "referencedDeclaration": 5859,
                           "src": "797:18:12",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_function_external_payable$_t_contract$_IUniverse_$6320_$_t_uint256_$_t_uint256_$_t_contract$_ICash_$11457_$_t_address_$_t_address_$_t_uint256_$_t_uint256_$returns$_t_bool_$",
+                            "typeIdentifier": "t_function_external_payable$_t_contract$_IUniverse_$6452_$_t_uint256_$_t_uint256_$_t_contract$_ICash_$11589_$_t_address_$_t_address_$_t_uint256_$_t_uint256_$returns$_t_bool_$",
                             "typeString": "function (contract IUniverse,uint256,uint256,contract ICash,address,address,uint256,uint256) payable external returns (bool)"
                           }
                         },
-                        "id": 4182,
+                        "id": 4314,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -844,11 +844,11 @@
                         "referencedDeclaration": null,
                         "src": "797:24:12",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_function_setvalue_nonpayable$_t_uint256_$returns$_t_function_external_payable$_t_contract$_IUniverse_$6320_$_t_uint256_$_t_uint256_$_t_contract$_ICash_$11457_$_t_address_$_t_address_$_t_uint256_$_t_uint256_$returns$_t_bool_$value_$",
+                          "typeIdentifier": "t_function_setvalue_nonpayable$_t_uint256_$returns$_t_function_external_payable$_t_contract$_IUniverse_$6452_$_t_uint256_$_t_uint256_$_t_contract$_ICash_$11589_$_t_address_$_t_address_$_t_uint256_$_t_uint256_$returns$_t_bool_$value_$",
                           "typeString": "function (uint256) returns (function (contract IUniverse,uint256,uint256,contract ICash,address,address,uint256,uint256) payable external returns (bool))"
                         }
                       },
-                      "id": 4185,
+                      "id": 4317,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -858,11 +858,11 @@
                       "nodeType": "FunctionCall",
                       "src": "797:35:12",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_payable$_t_contract$_IUniverse_$6320_$_t_uint256_$_t_uint256_$_t_contract$_ICash_$11457_$_t_address_$_t_address_$_t_uint256_$_t_uint256_$returns$_t_bool_$value",
+                        "typeIdentifier": "t_function_external_payable$_t_contract$_IUniverse_$6452_$_t_uint256_$_t_uint256_$_t_contract$_ICash_$11589_$_t_address_$_t_address_$_t_uint256_$_t_uint256_$returns$_t_bool_$value",
                         "typeString": "function (contract IUniverse,uint256,uint256,contract ICash,address,address,uint256,uint256) payable external returns (bool)"
                       }
                     },
-                    "id": 4194,
+                    "id": 4326,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -876,33 +876,33 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 4195,
+                  "id": 4327,
                   "nodeType": "ExpressionStatement",
                   "src": "797:155:12"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 4196,
+                    "id": 4328,
                     "name": "_market",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 4145,
+                    "referencedDeclaration": 4277,
                     "src": "969:7:12",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IMarket_$5873",
+                      "typeIdentifier": "t_contract$_IMarket_$6005",
                       "typeString": "contract IMarket"
                     }
                   },
-                  "functionReturnParameters": 4146,
-                  "id": 4197,
+                  "functionReturnParameters": 4278,
+                  "id": 4329,
                   "nodeType": "Return",
                   "src": "962:14:12"
                 }
               ]
             },
             "documentation": null,
-            "id": 4199,
+            "id": 4331,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -910,31 +910,31 @@
             "name": "createMarket",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4143,
+              "id": 4275,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4126,
+                  "id": 4258,
                   "name": "_controller",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4199,
+                  "scope": 4331,
                   "src": "266:23:12",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IController_$3901",
+                    "typeIdentifier": "t_contract$_IController_$4033",
                     "typeString": "contract IController"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4125,
+                    "id": 4257,
                     "name": "IController",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 3901,
+                    "referencedDeclaration": 4033,
                     "src": "266:11:12",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IController_$3901",
+                      "typeIdentifier": "t_contract$_IController_$4033",
                       "typeString": "contract IController"
                     }
                   },
@@ -943,26 +943,26 @@
                 },
                 {
                   "constant": false,
-                  "id": 4128,
+                  "id": 4260,
                   "name": "_universe",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4199,
+                  "scope": 4331,
                   "src": "291:19:12",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IUniverse_$6320",
+                    "typeIdentifier": "t_contract$_IUniverse_$6452",
                     "typeString": "contract IUniverse"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4127,
+                    "id": 4259,
                     "name": "IUniverse",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 6320,
+                    "referencedDeclaration": 6452,
                     "src": "291:9:12",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IUniverse_$6320",
+                      "typeIdentifier": "t_contract$_IUniverse_$6452",
                       "typeString": "contract IUniverse"
                     }
                   },
@@ -971,10 +971,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 4130,
+                  "id": 4262,
                   "name": "_endTime",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4199,
+                  "scope": 4331,
                   "src": "312:16:12",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -983,7 +983,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4129,
+                    "id": 4261,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "312:7:12",
@@ -997,10 +997,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 4132,
+                  "id": 4264,
                   "name": "_feePerEthInWei",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4199,
+                  "scope": 4331,
                   "src": "330:23:12",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1009,7 +1009,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4131,
+                    "id": 4263,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "330:7:12",
@@ -1023,26 +1023,26 @@
                 },
                 {
                   "constant": false,
-                  "id": 4134,
+                  "id": 4266,
                   "name": "_denominationToken",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4199,
+                  "scope": 4331,
                   "src": "355:24:12",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ICash_$11457",
+                    "typeIdentifier": "t_contract$_ICash_$11589",
                     "typeString": "contract ICash"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4133,
+                    "id": 4265,
                     "name": "ICash",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 11457,
+                    "referencedDeclaration": 11589,
                     "src": "355:5:12",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ICash_$11457",
+                      "typeIdentifier": "t_contract$_ICash_$11589",
                       "typeString": "contract ICash"
                     }
                   },
@@ -1051,10 +1051,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 4136,
+                  "id": 4268,
                   "name": "_designatedReporterAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4199,
+                  "scope": 4331,
                   "src": "381:34:12",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1063,7 +1063,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4135,
+                    "id": 4267,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "381:7:12",
@@ -1077,10 +1077,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 4138,
+                  "id": 4270,
                   "name": "_sender",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4199,
+                  "scope": 4331,
                   "src": "417:15:12",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1089,7 +1089,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4137,
+                    "id": 4269,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "417:7:12",
@@ -1103,10 +1103,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 4140,
+                  "id": 4272,
                   "name": "_numOutcomes",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4199,
+                  "scope": 4331,
                   "src": "434:20:12",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1115,7 +1115,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4139,
+                    "id": 4271,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "434:7:12",
@@ -1129,10 +1129,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 4142,
+                  "id": 4274,
                   "name": "_numTicks",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4199,
+                  "scope": 4331,
                   "src": "456:17:12",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1141,7 +1141,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4141,
+                    "id": 4273,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "456:7:12",
@@ -1158,31 +1158,31 @@
             },
             "payable": true,
             "returnParameters": {
-              "id": 4146,
+              "id": 4278,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4145,
+                  "id": 4277,
                   "name": "_market",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4199,
+                  "scope": 4331,
                   "src": "499:15:12",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IMarket_$5873",
+                    "typeIdentifier": "t_contract$_IMarket_$6005",
                     "typeString": "contract IMarket"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4144,
+                    "id": 4276,
                     "name": "IMarket",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 5873,
+                    "referencedDeclaration": 6005,
                     "src": "499:7:12",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IMarket_$5873",
+                      "typeIdentifier": "t_contract$_IMarket_$6005",
                       "typeString": "contract IMarket"
                     }
                   },
@@ -1192,14 +1192,14 @@
               ],
               "src": "498:17:12"
             },
-            "scope": 4200,
+            "scope": 4332,
             "src": "244:739:12",
             "stateMutability": "payable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 4201,
+        "scope": 4333,
         "src": "215:770:12"
       }
     ],
@@ -1209,14 +1209,14 @@
     "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/factories/MarketFactory.sol",
     "exportedSymbols": {
       "MarketFactory": [
-        4200
+        4332
       ]
     },
-    "id": 4201,
+    "id": 4333,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4119,
+        "id": 4251,
         "literals": [
           "solidity",
           "^",
@@ -1229,10 +1229,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/libraries/Delegator.sol",
         "file": "./../libraries/Delegator.sol",
-        "id": 4120,
+        "id": 4252,
         "nodeType": "ImportDirective",
-        "scope": 4201,
-        "sourceUnit": 4472,
+        "scope": 4333,
+        "sourceUnit": 4604,
         "src": "27:38:12",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1240,10 +1240,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/reporting/IMarket.sol",
         "file": "./../reporting/IMarket.sol",
-        "id": 4121,
+        "id": 4253,
         "nodeType": "ImportDirective",
-        "scope": 4201,
-        "sourceUnit": 5874,
+        "scope": 4333,
+        "sourceUnit": 6006,
         "src": "66:36:12",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1251,10 +1251,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/reporting/IReputationToken.sol",
         "file": "./../reporting/IReputationToken.sol",
-        "id": 4122,
+        "id": 4254,
         "nodeType": "ImportDirective",
-        "scope": 4201,
-        "sourceUnit": 6049,
+        "scope": 4333,
+        "sourceUnit": 6181,
         "src": "103:45:12",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1262,10 +1262,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/trading/ICash.sol",
         "file": "./../trading/ICash.sol",
-        "id": 4123,
+        "id": 4255,
         "nodeType": "ImportDirective",
-        "scope": 4201,
-        "sourceUnit": 11458,
+        "scope": 4333,
+        "sourceUnit": 11590,
         "src": "149:32:12",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1273,10 +1273,10 @@
       {
         "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/flux-oracle/libraries/augur/source/contracts/IController.sol",
         "file": "./../IController.sol",
-        "id": 4124,
+        "id": 4256,
         "nodeType": "ImportDirective",
-        "scope": 4201,
-        "sourceUnit": 3902,
+        "scope": 4333,
+        "sourceUnit": 4034,
         "src": "182:30:12",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1284,51 +1284,51 @@
       {
         "baseContracts": [],
         "contractDependencies": [
-          4471
+          4603
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 4200,
+        "id": 4332,
         "linearizedBaseContracts": [
-          4200
+          4332
         ],
         "name": "MarketFactory",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 4198,
+              "id": 4330,
               "nodeType": "Block",
               "src": "516:467:12",
               "statements": [
                 {
                   "assignments": [
-                    4148
+                    4280
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4148,
+                      "id": 4280,
                       "name": "_delegator",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4199,
+                      "scope": 4331,
                       "src": "526:20:12",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Delegator_$4471",
+                        "typeIdentifier": "t_contract$_Delegator_$4603",
                         "typeString": "contract Delegator"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 4147,
+                        "id": 4279,
                         "name": "Delegator",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 4471,
+                        "referencedDeclaration": 4603,
                         "src": "526:9:12",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Delegator_$4471",
+                          "typeIdentifier": "t_contract$_Delegator_$4603",
                           "typeString": "contract Delegator"
                         }
                       },
@@ -1336,27 +1336,27 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4154,
+                  "id": 4286,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 4151,
+                        "id": 4283,
                         "name": "_controller",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4126,
+                        "referencedDeclaration": 4258,
                         "src": "563:11:12",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IController_$3901",
+                          "typeIdentifier": "t_contract$_IController_$4033",
                           "typeString": "contract IController"
                         }
                       },
                       {
                         "argumentTypes": null,
                         "hexValue": "4d61726b6574",
-                        "id": 4152,
+                        "id": 4284,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -1375,7 +1375,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_IController_$3901",
+                          "typeIdentifier": "t_contract$_IController_$4033",
                           "typeString": "contract IController"
                         },
                         {
@@ -1383,7 +1383,7 @@
                           "typeString": "literal_string \"Market\""
                         }
                       ],
-                      "id": 4150,
+                      "id": 4282,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1391,23 +1391,23 @@
                       "nodeType": "NewExpression",
                       "src": "549:13:12",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_creation_nonpayable$_t_contract$_IController_$3901_$_t_bytes32_$returns$_t_contract$_Delegator_$4471_$",
+                        "typeIdentifier": "t_function_creation_nonpayable$_t_contract$_IController_$4033_$_t_bytes32_$returns$_t_contract$_Delegator_$4603_$",
                         "typeString": "function (contract IController,bytes32) returns (contract Delegator)"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 4149,
+                        "id": 4281,
                         "name": "Delegator",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 4471,
+                        "referencedDeclaration": 4603,
                         "src": "553:9:12",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Delegator_$4471",
+                          "typeIdentifier": "t_contract$_Delegator_$4603",
                           "typeString": "contract Delegator"
                         }
                       }
                     },
-                    "id": 4153,
+                    "id": 4285,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1417,7 +1417,7 @@
                     "nodeType": "FunctionCall",
                     "src": "549:36:12",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Delegator_$4471",
+                      "typeIdentifier": "t_contract$_Delegator_$4603",
                       "typeString": "contract Delegator"
                     }
                   },
@@ -1427,21 +1427,21 @@
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 4159,
+                    "id": 4291,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 4155,
+                      "id": 4287,
                       "name": "_market",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4145,
+                      "referencedDeclaration": 4277,
                       "src": "595:7:12",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IMarket_$5873",
+                        "typeIdentifier": "t_contract$_IMarket_$6005",
                         "typeString": "contract IMarket"
                       }
                     },
@@ -1452,14 +1452,14 @@
                       "arguments": [
                         {
                           "argumentTypes": null,
-                          "id": 4157,
+                          "id": 4289,
                           "name": "_delegator",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 4148,
+                          "referencedDeclaration": 4280,
                           "src": "613:10:12",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_Delegator_$4471",
+                            "typeIdentifier": "t_contract$_Delegator_$4603",
                             "typeString": "contract Delegator"
                           }
                         }
@@ -1467,22 +1467,22 @@
                       "expression": {
                         "argumentTypes": [
                           {
-                            "typeIdentifier": "t_contract$_Delegator_$4471",
+                            "typeIdentifier": "t_contract$_Delegator_$4603",
                             "typeString": "contract Delegator"
                           }
                         ],
-                        "id": 4156,
+                        "id": 4288,
                         "name": "IMarket",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5873,
+                        "referencedDeclaration": 6005,
                         "src": "605:7:12",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_IMarket_$5873_$",
+                          "typeIdentifier": "t_type$_t_contract$_IMarket_$6005_$",
                           "typeString": "type(contract IMarket)"
                         }
                       },
-                      "id": 4158,
+                      "id": 4290,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1492,47 +1492,47 @@
                       "nodeType": "FunctionCall",
                       "src": "605:19:12",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IMarket_$5873",
+                        "typeIdentifier": "t_contract$_IMarket_$6005",
                         "typeString": "contract IMarket"
                       }
                     },
                     "src": "595:29:12",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IMarket_$5873",
+                      "typeIdentifier": "t_contract$_IMarket_$6005",
                       "typeString": "contract IMarket"
                     }
                   },
-                  "id": 4160,
+                  "id": 4292,
                   "nodeType": "ExpressionStatement",
                   "src": "595:29:12"
                 },
                 {
                   "assignments": [
-                    4162
+                    4294
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4162,
+                      "id": 4294,
                       "name": "_reputationToken",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4199,
+                      "scope": 4331,
                       "src": "634:33:12",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IReputationToken_$6048",
+                        "typeIdentifier": "t_contract$_IReputationToken_$6180",
                         "typeString": "contract IReputationToken"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 4161,
+                        "id": 4293,
                         "name": "IReputationToken",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 6048,
+                        "referencedDeclaration": 6180,
                         "src": "634:16:12",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IReputationToken_$6048",
+                          "typeIdentifier": "t_contract$_IReputationToken_$6180",
                           "typeString": "contract IReputationToken"
                         }
                       },
@@ -1540,7 +1540,7 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4166,
+                  "id": 4298,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [],
@@ -1548,32 +1548,32 @@
                       "argumentTypes": [],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 4163,
+                        "id": 4295,
                         "name": "_universe",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4128,
+                        "referencedDeclaration": 4260,
                         "src": "670:9:12",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IUniverse_$6320",
+                          "typeIdentifier": "t_contract$_IUniverse_$6452",
                           "typeString": "contract IUniverse"
                         }
                       },
-                      "id": 4164,
+                      "id": 4296,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "getReputationToken",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 6101,
+                      "referencedDeclaration": 6233,
                       "src": "670:28:12",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_view$__$returns$_t_contract$_IReputationToken_$6048_$",
+                        "typeIdentifier": "t_function_external_view$__$returns$_t_contract$_IReputationToken_$6180_$",
                         "typeString": "function () view external returns (contract IReputationToken)"
                       }
                     },
-                    "id": 4165,
+                    "id": 4297,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1583,7 +1583,7 @@
                     "nodeType": "FunctionCall",
                     "src": "670:30:12",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IReputationToken_$6048",
+                      "typeIdentifier": "t_contract$_IReputationToken_$6180",
                       "typeString": "contract IReputationToken"
                     }
                   },
@@ -1599,14 +1599,14 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 4170,
+                            "id": 4302,
                             "name": "_market",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4145,
+                            "referencedDeclaration": 4277,
                             "src": "744:7:12",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_IMarket_$5873",
+                              "typeIdentifier": "t_contract$_IMarket_$6005",
                               "typeString": "contract IMarket"
                             }
                           },
@@ -1615,14 +1615,14 @@
                             "arguments": [
                               {
                                 "argumentTypes": null,
-                                "id": 4173,
+                                "id": 4305,
                                 "name": "this",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 14342,
+                                "referencedDeclaration": 14474,
                                 "src": "780:4:12",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_contract$_MarketFactory_$4200",
+                                  "typeIdentifier": "t_contract$_MarketFactory_$4332",
                                   "typeString": "contract MarketFactory"
                                 }
                               }
@@ -1630,38 +1630,38 @@
                             "expression": {
                               "argumentTypes": [
                                 {
-                                  "typeIdentifier": "t_contract$_MarketFactory_$4200",
+                                  "typeIdentifier": "t_contract$_MarketFactory_$4332",
                                   "typeString": "contract MarketFactory"
                                 }
                               ],
                               "expression": {
                                 "argumentTypes": null,
-                                "id": 4171,
+                                "id": 4303,
                                 "name": "_reputationToken",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 4162,
+                                "referencedDeclaration": 4294,
                                 "src": "753:16:12",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_contract$_IReputationToken_$6048",
+                                  "typeIdentifier": "t_contract$_IReputationToken_$6180",
                                   "typeString": "contract IReputationToken"
                                 }
                               },
-                              "id": 4172,
+                              "id": 4304,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
                               "lValueRequested": false,
                               "memberName": "balanceOf",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 5400,
+                              "referencedDeclaration": 5532,
                               "src": "753:26:12",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_uint256_$",
                                 "typeString": "function (address) view external returns (uint256)"
                               }
                             },
-                            "id": 4174,
+                            "id": 4306,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -1679,7 +1679,7 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_IMarket_$5873",
+                              "typeIdentifier": "t_contract$_IMarket_$6005",
                               "typeString": "contract IMarket"
                             },
                             {
@@ -1689,32 +1689,32 @@
                           ],
                           "expression": {
                             "argumentTypes": null,
-                            "id": 4168,
+                            "id": 4300,
                             "name": "_reputationToken",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4162,
+                            "referencedDeclaration": 4294,
                             "src": "718:16:12",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_IReputationToken_$6048",
+                              "typeIdentifier": "t_contract$_IReputationToken_$6180",
                               "typeString": "contract IReputationToken"
                             }
                           },
-                          "id": 4169,
+                          "id": 4301,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "transfer",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 5409,
+                          "referencedDeclaration": 5541,
                           "src": "718:25:12",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$_t_bool_$",
                             "typeString": "function (address,uint256) external returns (bool)"
                           }
                         },
-                        "id": 4175,
+                        "id": 4307,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1736,21 +1736,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 4167,
+                      "id": 4299,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        14278,
-                        14279
+                        14410,
+                        14411
                       ],
-                      "referencedDeclaration": 14278,
+                      "referencedDeclaration": 14410,
                       "src": "710:7:12",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 4176,
+                    "id": 4308,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1764,7 +1764,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 4177,
+                  "id": 4309,
                   "nodeType": "ExpressionStatement",
                   "src": "710:77:12"
                 },
@@ -1774,24 +1774,24 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 4186,
+                        "id": 4318,
                         "name": "_universe",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4128,
+                        "referencedDeclaration": 4260,
                         "src": "833:9:12",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IUniverse_$6320",
+                          "typeIdentifier": "t_contract$_IUniverse_$6452",
                           "typeString": "contract IUniverse"
                         }
                       },
                       {
                         "argumentTypes": null,
-                        "id": 4187,
+                        "id": 4319,
                         "name": "_endTime",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4130,
+                        "referencedDeclaration": 4262,
                         "src": "844:8:12",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1800,11 +1800,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 4188,
+                        "id": 4320,
                         "name": "_feePerEthInWei",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4132,
+                        "referencedDeclaration": 4264,
                         "src": "854:15:12",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1813,24 +1813,24 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 4189,
+                        "id": 4321,
                         "name": "_denominationToken",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4134,
+                        "referencedDeclaration": 4266,
                         "src": "871:18:12",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ICash_$11457",
+                          "typeIdentifier": "t_contract$_ICash_$11589",
                           "typeString": "contract ICash"
                         }
                       },
                       {
                         "argumentTypes": null,
-                        "id": 4190,
+                        "id": 4322,
                         "name": "_designatedReporterAddress",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4136,
+                        "referencedDeclaration": 4268,
                         "src": "891:26:12",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -1839,11 +1839,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 4191,
+                        "id": 4323,
                         "name": "_sender",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4138,
+                        "referencedDeclaration": 4270,
                         "src": "919:7:12",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -1852,11 +1852,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 4192,
+                        "id": 4324,
                         "name": "_numOutcomes",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4140,
+                        "referencedDeclaration": 4272,
                         "src": "928:12:12",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1865,11 +1865,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 4193,
+                        "id": 4325,
                         "name": "_numTicks",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4142,
+                        "referencedDeclaration": 4274,
                         "src": "942:9:12",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1880,7 +1880,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_IUniverse_$6320",
+                          "typeIdentifier": "t_contract$_IUniverse_$6452",
                           "typeString": "contract IUniverse"
                         },
                         {
@@ -1892,7 +1892,7 @@
                           "typeString": "uint256"
                         },
                         {
-                          "typeIdentifier": "t_contract$_ICash_$11457",
+                          "typeIdentifier": "t_contract$_ICash_$11589",
                           "typeString": "contract ICash"
                         },
                         {
@@ -1917,18 +1917,18 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 4183,
+                            "id": 4315,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 14275,
+                            "referencedDeclaration": 14407,
                             "src": "822:3:12",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
                             }
                           },
-                          "id": 4184,
+                          "id": 4316,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -1954,32 +1954,32 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 4178,
+                            "id": 4310,
                             "name": "_market",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4145,
+                            "referencedDeclaration": 4277,
                             "src": "797:7:12",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_IMarket_$5873",
+                              "typeIdentifier": "t_contract$_IMarket_$6005",
                               "typeString": "contract IMarket"
                             }
                           },
-                          "id": 4181,
+                          "id": 4313,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "initialize",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 5727,
+                          "referencedDeclaration": 5859,
                           "src": "797:18:12",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_function_external_payable$_t_contract$_IUniverse_$6320_$_t_uint256_$_t_uint256_$_t_contract$_ICash_$11457_$_t_address_$_t_address_$_t_uint256_$_t_uint256_$returns$_t_bool_$",
+                            "typeIdentifier": "t_function_external_payable$_t_contract$_IUniverse_$6452_$_t_uint256_$_t_uint256_$_t_contract$_ICash_$11589_$_t_address_$_t_address_$_t_uint256_$_t_uint256_$returns$_t_bool_$",
                             "typeString": "function (contract IUniverse,uint256,uint256,contract ICash,address,address,uint256,uint256) payable external returns (bool)"
                           }
                         },
-                        "id": 4182,
+                        "id": 4314,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1989,11 +1989,11 @@
                         "referencedDeclaration": null,
                         "src": "797:24:12",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_function_setvalue_nonpayable$_t_uint256_$returns$_t_function_external_payable$_t_contract$_IUniverse_$6320_$_t_uint256_$_t_uint256_$_t_contract$_ICash_$11457_$_t_address_$_t_address_$_t_uint256_$_t_uint256_$returns$_t_bool_$value_$",
+                          "typeIdentifier": "t_function_setvalue_nonpayable$_t_uint256_$returns$_t_function_external_payable$_t_contract$_IUniverse_$6452_$_t_uint256_$_t_uint256_$_t_contract$_ICash_$11589_$_t_address_$_t_address_$_t_uint256_$_t_uint256_$returns$_t_bool_$value_$",
                           "typeString": "function (uint256) returns (function (contract IUniverse,uint256,uint256,contract ICash,address,address,uint256,uint256) payable external returns (bool))"
                         }
                       },
-                      "id": 4185,
+                      "id": 4317,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2003,11 +2003,11 @@
                       "nodeType": "FunctionCall",
                       "src": "797:35:12",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_payable$_t_contract$_IUniverse_$6320_$_t_uint256_$_t_uint256_$_t_contract$_ICash_$11457_$_t_address_$_t_address_$_t_uint256_$_t_uint256_$returns$_t_bool_$value",
+                        "typeIdentifier": "t_function_external_payable$_t_contract$_IUniverse_$6452_$_t_uint256_$_t_uint256_$_t_contract$_ICash_$11589_$_t_address_$_t_address_$_t_uint256_$_t_uint256_$returns$_t_bool_$value",
                         "typeString": "function (contract IUniverse,uint256,uint256,contract ICash,address,address,uint256,uint256) payable external returns (bool)"
                       }
                     },
-                    "id": 4194,
+                    "id": 4326,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2021,33 +2021,33 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 4195,
+                  "id": 4327,
                   "nodeType": "ExpressionStatement",
                   "src": "797:155:12"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 4196,
+                    "id": 4328,
                     "name": "_market",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 4145,
+                    "referencedDeclaration": 4277,
                     "src": "969:7:12",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IMarket_$5873",
+                      "typeIdentifier": "t_contract$_IMarket_$6005",
                       "typeString": "contract IMarket"
                     }
                   },
-                  "functionReturnParameters": 4146,
-                  "id": 4197,
+                  "functionReturnParameters": 4278,
+                  "id": 4329,
                   "nodeType": "Return",
                   "src": "962:14:12"
                 }
               ]
             },
             "documentation": null,
-            "id": 4199,
+            "id": 4331,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -2055,31 +2055,31 @@
             "name": "createMarket",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4143,
+              "id": 4275,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4126,
+                  "id": 4258,
                   "name": "_controller",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4199,
+                  "scope": 4331,
                   "src": "266:23:12",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IController_$3901",
+                    "typeIdentifier": "t_contract$_IController_$4033",
                     "typeString": "contract IController"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4125,
+                    "id": 4257,
                     "name": "IController",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 3901,
+                    "referencedDeclaration": 4033,
                     "src": "266:11:12",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IController_$3901",
+                      "typeIdentifier": "t_contract$_IController_$4033",
                       "typeString": "contract IController"
                     }
                   },
@@ -2088,26 +2088,26 @@
                 },
                 {
                   "constant": false,
-                  "id": 4128,
+                  "id": 4260,
                   "name": "_universe",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4199,
+                  "scope": 4331,
                   "src": "291:19:12",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IUniverse_$6320",
+                    "typeIdentifier": "t_contract$_IUniverse_$6452",
                     "typeString": "contract IUniverse"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4127,
+                    "id": 4259,
                     "name": "IUniverse",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 6320,
+                    "referencedDeclaration": 6452,
                     "src": "291:9:12",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IUniverse_$6320",
+                      "typeIdentifier": "t_contract$_IUniverse_$6452",
                       "typeString": "contract IUniverse"
                     }
                   },
@@ -2116,10 +2116,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 4130,
+                  "id": 4262,
                   "name": "_endTime",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4199,
+                  "scope": 4331,
                   "src": "312:16:12",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2128,7 +2128,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4129,
+                    "id": 4261,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "312:7:12",
@@ -2142,10 +2142,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 4132,
+                  "id": 4264,
                   "name": "_feePerEthInWei",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4199,
+                  "scope": 4331,
                   "src": "330:23:12",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2154,7 +2154,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4131,
+                    "id": 4263,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "330:7:12",
@@ -2168,26 +2168,26 @@
                 },
                 {
                   "constant": false,
-                  "id": 4134,
+                  "id": 4266,
                   "name": "_denominationToken",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4199,
+                  "scope": 4331,
                   "src": "355:24:12",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ICash_$11457",
+                    "typeIdentifier": "t_contract$_ICash_$11589",
                     "typeString": "contract ICash"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4133,
+                    "id": 4265,
                     "name": "ICash",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 11457,
+                    "referencedDeclaration": 11589,
                     "src": "355:5:12",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ICash_$11457",
+                      "typeIdentifier": "t_contract$_ICash_$11589",
                       "typeString": "contract ICash"
                     }
                   },
@@ -2196,10 +2196,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 4136,
+                  "id": 4268,
                   "name": "_designatedReporterAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4199,
+                  "scope": 4331,
                   "src": "381:34:12",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2208,7 +2208,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4135,
+                    "id": 4267,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "381:7:12",
@@ -2222,10 +2222,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 4138,
+                  "id": 4270,
                   "name": "_sender",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4199,
+                  "scope": 4331,
                   "src": "417:15:12",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2234,7 +2234,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4137,
+                    "id": 4269,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "417:7:12",
@@ -2248,10 +2248,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 4140,
+                  "id": 4272,
                   "name": "_numOutcomes",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4199,
+                  "scope": 4331,
                   "src": "434:20:12",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2260,7 +2260,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4139,
+                    "id": 4271,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "434:7:12",
@@ -2274,10 +2274,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 4142,
+                  "id": 4274,
                   "name": "_numTicks",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4199,
+                  "scope": 4331,
                   "src": "456:17:12",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2286,7 +2286,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4141,
+                    "id": 4273,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "456:7:12",
@@ -2303,31 +2303,31 @@
             },
             "payable": true,
             "returnParameters": {
-              "id": 4146,
+              "id": 4278,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4145,
+                  "id": 4277,
                   "name": "_market",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4199,
+                  "scope": 4331,
                   "src": "499:15:12",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IMarket_$5873",
+                    "typeIdentifier": "t_contract$_IMarket_$6005",
                     "typeString": "contract IMarket"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4144,
+                    "id": 4276,
                     "name": "IMarket",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 5873,
+                    "referencedDeclaration": 6005,
                     "src": "499:7:12",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IMarket_$5873",
+                      "typeIdentifier": "t_contract$_IMarket_$6005",
                       "typeString": "contract IMarket"
                     }
                   },
@@ -2337,14 +2337,14 @@
               ],
               "src": "498:17:12"
             },
-            "scope": 4200,
+            "scope": 4332,
             "src": "244:739:12",
             "stateMutability": "payable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 4201,
+        "scope": 4333,
         "src": "215:770:12"
       }
     ],
@@ -2356,7 +2356,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.13",
-  "updatedAt": "2019-08-24T23:51:51.483Z",
+  "updatedAt": "2019-08-25T01:25:40.725Z",
   "devdoc": {
     "methods": {}
   },
