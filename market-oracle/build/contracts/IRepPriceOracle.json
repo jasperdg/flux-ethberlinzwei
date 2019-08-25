@@ -1,0 +1,418 @@
+{
+  "contractName": "IRepPriceOracle",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_repPriceInAttoEth",
+          "type": "uint256"
+        }
+      ],
+      "name": "setRepPriceInAttoEth",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getRepPriceInAttoEth",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.4.22;\n\n\ncontract IRepPriceOracle {\n    function setRepPriceInAttoEth(uint256 _repPriceInAttoEth) external returns (bool);\n    function getRepPriceInAttoEth() external view returns (uint256);\n}\n",
+  "sourcePath": "/Users/jasperdegooijer/Documents/eth-berlin/market-oracle/libraries/augur/source/contracts/reporting/IRepPriceOracle.sol",
+  "ast": {
+    "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/market-oracle/libraries/augur/source/contracts/reporting/IRepPriceOracle.sol",
+    "exportedSymbols": {
+      "IRepPriceOracle": [
+        6020
+      ]
+    },
+    "id": 6021,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 6007,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".22"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:36"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 6020,
+        "linearizedBaseContracts": [
+          6020
+        ],
+        "name": "IRepPriceOracle",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 6014,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "setRepPriceInAttoEth",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6010,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6009,
+                  "name": "_repPriceInAttoEth",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6014,
+                  "src": "88:26:36",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 6008,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "88:7:36",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "87:28:36"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 6013,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6012,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6014,
+                  "src": "134:4:36",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 6011,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "134:4:36",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "133:6:36"
+            },
+            "scope": 6020,
+            "src": "58:82:36",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 6019,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getRepPriceInAttoEth",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6015,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "174:2:36"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 6018,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6017,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6019,
+                  "src": "200:7:36",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 6016,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "200:7:36",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "199:9:36"
+            },
+            "scope": 6020,
+            "src": "145:64:36",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 6021,
+        "src": "27:184:36"
+      }
+    ],
+    "src": "0:212:36"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/market-oracle/libraries/augur/source/contracts/reporting/IRepPriceOracle.sol",
+    "exportedSymbols": {
+      "IRepPriceOracle": [
+        6020
+      ]
+    },
+    "id": 6021,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 6007,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".22"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:36"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 6020,
+        "linearizedBaseContracts": [
+          6020
+        ],
+        "name": "IRepPriceOracle",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 6014,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "setRepPriceInAttoEth",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6010,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6009,
+                  "name": "_repPriceInAttoEth",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6014,
+                  "src": "88:26:36",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 6008,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "88:7:36",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "87:28:36"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 6013,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6012,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6014,
+                  "src": "134:4:36",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 6011,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "134:4:36",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "133:6:36"
+            },
+            "scope": 6020,
+            "src": "58:82:36",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 6019,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getRepPriceInAttoEth",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6015,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "174:2:36"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 6018,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6017,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6019,
+                  "src": "200:7:36",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 6016,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "200:7:36",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "199:9:36"
+            },
+            "scope": 6020,
+            "src": "145:64:36",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 6021,
+        "src": "27:184:36"
+      }
+    ],
+    "src": "0:212:36"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.13",
+  "updatedAt": "2019-08-25T06:22:07.794Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

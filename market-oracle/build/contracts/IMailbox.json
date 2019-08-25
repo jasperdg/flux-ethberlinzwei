@@ -1,0 +1,500 @@
+{
+  "contractName": "IMailbox",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_owner",
+          "type": "address"
+        },
+        {
+          "name": "_market",
+          "type": "address"
+        }
+      ],
+      "name": "initialize",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "depositEther",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ],
+  "metadata": "",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.4.22;\n\nimport './../reporting/IMarket.sol';\n\n\ncontract IMailbox {\n    function initialize(address _owner, IMarket _market) public returns (bool);\n    function depositEther() public payable returns (bool);\n}\n",
+  "sourcePath": "/Users/jasperdegooijer/Documents/eth-berlin/market-oracle/libraries/augur/source/contracts/reporting/IMailbox.sol",
+  "ast": {
+    "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/market-oracle/libraries/augur/source/contracts/reporting/IMailbox.sol",
+    "exportedSymbols": {
+      "IMailbox": [
+        5818
+      ]
+    },
+    "id": 5819,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 5802,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".22"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:34"
+      },
+      {
+        "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/market-oracle/libraries/augur/source/contracts/reporting/IMarket.sol",
+        "file": "./../reporting/IMarket.sol",
+        "id": 5803,
+        "nodeType": "ImportDirective",
+        "scope": 5819,
+        "sourceUnit": 6006,
+        "src": "26:36:34",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 5818,
+        "linearizedBaseContracts": [
+          5818
+        ],
+        "name": "IMailbox",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 5812,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "initialize",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5808,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5805,
+                  "name": "_owner",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5812,
+                  "src": "109:14:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5804,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "109:7:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5807,
+                  "name": "_market",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5812,
+                  "src": "125:15:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IMarket_$6005",
+                    "typeString": "contract IMarket"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 5806,
+                    "name": "IMarket",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 6005,
+                    "src": "125:7:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IMarket_$6005",
+                      "typeString": "contract IMarket"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "108:33:34"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 5811,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5810,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5812,
+                  "src": "158:4:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 5809,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "158:4:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "157:6:34"
+            },
+            "scope": 5818,
+            "src": "89:75:34",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 5817,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "depositEther",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5813,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "190:2:34"
+            },
+            "payable": true,
+            "returnParameters": {
+              "id": 5816,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5815,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5817,
+                  "src": "217:4:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 5814,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "217:4:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "216:6:34"
+            },
+            "scope": 5818,
+            "src": "169:54:34",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 5819,
+        "src": "65:160:34"
+      }
+    ],
+    "src": "0:226:34"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/market-oracle/libraries/augur/source/contracts/reporting/IMailbox.sol",
+    "exportedSymbols": {
+      "IMailbox": [
+        5818
+      ]
+    },
+    "id": 5819,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 5802,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".22"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:34"
+      },
+      {
+        "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/market-oracle/libraries/augur/source/contracts/reporting/IMarket.sol",
+        "file": "./../reporting/IMarket.sol",
+        "id": 5803,
+        "nodeType": "ImportDirective",
+        "scope": 5819,
+        "sourceUnit": 6006,
+        "src": "26:36:34",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 5818,
+        "linearizedBaseContracts": [
+          5818
+        ],
+        "name": "IMailbox",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 5812,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "initialize",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5808,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5805,
+                  "name": "_owner",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5812,
+                  "src": "109:14:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5804,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "109:7:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5807,
+                  "name": "_market",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5812,
+                  "src": "125:15:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IMarket_$6005",
+                    "typeString": "contract IMarket"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 5806,
+                    "name": "IMarket",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 6005,
+                    "src": "125:7:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IMarket_$6005",
+                      "typeString": "contract IMarket"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "108:33:34"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 5811,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5810,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5812,
+                  "src": "158:4:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 5809,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "158:4:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "157:6:34"
+            },
+            "scope": 5818,
+            "src": "89:75:34",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 5817,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "depositEther",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5813,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "190:2:34"
+            },
+            "payable": true,
+            "returnParameters": {
+              "id": 5816,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5815,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5817,
+                  "src": "217:4:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 5814,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "217:4:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "216:6:34"
+            },
+            "scope": 5818,
+            "src": "169:54:34",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 5819,
+        "src": "65:160:34"
+      }
+    ],
+    "src": "0:226:34"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.13",
+  "updatedAt": "2019-08-25T06:22:07.788Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

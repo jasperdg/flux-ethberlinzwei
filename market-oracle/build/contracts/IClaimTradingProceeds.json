@@ -1,0 +1,104 @@
+{
+  "contractName": "IClaimTradingProceeds",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.4.24+commit.e67f0147\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/jasperdegooijer/Documents/eth-berlin/market-oracle/libraries/augur/source/contracts/trading/IClaimTradingProceeds.sol\":\"IClaimTradingProceeds\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/jasperdegooijer/Documents/eth-berlin/market-oracle/libraries/augur/source/contracts/trading/IClaimTradingProceeds.sol\":{\"keccak256\":\"0x326619a34be474d0dc6a76eefaa96a851429bd0d1fa87fcc24463b64a573a38c\",\"urls\":[\"bzzr://92ddf822f4e11fd75f36eb6a0e5091f2b1c666ab7a122bde23c9fe01d84fb017\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3006080604052600080fd00a165627a7a72305820f6f976176fa83f6a5f3c63ae32d908fba69eda82cbdc042d12f184d44930ff350029",
+  "deployedBytecode": "0x6080604052600080fd00a165627a7a72305820f6f976176fa83f6a5f3c63ae32d908fba69eda82cbdc042d12f184d44930ff350029",
+  "sourceMap": "28:35:46:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;28:35:46;;;;;;;",
+  "deployedSourceMap": "28:35:46:-;;;;;",
+  "source": "pragma solidity ^0.4.22;\n\n\n\ncontract IClaimTradingProceeds {\n\n}\n",
+  "sourcePath": "/Users/jasperdegooijer/Documents/eth-berlin/market-oracle/libraries/augur/source/contracts/trading/IClaimTradingProceeds.sol",
+  "ast": {
+    "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/market-oracle/libraries/augur/source/contracts/trading/IClaimTradingProceeds.sol",
+    "exportedSymbols": {
+      "IClaimTradingProceeds": [
+        11592
+      ]
+    },
+    "id": 11593,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 11591,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".22"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:46"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 11592,
+        "linearizedBaseContracts": [
+          11592
+        ],
+        "name": "IClaimTradingProceeds",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 11593,
+        "src": "28:35:46"
+      }
+    ],
+    "src": "0:64:46"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/jasperdegooijer/Documents/eth-berlin/market-oracle/libraries/augur/source/contracts/trading/IClaimTradingProceeds.sol",
+    "exportedSymbols": {
+      "IClaimTradingProceeds": [
+        11592
+      ]
+    },
+    "id": 11593,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 11591,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".22"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:46"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 11592,
+        "linearizedBaseContracts": [
+          11592
+        ],
+        "name": "IClaimTradingProceeds",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 11593,
+        "src": "28:35:46"
+      }
+    ],
+    "src": "0:64:46"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.13",
+  "updatedAt": "2019-08-25T06:22:07.963Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
