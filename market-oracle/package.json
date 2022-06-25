@@ -14,7 +14,7 @@
     "chainlink": "^0.6.6-beta2",
     "ethereumjs-tx": "^1.3.7",
     "link_token": "^1.0.6",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.7",
     "openzeppelin-solidity": "^1.12.0",
     "web3": "^1.0.0-beta.55",
     "web3-utils": "^1.0.0-beta.55"
